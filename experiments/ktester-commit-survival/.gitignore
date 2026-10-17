@@ -1,3 +1,4 @@
 /work/
 /docs/handover-*.md
 __pycache__/
+/results/phase-*-running.json

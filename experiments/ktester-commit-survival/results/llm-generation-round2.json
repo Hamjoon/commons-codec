@@ -1,0 +1,338 @@
+{
+  "round": 2,
+  "rerun": false,
+  "stage": "commit-survival-round2",
+  "run": {
+    "project": "commons-codec",
+    "start": "2026-10-17T09:38:45Z",
+    "end": "2026-10-17T10:42:30Z",
+    "generate_rc": 0,
+    "coverage_rc": 1
+  },
+  "population_tasks": 52,
+  "tasks_submitted": 52,
+  "test_class_files": 52,
+  "missing_test_class_ids": [],
+  "wall_seconds": 3825.0,
+  "provider_routing": "unpinned",
+  "providers_observed": [],
+  "provider_note": "Released LLMCaller returns message content only and does not log response provider metadata; provider identity unavailable.",
+  "logs": [
+    {
+      "file": "commit-survival-round2-commons-codec-coverage.log",
+      "timeouts": [],
+      "out_of_memory_occurrences": [],
+      "error_records": [
+        {
+          "line": 281,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 340,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 357,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 467,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 494,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 559,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 568,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 595,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 603,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 727,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 904,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1169,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1182,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1222,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1446,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1637,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1858,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2052,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2066,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2319,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2933,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3031,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3121,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3130,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3138,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3215,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3245,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3570,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3881,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 3906,
+          "message": "Traceback (most recent call last):"
+        },
+        {
+          "line": 3907,
+          "message": "  File \"/work/code/evaluation.py\", line 68, in <module>"
+        },
+        {
+          "line": 3908,
+          "message": "    run(args.operation)"
+        },
+        {
+          "line": 3909,
+          "message": "    ~~~^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 3910,
+          "message": "  File \"/work/code/evaluation.py\", line 42, in run"
+        },
+        {
+          "line": 3911,
+          "message": "    test_coverage(FS, TS, dataset_info)"
+        },
+        {
+          "line": 3912,
+          "message": "    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 3913,
+          "message": "  File \"/work/code/evaluations/coverage_test.py\", line 256, in test_coverage"
+        },
+        {
+          "line": 3914,
+          "message": "    coverage_data = calculator.generate_project_summary(test_result, filter=True)"
+        },
+        {
+          "line": 3915,
+          "message": "  File \"/work/code/evaluations/coverage_test.py\", line 156, in generate_project_summary"
+        },
+        {
+          "line": 3916,
+          "message": "    cov_score = self.extract_single_coverage(html_path, method)"
+        },
+        {
+          "line": 3917,
+          "message": "  File \"/work/code/tools/execute_test.py\", line 176, in extract_single_coverage"
+        },
+        {
+          "line": 3918,
+          "message": "    branch_cov = float(tds[4].string.replace(\"%\", \"\"))/100"
+        },
+        {
+          "line": 3919,
+          "message": "                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 3920,
+          "message": "ValueError: could not convert string to float: 'n/a'"
+        }
+      ],
+      "framework_completed": 0,
+      "test_generation_completed": 0,
+      "explicit_timeout_mentions": 0
+    },
+    {
+      "file": "commit-survival-round2-commons-codec-generate.log",
+      "timeouts": [],
+      "out_of_memory_occurrences": [],
+      "error_records": [
+        {
+          "line": 151,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 40 column 65 (char 1528)"
+        },
+        {
+          "line": 154,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 13 column 63 (char 428)"
+        },
+        {
+          "line": 159,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 100 column 40 (char 2758)"
+        },
+        {
+          "line": 231,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 13 column 64 (char 422)"
+        },
+        {
+          "line": 290,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 40 column 53 (char 1600)"
+        },
+        {
+          "line": 362,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 40 column 53 (char 1588)"
+        },
+        {
+          "line": 390,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Expecting value: line 38 column 77661 (char 78823)"
+        },
+        {
+          "line": 394,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Expecting ',' delimiter: line 175376 column 1 (char 292959)"
+        },
+        {
+          "line": 640,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 865,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1035,
+          "message": "Error in post process: java.lang.NullPointerException: Cannot invoke \"spoon.reflect.declaration.CtMethod.prettyprint()\" because \"sourceMethod\" is null"
+        }
+      ],
+      "framework_completed": 52,
+      "test_generation_completed": 52,
+      "explicit_timeout_mentions": 0
+    }
+  ],
+  "timeouts": 0,
+  "out_of_memory_occurrences": 0,
+  "missing_output_directory_task_ids": [],
+  "authors_evaluator_reference": {
+    "summary_available": false,
+    "task_entries": 0,
+    "summary_failure": "ValueError: could not convert string to float: 'n/a' in the reference evaluator's branch-coverage parser",
+    "na_failure_nonblocking_authorized": true,
+    "test_cases": null,
+    "passed_cases": null,
+    "compiled_cases": null,
+    "compile_pass_rate": null,
+    "execution_pass_rate": null,
+    "tests_per_produced_class": null,
+    "error_type_counts": {},
+    "raw_results_available": true,
+    "raw_task_entries": 52,
+    "raw_files_compiled": 23,
+    "raw_executed_test_cases": 369,
+    "raw_passed_test_cases": 263,
+    "raw_note": "Raw evaluator execution dictionary recovered from the log before coverage-summary parsing; not the authors final filtered/scored summary."
+  },
+  "source_sha256": {
+    "Base32_builder_Test.java": "16a393cf835ab49288064830dba23f6a44091a6f93cd4aa1b4f28a7f64787f4d",
+    "Base32_decode_Test.java": "809d26bb4f7594990b9c94af25853c3e862c7f93f076467a454a3e6929d9b26f",
+    "Base32_encode_Test.java": "eb99d9c8005b042b9ae465b88424ee49613cf9fe0d1f5ef71a52c2e76cc2bffa",
+    "Base32_getLineSeparator_Test.java": "0a40c843682d218ff1729120cf94f1f595f5778e68626a7818c5d9385ab5c52a",
+    "Base32_isInAlphabet_Test.java": "ab53cadd92af4f5564bfd64427d91f0cd9af4e8a4cfac630ff4886e719c9e7dd",
+    "Base64_builder_Test.java": "b754aa3491f661d08d78e709544185c22cebaf9206c579a91185145d0a04891d",
+    "Base64_decodeBase64_2_Test.java": "babb2993d439c7066eb3a25695570cce88c536d9a7b77e1ab2d080c92ebba33d",
+    "Base64_decodeBase64_Test.java": "bc9fdfa880a66dfac6d4d30ba95d36010cd5bdc45bb1f32f4e49b78e50a46bd1",
+    "Base64_decodeInteger_Test.java": "87280756ad8a7855145c89d495ce1587cfe8c267cca3a489e0321751c745a246",
+    "Base64_decode_Test.java": "499383b4923a18760f41677dbbd437f0a664919ccedbf80c4d1241ccfbe693d9",
+    "Base64_encodeBase64Chunked_Test.java": "904834c9be5a85a5a251d7728e23d6efbc2d7fe3c86d18e0060cef14a7293c31",
+    "Base64_encodeBase64String_Test.java": "6586ab6b74e4d79561f067e51a3f6a6110551b2258c0a1af3a46fcddbff7a39d",
+    "Base64_encodeBase64URLSafeString_Test.java": "1f5588d747d6cf694c9b9b484175b1f27ba74f3805ba415c60ec642dd46e6545",
+    "Base64_encodeBase64URLSafe_Test.java": "0b75b252c05938c60e412733ad3f6e183481e0b62feba3bb363bdd0c2ea08e22",
+    "Base64_encodeBase64_2_Test.java": "3bf631999fadfd5d885dae3afcaa2e870f88e0138e33253e6151e42987d0a922",
+    "Base64_encodeBase64_3_Test.java": "0032f91bffeaed8387142c43f508e8fb1450ed1ab0ba58f9335957f959a866a9",
+    "Base64_encodeBase64_4_Test.java": "6d75ac6a3dd041697be6c7422d8d2f93536e46d5594698b319c611fde6d3205c",
+    "Base64_encodeBase64_Test.java": "37ad638a05c3c4cf5e0068bf77479bc26e430eb1349fae07379e61bce992a834",
+    "Base64_encodeInteger_Test.java": "afe1467e11ff262e6c1796ea1587acb401125567742095843e22e53cba55fed4",
+    "Base64_encode_Test.java": "09a125aaa9e9ab6a8ff5f7fc0023e978fad834f5faad1e8d2d95b00283cf981f",
+    "Base64_getLineSeparator_Test.java": "95a8145cfca172cd369d2d774926b0430fa34e044e4d667967ac02573a4205a1",
+    "Base64_isBase64_2_Test.java": "da2ad8a458260391721b2be40a0c00b27e4226f4136976c1bff31d2d7b404a4b",
+    "Base64_isBase64_3_Test.java": "149c5823b5e5df341369294b24907f632f8697c45c0dcc7b7e0c2e5f9655f72d",
+    "Base64_isBase64_Test.java": "80cc7311e0ab9273c427480ac4a0d2f87089cbe083ae2a1a6f7251286764cc9c",
+    "Base64_isInAlphabet_Test.java": "4cc80511b516eeb766aded539e41c8926c741ff02ea8783b0000c9f17f69925b",
+    "Base64_isUrlSafe_Test.java": "5a6a0cb5a6b08cdeaa27dad3770e2bdce2e74b6940e22efbf5931931565eab39",
+    "Base64_toIntegerBytes_Test.java": "678fd4f1e96900949fec146af08986a6d04738524e917cb0f340ca845d8efc28",
+    "Md5Crypt_apr1Crypt_2_Test.java": "7cfcd4b811e02a999e7b2078ee4c8bdf82e5d364fbc851c8c50e9b219f99519f",
+    "Md5Crypt_apr1Crypt_3_Test.java": "11ffebc9170ce27557b2ae5f5b2e63f25d4c2195d2eec918b135461155f095cb",
+    "Md5Crypt_apr1Crypt_4_Test.java": "6f5ded14c5c81514b00a25c32aafd7aa7096480c6f1468adc6712dfadde34f14",
+    "Md5Crypt_apr1Crypt_5_Test.java": "e2d003b4bb4fc8fdc1717ff93917a36aac8585a21a3c8be3933f60f576bb8608",
+    "Md5Crypt_apr1Crypt_Test.java": "4cf9e81119b0a597f4878e11ddde9b628a59b54f57c8e5747b1a5588a4b91ec3",
+    "Md5Crypt_md5Crypt_2_Test.java": "f3e3c5fd2bf1a9a504dea352c84ecf2ede69d739924d0c60e0705b45915e75eb",
+    "Md5Crypt_md5Crypt_3_Test.java": "5c9fc21bc06368c5c2b073f99c24613016168a3ecb90743d69dcfcc49da803d8",
+    "Md5Crypt_md5Crypt_4_Test.java": "d618707b5f6aa6269f8734c82f9a180507eb5e82d6b5c556ee8dd2260718716d",
+    "Md5Crypt_md5Crypt_5_Test.java": "34050c327c9591287956b4753b69082b49b2248e2e3e6b8efdc43634a42e6ea5",
+    "Md5Crypt_md5Crypt_Test.java": "59ea1b2b4726648c27d944124b5eef65b3507901e7a9fceef12ac67fd82d9a67",
+    "MurmurHash3_hash128_Test.java": "3bae74fcd699385f7027e216260398b75aa8853de8cd1772b41f8905d78c4061",
+    "MurmurHash3_hash128x64_2_Test.java": "38fd3b50312c97e068bc3a31700fbb7c463ca5de31ce4f3919e519a7a9dda8f4",
+    "MurmurHash3_hash128x64_Test.java": "59600d1aeaaf62f15224172eeba6ad0fe840baa1c2478a6556de1f6e11ec8862",
+    "MurmurHash3_hash32_2_Test.java": "c4cb39d2eb0ea561e5bf0822a6e3573588da9745027968ac003d573601ebe651",
+    "MurmurHash3_hash32_3_Test.java": "689eb1577ec216933a2dc21b89803bdf52af45cdd0f3293f7cecbc0624591080",
+    "MurmurHash3_hash32_4_Test.java": "67c5b3179bc3ca2504495faae6b1259caa06d3ed153d65173a9fffc6bf923f7a",
+    "MurmurHash3_hash32_Test.java": "df6933404ebf4bf1e85960179970443fa070536de510ad1964c3b6fac2ff9984",
+    "MurmurHash3_hash32x86_2_Test.java": "bec78eee79c8fcfbb338e680d7cbfa261d97452ecaf0ab7cde25c6f279d91193",
+    "MurmurHash3_hash32x86_Test.java": "0ba8ebbd4d2560e8e76220032ecca6fa6a5b9f706a136b81ce2362a49bd74b71",
+    "Sha2Crypt_sha256Crypt_2_Test.java": "640fc7b09403a6c41c8121bb1d012ad4caccfcd78247633795a1ee9bcffdbfa0",
+    "Sha2Crypt_sha256Crypt_3_Test.java": "1ec084b1da9904d19680148867329396325f3233d087f35513de9e489bd55659",
+    "Sha2Crypt_sha256Crypt_Test.java": "5b9e2bae311843e86c8430ec0197a5736894811453b4ec15ca8d67e88a6ef7ea",
+    "Sha2Crypt_sha512Crypt_2_Test.java": "ff49101d48dbdb76f2c83349b3a700fd8a23c559f106b4f3accc8f90ef849850",
+    "Sha2Crypt_sha512Crypt_3_Test.java": "ce11f66267c7f7ad53c9393ad492e93398ac38b170cb78cf904e5da16294f91e",
+    "Sha2Crypt_sha512Crypt_Test.java": "9f6ddcae7a69c868819a0649cef237a2c51ae2c39213c6e0bd43241d81ef23d3"
+  }
+}

@@ -7,7 +7,7 @@ Developer denominator: **143**.
 | 1 | 52 | 24 | 151 | 126 | 126 | 126 |
 | 2 | 52 | 23 | 252 | 167 | 164 | 290 |
 
-LLM denominator so far: **290**, versus **143** developer methods. Duplicates removed: **3**. Shortfall: **0**.
+LLM denominator frozen: **290**, versus **143** developer methods. Duplicates removed: **3**. Shortfall: **0**.
 
 Each source is compiled independently against production classes at t and the 18 fixed test jars. Each compiled class is launched three times in separate JVMs with a 600-second wall-clock limit per run. Compile failures are recorded with the first javac error and contribute no listed methods. Files and commands are in llm-roundN-validation.json; per-case and per-method outcomes are in the corresponding CSVs. Raw logs/XML remain under ignored work/llm-roundN/.
 

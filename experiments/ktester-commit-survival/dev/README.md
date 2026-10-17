@@ -44,3 +44,5 @@ Methods not passing every run (same invocation):
 - org.apache.commons.codec.net.PercentCodecTest#testBasicSpace: run1=skipped, run2=skipped, run3=skipped; in-scope=no.
 
 Frozen Java sources and test resources are in src-test-t/, with original relative paths beneath java/ and resources/. Their content digests are in frozen-source-sha256.json. Raw Surefire reports remain locally in ignored work/surefire-run*/. The tracked testcase-to-method map preserves the method-level evidence.
+
+Parameterized mapping audit: `python3 -c "import csv; r=list(csv.DictReader(open('experiments/ktester-commit-survival/dev/surefire-method-map.csv'))); print(len({(x['class'],x['method']) for x in r if x['run']=='1' and '(' in x['raw-name']}))"` reports 39 concrete-class/method parameterized execution units. This differs from the expected source declaration count because the unit includes the concrete execution class.

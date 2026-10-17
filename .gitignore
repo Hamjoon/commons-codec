@@ -11,3 +11,7 @@ target/
 .classpath
 .externalToolBuilders/*
 /commons-codec.iml
+
+# Local commit-survival workspace and handovers
+experiments/ktester-commit-survival/docs/handover-*.md
+experiments/ktester-commit-survival/work/

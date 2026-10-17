@@ -1,0 +1,40 @@
+{
+  "status": "blocked_at_end_of_step_3",
+  "completed_steps": [
+    1,
+    2
+  ],
+  "incomplete_step": 3,
+  "not_started": [
+    4,
+    5
+  ],
+  "developer_denominator": 143,
+  "selected_commits": 338,
+  "scope_changing_commits": 21,
+  "unresolved_artifacts": [
+    {
+      "filename": "evosuite-1.2.0.jar",
+      "coordinate": "org.evosuite:evosuite-master:1.2.0",
+      "classifier": "",
+      "attempts": 2
+    },
+    {
+      "filename": "jacocoagent.jar",
+      "coordinate": "org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT",
+      "classifier": "",
+      "attempts": 2
+    },
+    {
+      "filename": "jacococli.jar",
+      "coordinate": "org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT",
+      "classifier": "nodeps",
+      "attempts": 2
+    }
+  ],
+  "population": "not enumerated or generated",
+  "overload_check": "not run",
+  "llm_calls": 0,
+  "author_index_rebuilt": false,
+  "pushes": 0
+}

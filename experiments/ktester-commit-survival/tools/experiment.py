@@ -11,3 +11,12 @@ SCOPE = [
  'org.apache.commons.codec.digest.Sha2Crypt',
 ]
 SCOPE_FILES = ['src/main/java/'+x.replace('.', '/')+'.java' for x in SCOPE]
+
+
+def preserve_log(log):
+    """Keep exact output locally and trim trailing whitespace in the public log."""
+    import shutil
+    raw = EXPERIMENT / 'work/raw-logs'
+    raw.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(log, raw / log.name)
+    log.write_text('\n'.join(line.rstrip() for line in log.read_text().splitlines()).rstrip() + '\n')

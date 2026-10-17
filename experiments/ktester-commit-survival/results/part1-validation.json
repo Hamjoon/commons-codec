@@ -1,0 +1,12 @@
+{
+  "invocation": "python3 experiments/ktester-commit-survival/tools/verify_part1.py --kt /Users/donggi/_projects/experiment-projects/KTester",
+  "frozen_files_matching_upstream": 79,
+  "method_rows_rechecked": 970,
+  "denominator_rows_rechecked": 143,
+  "saved_surefire_runs_rechecked": 3,
+  "resolved_jars_matching_supplied": 18,
+  "unresolved_with_exactly_two_failed_attempts": 3,
+  "protected_kt_tracked_diff_empty": true,
+  "tracked_forbidden_paths": [],
+  "python_helper_syntax": "passed"
+}

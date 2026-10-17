@@ -1,0 +1,788 @@
+[
+  {
+    "source": "data/projects/commons-codec/libs/apiguardian-api-1.1.2.jar",
+    "filename": "apiguardian-api-1.1.2.jar",
+    "bytes": 6806,
+    "sha256": "b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38",
+    "coordinate": "org.apiguardian:apiguardian-api:1.1.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Bnd-LastModified": "1624798392241",
+      "Build-Date": "2021-06-27",
+      "Build-Revision": "aa952a1b9d5b4e9cc0af853e2c140c2455b397be",
+      "Build-Time": "14:53:10.089+0200",
+      "Built-By": "@API Guardian Team",
+      "Bundle-Description": "@API Guardian",
+      "Bundle-DocURL": "https://github.com/apiguardian-team/apiguardian",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "apiguardian-api",
+      "Bundle-SymbolicName": "org.apiguardian.api",
+      "Bundle-Vendor": "apiguardian.org",
+      "Bundle-Version": "1.1.2",
+      "Created-By": "11.0.11 (AdoptOpenJDK)",
+      "Export-Package": "org.apiguardian.api;version=\"1.1.2\"",
+      "Implementation-Title": "apiguardian-api",
+      "Implementation-Vendor": "apiguardian.org",
+      "Implementation-Version": "1.1.2",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\"",
+      "Specification-Title": "apiguardian-api",
+      "Specification-Vendor": "apiguardian.org",
+      "Specification-Version": "1.1.2",
+      "Tool": "Bnd-5.3.0.202102221516"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/byte-buddy-1.14.1.jar",
+    "filename": "byte-buddy-1.14.1.jar",
+    "bytes": 4184899,
+    "sha256": "63479f9a0a1b28f98313230d688a46b02bd80d09a700e127482d0bd635b47bad",
+    "coordinate": "net.bytebuddy:byte-buddy:1.14.1",
+    "classifier": "",
+    "coordinate_evidence": "pom.properties",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/net.bytebuddy/byte-buddy/pom.properties",
+        "coordinate": "net.bytebuddy:byte-buddy:1.14.1"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Bundle-Description": "Byte Buddy is a Java library for creating Java classes at run time.        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "Bundle-License": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "Bundle-SymbolicName": "net.bytebuddy.byte-buddy",
+      "Bundle-ManifestVersion": "2",
+      "Tool": "Bnd-6.3.1.202206071316",
+      "Main-Class": "net.bytebuddy.build.Plugin$Engine$Default",
+      "Export-Package": "net.bytebuddy;version=\"1.14.1\",net.bytebuddy.agent.builder;version=\"1.14.1\",net.bytebuddy.asm;version=\"1.14.1\",net.bytebuddy.build;version=\"1.14.1\",net.bytebuddy.description;version=\"1.14.1\",net.bytebuddy.description.annotation;version=\"1.14.1\",net.bytebuddy.description.enumeration;version=\"1.14.1\",net.bytebuddy.description.field;version=\"1.14.1\",net.bytebuddy.description.method;version=\"1.14.1\",net.bytebuddy.description.modifier;version=\"1.14.1\",net.bytebuddy.description.type;version=\"1.14.1\",net.bytebuddy.dynamic;version=\"1.14.1\",net.bytebuddy.dynamic.loading;version=\"1.14.1\",net.bytebuddy.dynamic.scaffold;version=\"1.14.1\",net.bytebuddy.dynamic.scaffold.inline;version=\"1.14.1\",net.bytebuddy.dynamic.scaffold.subclass;version=\"1.14.1\",net.bytebuddy.implementation;version=\"1.14.1\",net.bytebuddy.implementation.attribute;version=\"1.14.1\",net.bytebuddy.implementation.auxiliary;version=\"1.14.1\",net.bytebuddy.implementation.bind;version=\"1.14.1\",net.bytebuddy.implementation.bind.annotation;version=\"1.14.1\",net.bytebuddy.implementation.bytecode;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.assign;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.assign.primitive;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.assign.reference;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.collection;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.constant;version=\"1.14.1\",net.bytebuddy.implementation.bytecode.member;version=\"1.14.1\",net.bytebuddy.matcher;version=\"1.14.1\",net.bytebuddy.pool;version=\"1.14.1\",net.bytebuddy.utility;version=\"1.14.1\",net.bytebuddy.utility.nullability;version=\"1.14.1\",net.bytebuddy.utility.privilege;version=\"1.14.1\",net.bytebuddy.utility.visitor;version=\"1.14.1\",net.bytebuddy.jar.asm;version=\"1.14.1\",net.bytebuddy.jar.asm.signature;version=\"1.14.1\",net.bytebuddy.jar.asm.commons;version=\"1.14.1\"",
+      "Bundle-Name": "Byte Buddy (without dependencies)",
+      "Bundle-Version": "1.14.1",
+      "Multi-Release": "true",
+      "Build-Jdk-Spec": "1.8",
+      "Created-By": "Apache Maven Bundle Plugin 5.1.7"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/byte-buddy-agent-1.14.1.jar",
+    "filename": "byte-buddy-agent-1.14.1.jar",
+    "bytes": 256702,
+    "sha256": "f4809b9d0f00e71be98a61a25b3e14437f53f6821485694011beeb25e9231dde",
+    "coordinate": "net.bytebuddy:byte-buddy-agent:1.14.1",
+    "classifier": "",
+    "coordinate_evidence": "pom.properties",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/net.bytebuddy/byte-buddy-agent/pom.properties",
+        "coordinate": "net.bytebuddy:byte-buddy-agent:1.14.1"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Bundle-Description": "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+      "Bundle-License": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "Bundle-SymbolicName": "net.bytebuddy.byte-buddy-agent",
+      "Agent-Class": "net.bytebuddy.agent.Installer",
+      "Bundle-ManifestVersion": "2",
+      "Can-Redefine-Classes": "true",
+      "Import-Package": "com.sun.tools.attach;resolution:=optional,com.ibm.tools.attach;resolution:=optional",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.5))\"",
+      "Can-Set-Native-Method-Prefix": "true",
+      "Tool": "Bnd-6.3.1.202206071316",
+      "Export-Package": "net.bytebuddy.agent;uses:=\"net.bytebuddy.agent.utility.nullability\";version=\"1.14.1\",net.bytebuddy.agent.utility.nullability;version=\"1.14.1\"",
+      "Premain-Class": "net.bytebuddy.agent.Installer",
+      "Bundle-Name": "Byte Buddy agent",
+      "Bundle-Version": "1.14.1",
+      "Multi-Release": "true",
+      "Can-Retransform-Classes": "true",
+      "Build-Jdk-Spec": "1.8",
+      "Created-By": "Apache Maven Bundle Plugin 5.1.7"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/commons-io-2.16.1.jar",
+    "filename": "commons-io-2.16.1.jar",
+    "bytes": 508826,
+    "sha256": "f41f7baacd716896447ace9758621f62c1c6b0a91d89acee488da26fc477c84f",
+    "coordinate": "commons-io:commons-io:2.16.1",
+    "classifier": "",
+    "coordinate_evidence": "pom.properties",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/commons-io/commons-io/pom.properties",
+        "coordinate": "commons-io:commons-io:2.16.1"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Created-By": "Apache Maven Bundle Plugin 5.1.9",
+      "Build-Jdk-Spec": "17",
+      "Specification-Title": "Apache Commons IO",
+      "Specification-Version": "2.16",
+      "Specification-Vendor": "The Apache Software Foundation",
+      "Implementation-Title": "Apache Commons IO",
+      "Implementation-Version": "2.16.1",
+      "Implementation-Vendor": "The Apache Software Foundation",
+      "Automatic-Module-Name": "org.apache.commons.io",
+      "Bundle-Description": "The Apache Commons IO library contains utility classes, stream implementations, file filters,file comparators, endian transformation classes, and much more.",
+      "Bundle-DocURL": "https://commons.apache.org/proper/commons-io/",
+      "Bundle-License": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "Apache Commons IO",
+      "Bundle-SymbolicName": "org.apache.commons.commons-io",
+      "Bundle-Vendor": "The Apache Software Foundation",
+      "Bundle-Version": "2.16.1",
+      "Export-Package": "org.apache.commons.io;version=\"1.4.9999\",org.apache.commons.io.comparator;version=\"1.4.9999\",org.apache.commons.io.filefilter;version=\"1.4.9999\",org.apache.commons.io.input;version=\"1.4.9999\",org.apache.commons.io.output;version=\"1.4.9999\",org.apache.commons.io.build;version=\"2.16.1\",org.apache.commons.io.channels;version=\"2.16.1\",org.apache.commons.io.charset;version=\"2.16.1\",org.apache.commons.io.file;version=\"2.16.1\",org.apache.commons.io.file.attribute;version=\"2.16.1\",org.apache.commons.io.file.spi;version=\"2.16.1\",org.apache.commons.io.function;version=\"2.16.1\",org.apache.commons.io.input.buffer;version=\"2.16.1\",org.apache.commons.io.monitor;version=\"2.16.1\",org.apache.commons.io.serialization;version=\"2.16.1\",org.apache.commons.io;version=\"2.16.1\",org.apache.commons.io.comparator;version=\"2.16.1\",org.apache.commons.io.filefilter;version=\"2.16.1\",org.apache.commons.io.input;version=\"2.16.1\",org.apache.commons.io.output;version=\"2.16.1\"",
+      "Import-Package": "sun.nio.ch;resolution:=optional,sun.misc;resolution:=optional",
+      "Include-Resource": "META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt=NOTICE.txt",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Tool": "Bnd-6.4.1.202306080939",
+      "Multi-Release": "true"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/commons-lang3-3.14.0.jar",
+    "filename": "commons-lang3-3.14.0.jar",
+    "bytes": 657952,
+    "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
+    "coordinate": "org.apache.commons:commons-lang3:3.14.0",
+    "classifier": "",
+    "coordinate_evidence": "pom.properties",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/org.apache.commons/commons-lang3/pom.properties",
+        "coordinate": "org.apache.commons:commons-lang3:3.14.0"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Created-By": "Apache Maven Bundle Plugin 5.1.9",
+      "Build-Jdk-Spec": "21",
+      "Specification-Title": "Apache Commons Lang",
+      "Specification-Version": "3.14",
+      "Specification-Vendor": "The Apache Software Foundation",
+      "Implementation-Title": "Apache Commons Lang",
+      "Implementation-Version": "3.14.0",
+      "Implementation-Vendor": "The Apache Software Foundation",
+      "Automatic-Module-Name": "org.apache.commons.lang3",
+      "Bundle-Description": "Apache Commons Lang, a package of Java utility classes for the  classes that are in java.lang's hierarchy, or are considered to be so  standard as to justify existence in java.lang.",
+      "Bundle-DocURL": "https://commons.apache.org/proper/commons-lang/",
+      "Bundle-License": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "Apache Commons Lang",
+      "Bundle-SymbolicName": "org.apache.commons.lang3",
+      "Bundle-Vendor": "The Apache Software Foundation",
+      "Bundle-Version": "3.14.0",
+      "Export-Package": "org.apache.commons.lang3;version=\"3.14.0\",org.apache.commons.lang3.arch;version=\"3.14.0\",org.apache.commons.lang3.builder;version=\"3.14.0\",org.apache.commons.lang3.compare;version=\"3.14.0\",org.apache.commons.lang3.concurrent;version=\"3.14.0\",org.apache.commons.lang3.concurrent.locks;version=\"3.14.0\",org.apache.commons.lang3.event;version=\"3.14.0\",org.apache.commons.lang3.exception;version=\"3.14.0\",org.apache.commons.lang3.function;version=\"3.14.0\",org.apache.commons.lang3.math;version=\"3.14.0\",org.apache.commons.lang3.mutable;version=\"3.14.0\",org.apache.commons.lang3.reflect;version=\"3.14.0\",org.apache.commons.lang3.stream;version=\"3.14.0\",org.apache.commons.lang3.text;version=\"3.14.0\",org.apache.commons.lang3.text.translate;version=\"3.14.0\",org.apache.commons.lang3.time;version=\"3.14.0\",org.apache.commons.lang3.tuple;version=\"3.14.0\",org.apache.commons.lang3.util;version=\"3.14.0\"",
+      "Include-Resource": "META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE.txt=NOTICE.txt",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Tool": "Bnd-6.4.1.202306080939",
+      "Multi-Release": "true"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/hamcrest-2.2.jar",
+    "filename": "hamcrest-2.2.jar",
+    "bytes": 123360,
+    "sha256": "5e62846a89f05cd78cd9c1a553f340d002458380c320455dd1f8fc5497a8a1c1",
+    "coordinate": "org.hamcrest:hamcrest:2.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Implementation-Title": "hamcrest",
+      "Automatic-Module-Name": "org.hamcrest",
+      "Bundle-SymbolicName": "org.hamcrest",
+      "Implementation-Version": "2.2",
+      "Bundle-ManifestVersion": "2",
+      "Bnd-LastModified": "1571259132000",
+      "Import-Package": "javax.xml.namespace;resolution:=optional,javax.xml.xpath;resolution:=optional,org.w3c.dom;resolution:=optional,org.hamcrest;version=\"[2.2,3)\",org.hamcrest.beans;version=\"[2.2,3)\",org.hamcrest.collection;version=\"[2.2,3)\",org.hamcrest.comparator;version=\"[2.2,3)\",org.hamcrest.core;version=\"[2.2,3)\",org.hamcrest.internal;version=\"[2.2,3)\",org.hamcrest.number;version=\"[2.2,3)\",org.hamcrest.object;version=\"[2.2,3)\",org.hamcrest.text;version=\"[2.2,3)\",org.hamcrest.xml;version=\"[2.2,3)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.7))\"",
+      "Tool": "Bnd-3.4.0.201707252008",
+      "Implementation-Vendor": "hamcrest.org",
+      "Export-Package": "org.hamcrest;version=\"2.2\";uses:=\"javax.xml.namespace,org.hamcrest.collection,org.hamcrest.core,org.hamcrest.internal,org.w3c.dom\",org.hamcrest.beans;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.collection;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.comparator;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.core;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.internal;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.io;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.number;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.object;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.text;version=\"2.2\";uses:=\"org.hamcrest\",org.hamcrest.xml;version=\"2.2\";uses:=\"javax.xml.namespace,org.hamcrest,org.w3c.dom\"",
+      "Bundle-Name": "hamcrest",
+      "Bundle-Version": "2.2",
+      "Created-By": "1.8.0_232-ea (Private Build)"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-jupiter-5.11.4.jar",
+    "filename": "junit-jupiter-5.11.4.jar",
+    "bytes": 6367,
+    "sha256": "aa880e4afba87d447357e4c1fc098c5cb1d200cb9403496c00d3b35a5bd0e8db",
+    "coordinate": "org.junit.jupiter:junit-jupiter:5.11.4",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-12-16",
+      "Build-Revision": "6430ba4f653f6ae42f326cd0731b259ee699c719",
+      "Build-Time": "14:07:27.656+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Jupiter (Aggregator)",
+      "Bundle-SymbolicName": "junit-jupiter",
+      "Bundle-Version": "5.11.4",
+      "Created-By": "21.0.5 (Eclipse Adoptium 21.0.5+11-LTS)",
+      "Implementation-Title": "junit-jupiter",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "5.11.4",
+      "Import-Package": "org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.11,2)\"",
+      "Specification-Title": "junit-jupiter",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "5.11.4"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-jupiter-api-5.10.2.jar",
+    "filename": "junit-jupiter-api-5.10.2.jar",
+    "bytes": 210956,
+    "sha256": "afff77c186cd317275803872fa5133aa801fd6ac40bd91c78a6cf8009b4b17cc",
+    "coordinate": "org.junit.jupiter:junit-jupiter-api:5.10.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-02-04",
+      "Build-Revision": "4c0dddad1b96d4a20e92a2cd583954643ac56ac0 ",
+      "Build-Time": "09:34:27.111+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Jupiter API",
+      "Bundle-SymbolicName": "junit-jupiter-api",
+      "Bundle-Version": "5.10.2",
+      "Created-By": "17.0.9 (BellSoft 17.0.9+11-LTS)",
+      "Export-Package": "org.junit.jupiter.api;version=\"5.10.2\";status=STABLE;uses:=\"kotlin,kotlin.jvm.functions,kotlin.jvm.internal,org.apiguardian.api,org.junit.jupiter.api.function,org.junit.jupiter.api.parallel,org.junit.platform.commons.annotation,org.opentest4j\",org.junit.jupiter.api.condition;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension\",org.junit.jupiter.api.extension;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api,org.junit.jupiter.api.function,org.junit.jupiter.api.parallel,org.junit.platform.commons\",org.junit.jupiter.api.extension.support;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension\",org.junit.jupiter.api.function;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api\",org.junit.jupiter.api.io;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension\",org.junit.jupiter.api.parallel;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api\"",
+      "Implementation-Title": "junit-jupiter-api",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "5.10.2",
+      "Import-Package": "org.apiguardian.api;resolution:=optional;version=\"[1.1,2)\",org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.10,2)\",kotlin;resolution:=optional,kotlin.collections;resolution:=optional,kotlin.jvm.functions;resolution:=optional,kotlin.jvm.internal;resolution:=optional,org.junit.jupiter.api;version=\"[5.10,6)\",org.junit.jupiter.api.extension;version=\"[5.10,6)\",org.junit.jupiter.api.function;version=\"[5.10,6)\",org.junit.jupiter.api.parallel;version=\"[5.10,6)\",org.junit.platform.commons;version=\"[1.10,2)\",org.junit.platform.commons.annotation;version=\"[1.10,2)\",org.junit.platform.commons.function;version=\"[1.10,2)\",org.junit.platform.commons.support;version=\"[1.10,2)\",org.junit.platform.commons.util;version=\"[1.10,2)\",org.opentest4j;version=\"[1.3,2)\"",
+      "Require-Capability": "org.junit.platform.engine;filter:=\"(&(org.junit.platform.engine=junit-jupiter)(version>=5.10.2)(!(version>=6)))\";effective:=active,osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Specification-Title": "junit-jupiter-api",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "5.10.2"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-jupiter-engine-5.10.2.jar",
+    "filename": "junit-jupiter-engine-5.10.2.jar",
+    "bytes": 244690,
+    "sha256": "b6df35da750a546ae932376f11b3c0df841f0c90c7cb2944cd39adb432886e4b",
+    "coordinate": "org.junit.jupiter:junit-jupiter-engine:5.10.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-02-04",
+      "Build-Revision": "4c0dddad1b96d4a20e92a2cd583954643ac56ac0 ",
+      "Build-Time": "09:34:27.111+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Jupiter Engine",
+      "Bundle-SymbolicName": "junit-jupiter-engine",
+      "Bundle-Version": "5.10.2",
+      "Created-By": "17.0.9 (BellSoft 17.0.9+11-LTS)",
+      "Export-Package": "org.junit.jupiter.engine;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.engine.execution,org.junit.platform.engine,org.junit.platform.engine.support.hierarchical\",org.junit.jupiter.engine.config;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.jupiter.api,org.junit.jupiter.api.extension,org.junit.jupiter.api.io,org.junit.jupiter.api.parallel,org.junit.platform.engine\",org.junit.jupiter.engine.descriptor;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.jupiter.api,org.junit.jupiter.api.extension,org.junit.jupiter.api.parallel,org.junit.jupiter.engine.config,org.junit.jupiter.engine.execution,org.junit.jupiter.engine.extension,org.junit.platform.engine,org.junit.platform.engine.support.descriptor,org.junit.platform.engine.support.hierarchical\",org.junit.jupiter.engine.discovery;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.jupiter.engine.descriptor,org.junit.platform.engine\",org.junit.jupiter.engine.discovery.predicates;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api\",org.junit.jupiter.engine.execution;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension,org.junit.jupiter.engine.config,org.junit.jupiter.engine.extension,org.junit.platform.engine,org.junit.platform.engine.support.hierarchical,org.junit.platform.engine.support.store\",org.junit.jupiter.engine.extension;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension,org.junit.jupiter.engine.config\",org.junit.jupiter.engine.support;version=\"5.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api,org.junit.platform.engine.support.hierarchical\"",
+      "Implementation-Title": "junit-jupiter-engine",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "5.10.2",
+      "Import-Package": "org.apiguardian.api;resolution:=optional;version=\"[1.1,2)\",org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.10,2)\",org.junit.jupiter.api;version=\"[5.10,6)\",org.junit.jupiter.api.extension;version=\"[5.10,6)\",org.junit.jupiter.api.function;version=\"[5.10,6)\",org.junit.jupiter.api.io;version=\"[5.10,6)\",org.junit.jupiter.api.parallel;version=\"[5.10,6)\",org.junit.platform.commons;version=\"[1.10,2)\",org.junit.platform.commons.function;version=\"[1.10,2)\",org.junit.platform.commons.support;version=\"[1.10,2)\",org.junit.platform.commons.util;version=\"[1.10,2)\",org.junit.platform.engine;version=\"[1.10,2)\",org.junit.platform.engine.discovery;version=\"[1.10,2)\",org.junit.platform.engine.reporting;version=\"[1.10,2)\",org.junit.platform.engine.support.config;version=\"[1.10,2)\",org.junit.platform.engine.support.descriptor;version=\"[1.10,2)\",org.junit.platform.engine.support.discovery;version=\"[1.10,2)\",org.junit.platform.engine.support.hierarchical;version=\"[1.10,2)\",org.junit.platform.engine.support.store;version=\"[1.10,2)\",org.opentest4j;version=\"[1.3,2)\"",
+      "Provide-Capability": "org.junit.platform.engine;org.junit.platform.engine=junit-jupiter;version:Version=\"5.10.2\"",
+      "Require-Capability": "org.junit.platform.launcher;filter:=\"(&(org.junit.platform.launcher=junit-platform-launcher)(version>=1.10.2)(!(version>=2)))\";effective:=active,osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Specification-Title": "junit-jupiter-engine",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "5.10.2"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-jupiter-params-5.10.2.jar",
+    "filename": "junit-jupiter-params-5.10.2.jar",
+    "bytes": 586027,
+    "sha256": "edb1e43ff0b8067626ffb55e5e9eeca1d9ab2478141a7c7f253d115b29cc7cf2",
+    "coordinate": "org.junit.jupiter:junit-jupiter-params:5.10.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-02-04",
+      "Build-Revision": "4c0dddad1b96d4a20e92a2cd583954643ac56ac0 ",
+      "Build-Time": "09:34:27.111+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Jupiter Params",
+      "Bundle-SymbolicName": "junit-jupiter-params",
+      "Bundle-Version": "5.10.2",
+      "Created-By": "17.0.9 (BellSoft 17.0.9+11-LTS)",
+      "Export-Package": "org.junit.jupiter.params;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api,org.junit.jupiter.api.extension\",org.junit.jupiter.params.aggregator;version=\"5.10.2\";status=STABLE;uses:=\"kotlin,org.apiguardian.api,org.junit.jupiter.api.extension,org.junit.platform.commons\",org.junit.jupiter.params.converter;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension,org.junit.jupiter.params.support,org.junit.platform.commons\",org.junit.jupiter.params.provider;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.jupiter.api.extension,org.junit.jupiter.params.support,org.junit.platform.commons\",org.junit.jupiter.params.support;version=\"5.10.2\";status=STABLE;uses:=\"org.apiguardian.api\"",
+      "Implementation-Title": "junit-jupiter-params",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "5.10.2",
+      "Import-Package": "org.apiguardian.api;resolution:=optional;version=\"[1.1,2)\",kotlin;resolution:=optional,kotlin.jvm.internal;resolution:=optional,org.junit.jupiter.api;version=\"[5.10,6)\",org.junit.jupiter.api.extension;version=\"[5.10,6)\",org.junit.jupiter.params.aggregator;version=\"[5.10,6)\",org.junit.jupiter.params.converter;version=\"[5.10,6)\",org.junit.jupiter.params.support;version=\"[5.10,6)\",org.junit.platform.commons;version=\"[1.10,2)\",org.junit.platform.commons.function;version=\"[1.10,2)\",org.junit.platform.commons.support;version=\"[1.10,2)\",org.junit.platform.commons.util;version=\"[1.10,2)\",org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.10,2)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Specification-Title": "junit-jupiter-params",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "5.10.2"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-platform-commons-1.10.2.jar",
+    "filename": "junit-platform-commons-1.10.2.jar",
+    "bytes": 106232,
+    "sha256": "b56a5ec000a479df4973b18bba24c98fe0db8faa14c8907d3ef451d8c71fd8ae",
+    "coordinate": "org.junit.platform:junit-platform-commons:1.10.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-02-04",
+      "Build-Revision": "4c0dddad1b96d4a20e92a2cd583954643ac56ac0 ",
+      "Build-Time": "09:34:27.111+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Platform Commons",
+      "Bundle-SymbolicName": "junit-platform-commons",
+      "Bundle-Version": "1.10.2",
+      "Created-By": "17.0.9 (BellSoft 17.0.9+11-LTS)",
+      "Export-Package": "org.junit.platform.commons;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.commons.util\",org.junit.platform.commons.annotation;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api\",org.junit.platform.commons.function;version=\"1.10.2\";status=MAINTAINED;uses:=\"org.apiguardian.api\",org.junit.platform.commons.logging;version=\"1.10.2\";status=INTERNAL;mandatory:=status;uses:=\"org.apiguardian.api\",org.junit.platform.commons.support;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.commons,org.junit.platform.commons.function\",org.junit.platform.commons.util;version=\"1.10.2\";status=DEPRECATED;uses:=\"org.apiguardian.api,org.junit.platform.commons,org.junit.platform.commons.function\"",
+      "Implementation-Title": "junit-platform-commons",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "1.10.2",
+      "Import-Package": "org.apiguardian.api;resolution:=optional;version=\"[1.1,2)\",org.junit.platform.commons;version=\"[1.10,2)\",org.junit.platform.commons.function;version=\"[1.10,2)\",org.junit.platform.commons.util;version=\"[1.10,2)\",org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.10,2)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Specification-Title": "junit-platform-commons",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "1.10.2",
+      "Multi-Release": "true"
+    }
+  },
+  {
+    "source": "code/dependencies/junit-platform-console-standalone-1.9.3.jar",
+    "filename": "junit-platform-console-standalone-1.9.3.jar",
+    "bytes": 2614186,
+    "sha256": "45e90d893561d813a64559554647eea5e74acaa9c8cb1fed1340d192f34689e2",
+    "coordinate": "org.junit.platform:junit-platform-console-standalone:1.9.3",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2023-04-26",
+      "Build-Revision": "bd7d03f517dfca3730fbd123c5fd4d4b70930129 ",
+      "Build-Time": "08:27:29.511+0200",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Platform Console Standalone",
+      "Bundle-SymbolicName": "junit-platform-console-standalone",
+      "Bundle-Version": "1.9.3",
+      "Created-By": "17.0.5 (BellSoft 17.0.5+8-LTS)",
+      "Engine-Version-junit-jupiter": "5.9.3",
+      "Engine-Version-junit-vintage": "5.9.3",
+      "Implementation-Title": "junit-platform-console-standalone",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "1.9.3",
+      "Import-Package": "kotlin;resolution:=optional,kotlin.collections;resolution:=optional,kotlin.jvm.functions;resolution:=optional,kotlin.jvm.internal;resolution:=optional,javax.xml.namespace,javax.xml.parsers,javax.xml.stream,javax.xml.transform,javax.xml.transform.dom,javax.xml.transform.stax,org.w3c.dom",
+      "Main-Class": "org.junit.platform.console.ConsoleLauncher",
+      "Multi-Release": "true",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=9))\"",
+      "Specification-Title": "junit-platform-console-standalone",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "1.9.3"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/junit-platform-engine-1.10.2.jar",
+    "filename": "junit-platform-engine-1.10.2.jar",
+    "bytes": 204821,
+    "sha256": "905cba9b4998ccc29d1239085a7fb1fe0e28024d7526152356d810edec0a49a3",
+    "coordinate": "org.junit.platform:junit-platform-engine:1.10.2",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Build-Date": "2024-02-04",
+      "Build-Revision": "4c0dddad1b96d4a20e92a2cd583954643ac56ac0 ",
+      "Build-Time": "09:34:27.111+0100",
+      "Built-By": "JUnit Team",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "JUnit Platform Engine API",
+      "Bundle-SymbolicName": "junit-platform-engine",
+      "Bundle-Version": "1.10.2",
+      "Created-By": "17.0.9 (BellSoft 17.0.9+11-LTS)",
+      "Export-Package": "org.junit.platform.engine;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.commons,org.junit.platform.engine.reporting\",org.junit.platform.engine.discovery;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.commons,org.junit.platform.engine\",org.junit.platform.engine.reporting;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api\",org.junit.platform.engine.support.config;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.engine\",org.junit.platform.engine.support.descriptor;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.engine\",org.junit.platform.engine.support.discovery;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.engine,org.junit.platform.engine.discovery\",org.junit.platform.engine.support.filter;version=\"1.10.2\";status=DEPRECATED;uses:=\"org.apiguardian.api,org.junit.platform.commons.util,org.junit.platform.engine\",org.junit.platform.engine.support.hierarchical;version=\"1.10.2\";status=STABLE;uses:=\"org.apiguardian.api,org.junit.platform.engine,org.opentest4j\",org.junit.platform.engine.support.store;version=\"1.10.2\";status=EXPERIMENTAL;uses:=\"org.apiguardian.api,org.junit.platform.commons\"",
+      "Implementation-Title": "junit-platform-engine",
+      "Implementation-Vendor": "junit.org",
+      "Implementation-Version": "1.10.2",
+      "Import-Package": "org.apiguardian.api;resolution:=optional;version=\"[1.1,2)\",org.junit.platform.commons.logging;status=INTERNAL;version=\"[1.10,2)\",org.junit.platform.commons;version=\"[1.10,2)\",org.junit.platform.commons.function;version=\"[1.10,2)\",org.junit.platform.commons.support;version=\"[1.10,2)\",org.junit.platform.commons.util;version=\"[1.10,2)\",org.junit.platform.engine;version=\"[1.10,2)\",org.junit.platform.engine.discovery;version=\"[1.10,2)\",org.junit.platform.engine.reporting;version=\"[1.10,2)\",org.junit.platform.engine.support.hierarchical;version=\"[1.10,2)\",org.opentest4j;version=\"[1.3,2)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Specification-Title": "junit-platform-engine",
+      "Specification-Vendor": "junit.org",
+      "Specification-Version": "1.10.2"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/mockito-core-5.2.0.jar",
+    "filename": "mockito-core-5.2.0.jar",
+    "bytes": 687422,
+    "sha256": "46e3f8dacd8ec62c8aa6fb11f8867624fb44a03e97fdfc628609346d5dc7e159",
+    "coordinate": "org.mockito:mockito-core:5.2.0",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Automatic-Module-Name": "org.mockito",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "Mockito Mock Library for Java. Core bundle requires Byte Buddy and Objenesis.",
+      "Bundle-SymbolicName": "org.mockito.mockito-core",
+      "Bundle-Version": "5.2.0",
+      "Export-Package": "org.mockito.internal;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.verification.api,org.mockito.invocation,org.mockito.plugins,org.mockito.quality,org.mockito.stubbing,org.mockito.verification\",org.mockito.internal.configuration;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.configuration,org.mockito.internal.util,org.mockito.plugins,org.mockito.stubbing\",org.mockito.internal.configuration.injection;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.configuration.injection.filter;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.configuration.injection.scanner;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.configuration.plugins;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.plugins\",org.mockito.internal.creation;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.creation.settings,org.mockito.internal.invocation,org.mockito.listeners,org.mockito.mock,org.mockito.quality,org.mockito.stubbing\",org.mockito.internal.creation.bytebuddy;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"net.bytebuddy.description.method,net.bytebuddy.dynamic.loading,net.bytebuddy.implementation.bind.annotation,net.bytebuddy.matcher,org.mockito,org.mockito.creation.instance,org.mockito.internal.creation.bytebuddy.inject,org.mockito.internal.util.concurrent,org.mockito.invocation,org.mockito.mock,org.mockito.plugins\",org.mockito.internal.creation.bytebuddy.inject;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.creation.instance;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.creation.instance,org.mockito.mock,org.mockito.plugins\",org.mockito.internal.creation.proxy;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.invocation,org.mockito.mock,org.mockito.plugins\",org.mockito.internal.creation.settings;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.listeners,org.mockito.mock,org.mockito.quality,org.mockito.stubbing\",org.mockito.internal.creation.util;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.debugging;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.invocation,org.mockito.invocation,org.mockito.listeners\",org.mockito.internal.exceptions;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.exceptions.base,org.mockito.exceptions.misusing,org.mockito.exceptions.verification,org.mockito.internal.matchers,org.mockito.internal.reporting,org.mockito.invocation,org.mockito.listeners,org.mockito.mock\",org.mockito.internal.exceptions.stacktrace;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.exceptions.stacktrace,org.mockito.plugins\",org.mockito.internal.exceptions.util;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.exceptions\",org.mockito.internal.framework;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.invocation,org.mockito.listeners,org.mockito.plugins,org.mockito.quality\",org.mockito.internal.hamcrest;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.hamcrest,org.mockito\",org.mockito.internal.handler;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.invocation,org.mockito.listeners,org.mockito.mock\",org.mockito.internal.invocation;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.exceptions,org.mockito.internal.invocation.mockref,org.mockito.internal.progress,org.mockito.internal.verification.api,org.mockito.invocation,org.mockito.mock\",org.mockito.internal.invocation.finder;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.invocation,org.mockito.stubbing\",org.mockito.internal.invocation.mockref;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.junit;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.junit.runner,org.junit.runner.notification,org.junit.runners.model,org.mockito.exceptions.base,org.mockito.internal.listeners,org.mockito.invocation,org.mockito.junit,org.mockito.listeners,org.mockito.mock,org.mockito.plugins,org.mockito.quality\",org.mockito.internal.listeners;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.creation.settings,org.mockito.invocation,org.mockito.listeners,org.mockito.stubbing\",org.mockito.internal.matchers;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.invocation\",org.mockito.internal.matchers.apachecommons;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito\",org.mockito.internal.matchers.text;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.reporting\",org.mockito.internal.progress;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.matchers,org.mockito.listeners,org.mockito.mock,org.mockito.stubbing,org.mockito.verification\",org.mockito.internal.reporting;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.invocation\",org.mockito.internal.runners;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.junit.runner,org.junit.runner.manipulation,org.junit.runner.notification,org.junit.runners.model,org.mockito.internal.junit,org.mockito.internal.util\",org.mockito.internal.runners.util;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.junit.runner.notification,org.mockito.internal.runners\",org.mockito.internal.session;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.plugins,org.mockito.quality,org.mockito.session\",org.mockito.internal.stubbing;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.invocation,org.mockito.invocation,org.mockito.mock,org.mockito.quality,org.mockito.stubbing\",org.mockito.internal.stubbing.answers;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.invocation,org.mockito.invocation,org.mockito.stubbing\",org.mockito.internal.stubbing.defaultanswers;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.util.reflection,org.mockito.invocation,org.mockito.stubbing\",org.mockito.internal.util;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.internal.stubbing,org.mockito.invocation,org.mockito.mock,org.mockito.plugins,org.mockito.stubbing\",org.mockito.internal.util.collections;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.util.concurrent;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.util.io;status=INTERNAL;mandatory:=status;version=\"5.2.0\",org.mockito.internal.util.reflection;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.plugins\",org.mockito.internal.verification;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal,org.mockito.internal.invocation,org.mockito.internal.stubbing,org.mockito.internal.util,org.mockito.internal.verification.api,org.mockito.invocation,org.mockito.listeners,org.mockito.verification\",org.mockito.internal.verification.api;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.invocation\",org.mockito.internal.verification.argumentmatching;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito\",org.mockito.internal.verification.checkers;status=INTERNAL;mandatory:=status;version=\"5.2.0\";uses:=\"org.mockito.internal.reporting,org.mockito.internal.verification.api,org.mockito.invocation\",org.mockito;version=\"5.2.0\";uses:=\"org.mockito.exceptions.misusing,org.mockito.invocation,org.mockito.listeners,org.mockito.mock,org.mockito.plugins,org.mockito.quality,org.mockito.session,org.mockito.stubbing,org.mockito.verification\",org.mockito.codegen;version=\"5.2.0\",org.mockito.configuration;version=\"5.2.0\";uses:=\"org.mockito.stubbing\",org.mockito.creation.instance;version=\"5.2.0\";uses:=\"org.mockito.exceptions.base\",org.mockito.exceptions.base;version=\"5.2.0\",org.mockito.exceptions.misusing;version=\"5.2.0\";uses:=\"org.mockito.exceptions.base\",org.mockito.exceptions.stacktrace;version=\"5.2.0\",org.mockito.exceptions.verification;version=\"5.2.0\";uses:=\"org.mockito.exceptions.base\",org.mockito.exceptions.verification.junit;version=\"5.2.0\";uses:=\"junit.framework\",org.mockito.exceptions.verification.opentest4j;version=\"5.2.0\";uses:=\"org.opentest4j\",org.mockito.hamcrest;version=\"5.2.0\";uses:=\"org.hamcrest\",org.mockito.invocation;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.mock\",org.mockito.junit;version=\"5.2.0\";uses:=\"org.junit.rules,org.junit.runner,org.junit.runner.manipulation,org.junit.runner.notification,org.mockito.exceptions.base,org.mockito.quality\",org.mockito.listeners;version=\"5.2.0\";uses:=\"org.mockito.invocation,org.mockito.mock,org.mockito.stubbing,org.mockito.verification\",org.mockito.mock;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.listeners,org.mockito.quality,org.mockito.stubbing\",org.mockito.plugins;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.creation.instance,org.mockito.exceptions.stacktrace,org.mockito.invocation,org.mockito.mock\",org.mockito.quality;version=\"5.2.0\",org.mockito.session;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.exceptions.misusing,org.mockito.quality\",org.mockito.stubbing;version=\"5.2.0\";uses:=\"org.mockito,org.mockito.invocation,org.mockito.quality\",org.mockito.verification;version=\"5.2.0\";uses:=\"org.mockito.internal.verification,org.mockito.internal.verification.api\"",
+      "Import-Package": "net.bytebuddy;version=\"[1.6.0,2.0)\",net.bytebuddy.agent;version=\"[1.6.0,2.0)\",net.bytebuddy.asm;version=\"[1.6.0,2.0)\",net.bytebuddy.description;version=\"[1.6.0,2.0)\",net.bytebuddy.description.field;version=\"[1.6.0,2.0)\",net.bytebuddy.description.method;version=\"[1.6.0,2.0)\",net.bytebuddy.description.modifier;version=\"[1.6.0,2.0)\",net.bytebuddy.description.type;version=\"[1.6.0,2.0)\",net.bytebuddy.dynamic;version=\"[1.6.0,2.0)\",net.bytebuddy.dynamic.loading;version=\"[1.6.0,2.0)\",net.bytebuddy.dynamic.scaffold;version=\"[1.6.0,2.0)\",net.bytebuddy.dynamic.scaffold.subclass;version=\"[1.6.0,2.0)\",net.bytebuddy.implementation;version=\"[1.6.0,2.0)\",net.bytebuddy.implementation.attribute;version=\"[1.6.0,2.0)\",net.bytebuddy.implementation.bind.annotation;version=\"[1.6.0,2.0)\",net.bytebuddy.implementation.bytecode;version=\"[1.6.0,2.0)\",net.bytebuddy.implementation.bytecode.assign;version=\"[1.6.0,2.0)\",net.bytebuddy.jar.asm;version=\"[1.6.0,2.0)\",net.bytebuddy.matcher;version=\"[1.6.0,2.0)\",net.bytebuddy.pool;version=\"[1.6.0,2.0)\",net.bytebuddy.utility;version=\"[1.6.0,2.0)\",junit.framework;resolution:=optional,org.junit;resolution:=optional,org.junit.rules;resolution:=optional,org.junit.runner;resolution:=optional,org.junit.runner.manipulation;resolution:=optional,org.junit.runner.notification;resolution:=optional,org.junit.runners;resolution:=optional,org.junit.runners.model;resolution:=optional,org.hamcrest;resolution:=optional;version=\"[2.2,3)\",org.objenesis;version=\"[3.1,4.0)\",org.opentest4j;resolution:=optional;version=\"[1.2,2)\",org.mockito;version=\"[5.2,6)\",org.mockito.codegen;version=\"[5.2,6)\",org.mockito.configuration;version=\"[5.2,6)\",org.mockito.creation.instance;version=\"[5.2,6)\",org.mockito.exceptions.base;version=\"[5.2,6)\",org.mockito.exceptions.misusing;version=\"[5.2,6)\",org.mockito.exceptions.stacktrace;version=\"[5.2,6)\",org.mockito.exceptions.verification;version=\"[5.2,6)\",org.mockito.exceptions.verification.junit;version=\"[5.2,6)\",org.mockito.exceptions.verification.opentest4j;version=\"[5.2,6)\",org.mockito.internal;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration.injection;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration.injection.filter;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration.injection.scanner;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration.plugins;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.creation;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.creation.bytebuddy;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.creation.bytebuddy.inject;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.creation.instance;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.creation.settings;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.debugging;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.exceptions;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.exceptions.stacktrace;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.exceptions.util;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.framework;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.hamcrest;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.handler;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.invocation;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.invocation.finder;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.invocation.mockref;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.junit;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.listeners;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.matchers;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.matchers.apachecommons;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.matchers.text;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.progress;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.reporting;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.runners;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.runners.util;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.session;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.stubbing;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.stubbing.answers;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.stubbing.defaultanswers;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util.collections;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util.concurrent;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util.io;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util.reflection;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.verification;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.verification.api;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.verification.argumentmatching;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.verification.checkers;version=\"[5.2,6)\";status=INTERNAL,org.mockito.invocation;version=\"[5.2,6)\",org.mockito.junit;version=\"[5.2,6)\",org.mockito.listeners;version=\"[5.2,6)\",org.mockito.mock;version=\"[5.2,6)\",org.mockito.plugins;version=\"[5.2,6)\",org.mockito.quality;version=\"[5.2,6)\",org.mockito.session;version=\"[5.2,6)\",org.mockito.stubbing;version=\"[5.2,6)\",org.mockito.verification;version=\"[5.2,6)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=11))\""
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/mockito-inline-5.2.0.jar",
+    "filename": "mockito-inline-5.2.0.jar",
+    "bytes": 1501,
+    "sha256": "ee52e1c299a632184fba274a9370993e09140429f5e516e6c5570fd6574b297f",
+    "coordinate": "org.mockito:mockito-inline:5.2.0",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/mockito-junit-jupiter-5.2.0.jar",
+    "filename": "mockito-junit-jupiter-5.2.0.jar",
+    "bytes": 5472,
+    "sha256": "c7dd82180320799c167d714499ac64fb5ad4ae8790e1d93da531c82236febe07",
+    "coordinate": "org.mockito:mockito-junit-jupiter:5.2.0",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Automatic-Module-Name": "org.mockito.junit.jupiter",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "Mockito Extension Library for JUnit 5.",
+      "Bundle-SymbolicName": "org.mockito.junit-jupiter",
+      "Bundle-Version": "5.2.0",
+      "Export-Package": "org.mockito.junit.jupiter;version=\"5.2.0\";uses:=\"org.junit.jupiter.api.extension,org.mockito.quality\"",
+      "Import-Package": "java.lang,java.lang.annotation,java.lang.invoke,java.lang.reflect,java.util,java.util.function,org.junit.jupiter.api.extension;version=\"[5.9,6)\",org.junit.platform.commons.support;version=\"[1.9,2)\",org.mockito;version=\"[5.2,6)\",org.mockito.internal.configuration;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.configuration.plugins;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.session;version=\"[5.2,6)\";status=INTERNAL,org.mockito.internal.util;version=\"[5.2,6)\";status=INTERNAL,org.mockito.plugins;version=\"[5.2,6)\",org.mockito.quality;version=\"[5.2,6)\",org.mockito.session;version=\"[5.2,6)\"",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=11))\""
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/objenesis-3.3.jar",
+    "filename": "objenesis-3.3.jar",
+    "bytes": 49423,
+    "sha256": "02dfd0b0439a5591e35b708ed2f5474eb0948f53abf74637e959b8e4ef69bfeb",
+    "coordinate": "org.objenesis:objenesis:3.3",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Implementation-Title": "Objenesis",
+      "Bundle-Description": "A library for instantiating Java objects",
+      "Automatic-Module-Name": "org.objenesis",
+      "Bundle-License": "http://www.apache.org/licenses/LICENSE-2.0.txt",
+      "Bundle-SymbolicName": "org.objenesis",
+      "Implementation-Version": "3.3",
+      "Specification-Vendor": "Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+      "Bnd-LastModified": "1659306572100",
+      "Bundle-ManifestVersion": "2",
+      "Specification-Title": "Objenesis",
+      "Bundle-Vendor": "Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+      "Import-Package": "COM.newmonics.PercClassLoader;resolution:=optional,sun.misc;resolution:=optional,sun.reflect;resolution:=optional",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.8))\"",
+      "Tool": "Bnd-6.3.1.202206071316",
+      "Implementation-Vendor": "Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+      "Dependencies": "jdk.unsupported",
+      "Export-Package": "org.objenesis;uses:=\"org.objenesis.instantiator,org.objenesis.strategy\";version=\"3.3.0\",org.objenesis.instantiator.sun;uses:=\"org.objenesis.instantiator,org.objenesis.instantiator.annotations,org.objenesis.instantiator.basic\";version=\"3.3.0\",org.objenesis.instantiator.util;uses:=\"sun.misc\";version=\"3.3.0\",org.objenesis.instantiator.perc;uses:=\"org.objenesis.instantiator,org.objenesis.instantiator.annotations\";version=\"3.3.0\",org.objenesis.instantiator.basic;uses:=\"org.objenesis.instantiator,org.objenesis.instantiator.annotations\";version=\"3.3.0\",org.objenesis.instantiator.gcj;uses:=\"org.objenesis.instantiator,org.objenesis.instantiator.annotations\";version=\"3.3.0\",org.objenesis.instantiator.annotations;version=\"3.3.0\",org.objenesis.instantiator;version=\"3.3.0\",org.objenesis.instantiator.android;uses:=\"org.objenesis.instantiator,org.objenesis.instantiator.annotations\";version=\"3.3.0\",org.objenesis.strategy;uses:=\"org.objenesis.instantiator\";version=\"3.3.0\"",
+      "Bundle-Name": "Objenesis",
+      "Bundle-Version": "3.3.0",
+      "Build-Jdk-Spec": "1.8",
+      "Created-By": "Apache Maven Bundle Plugin 5.1.7",
+      "Specification-Version": "3.3"
+    }
+  },
+  {
+    "source": "data/projects/commons-codec/libs/opentest4j-1.3.0.jar",
+    "filename": "opentest4j-1.3.0.jar",
+    "bytes": 14304,
+    "sha256": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b",
+    "coordinate": "org.opentest4j:opentest4j:1.3.0",
+    "classifier": "",
+    "coordinate_evidence": "NO pom.properties: coordinate inferred from jar filename and manifest; verify against Central bytes",
+    "embedded_maven_properties": [],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Bnd-LastModified": "1688646308899",
+      "Build-Date": "2023-07-06",
+      "Build-Revision": "214973bfa4e7e9be7d04e623202cc4147c7036d2",
+      "Build-Time": "14:25:06.116+0200",
+      "Built-By": "OTA4J Team",
+      "Bundle-License": "The Apache License, Version 2.0",
+      "Bundle-ManifestVersion": "2",
+      "Bundle-Name": "opentest4j",
+      "Bundle-SymbolicName": "org.opentest4j",
+      "Bundle-Vendor": "opentest4j.org",
+      "Bundle-Version": "1.3.0",
+      "Created-By": "17.0.7 (BellSoft)",
+      "Export-Package": "org.opentest4j;version=\"1.3.0\"",
+      "Implementation-Title": "opentest4j",
+      "Implementation-Vendor": "opentest4j.org",
+      "Implementation-Version": "1.3.0",
+      "Require-Capability": "osgi.ee;filter:=\"(&(osgi.ee=JavaSE)(version=1.6))\"",
+      "Specification-Title": "opentest4j",
+      "Specification-Vendor": "opentest4j.org",
+      "Specification-Version": "1.3.0",
+      "Tool": "Bnd-6.4.0.202211291949"
+    }
+  },
+  {
+    "source": "code/dependencies/evosuite-1.2.0.jar",
+    "filename": "evosuite-1.2.0.jar",
+    "bytes": 19766471,
+    "sha256": "0bc0062fdec70c35089ad736c9b88ccf87308c2f0aaaafe43176f3c4a89ddeba",
+    "coordinate": "org.evosuite:evosuite-master:1.2.0",
+    "classifier": "",
+    "coordinate_evidence": "primary embedded pom.properties; shaded dependency coordinates recorded separately",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/org.evosuite/evosuite-master/pom.properties",
+        "coordinate": "org.evosuite:evosuite-master:1.2.0"
+      },
+      {
+        "path": "META-INF/maven/org.evosuite/evosuite-runtime/pom.properties",
+        "coordinate": "org.evosuite:evosuite-runtime:1.2.0"
+      },
+      {
+        "path": "META-INF/maven/net.bytebuddy/byte-buddy/pom.properties",
+        "coordinate": "net.bytebuddy:byte-buddy:1.11.13"
+      },
+      {
+        "path": "META-INF/maven/net.bytebuddy/byte-buddy-dep/pom.properties",
+        "coordinate": "net.bytebuddy:byte-buddy-dep:1.11.13"
+      },
+      {
+        "path": "META-INF/maven/net.bytebuddy/byte-buddy-agent/pom.properties",
+        "coordinate": "net.bytebuddy:byte-buddy-agent:1.11.13"
+      },
+      {
+        "path": "META-INF/maven/org.slf4j/slf4j-api/pom.properties",
+        "coordinate": "org.slf4j:slf4j-api:1.7.32"
+      },
+      {
+        "path": "META-INF/maven/javax.xml.ws/jaxws-api/pom.properties",
+        "coordinate": "javax.xml.ws:jaxws-api:2.3.1"
+      },
+      {
+        "path": "META-INF/maven/javax.xml.soap/javax.xml.soap-api/pom.properties",
+        "coordinate": "javax.xml.soap:javax.xml.soap-api:1.4.0"
+      },
+      {
+        "path": "META-INF/maven/javax.annotation/javax.annotation-api/pom.properties",
+        "coordinate": "javax.annotation:javax.annotation-api:1.3.2"
+      },
+      {
+        "path": "META-INF/maven/com.opencsv/opencsv/pom.properties",
+        "coordinate": "com.opencsv:opencsv:5.5.2"
+      },
+      {
+        "path": "META-INF/maven/org.apache.commons/commons-text/pom.properties",
+        "coordinate": "org.apache.commons:commons-text:1.9"
+      },
+      {
+        "path": "META-INF/maven/commons-beanutils/commons-beanutils/pom.properties",
+        "coordinate": "commons-beanutils:commons-beanutils:1.9.4"
+      },
+      {
+        "path": "META-INF/maven/commons-logging/commons-logging/pom.properties",
+        "coordinate": "commons-logging:commons-logging:1.2"
+      },
+      {
+        "path": "META-INF/maven/commons-collections/commons-collections/pom.properties",
+        "coordinate": "commons-collections:commons-collections:3.2.2"
+      },
+      {
+        "path": "META-INF/maven/org.apache.commons/commons-collections4/pom.properties",
+        "coordinate": "org.apache.commons:commons-collections4:4.4"
+      },
+      {
+        "path": "META-INF/maven/com.googlecode.gentyref/gentyref/pom.properties",
+        "coordinate": "com.googlecode.gentyref:gentyref:1.2.0"
+      },
+      {
+        "path": "META-INF/maven/com.thoughtworks.xstream/xstream/pom.properties",
+        "coordinate": "com.thoughtworks.xstream:xstream:1.4.18"
+      },
+      {
+        "path": "META-INF/maven/io.github.x-stream/mxparser/pom.properties",
+        "coordinate": "io.github.x-stream:mxparser:1.2.2"
+      },
+      {
+        "path": "META-INF/maven/org.kohsuke/graphviz-api/pom.properties",
+        "coordinate": "org.kohsuke:graphviz-api:1.1"
+      },
+      {
+        "path": "META-INF/maven/org.apache.commons/commons-exec/pom.properties",
+        "coordinate": "org.apache.commons:commons-exec:1.3"
+      },
+      {
+        "path": "META-INF/maven/org.evosuite/evosuite-client/pom.properties",
+        "coordinate": "org.evosuite:evosuite-client:1.2.0"
+      },
+      {
+        "path": "META-INF/maven/ch.qos.logback/logback-classic/pom.properties",
+        "coordinate": "ch.qos.logback:logback-classic:1.2.3"
+      },
+      {
+        "path": "META-INF/maven/ch.qos.logback/logback-core/pom.properties",
+        "coordinate": "ch.qos.logback:logback-core:1.2.3"
+      },
+      {
+        "path": "META-INF/maven/org.apache.commons/commons-lang3/pom.properties",
+        "coordinate": "org.apache.commons:commons-lang3:3.12.0"
+      },
+      {
+        "path": "META-INF/maven/commons-io/commons-io/pom.properties",
+        "coordinate": "commons-io:commons-io:2.11.0"
+      },
+      {
+        "path": "META-INF/maven/commons-cli/commons-cli/pom.properties",
+        "coordinate": "commons-cli:commons-cli:1.4"
+      },
+      {
+        "path": "META-INF/maven/com.sun.istack/istack-commons-runtime/pom.properties",
+        "coordinate": "com.sun.istack:istack-commons-runtime:3.0.5"
+      },
+      {
+        "path": "META-INF/maven/org.glassfish.jaxb/txw2/pom.properties",
+        "coordinate": "org.glassfish.jaxb:txw2:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/org.glassfish.jaxb/jaxb-core/pom.properties",
+        "coordinate": "org.glassfish.jaxb:jaxb-core:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/com.sun.xml.bind/jaxb-core/pom.properties",
+        "coordinate": "com.sun.xml.bind:jaxb-core:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/org.glassfish.jaxb/jaxb-runtime/pom.properties",
+        "coordinate": "org.glassfish.jaxb:jaxb-runtime:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/com.sun.xml.bind/jaxb-impl/pom.properties",
+        "coordinate": "com.sun.xml.bind:jaxb-impl:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/javax.xml.bind/jaxb-api/pom.properties",
+        "coordinate": "javax.xml.bind:jaxb-api:2.3.0"
+      },
+      {
+        "path": "META-INF/maven/javax.activation/javax.activation-api/pom.properties",
+        "coordinate": "javax.activation:javax.activation-api:1.2.0"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Implementation-Title": "evosuite-master",
+      "Implementation-Version": "1.2.0",
+      "Built-By": "gordon",
+      "Specification-Vendor": "EvoSuite",
+      "Agent-Class": "org.evosuite.runtime.agent.InstrumentingAgent",
+      "Can-Redefine-Classes": "true",
+      "Specification-Title": "evosuite-master",
+      "Implementation-Vendor-Id": "org.evosuite",
+      "Implementation-Vendor": "EvoSuite",
+      "Main-Class": "org.evosuite.EvoSuite",
+      "Premain-Class": "org.evosuite.runtime.agent.InstrumentingAgent",
+      "Can-Retransform-Classes": "true",
+      "Created-By": "Apache Maven 3.8.2",
+      "Build-Jdk": "1.8.0_101",
+      "Specification-Version": "1.2",
+      "Implementation-URL": "http://www.evosuite.org/evosuite-master/"
+    }
+  },
+  {
+    "source": "code/dependencies/jacocoagent.jar",
+    "filename": "jacocoagent.jar",
+    "bytes": 303380,
+    "sha256": "aa563a26ebd940ab5740847ac591420034d9deb960eadb2f0fc9e654b6f76b6b",
+    "coordinate": "org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT",
+    "classifier": "",
+    "coordinate_evidence": "primary embedded pom.properties; shaded dependency coordinates recorded separately",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/org.jacoco/org.jacoco.agent.rt/pom.properties",
+        "coordinate": "org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT"
+      },
+      {
+        "path": "META-INF/maven/org.jacoco/org.jacoco.core/pom.properties",
+        "coordinate": "org.jacoco:org.jacoco.core:0.8.13-SNAPSHOT"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Created-By": "Maven JAR Plugin 3.4.2",
+      "Build-Jdk-Spec": "1.5",
+      "Build-Tool-Jdk-Spec": "17",
+      "Automatic-Module-Name": "org.jacoco.agent.rt",
+      "Implementation-Title": "JaCoCo Java Agent",
+      "Implementation-Vendor": "Mountainminds GmbH & Co. KG",
+      "Implementation-Version": "0.8.13-SNAPSHOT",
+      "Premain-Class": "org.jacoco.agent.rt.internal_18453e1.PreMain"
+    }
+  },
+  {
+    "source": "code/dependencies/jacococli.jar",
+    "filename": "jacococli.jar",
+    "bytes": 600653,
+    "sha256": "9511817959178ac1b76337ce32a15448ca683874d38101a8c37180198ffa044f",
+    "coordinate": "org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT",
+    "classifier": "nodeps",
+    "coordinate_evidence": "primary embedded pom.properties; shaded dependency coordinates recorded separately",
+    "embedded_maven_properties": [
+      {
+        "path": "META-INF/maven/org.jacoco/org.jacoco.cli/pom.properties",
+        "coordinate": "org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT"
+      },
+      {
+        "path": "META-INF/maven/org.jacoco/org.jacoco.core/pom.properties",
+        "coordinate": "org.jacoco:org.jacoco.core:0.8.13-SNAPSHOT"
+      },
+      {
+        "path": "META-INF/maven/org.jacoco/org.jacoco.report/pom.properties",
+        "coordinate": "org.jacoco:org.jacoco.report:0.8.13-SNAPSHOT"
+      },
+      {
+        "path": "META-INF/maven/args4j/args4j/pom.properties",
+        "coordinate": "args4j:args4j:2.0.28"
+      }
+    ],
+    "manifest": {
+      "Manifest-Version": "1.0",
+      "Created-By": "Maven JAR Plugin 3.4.2",
+      "Build-Jdk-Spec": "1.5",
+      "Build-Tool-Jdk-Spec": "17",
+      "Implementation-Title": "JaCoCo Command Line Interface",
+      "Implementation-Vendor": "Mountainminds GmbH & Co. KG",
+      "Implementation-Version": "0.8.13-SNAPSHOT",
+      "Main-Class": "org.jacoco.cli.internal.Main"
+    }
+  }
+]

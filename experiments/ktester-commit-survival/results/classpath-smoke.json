@@ -1,0 +1,72 @@
+{
+  "author_source": "/work/results/stage4c/commons-codec/test_classes/Md5Crypt_md5Crypt_Test.java",
+  "source_sha256": "9f0785522b4b30905861696f59abc7e44f945ccae1fc7986cf82e563d748b83c",
+  "cwd": "/repo/experiments/ktester-commit-survival",
+  "runtime_files": [
+    "apiguardian-api-1.1.2.jar",
+    "byte-buddy-1.14.1.jar",
+    "byte-buddy-agent-1.14.1.jar",
+    "commons-io-2.16.1.jar",
+    "commons-lang3-3.14.0.jar",
+    "hamcrest-2.2.jar",
+    "junit-jupiter-5.11.4.jar",
+    "junit-jupiter-api-5.10.2.jar",
+    "junit-jupiter-engine-5.10.2.jar",
+    "junit-jupiter-params-5.10.2.jar",
+    "junit-platform-commons-1.10.2.jar",
+    "junit-platform-engine-1.10.2.jar",
+    "mockito-core-5.2.0.jar",
+    "mockito-inline-5.2.0.jar",
+    "mockito-junit-jupiter-5.2.0.jar",
+    "objenesis-3.3.jar",
+    "opentest4j-1.3.0.jar",
+    "junit-platform-console-standalone-1.9.3.jar"
+  ],
+  "runs": [
+    {
+      "stage": "compile",
+      "command": [
+        "javac",
+        "-cp",
+        "work/t/target/classes:work/libs/*",
+        "-d",
+        "work/smoke/classes",
+        "work/smoke/Md5Crypt_md5Crypt_Test.java"
+      ],
+      "shell_command": "javac -cp 'work/t/target/classes:work/libs/*' -d work/smoke/classes work/smoke/Md5Crypt_md5Crypt_Test.java",
+      "exit_code": 0,
+      "seconds": 0.422,
+      "log": "results/classpath-smoke-compile.txt"
+    },
+    {
+      "stage": "launch",
+      "command": [
+        "java",
+        "-cp",
+        "work/t/target/classes:work/smoke/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar",
+        "org.junit.platform.console.ConsoleLauncher",
+        "--disable-banner",
+        "--disable-ansi-colors",
+        "--fail-if-no-tests",
+        "--select-class",
+        "org.apache.commons.codec.digest.Md5Crypt_md5Crypt_Test",
+        "--details",
+        "summary",
+        "--reports-dir",
+        "work/smoke/reports"
+      ],
+      "shell_command": "java -cp work/t/target/classes:work/smoke/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar org.junit.platform.console.ConsoleLauncher --disable-banner --disable-ansi-colors --fail-if-no-tests --select-class org.apache.commons.codec.digest.Md5Crypt_md5Crypt_Test --details summary --reports-dir work/smoke/reports",
+      "exit_code": 1,
+      "seconds": 0.369,
+      "log": "results/classpath-smoke-launch.txt"
+    }
+  ],
+  "complete_classpath_fetch": false,
+  "counts": {
+    "tests": 14,
+    "failures": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "launcher_executed_tests": true
+}

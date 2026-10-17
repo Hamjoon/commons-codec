@@ -1,0 +1,614 @@
+{
+  "index": 0,
+  "sha": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "date": "2024-05-16T14:47:23-04:00",
+  "group": "dev",
+  "phase": "check-coverage",
+  "worker": "w0",
+  "input_sha256": "178a13493dd8ea3c068bb376f8ed9a1fd4c41ed34cd37ccc9514f0b0dfc757dc",
+  "requested_ids": [
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferEnd",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferMiddle",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferStart",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamples",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamplesReverse",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Chunked",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing10Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing15Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing20Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing25Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing30Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing35Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing5Bits",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexImpossibleSamples",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamples",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverse",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverseLowercase",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleChunked",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleSamples",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Samples",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32SamplesNonDefaultPadding",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderCodecPolicy",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderLineAttributes",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderPadingByte",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testCodec200",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testConstructors",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testEmptyBase32",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testIsInAlphabet",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytes",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesChunked",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesHex",
+    "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testSingleCharEncoding"
+  ],
+  "coverage_requested": true,
+  "build": {
+    "index": 0,
+    "sha": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+    "worker": "w0",
+    "status": "built",
+    "attempts": [
+      {
+        "command": [
+          "mvn",
+          "-q",
+          "-o",
+          "-DskipTests",
+          "-Drat.skip",
+          "-Dcheckstyle.skip",
+          "-Dspotbugs.skip",
+          "-Dpmd.skip",
+          "-Dmaven.javadoc.skip",
+          "package"
+        ],
+        "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 8.248,
+        "log": "work/phase-check/0/build-1.txt"
+      }
+    ],
+    "message": "",
+    "cache_warmed_online": false,
+    "reused_from": "results/builds/check/0.json"
+  },
+  "files": [
+    {
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "compile_attempts": [
+        {
+          "command": [
+            "javac",
+            "-cp",
+            "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+            "-d",
+            "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/01-Base32Test/classes",
+            "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/01-Base32Test/Base32Test.java",
+            "/repo/experiments/ktester-commit-survival/dev/src-test-t/java/org/apache/commons/codec/binary/BaseNTestData.java"
+          ],
+          "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+          "exit_code": 0,
+          "timeout": false,
+          "seconds": 0.478,
+          "log": "work/phase-check-coverage/0/dev/01-Base32Test/javac-1.txt"
+        }
+      ],
+      "compile_status": "compiled",
+      "first_javac_error": "",
+      "runs": [
+        {
+          "command": [
+            "java",
+            "-javaagent:/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile=/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/jacoco.exec,append=true,includes=org.apache.commons.codec.*",
+            "-cp",
+            "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes:/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/01-Base32Test/classes:/repo/experiments/ktester-commit-survival/dev/src-test-t/resources:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+            "org.junit.platform.console.ConsoleLauncher",
+            "--disable-banner",
+            "--disable-ansi-colors",
+            "--fail-if-no-tests",
+            "--details",
+            "summary",
+            "--select-class",
+            "org.apache.commons.codec.binary.Base32Test",
+            "--reports-dir",
+            "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/01-Base32Test/initial"
+          ],
+          "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+          "exit_code": 0,
+          "timeout": false,
+          "seconds": 0.423,
+          "log": "work/phase-check-coverage/0/dev/01-Base32Test/initial/console.txt",
+          "selection_mode": "class",
+          "selected_ids": [
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferEnd",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferMiddle",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferStart",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamples",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamplesReverse",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Chunked",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing10Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing15Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing20Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing25Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing30Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing35Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing5Bits",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexImpossibleSamples",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamples",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverse",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverseLowercase",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleChunked",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleSamples",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Samples",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32SamplesNonDefaultPadding",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderCodecPolicy",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderLineAttributes",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderPadingByte",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testCodec200",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testConstructors",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testEmptyBase32",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testIsInAlphabet",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytes",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesChunked",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesHex",
+            "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testSingleCharEncoding"
+          ],
+          "xml_cases": 32
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferEnd",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32AtBufferEnd",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32AtBufferEnd()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferMiddle",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32AtBufferMiddle",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32AtBufferMiddle()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32AtBufferStart",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32AtBufferStart",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32AtBufferStart()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamples",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32BinarySamples",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32BinarySamples()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32BinarySamplesReverse",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32BinarySamplesReverse",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32BinarySamplesReverse()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Chunked",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32Chunked",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32Chunked()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing10Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing10Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing10Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing15Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing15Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing15Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing20Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing20Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing20Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing25Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing25Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing25Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing30Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing30Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing30Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing35Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing35Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing35Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32DecodingOfTrailing5Bits",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32DecodingOfTrailing5Bits",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32DecodingOfTrailing5Bits()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexImpossibleSamples",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32HexImpossibleSamples",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32HexImpossibleSamples()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamples",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32HexSamples",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32HexSamples()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverse",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32HexSamplesReverse",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32HexSamplesReverse()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32HexSamplesReverseLowercase",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32HexSamplesReverseLowercase",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32HexSamplesReverseLowercase()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleChunked",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32ImpossibleChunked",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32ImpossibleChunked()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32ImpossibleSamples",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32ImpossibleSamples",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32ImpossibleSamples()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32Samples",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32Samples",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32Samples()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBase32SamplesNonDefaultPadding",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBase32SamplesNonDefaultPadding",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBase32SamplesNonDefaultPadding()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderCodecPolicy",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBuilderCodecPolicy",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBuilderCodecPolicy()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderLineAttributes",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBuilderLineAttributes",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBuilderLineAttributes()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testBuilderPadingByte",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testBuilderPadingByte",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testBuilderPadingByte()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testCodec200",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testCodec200",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testCodec200()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testConstructors",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testConstructors",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testConstructors()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testEmptyBase32",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testEmptyBase32",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testEmptyBase32()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testIsInAlphabet",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testIsInAlphabet",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testIsInAlphabet()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytes",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testRandomBytes",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testRandomBytes()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesChunked",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testRandomBytesChunked",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testRandomBytesChunked()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testRandomBytesHex",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testRandomBytesHex",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testRandomBytesHex()"
+      ]
+    },
+    {
+      "id": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java|org.apache.commons.codec.binary.Base32Test|testSingleCharEncoding",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "method": "testSingleCharEncoding",
+      "state": "pass",
+      "message": "",
+      "flaky": false,
+      "initial_state": "pass",
+      "selector": [
+        "org.apache.commons.codec.binary.Base32Test#testSingleCharEncoding()"
+      ]
+    }
+  ],
+  "fallbacks": [],
+  "runner_sha256": {
+    "survival_common.py": "fd9264d2359bfc55d2d0a8f89c13c9e2126c207372d395a7c2420379c3765088",
+    "run_commit.py": "80a9dc11b36fb40892e4d31e59d6077d24d6a13510a50a05cf9d81a4ed06e23f",
+    "run_phase.py": "9fae9de78d42927473fef476b8fbcfb519b964b1007cc2c75e9cd8d5e53199d0",
+    "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+    "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557"
+  },
+  "status": "evaluated",
+  "coverage": {
+    "xml": "results/runner-check-coverage/0-dev-coverage.xml",
+    "lines_csv": "results/runner-check-coverage/0-dev-coverage-lines.csv",
+    "report": {
+      "command": [
+        "java",
+        "-jar",
+        "/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+        "report",
+        "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/jacoco.exec",
+        "--classfiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes",
+        "--sourcefiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/src/main/java",
+        "--xml",
+        "/repo/experiments/ktester-commit-survival/results/runner-check-coverage/0-dev-coverage.xml"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.216,
+      "log": "work/phase-check-coverage/0/dev/coverage-report.txt"
+    },
+    "line_entries": 830,
+    "covered_lines": 182
+  },
+  "seconds": 1.334
+}

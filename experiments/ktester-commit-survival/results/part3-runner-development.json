@@ -1,0 +1,12 @@
+{
+  "corrections": [
+    {
+      "issue": "Initial javap inspection included non-test overloads; Base64Test.testEncodeOverMaxSize has a private helper of the same name",
+      "resolution": "Inspect compiled runtime JUnit annotations and parameter types, selecting all annotated overloads only",
+      "evidence": "KTester/evaluation/logs/commit-survival-part3-check-dev.log",
+      "note": "Attempt to move incomplete reports used a wrong working directory and failed; no frozen source was affected. Incomplete check reports were subsequently replaced by the corrected runner.",
+      "frozen_sources_changed": false,
+      "survival_loop_started": false
+    }
+  ]
+}

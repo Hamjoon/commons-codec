@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "input_sha256": "178a13493dd8ea3c068bb376f8ed9a1fd4c41ed34cd37ccc9514f0b0dfc757dc",
+  "checks": {
+    "dev": {
+      "files": 6,
+      "expected_methods": 143,
+      "reported_methods": 143,
+      "states": {
+        "pass": 143
+      },
+      "differences": [],
+      "seconds": 8.172
+    },
+    "llm": {
+      "files": 46,
+      "expected_methods": 290,
+      "reported_methods": 290,
+      "states": {
+        "pass": 290
+      },
+      "differences": [],
+      "seconds": 425.454
+    }
+  },
+  "coverage": {
+    "dev": {
+      "xml": "results/runner-check-coverage/0-dev-coverage.xml",
+      "lines_csv": "results/runner-check-coverage/0-dev-coverage-lines.csv",
+      "report": {
+        "command": [
+          "java",
+          "-jar",
+          "/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+          "report",
+          "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/dev/jacoco.exec",
+          "--classfiles",
+          "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes",
+          "--sourcefiles",
+          "/repo/experiments/ktester-commit-survival/work/commits/w0/src/main/java",
+          "--xml",
+          "/repo/experiments/ktester-commit-survival/results/runner-check-coverage/0-dev-coverage.xml"
+        ],
+        "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.216,
+        "log": "work/phase-check-coverage/0/dev/coverage-report.txt"
+      },
+      "line_entries": 830,
+      "covered_lines": 182
+    },
+    "llm": {
+      "xml": "results/runner-check-coverage/0-llm-coverage.xml",
+      "lines_csv": "results/runner-check-coverage/0-llm-coverage-lines.csv",
+      "report": {
+        "command": [
+          "java",
+          "-jar",
+          "/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+          "report",
+          "/repo/experiments/ktester-commit-survival/work/phase-check-coverage/0/llm/jacoco.exec",
+          "--classfiles",
+          "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes",
+          "--sourcefiles",
+          "/repo/experiments/ktester-commit-survival/work/commits/w0/src/main/java",
+          "--xml",
+          "/repo/experiments/ktester-commit-survival/results/runner-check-coverage/0-llm-coverage.xml"
+        ],
+        "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.219,
+        "log": "work/phase-check-coverage/0/llm/coverage-report.txt"
+      },
+      "line_entries": 830,
+      "covered_lines": 108
+    }
+  },
+  "empty_alive_set_coverage": {
+    "xml": "results/runner-check-empty/0-dev-coverage.xml",
+    "lines_csv": "results/runner-check-empty/0-dev-coverage-lines.csv",
+    "report": {
+      "command": [
+        "java",
+        "-jar",
+        "/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+        "report",
+        "--classfiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes",
+        "--sourcefiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/src/main/java",
+        "--xml",
+        "/repo/experiments/ktester-commit-survival/results/runner-check-empty/0-dev-coverage.xml"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.221,
+      "log": "work/phase-check-empty/0/dev/coverage-report.txt"
+    },
+    "line_entries": 830,
+    "covered_lines": 0
+  },
+  "additional_developer_jars": [],
+  "selection": "Phase A developer classes; LLM frozen denominator methods selected by compiled annotated signatures. Phase B alive-entering methods only, with recorded class fallback if launcher rejects a selector."
+}

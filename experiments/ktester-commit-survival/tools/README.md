@@ -54,3 +54,46 @@ The original smoke source remains under ignored work/smoke/ only. No jar or auth
 ## First attempt
 
 The initial exact-inventory fetch stopped after repeated failures resolving EvoSuite and the supplied JaCoCo snapshots. The first attempt is preserved in commit 05e849ed and its failure logs. The addendum explicitly resolves that stop through exclusion and released-version substitution; those old failure logs are historical evidence, not current unresolved dependencies.
+
+## Part 3 runner and reproducible commands
+
+Part 3 freezes its input hashes in `results/part3-input-sha256.json`. Developer compile units are resolved once from transitive same-package Java identifier/type references (comments and strings excluded) and recorded in `dev-compile-units.json`. The six units use the existing 18 test jars; no additional developer jar is needed. `Base64Test` references `BaseNCodecTest.getPresumableFreeMemory()`, so that helper class is compiled but its own tests are not selected. Frozen resources are included on the runtime classpath.
+
+The runner copies each source into a private unit directory without changing bytes. It strips `r2-` only from the temporary Java filename. Production and test outputs are isolated; each worker owns `work/commits/wN/`, exported with `git archive`. `mvn -q -o -DskipTests -Drat.skip -Dcheckstyle.skip -Dspotbugs.skip -Dpmd.skip -Dmaven.javadoc.skip package` uses the Part 1 skip set. A cache-miss failure may warm Maven online on its second attempt; other build failures get a second offline attempt. Every attempt is recorded. Build-fail commits are excluded during aggregation and carry forward the preceding cumulative state.
+
+Phase A executes all six developer classes and the frozen LLM denominator methods from all 46 contributing files. LLM methods excluded by Part 2 are not reintroduced into the measured set. Each file compiles individually. `MethodSelectors.java` reads compiled JUnit annotations and exact parameter types without initializing the class, distinguishing tests from private overloads and selecting parameterized methods without guessing source type names. Method identity is `(file, class, method)` so identically named classes from different rounds remain distinct. All invocations of a parameterized method must pass. A fail/error method is rerun once, in isolation; if that retry passes, its final state is pass with `flaky=true`. Otherwise its original failure state is retained and both outcomes recorded. A whole-class run timeout marks all selected denominator methods timeout. Skipped or unreported methods are absent. Every Java run is limited to 600 seconds with process-group termination.
+
+Phase B selects only methods alive entering each commit (index 0 uses the full denominator). It appends coverage within each isolated group using the same released JaCoCo 0.8.12 tools as Part 1. A rejected method selector may fall back to the class, with the exact fallback recorded. The XML report includes all production classes, retaining executable but uncovered lines. An empty alive set produces zero-coverage XML without executing any tests. Step 0 verifies this case too.
+
+All commands below run inside the prescribed container, from `/repo/experiments/ktester-commit-survival`:
+
+```sh
+python tools/prepare_part3.py
+python tools/run_commit.py --index 0 --group dev --phase check --worker w0
+python tools/run_commit.py --index 0 --group llm --phase check --worker w0
+python tools/check_runner.py
+python tools/selftest_part3.py
+# Commit Step 0 only after all denominator methods and coverage checks pass.
+python tools/run_phase.py --phase a --workers 4 --start 1 --end 539
+# Check/commit Phase A, then derive and commit survival tables.
+python tools/aggregate_survival.py
+python tools/prepare_coverage.py
+python tools/run_phase.py --phase b --workers 4 --start 0 --end 539
+# Check/commit Phase B, then derive and commit changed-line tables.
+python tools/aggregate_coverage.py
+```
+
+Host wrapper: from KTester/docker, `docker compose -f compose.yml -f compose.commit-survival.yml run --rm ktester bash -c 'cd /repo/experiments/ktester-commit-survival && <command>'`. Do not use `bash -l`. Four Python processes run interleaved indices, each building and measuring both groups before moving to its next commit. No table is aggregated in a worker. Every completed group is atomically written to `results/raw/<index>-<group>.json` or `results/raw-coverage/<index>-<group>.json`. Resume skips only complete records with matching commit, frozen inputs, runner hashes and selection. Incomplete local group reports may be replaced on retry. More than 53 build-fail commits stops the phase; worker infrastructure exceptions are reported separately. Every phase invocation records its exact worker layout and wall time.
+
+`run_commit.py` accepts `--index`, `--group dev|llm`, `--worker wN`, `--phase a|b|check|check-coverage`, optional `--selection <JSON array of frozen method ids>`, and `--coverage`. `--class-selection` is for explicit full-class smoke checks. Existing complete raw records are never overwritten. Failure messages, compile attempts, launcher commands and retry outcomes are retained. Logs/JUnit XML are local under ignored `work/phase-*/` and referenced by the public JSON.
+
+Agent and report command shapes (absolute paths and exact argument arrays are in each raw record):
+
+```sh
+java -javaagent:work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile=work/phase-b/INDEX/GROUP/jacoco.exec,append=true,includes=org.apache.commons.codec.* -cp '<production>:<isolated-test-classes>:<frozen-resources>:<18-test-jars>' org.junit.platform.console.ConsoleLauncher --disable-banner --disable-ansi-colors --fail-if-no-tests --details summary --select-method 'CLASS#METHOD(PARAMETER_TYPES)' --reports-dir '<private-unit-report-dir>'
+java -jar work/libs/org.jacoco.cli-0.8.12-nodeps.jar report work/phase-b/INDEX/GROUP/jacoco.exec --classfiles work/commits/wN/target/classes --sourcefiles work/commits/wN/src/main/java --xml results/coverage/INDEX-GROUP.xml
+```
+
+Scientific figures use Matplotlib isolated in ignored `work/python-libs`; resolved package versions are in `results/part3-plot-dependencies.json`. Reinstall in the container with `python -m pip install --target work/python-libs matplotlib` only if that local environment is missing. Python plotting libraries never enter the Java classpath. `selftest_part3.py` checks assertion/error classification, parameterized aggregation, missing/skipped states, process timeout, build carryover, cumulative/transient survival, alive-entering indexing, flaky history, and zero-context diff line ranges.
+
+After final commits, render the ignored handover with `python tools/report_part3.py --kt /work` inside the container, or use the host KTester path when running on the host. The five tables are copied verbatim from scripted results and final Git hashes are read at render time. No push is performed.

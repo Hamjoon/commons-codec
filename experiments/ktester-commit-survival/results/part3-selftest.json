@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "assertion versus exception",
+    "parameterized invocation reduction",
+    "absent and skipped methods",
+    "class-timeout dominance and process termination",
+    "build-fail carryover",
+    "cumulative survival and first-break kinds",
+    "transient recovery remains cumulatively lost",
+    "alive-entering off-by-one",
+    "flaky history",
+    "zero-context insertion/deletion/replacement line ranges"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "resolution": "Transitive same-package Java identifier/type references from tree-sitter; comments and string literals excluded. Verified by isolated javac at t.",
+  "additional_developer_jars": [],
+  "units": [
+    {
+      "class": "org.apache.commons.codec.binary.Base32Test",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java",
+      "helpers": [
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNTestData.java"
+      ],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/binary/Base32Test.java": "40a2244b0d7970cf99420c7625f5890ab1c3586da79d36a0be8cb3e7437929a4",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNTestData.java": "3502d649fd1ea51ec054bee13189b34273bc6e1d2d748fefd4f70cdcf0d85b97"
+      }
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64Codec13Test",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base64Codec13Test.java",
+      "helpers": [],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/binary/Base64Codec13Test.java": "97f34d7776f9d77bcc8bebb4e783b97dbe8d2a48dae4ad6ecd5f1c884c7648da"
+      }
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64Test",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/binary/Base64Test.java",
+      "helpers": [
+        "dev/src-test-t/java/org/apache/commons/codec/binary/Base64TestData.java",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNCodecTest.java",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNTestData.java"
+      ],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/binary/Base64Test.java": "3476503cf638e59b5df9fcfa07966ff5686f7b108b45300fb15d9b8e1e2a8269",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/Base64TestData.java": "c83177327bd8ba73f41c438f4d14b8cded2167e6af83a469ade378d44d05df56",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNCodecTest.java": "644a22489a09acf07477382819bd5ac2ff1ef6fe3070bd19c02da8c8a8681094",
+        "dev/src-test-t/java/org/apache/commons/codec/binary/BaseNTestData.java": "3502d649fd1ea51ec054bee13189b34273bc6e1d2d748fefd4f70cdcf0d85b97"
+      }
+    },
+    {
+      "class": "org.apache.commons.codec.digest.Md5CryptTest",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/Md5CryptTest.java",
+      "helpers": [],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/digest/Md5CryptTest.java": "41483cdee2fe7b9de9782f7fcdf7a6d8707d1d86427a7e6c0c0577f6f7ce646e"
+      }
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3Test",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+      "helpers": [],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/digest/MurmurHash3Test.java": "6d6b732d71a864c53027da2c44e7779f359af657a297735cce02959b5576897c"
+      }
+    },
+    {
+      "class": "org.apache.commons.codec.digest.Sha2CryptTest",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/Sha2CryptTest.java",
+      "helpers": [],
+      "source_sha256": {
+        "dev/src-test-t/java/org/apache/commons/codec/digest/Sha2CryptTest.java": "78c59c9995ee602f48a525f5347d5bfa3e112625a3a7067a2d33c2eebc180368"
+      }
+    }
+  ]
+}

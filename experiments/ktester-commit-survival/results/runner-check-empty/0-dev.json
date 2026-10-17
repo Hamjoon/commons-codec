@@ -1,0 +1,78 @@
+{
+  "index": 0,
+  "sha": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "date": "2024-05-16T14:47:23-04:00",
+  "group": "dev",
+  "phase": "check-empty",
+  "worker": "w0",
+  "input_sha256": "178a13493dd8ea3c068bb376f8ed9a1fd4c41ed34cd37ccc9514f0b0dfc757dc",
+  "requested_ids": [],
+  "coverage_requested": true,
+  "build": {
+    "index": 0,
+    "sha": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+    "worker": "w0",
+    "status": "built",
+    "attempts": [
+      {
+        "command": [
+          "mvn",
+          "-q",
+          "-o",
+          "-DskipTests",
+          "-Drat.skip",
+          "-Dcheckstyle.skip",
+          "-Dspotbugs.skip",
+          "-Dpmd.skip",
+          "-Dmaven.javadoc.skip",
+          "package"
+        ],
+        "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 8.248,
+        "log": "work/phase-check/0/build-1.txt"
+      }
+    ],
+    "message": "",
+    "cache_warmed_online": false,
+    "reused_from": "results/builds/check/0.json"
+  },
+  "files": [],
+  "methods": [],
+  "fallbacks": [],
+  "runner_sha256": {
+    "survival_common.py": "fd9264d2359bfc55d2d0a8f89c13c9e2126c207372d395a7c2420379c3765088",
+    "run_commit.py": "80a9dc11b36fb40892e4d31e59d6077d24d6a13510a50a05cf9d81a4ed06e23f",
+    "run_phase.py": "9fae9de78d42927473fef476b8fbcfb519b964b1007cc2c75e9cd8d5e53199d0",
+    "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+    "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557"
+  },
+  "status": "evaluated",
+  "coverage": {
+    "xml": "results/runner-check-empty/0-dev-coverage.xml",
+    "lines_csv": "results/runner-check-empty/0-dev-coverage-lines.csv",
+    "report": {
+      "command": [
+        "java",
+        "-jar",
+        "/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+        "report",
+        "--classfiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/target/classes",
+        "--sourcefiles",
+        "/repo/experiments/ktester-commit-survival/work/commits/w0/src/main/java",
+        "--xml",
+        "/repo/experiments/ktester-commit-survival/results/runner-check-empty/0-dev-coverage.xml"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w0",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.221,
+      "log": "work/phase-check-empty/0/dev/coverage-report.txt"
+    },
+    "line_entries": 830,
+    "covered_lines": 0
+  },
+  "seconds": 0.289
+}

@@ -1,0 +1,853 @@
+{
+  "round": 1,
+  "rerun": false,
+  "stage": "commit-survival-round1",
+  "run": {
+    "project": "commons-codec",
+    "start": "2026-10-17T08:16:22Z",
+    "end": "2026-10-17T09:21:32Z",
+    "generate_rc": 0,
+    "coverage_rc": 1
+  },
+  "population_tasks": 52,
+  "tasks_submitted": 52,
+  "test_class_files": 52,
+  "missing_test_class_ids": [],
+  "wall_seconds": 3910.0,
+  "provider_routing": "unpinned",
+  "providers_observed": [],
+  "provider_note": "Released LLMCaller returns message content only and does not log response provider metadata; provider identity unavailable.",
+  "logs": [
+    {
+      "file": "commit-survival-round1-commons-codec-coverage.log",
+      "timeouts": [],
+      "out_of_memory_occurrences": [],
+      "error_records": [
+        {
+          "line": 130,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 436,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 623,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 637,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 748,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 761,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 769,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 888,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 901,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 989,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1101,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1176,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1193,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1202,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1215,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1332,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1345,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1354,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1625,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1713,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1728,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1741,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1806,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1819,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1834,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1919,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2427,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2440,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2510,
+          "message": "Traceback (most recent call last):"
+        },
+        {
+          "line": 2511,
+          "message": "  File \"/work/code/evaluation.py\", line 68, in <module>"
+        },
+        {
+          "line": 2512,
+          "message": "    run(args.operation)"
+        },
+        {
+          "line": 2513,
+          "message": "    ~~~^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 2514,
+          "message": "  File \"/work/code/evaluation.py\", line 42, in run"
+        },
+        {
+          "line": 2515,
+          "message": "    test_coverage(FS, TS, dataset_info)"
+        },
+        {
+          "line": 2516,
+          "message": "    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 2517,
+          "message": "  File \"/work/code/evaluations/coverage_test.py\", line 256, in test_coverage"
+        },
+        {
+          "line": 2518,
+          "message": "    coverage_data = calculator.generate_project_summary(test_result, filter=True)"
+        },
+        {
+          "line": 2519,
+          "message": "  File \"/work/code/evaluations/coverage_test.py\", line 156, in generate_project_summary"
+        },
+        {
+          "line": 2520,
+          "message": "    cov_score = self.extract_single_coverage(html_path, method)"
+        },
+        {
+          "line": 2521,
+          "message": "  File \"/work/code/tools/execute_test.py\", line 176, in extract_single_coverage"
+        },
+        {
+          "line": 2522,
+          "message": "    branch_cov = float(tds[4].string.replace(\"%\", \"\"))/100"
+        },
+        {
+          "line": 2523,
+          "message": "                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+        },
+        {
+          "line": 2524,
+          "message": "ValueError: could not convert string to float: 'n/a'"
+        }
+      ],
+      "framework_completed": 0,
+      "test_generation_completed": 0,
+      "explicit_timeout_mentions": 0
+    },
+    {
+      "file": "commit-survival-round1-commons-codec-generate.log",
+      "timeouts": [],
+      "out_of_memory_occurrences": [],
+      "error_records": [
+        {
+          "line": 26,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_builder/init_response.md'"
+        },
+        {
+          "line": 30,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_builder/init_response.md'"
+        },
+        {
+          "line": 32,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_getLineSeparator/init_response.md'"
+        },
+        {
+          "line": 34,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeBase64/init_response.md'"
+        },
+        {
+          "line": 36,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeInteger/init_response.md'"
+        },
+        {
+          "line": 42,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_4/init_response.md'"
+        },
+        {
+          "line": 44,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeBase64_2/init_response.md'"
+        },
+        {
+          "line": 46,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64/init_response.md'"
+        },
+        {
+          "line": 47,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64String/init_response.md'"
+        },
+        {
+          "line": 50,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeInteger/init_response.md'"
+        },
+        {
+          "line": 52,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_3/init_response.md'"
+        },
+        {
+          "line": 53,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64Chunked/init_response.md'"
+        },
+        {
+          "line": 56,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64URLSafe/init_response.md'"
+        },
+        {
+          "line": 58,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_toIntegerBytes/init_response.md'"
+        },
+        {
+          "line": 60,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_getLineSeparator/init_response.md'"
+        },
+        {
+          "line": 62,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64/init_response.md'"
+        },
+        {
+          "line": 64,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isInAlphabet/init_response.md'"
+        },
+        {
+          "line": 66,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt/init_response.md'"
+        },
+        {
+          "line": 68,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64_2/init_response.md'"
+        },
+        {
+          "line": 70,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_4/init_response.md'"
+        },
+        {
+          "line": 72,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_2/init_response.md'"
+        },
+        {
+          "line": 74,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64_3/init_response.md'"
+        },
+        {
+          "line": 76,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_5/init_response.md'"
+        },
+        {
+          "line": 78,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_2/init_response.md'"
+        },
+        {
+          "line": 80,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_4/init_response.md'"
+        },
+        {
+          "line": 84,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128/init_response.md'"
+        },
+        {
+          "line": 86,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_2/init_response.md'"
+        },
+        {
+          "line": 88,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_3/init_response.md'"
+        },
+        {
+          "line": 90,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128x64/init_response.md'"
+        },
+        {
+          "line": 92,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_isInAlphabet/init_response.md'"
+        },
+        {
+          "line": 93,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isUrlSafe/init_response.md'"
+        },
+        {
+          "line": 96,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64URLSafeString/init_response.md'"
+        },
+        {
+          "line": 98,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_2/init_response.md'"
+        },
+        {
+          "line": 100,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128x64_2/init_response.md'"
+        },
+        {
+          "line": 102,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32x86_2/init_response.md'"
+        },
+        {
+          "line": 104,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32/init_response.md'"
+        },
+        {
+          "line": 106,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt_2/init_response.md'"
+        },
+        {
+          "line": 108,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt/init_response.md'"
+        },
+        {
+          "line": 110,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt_3/init_response.md'"
+        },
+        {
+          "line": 112,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt_2/init_response.md'"
+        },
+        {
+          "line": 113,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_3/init_response.md'"
+        },
+        {
+          "line": 114,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt_3/init_response.md'"
+        },
+        {
+          "line": 115,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt/init_response.md'"
+        },
+        {
+          "line": 116,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32x86/init_response.md'"
+        },
+        {
+          "line": 117,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_5/init_response.md'"
+        },
+        {
+          "line": 118,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_3/init_response.md'"
+        },
+        {
+          "line": 119,
+          "message": "Error processing test framework for: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_4/init_response.md'"
+        },
+        {
+          "line": 138,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_getLineSeparator/condition4case_response.md'"
+        },
+        {
+          "line": 139,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_isInAlphabet/condition4case_response.md'"
+        },
+        {
+          "line": 140,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base32_builder/condition4case_response.md'"
+        },
+        {
+          "line": 149,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_builder/condition4case_response.md'"
+        },
+        {
+          "line": 152,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeBase64/condition4case_response.md'"
+        },
+        {
+          "line": 155,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeBase64_2/condition4case_response.md'"
+        },
+        {
+          "line": 157,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_decodeInteger/condition4case_response.md'"
+        },
+        {
+          "line": 159,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 22 column 51 (char 522)"
+        },
+        {
+          "line": 162,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64/condition4case_response.md'"
+        },
+        {
+          "line": 167,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 33 column 84 (char 1435)"
+        },
+        {
+          "line": 170,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_4/condition4case_response.md'"
+        },
+        {
+          "line": 172,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64String/condition4case_response.md'"
+        },
+        {
+          "line": 176,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64URLSafe/condition4case_response.md'"
+        },
+        {
+          "line": 182,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64Chunked/condition4case_response.md'"
+        },
+        {
+          "line": 185,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeInteger/condition4case_response.md'"
+        },
+        {
+          "line": 187,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64URLSafeString/condition4case_response.md'"
+        },
+        {
+          "line": 191,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64_3/condition4case_response.md'"
+        },
+        {
+          "line": 193,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64/condition4case_response.md'"
+        },
+        {
+          "line": 195,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_getLineSeparator/condition4case_response.md'"
+        },
+        {
+          "line": 197,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isBase64_2/condition4case_response.md'"
+        },
+        {
+          "line": 199,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isInAlphabet/condition4case_response.md'"
+        },
+        {
+          "line": 201,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_isUrlSafe/condition4case_response.md'"
+        },
+        {
+          "line": 203,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_4/condition4case_response.md'"
+        },
+        {
+          "line": 205,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_5/condition4case_response.md'"
+        },
+        {
+          "line": 207,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_2/condition4case_response.md'"
+        },
+        {
+          "line": 209,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt/condition4case_response.md'"
+        },
+        {
+          "line": 211,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_toIntegerBytes/condition4case_response.md'"
+        },
+        {
+          "line": 213,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_4/condition4case_response.md'"
+        },
+        {
+          "line": 214,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_apr1Crypt_3/condition4case_response.md'"
+        },
+        {
+          "line": 216,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_2/condition4case_response.md'"
+        },
+        {
+          "line": 221,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_3/condition4case_response.md'"
+        },
+        {
+          "line": 223,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128x64/condition4case_response.md'"
+        },
+        {
+          "line": 225,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128/condition4case_response.md'"
+        },
+        {
+          "line": 227,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32/condition4case_response.md'"
+        },
+        {
+          "line": 228,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Md5Crypt_md5Crypt_5/condition4case_response.md'"
+        },
+        {
+          "line": 229,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash128x64_2/condition4case_response.md'"
+        },
+        {
+          "line": 233,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_3/condition4case_response.md'"
+        },
+        {
+          "line": 235,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt/condition4case_response.md'"
+        },
+        {
+          "line": 237,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_4/condition4case_response.md'"
+        },
+        {
+          "line": 239,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32_2/condition4case_response.md'"
+        },
+        {
+          "line": 240,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt/condition4case_response.md'"
+        },
+        {
+          "line": 243,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32x86_2/condition4case_response.md'"
+        },
+        {
+          "line": 244,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt_3/condition4case_response.md'"
+        },
+        {
+          "line": 245,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha256Crypt_2/condition4case_response.md'"
+        },
+        {
+          "line": 246,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/MurmurHash3_hash32x86/condition4case_response.md'"
+        },
+        {
+          "line": 247,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt_2/condition4case_response.md'"
+        },
+        {
+          "line": 248,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Invalid control character at: line 16 column 57 (char 518)"
+        },
+        {
+          "line": 249,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Sha2Crypt_sha512Crypt_3/condition4case_response.md'"
+        },
+        {
+          "line": 250,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Expecting ':' delimiter: line 174925 column 1 (char 296263)"
+        },
+        {
+          "line": 251,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_3/condition4case_response.md'"
+        },
+        {
+          "line": 252,
+          "message": "<class 'json.decoder.JSONDecodeError'> occured while get json object from llm api: Expecting ':' delimiter: line 98 column 6291 (char 486391)"
+        },
+        {
+          "line": 253,
+          "message": "Error processing test case: [Errno 2] No such file or directory: '../evaluation/commons-codec/responses/Base64_encodeBase64_2/condition4case_response.md'"
+        },
+        {
+          "line": 371,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 382,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 393,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 404,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 514,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 790,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1210,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1420,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1440,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1462,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1478,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1499,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1516,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1532,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1548,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1564,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1580,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1596,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1733,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1743,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1753,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1762,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 1993,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2375,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2391,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2640,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2649,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2718,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2751,
+          "message": "error occured in compile test class, info:"
+        },
+        {
+          "line": 2774,
+          "message": "Error in post process: [Errno 2] No such file or directory: '../evaluation/commons-codec/fix/Base32_builder/repair_prompt_0.md'"
+        }
+      ],
+      "framework_completed": 5,
+      "test_generation_completed": 5,
+      "explicit_timeout_mentions": 0
+    }
+  ],
+  "timeouts": 0,
+  "out_of_memory_occurrences": 0,
+  "missing_output_directory_task_ids": [
+    "Base32_builder",
+    "Base32_getLineSeparator",
+    "Base32_isInAlphabet",
+    "Base64_builder",
+    "Base64_decodeBase64",
+    "Base64_decodeBase64_2",
+    "Base64_decodeInteger",
+    "Base64_encodeBase64",
+    "Base64_encodeBase64Chunked",
+    "Base64_encodeBase64String",
+    "Base64_encodeBase64URLSafe",
+    "Base64_encodeBase64URLSafeString",
+    "Base64_encodeBase64_2",
+    "Base64_encodeBase64_3",
+    "Base64_encodeBase64_4",
+    "Base64_encodeInteger",
+    "Base64_getLineSeparator",
+    "Base64_isBase64",
+    "Base64_isBase64_2",
+    "Base64_isBase64_3",
+    "Base64_isInAlphabet",
+    "Base64_isUrlSafe",
+    "Base64_toIntegerBytes",
+    "Md5Crypt_apr1Crypt",
+    "Md5Crypt_apr1Crypt_2",
+    "Md5Crypt_apr1Crypt_3",
+    "Md5Crypt_apr1Crypt_4",
+    "Md5Crypt_apr1Crypt_5",
+    "Md5Crypt_md5Crypt_2",
+    "Md5Crypt_md5Crypt_3",
+    "Md5Crypt_md5Crypt_4",
+    "Md5Crypt_md5Crypt_5",
+    "MurmurHash3_hash128",
+    "MurmurHash3_hash128x64",
+    "MurmurHash3_hash128x64_2",
+    "MurmurHash3_hash32",
+    "MurmurHash3_hash32_2",
+    "MurmurHash3_hash32_3",
+    "MurmurHash3_hash32_4",
+    "MurmurHash3_hash32x86",
+    "MurmurHash3_hash32x86_2",
+    "Sha2Crypt_sha256Crypt",
+    "Sha2Crypt_sha256Crypt_2",
+    "Sha2Crypt_sha256Crypt_3",
+    "Sha2Crypt_sha512Crypt",
+    "Sha2Crypt_sha512Crypt_2",
+    "Sha2Crypt_sha512Crypt_3"
+  ],
+  "authors_evaluator_reference": {
+    "summary_available": false,
+    "task_entries": 0,
+    "test_cases": null,
+    "passed_cases": null,
+    "compiled_cases": null,
+    "compile_pass_rate": null,
+    "execution_pass_rate": null,
+    "tests_per_produced_class": null,
+    "error_type_counts": {},
+    "raw_results_available": true,
+    "raw_task_entries": 52,
+    "raw_files_compiled": 24,
+    "raw_executed_test_cases": 153,
+    "raw_passed_test_cases": 128,
+    "raw_note": "Raw evaluator execution dictionary recovered from the log before coverage-summary parsing; not the authors final filtered/scored summary.",
+    "summary_failure": "ValueError: could not convert string to float: 'n/a' (JaCoCo branch coverage for Base32.getLineSeparator)"
+  },
+  "source_sha256": {
+    "Base32_builder_Test.java": "49f9e35a31ffbebf6b3643b25484092040d97e34067f704b478f6547bcbab5d0",
+    "Base32_decode_Test.java": "cc6479cd0e6204ac2a4f5a104492f55390a720560461ad51c560d095cdb8a668",
+    "Base32_encode_Test.java": "1594c4dc632ead34f4608a3f92c1693d4977b843465b1d8fec5b4ba360e5c51a",
+    "Base32_getLineSeparator_Test.java": "e48f97bd96207d42f706876bff7e4d8ba6c7ff28aa6bced7561018156998251c",
+    "Base32_isInAlphabet_Test.java": "f310dea5099af03fdad420b8aa5665649546ead79891cea8285f37bfea9b3080",
+    "Base64_builder_Test.java": "1af7267262b1fcd165ec7d5dd85c8fa805c4bb61744382414560113a8fc6cc06",
+    "Base64_decodeBase64_2_Test.java": "d154a630e5468e041a8e6e4e045ac820d634310a3ce4105210e36e5d18af520d",
+    "Base64_decodeBase64_Test.java": "708f999624926a1d3941846e2e6dfe5e03ae9963aae24d42978236fb34fd33a8",
+    "Base64_decodeInteger_Test.java": "2bce24e5d806d75a4d8d3a84fb6b21fb6e896219801f71cd0df9c8d0f38758e2",
+    "Base64_decode_Test.java": "812b8ce1045c2291bb6fc5d5d43dea4690bdedcf004abc9b69f267ea1a92b638",
+    "Base64_encodeBase64Chunked_Test.java": "8ae627944d057474b842db23e6eac64aba893051c977cd8d55417520f949bd63",
+    "Base64_encodeBase64String_Test.java": "fc6840ef83eecd4041a26c332f04bf72891f16985b183de977023f122500a3bd",
+    "Base64_encodeBase64URLSafeString_Test.java": "fe4ceda7242562cf43d00863bdfc196c1e2046d6408a0d022d2cd8c69b9ea7b4",
+    "Base64_encodeBase64URLSafe_Test.java": "523f041aa25d738c9b83438ce9fbcb4b265cca4b2ac3e4596ab1c0e4af78bcce",
+    "Base64_encodeBase64_2_Test.java": "04ac69716d6d292ed3e9a507b5433d6046dd9ff46aa47d48bc460e75c46068b6",
+    "Base64_encodeBase64_3_Test.java": "51604460231c71641d79a5b74dd2f0d06df38aa6c4869318247bb4f9800001ff",
+    "Base64_encodeBase64_4_Test.java": "cb6973e85ee8f1aaeb3d8d402194450f61a3e88606a7284fe1de07ae5647cd55",
+    "Base64_encodeBase64_Test.java": "f7608ac427dca4d884c3fdd91b12102d7fe29ab48599eaa67193991220334a2e",
+    "Base64_encodeInteger_Test.java": "e053cfb879cff9f21eb9641070142f0a42aa1c1a08672b0ea7dddfa4e4dd9583",
+    "Base64_encode_Test.java": "81900dd2030fff9798f8f6e90ae750ccefb862d6828536b9940220e382363eea",
+    "Base64_getLineSeparator_Test.java": "67e10c98a4d716bda876dad643b145fedf80867834c3e9f25078a51c5b9ae6fc",
+    "Base64_isBase64_2_Test.java": "5e45efac4efc1a42110a14f3aec8c9bb1f71d8d5f79e8da4629458f7d0619a28",
+    "Base64_isBase64_3_Test.java": "67460981916a5504fc8ed25ff327fa8ee6da0cbf2b5e2c71ea8b04b58f683cd4",
+    "Base64_isBase64_Test.java": "50c7c48d492377f36c6a6455bd5b61873a96508cb4ac1d9c1a43a522bbddb4b2",
+    "Base64_isInAlphabet_Test.java": "3db777ffa0b7a25a1c780e3886ac77fbad55c320ba07d3e03195248314cbe144",
+    "Base64_isUrlSafe_Test.java": "12d2b0fe2e6329ba0afc4fd2f1417c48e0d0f583b20a38a85d669dc5e7fdd557",
+    "Base64_toIntegerBytes_Test.java": "f81bf5d56f57ecea2d75d273b90b7d9a362c3c1a707eb8fa30d50450066f0dc5",
+    "Md5Crypt_apr1Crypt_2_Test.java": "7054466f359b370ef0f83b87baf99bbb41ad5246de1b39a411d72b8311c25f54",
+    "Md5Crypt_apr1Crypt_3_Test.java": "b768e0e5648202d65d9b7b33eee7d3dfad2d0ad0c4cb7fd8066067ff5e288bc0",
+    "Md5Crypt_apr1Crypt_4_Test.java": "b1ca9520fffdabf127dbd072aa914929a2f4b1ea2af62cdcdac45f4092c41b8c",
+    "Md5Crypt_apr1Crypt_5_Test.java": "8c1bdf3949c05b82610615c55d9e5ed91bf5e74705484abc5ffa60407c621bc4",
+    "Md5Crypt_apr1Crypt_Test.java": "629dcb82aeeb00bf739dc2ec0596894dd57c16d3b95dd1b6a031c77125c637e1",
+    "Md5Crypt_md5Crypt_2_Test.java": "6c7510852520c75f6d4501a4967c3972207e86232ddca465f147b9520506ab8e",
+    "Md5Crypt_md5Crypt_3_Test.java": "879cfffc42153af84ced60618a69f43258513a77a345681af2cb6f2678383c43",
+    "Md5Crypt_md5Crypt_4_Test.java": "bd4ab83af2a6ea612db2c04db92de1ebd197eaafd025540ce2803effb077058b",
+    "Md5Crypt_md5Crypt_5_Test.java": "1ff7127a3f85234d50c6a7ed45a546575ed17a6ec2fc81036d792370fc0e2762",
+    "Md5Crypt_md5Crypt_Test.java": "56ecdc204478f6ee471a353c05655cebecfe9053876d4f08f85bcee13759fbe5",
+    "MurmurHash3_hash128_Test.java": "ef65c63db2d92a690847e1072efb6113e85d394205e7f30ad40cafd375a5d39f",
+    "MurmurHash3_hash128x64_2_Test.java": "8911fbb14aa92f6a5f8e7e5e68ba2b1fd669f8d4cdabc42aed27ae560ad3c8c7",
+    "MurmurHash3_hash128x64_Test.java": "d6cbd14756c646c7ad0350884db66ffa1b8f752e05dcea19958e418e4db0f5a7",
+    "MurmurHash3_hash32_2_Test.java": "2616a080ba317989bf4d9a9bb7c13ba2cf31ba73a7ce9c343c5ba7567d3e37c8",
+    "MurmurHash3_hash32_3_Test.java": "e05cf8efedeec132f697d1625866606fc7251af28c681668637031511f48397c",
+    "MurmurHash3_hash32_4_Test.java": "63f20149f61bac2b87e4b28c3f66d81ae8c5686abc79e1dc2ca94f747a0aa521",
+    "MurmurHash3_hash32_Test.java": "7623053137989e911744e58bf84ae406c9b83cd99914662a92647897d7a756f6",
+    "MurmurHash3_hash32x86_2_Test.java": "241e58682feb6d7d57e7251cd298fe4bca5db896ac056270006c9d930f17c019",
+    "MurmurHash3_hash32x86_Test.java": "a3699d0e4e98c47f2f906ecc94fb4f899ca8a98231235bbb15d16c36b833a459",
+    "Sha2Crypt_sha256Crypt_2_Test.java": "f284bae7ac1f200e3d8bdbb77f38d85ca8ffc7b3caa52dd586f2a8f669e03d20",
+    "Sha2Crypt_sha256Crypt_3_Test.java": "6830895924c5c8bc61cff405a52a0537ad79e7005f2e8f1c1d4cc4a52b57480b",
+    "Sha2Crypt_sha256Crypt_Test.java": "4b2d9be376fd7483f823080a3a47f60c99311bc0fd05eff42f51d54029a9ae93",
+    "Sha2Crypt_sha512Crypt_2_Test.java": "4ea1af40be278097919127d60dbf1c1a50e647ace8c980bb7731c4dac5ee07ef",
+    "Sha2Crypt_sha512Crypt_3_Test.java": "49acc0470ae6d3f7625043a4aa7b280aed889e6d82338b9028c6745e8983f710",
+    "Sha2Crypt_sha512Crypt_Test.java": "841cfaeff343c58843b234271b82c0438a55214b0bb3648a60178bf5d019fe41"
+  }
+}

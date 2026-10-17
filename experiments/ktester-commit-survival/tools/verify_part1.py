@@ -70,19 +70,31 @@ if __name__=='__main__':
   assert new['test-path']=='src/test/java/'+new['test-class'].replace('.','/')+'.java'
   assert row=={'old-id':old['id'],'new-id':new['id'],'class':old['class'],'method-signature':old['method-name']}
  assert {k:v for k,v in dataset.items() if k!='focal-methods'}=={k:v for k,v in current.items() if k!='focal-methods'}
- groups=collections.defaultdict(list)
- for m in final:groups[(m['class'],m['method-name'].split('(')[0])].append(m)
- for (cls,name),group in groups.items():
+ frequencies=collections.Counter(m['id'] for m in entries)
+ groups=collections.defaultdict(list);reserved={k for k,v in frequencies.items() if v==1}
+ for old,new in zip(entries,final):
+  if frequencies[old['id']]==1:assert old==new
+  else:groups[(old['class'],old['method-name'].split('(')[0])].append(new)
+ for (cls,name),group in sorted(groups.items()):
   def ordering(m):
    params=m['method-name'].split('(',1)[1][:-1];return (len(params.split(', ')) if params else 0,params)
-  for i,m in enumerate(sorted(group,key=ordering),1):assert m['id']==cls.rsplit('.',1)[1]+'_'+name+('' if i==1 else '_'+str(i))
+  i=1
+  for m in sorted(group,key=ordering):
+   while True:
+    expected_id=cls.rsplit('.',1)[1]+'_'+name+('' if i==1 else '_'+str(i));i+=1
+    if expected_id not in reserved:break
+   assert m['id']==expected_id;reserved.add(expected_id)
+ final_by_method={m['class']+'.'+m['method-name']:m for m in final}
+ for m in authors['focal-methods']:
+  sig=m['class']+'.'+m['method-name']
+  if sig in final_by_method:assert normalize(m)==normalize(final_by_method[sig])
  renumbering=json.loads((EXPERIMENT/'population/id-renumbering-validation.json').read_text())
- assert renumbering['valid'] and renumbering['changed_ids']==sum(a['id']!=b['id'] for a,b in zip(entries,final))==34
+ assert renumbering['valid'] and renumbering['changed_ids']==sum(a['id']!=b['id'] for a,b in zip(entries,final))==23
  for name,digest in renumbering['sha256'].items():assert hashlib.sha256((EXPERIMENT/'population'/name).read_bytes()).hexdigest()==digest
  assert (args.kt/'data/commit-survival/commons-codec/commons-codec').resolve()==(args.kt/'data/projects/commons-codec').resolve()
  protected=subprocess.check_output(['git','-C',str(args.kt),'diff','89a1514','--','code','data/projects','data/project_index','data/dataset_info.json'],text=True);assert not protected
  forbidden=[p for p in subprocess.check_output(['git','-C',str(REPO),'ls-files','--cached'],text=True).splitlines() if p.startswith('experiments/ktester-commit-survival/') and (p.endswith('.jar') or '/work/' in p or '/docs/handover-' in p)]
  assert not forbidden,forbidden
  evidence={'invocation':'python3 experiments/ktester-commit-survival/tools/verify_part1.py --kt '+str(args.kt),'frozen_files_matching_upstream':len(frozen),'method_rows_rechecked':len(rows),'denominator_rows_rechecked':len(denom),'saved_surefire_runs_rechecked':3,'resolved_jars_sha256_verified':sum(x['resolved'] for x in fetched['entries']),'original_runtime_jars_matching_supplied':sum(x.get('identical_to_supplied') is True for x in fetched['entries']),'unresolved_with_exactly_two_failed_attempts':sum(not x['resolved'] for x in fetched['entries']),'protected_kt_tracked_diff_empty':True,'tracked_forbidden_paths':forbidden,'python_helper_syntax':'passed'}
- evidence.update({'population_entries_rechecked':len(entries),'population_unique_ids':len({m['id'] for m in final}),'population_colliding_ids':0,'raw_population_colliding_ids':len(collisions),'raw_population_collision_affected_methods':sum(map(len,collisions.values())),'raw_original_entries_equal_up_to_line_endings':len(checked),'protected_input_hashes_verified':len(population['protected_input_sha256']),'population_valid':True,'renumbered_ids':renumbering['changed_ids'],'non_naming_fields_unchanged':True})
+ evidence.update({'population_entries_rechecked':len(entries),'population_unique_ids':len({m['id'] for m in final}),'population_colliding_ids':0,'raw_population_colliding_ids':len(collisions),'raw_population_collision_affected_methods':sum(map(len,collisions.values())),'raw_original_entries_equal_up_to_line_endings':len(checked),'protected_input_hashes_verified':len(population['protected_input_sha256']),'population_valid':True,'renumbered_ids':renumbering['changed_ids'],'non_naming_fields_unchanged':True,'previously_unique_entries_unchanged':True,'final_original_entries_equal_up_to_line_endings':len(checked)})
  (EXPERIMENT/'results/part1-validation.json').write_text(json.dumps(evidence,indent=2)+'\n');print(json.dumps(evidence,indent=2))

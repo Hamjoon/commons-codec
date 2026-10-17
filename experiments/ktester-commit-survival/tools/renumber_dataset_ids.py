@@ -12,7 +12,7 @@ import shutil
 
 PUBLIC = Path(__file__).resolve().parents[1] / 'population'
 NAMING = {'id', 'test-class', 'test-path'}
-RULE = 'Within each (class, method name) group, sort by parameter count, then parameter-list string (case-sensitive lexicographic order); assign base ID, _2, _3, and so on.'
+RULE = 'Preserve every ID that is unique in the raw output. Within each (class, method name) group, sort only entries whose raw IDs collide by parameter count, then parameter-list string (case-sensitive lexicographic order). Assign the lowest available base ID, _2, _3, and so on, skipping all reserved unique IDs.'
 
 
 def sha(path):
@@ -33,13 +33,23 @@ def order_key(entry):
 def renumber(raw):
     result = copy.deepcopy(raw)
     entries = result['commons-codec']['focal-methods']
+    frequencies = collections.Counter(m['id'] for m in entries)
+    reserved = {ident for ident, count in frequencies.items() if count == 1}
     groups = collections.defaultdict(list)
     for entry in entries:
-        groups[group_key(entry)].append(entry)
-    for (cls, method), group in groups.items():
+        if frequencies[entry['id']] > 1:
+            groups[group_key(entry)].append(entry)
+    for (cls, method), group in sorted(groups.items()):
         assert len({m['method-name'] for m in group}) == len(group)
-        for index, entry in enumerate(sorted(group, key=order_key), 1):
-            ident = cls.rsplit('.', 1)[1] + '_' + method + ('' if index == 1 else '_' + str(index))
+        base = cls.rsplit('.', 1)[1] + '_' + method
+        index = 1
+        for entry in sorted(group, key=order_key):
+            while True:
+                ident = base + ('' if index == 1 else '_' + str(index))
+                index += 1
+                if ident not in reserved:
+                    break
+            reserved.add(ident)
             if ident != entry['id']:
                 entry['id'] = ident
                 entry['test-class'] = entry['package'] + '.' + ident + '_Test'
@@ -64,10 +74,11 @@ def validate(raw, result):
     frequencies = collections.Counter(m['id'] for m in old)
     changed = [{'old-id': a['id'], 'new-id': b['id'], 'class': a['class'], 'method-signature': a['method-name']}
                for a, b in zip(old, new) if a['id'] != b['id']]
+    assert all(a == b for a, b in zip(old, new) if frequencies[a['id']] == 1), 'Previously unique entry changed'
     return {'valid': True, 'rule': RULE, 'entries': len(new), 'unique_ids': len({m['id'] for m in new}),
             'raw_unique_ids': len(frequencies), 'changed_ids': len(changed), 'unchanged_ids': len(new) - len(changed),
             'previously_unique_ids_changed': [m for m in changed if frequencies[m['old-id']] == 1],
-            'non_naming_fields_unchanged': True, 'entry_order_unchanged': True,
+            'non_naming_fields_unchanged': True, 'entry_order_unchanged': True, 'previously_unique_entries_unchanged': True,
             'test_class_and_path_consistent': True, 'nonempty_code_fields': True, 'idempotent': True}
 
 
@@ -104,11 +115,8 @@ def main():
     lines = [readme.rstrip(), '', '## Renumbering', '', RULE, '',
              'Invocation (from commons-codec): `' + validation['invocation'] + '`. Evidence: id-renumbering-validation.json; id-renumbering.csv lists all entries, including unchanged IDs.', '',
              f"Validation: {validation['entries']} entries, {validation['unique_ids']} distinct IDs; {validation['changed_ids']} IDs changed and {validation['unchanged_ids']} remained unchanged. Every test-class and test-path follows the author naming convention. No other field changed, including focal-method and class-code; entry order is preserved. Applying the transformation again is idempotent.", '',
-             f"The explicit sort also changes {len(validation['previously_unique_ids_changed'])} previously unique IDs. The addendum’s sentence claiming only duplicates change does not hold for this ordering; the explicit sort rule governs. Affected previously unique IDs:", '',
-             '| Method | Old ID | New ID |', '|---|---|---|']
-    for item in validation['previously_unique_ids_changed']:
-        lines.append(f"| {item['class']}.{item['method-signature']} | {item['old-id']} | {item['new-id']} |")
-    lines += ['', 'The original Md5Crypt.md5Crypt(byte[], String, String, Random) entry is now Md5Crypt_md5Crypt_5. Its id, test-class and test-path change; all other original-entry fields still match the authors up to line endings. The four Base32/Base64 original entries keep their naming fields. No Java source, packaged jar, authors’ dataset, prompts or settings were changed.']
+             'Gary clarified that preserving previously unique IDs governs the ambiguous wording in addendum 3. Only entries with colliding raw IDs participate in sorting; all previously unique entries are preserved byte-for-byte at the field level.', '',
+             'All five original non-private focal entries still match every author field up to line endings, including Md5Crypt_md5Crypt. No Java source, packaged jar, authors’ dataset, prompts or settings were changed.']
     (directory / 'README.md').write_text('\n'.join(lines) + '\n')
     for name in ['dataset_info.raw.json', 'dataset_info.json', 'id-renumbering.csv', 'id-renumbering-validation.json', 'README.md']:
         shutil.copyfile(directory / name, PUBLIC / name)

@@ -18,6 +18,8 @@
   "raw_original_entries_equal_up_to_line_endings": 5,
   "protected_input_hashes_verified": 230,
   "population_valid": true,
-  "renumbered_ids": 34,
-  "non_naming_fields_unchanged": true
+  "renumbered_ids": 23,
+  "non_naming_fields_unchanged": true,
+  "previously_unique_entries_unchanged": true,
+  "final_original_entries_equal_up_to_line_endings": 5
 }

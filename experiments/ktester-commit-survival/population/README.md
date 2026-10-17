@@ -87,22 +87,12 @@ dataset_meta.json, the preserved dataset_info.raw.json and the renumbered datase
 
 ## Renumbering
 
-Within each (class, method name) group, sort by parameter count, then parameter-list string (case-sensitive lexicographic order); assign base ID, _2, _3, and so on.
+Preserve every ID that is unique in the raw output. Within each (class, method name) group, sort only entries whose raw IDs collide by parameter count, then parameter-list string (case-sensitive lexicographic order). Assign the lowest available base ID, _2, _3, and so on, skipping all reserved unique IDs.
 
 Invocation (from commons-codec): `python3 experiments/ktester-commit-survival/tools/renumber_dataset_ids.py --kt /Users/donggi/_projects/experiment-projects/KTester`. Evidence: id-renumbering-validation.json; id-renumbering.csv lists all entries, including unchanged IDs.
 
-Validation: 66 entries, 66 distinct IDs; 34 IDs changed and 32 remained unchanged. Every test-class and test-path follows the author naming convention. No other field changed, including focal-method and class-code; entry order is preserved. Applying the transformation again is idempotent.
+Validation: 66 entries, 66 distinct IDs; 23 IDs changed and 43 remained unchanged. Every test-class and test-path follows the author naming convention. No other field changed, including focal-method and class-code; entry order is preserved. Applying the transformation again is idempotent.
 
-The explicit sort also changes 7 previously unique IDs. The addendum’s sentence claiming only duplicates change does not hold for this ordering; the explicit sort rule governs. Affected previously unique IDs:
+Gary clarified that preserving previously unique IDs governs the ambiguous wording in addendum 3. Only entries with colliding raw IDs participate in sorting; all previously unique entries are preserved byte-for-byte at the field level.
 
-| Method | Old ID | New ID |
-|---|---|---|
-| org.apache.commons.codec.digest.Md5Crypt.md5Crypt(byte[], String, String, Random) | Md5Crypt_md5Crypt | Md5Crypt_md5Crypt_5 |
-| org.apache.commons.codec.binary.Base64.decodeBase64(byte[]) | Base64_decodeBase64 | Base64_decodeBase64_2 |
-| org.apache.commons.codec.binary.Base64.decodeBase64(String) | Base64_decodeBase64_2 | Base64_decodeBase64 |
-| org.apache.commons.codec.binary.Base64.isBase64(byte) | Base64_isBase64 | Base64_isBase64_2 |
-| org.apache.commons.codec.digest.Md5Crypt.apr1Crypt(byte[]) | Md5Crypt_apr1Crypt | Md5Crypt_apr1Crypt_2 |
-| org.apache.commons.codec.digest.MurmurHash3.hash128(byte[]) | MurmurHash3_hash128 | MurmurHash3_hash128_2 |
-| org.apache.commons.codec.digest.MurmurHash3.hash32(byte[]) | MurmurHash3_hash32 | MurmurHash3_hash32_2 |
-
-The original Md5Crypt.md5Crypt(byte[], String, String, Random) entry is now Md5Crypt_md5Crypt_5. Its id, test-class and test-path change; all other original-entry fields still match the authors up to line endings. The four Base32/Base64 original entries keep their naming fields. No Java source, packaged jar, authors’ dataset, prompts or settings were changed.
+All five original non-private focal entries still match every author field up to line endings, including Md5Crypt_md5Crypt. No Java source, packaged jar, authors’ dataset, prompts or settings were changed.

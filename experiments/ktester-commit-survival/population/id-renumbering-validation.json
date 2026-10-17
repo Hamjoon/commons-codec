@@ -1,64 +1,22 @@
 {
   "valid": true,
-  "rule": "Within each (class, method name) group, sort by parameter count, then parameter-list string (case-sensitive lexicographic order); assign base ID, _2, _3, and so on.",
+  "rule": "Preserve every ID that is unique in the raw output. Within each (class, method name) group, sort only entries whose raw IDs collide by parameter count, then parameter-list string (case-sensitive lexicographic order). Assign the lowest available base ID, _2, _3, and so on, skipping all reserved unique IDs.",
   "entries": 66,
   "unique_ids": 66,
   "raw_unique_ids": 43,
-  "changed_ids": 34,
-  "unchanged_ids": 32,
-  "previously_unique_ids_changed": [
-    {
-      "old-id": "Md5Crypt_md5Crypt",
-      "new-id": "Md5Crypt_md5Crypt_5",
-      "class": "org.apache.commons.codec.digest.Md5Crypt",
-      "method-signature": "md5Crypt(byte[], String, String, Random)"
-    },
-    {
-      "old-id": "Base64_decodeBase64",
-      "new-id": "Base64_decodeBase64_2",
-      "class": "org.apache.commons.codec.binary.Base64",
-      "method-signature": "decodeBase64(byte[])"
-    },
-    {
-      "old-id": "Base64_decodeBase64_2",
-      "new-id": "Base64_decodeBase64",
-      "class": "org.apache.commons.codec.binary.Base64",
-      "method-signature": "decodeBase64(String)"
-    },
-    {
-      "old-id": "Base64_isBase64",
-      "new-id": "Base64_isBase64_2",
-      "class": "org.apache.commons.codec.binary.Base64",
-      "method-signature": "isBase64(byte)"
-    },
-    {
-      "old-id": "Md5Crypt_apr1Crypt",
-      "new-id": "Md5Crypt_apr1Crypt_2",
-      "class": "org.apache.commons.codec.digest.Md5Crypt",
-      "method-signature": "apr1Crypt(byte[])"
-    },
-    {
-      "old-id": "MurmurHash3_hash128",
-      "new-id": "MurmurHash3_hash128_2",
-      "class": "org.apache.commons.codec.digest.MurmurHash3",
-      "method-signature": "hash128(byte[])"
-    },
-    {
-      "old-id": "MurmurHash3_hash32",
-      "new-id": "MurmurHash3_hash32_2",
-      "class": "org.apache.commons.codec.digest.MurmurHash3",
-      "method-signature": "hash32(byte[])"
-    }
-  ],
+  "changed_ids": 23,
+  "unchanged_ids": 43,
+  "previously_unique_ids_changed": [],
   "non_naming_fields_unchanged": true,
   "entry_order_unchanged": true,
+  "previously_unique_entries_unchanged": true,
   "test_class_and_path_consistent": true,
   "nonempty_code_fields": true,
   "idempotent": true,
   "invocation": "python3 experiments/ktester-commit-survival/tools/renumber_dataset_ids.py --kt /Users/donggi/_projects/experiment-projects/KTester",
   "sha256": {
     "dataset_info.raw.json": "1d649d45b6f64c40d5cbac56e26967116843ae1f8f9aa682f533bb3da374f188",
-    "dataset_info.json": "21f9a2d734298bef906b1314073e32d9a25ddb895c74053368822c8f33644046",
-    "id-renumbering.csv": "e9d0f0ece42ab5c36346be0c2fdf15d36adf14c841b9e82dc94d582d498fe58d"
+    "dataset_info.json": "2c76f9695a84dcfb01d9daab7cf9b916f2803bace58f0dc0ef494e50c30df91f",
+    "id-renumbering.csv": "902bba6b52ea8fee6c98bbdb68ac922dc2e708cbdc3aa8abdc10594537ff0df6"
   }
 }

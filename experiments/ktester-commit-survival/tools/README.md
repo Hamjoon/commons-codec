@@ -69,6 +69,10 @@ The updated Part 3 addendum defines B using every `changes-src-main=yes` index a
 
 The revised aggregation writes all/scope post-image columns and all-lines pre-image columns in `changed-lines.csv`. Table 3 has all-production rows and two totals rows (all files and five scope files); it has no separate table3b. The single all-lines Table 4 stays in the repository and is omitted from the handover report. `coverage-t.md` covers only the five scope files. All line counts and percentages are derived from the raw XML and validated against its line CSV.
 
+`finish_part3.py` is a host-side continuation for the long-running measurement. It never starts or restarts Phase A. It waits for the existing Phase A completion record, verifies every raw record, creates the prescribed stage commits with the Codex trailer, derives survival, wires the expanded coverage extractor only after Phase A is committed, runs Phase B with four workers, derives coverage, and renders the final ignored handover. It uses a process lock and an atomic stage ledger at `work/part3-continuation.json`. Before Aggregation 2 it re-reads the addendum and compares its digest with the reviewed version; a change stops continuation for inspection. It also stops on failed verification, worker failure, or unrelated staged changes, recording the reason in the ledger. It does not push. Do not launch manual stage commands while this continuation is active.
+
+Host preflight: `python3 experiments/ktester-commit-survival/tools/finish_part3.py --kt /Users/donggi/_projects/experiment-projects/KTester --check`. Remove `--check` to continue the existing Phase A run. The Phase B container has the stable name `ktester-commit-survival-phase-b`, allowing a resumed continuation to wait for an already-running Phase B without duplicating workers. Stage logs are under KTester `evaluation/logs/commit-survival-part3-*.log`.
+
 All commands below run inside the prescribed container, from `/repo/experiments/ktester-commit-survival`:
 
 ```sh

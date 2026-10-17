@@ -9,11 +9,21 @@
       "new_unique": 126,
       "cumulative_denominator": 126,
       "duplicates_removed": 0
+    },
+    {
+      "round": 2,
+      "files_produced": 52,
+      "files_compiled": 23,
+      "methods_listed": 252,
+      "pass3": 167,
+      "new_unique": 164,
+      "cumulative_denominator": 290,
+      "duplicates_removed": 3
     }
   ],
-  "llm_denominator": 126,
+  "llm_denominator": 290,
   "developer_denominator": 143,
-  "duplicates_removed": 0,
-  "shortfall": 17,
+  "duplicates_removed": 3,
+  "shortfall": 0,
   "frozen": false
 }

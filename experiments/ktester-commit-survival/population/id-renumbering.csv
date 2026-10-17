@@ -1,0 +1,67 @@
+old-id,new-id,class,method-signature
+Base64_decode,Base64_decode,org.apache.commons.codec.binary.Base64,"decode(byte[], int, int, Context)"
+Base32_decode,Base32_decode,org.apache.commons.codec.binary.Base32,"decode(byte[], int, int, Context)"
+Base64_encode,Base64_encode,org.apache.commons.codec.binary.Base64,"encode(byte[], int, int, Context)"
+Base32_encode,Base32_encode,org.apache.commons.codec.binary.Base32,"encode(byte[], int, int, Context)"
+Md5Crypt_md5Crypt,Md5Crypt_md5Crypt_5,org.apache.commons.codec.digest.Md5Crypt,"md5Crypt(byte[], String, String, Random)"
+Base32_builder,Base32_builder,org.apache.commons.codec.binary.Base32,builder()
+Base32_getLineSeparator,Base32_getLineSeparator,org.apache.commons.codec.binary.Base32,getLineSeparator()
+Base32_isInAlphabet,Base32_isInAlphabet,org.apache.commons.codec.binary.Base32,isInAlphabet(byte)
+Base64_builder,Base64_builder,org.apache.commons.codec.binary.Base64,builder()
+Base64_decodeBase64,Base64_decodeBase64_2,org.apache.commons.codec.binary.Base64,decodeBase64(byte[])
+Base64_decodeBase64_2,Base64_decodeBase64,org.apache.commons.codec.binary.Base64,decodeBase64(String)
+Base64_decodeInteger,Base64_decodeInteger,org.apache.commons.codec.binary.Base64,decodeInteger(byte[])
+Base64_encodeBase64,Base64_encodeBase64,org.apache.commons.codec.binary.Base64,encodeBase64(byte[])
+Base64_encodeBase64_2,Base64_encodeBase64_2,org.apache.commons.codec.binary.Base64,"encodeBase64(byte[], boolean)"
+Base64_encodeBase64_2,Base64_encodeBase64_3,org.apache.commons.codec.binary.Base64,"encodeBase64(byte[], boolean, boolean)"
+Base64_encodeBase64_2,Base64_encodeBase64_4,org.apache.commons.codec.binary.Base64,"encodeBase64(byte[], boolean, boolean, int)"
+Base64_encodeBase64Chunked,Base64_encodeBase64Chunked,org.apache.commons.codec.binary.Base64,encodeBase64Chunked(byte[])
+Base64_encodeBase64String,Base64_encodeBase64String,org.apache.commons.codec.binary.Base64,encodeBase64String(byte[])
+Base64_encodeBase64URLSafe,Base64_encodeBase64URLSafe,org.apache.commons.codec.binary.Base64,encodeBase64URLSafe(byte[])
+Base64_encodeBase64URLSafeString,Base64_encodeBase64URLSafeString,org.apache.commons.codec.binary.Base64,encodeBase64URLSafeString(byte[])
+Base64_encodeInteger,Base64_encodeInteger,org.apache.commons.codec.binary.Base64,encodeInteger(BigInteger)
+Base64_isArrayByteBase64,Base64_isArrayByteBase64,org.apache.commons.codec.binary.Base64,isArrayByteBase64(byte[])
+Base64_isBase64,Base64_isBase64_2,org.apache.commons.codec.binary.Base64,isBase64(byte)
+Base64_isBase64_2,Base64_isBase64_3,org.apache.commons.codec.binary.Base64,isBase64(byte[])
+Base64_isBase64_2,Base64_isBase64,org.apache.commons.codec.binary.Base64,isBase64(String)
+Base64_toIntegerBytes,Base64_toIntegerBytes,org.apache.commons.codec.binary.Base64,toIntegerBytes(BigInteger)
+Base64_getLineSeparator,Base64_getLineSeparator,org.apache.commons.codec.binary.Base64,getLineSeparator()
+Base64_isInAlphabet,Base64_isInAlphabet,org.apache.commons.codec.binary.Base64,isInAlphabet(byte)
+Base64_isUrlSafe,Base64_isUrlSafe,org.apache.commons.codec.binary.Base64,isUrlSafe()
+Md5Crypt_apr1Crypt,Md5Crypt_apr1Crypt_2,org.apache.commons.codec.digest.Md5Crypt,apr1Crypt(byte[])
+Md5Crypt_apr1Crypt_2,Md5Crypt_apr1Crypt_4,org.apache.commons.codec.digest.Md5Crypt,"apr1Crypt(byte[], Random)"
+Md5Crypt_apr1Crypt_2,Md5Crypt_apr1Crypt_5,org.apache.commons.codec.digest.Md5Crypt,"apr1Crypt(byte[], String)"
+Md5Crypt_apr1Crypt_2,Md5Crypt_apr1Crypt,org.apache.commons.codec.digest.Md5Crypt,apr1Crypt(String)
+Md5Crypt_apr1Crypt_2,Md5Crypt_apr1Crypt_3,org.apache.commons.codec.digest.Md5Crypt,"apr1Crypt(String, String)"
+Md5Crypt_md5Crypt_2,Md5Crypt_md5Crypt,org.apache.commons.codec.digest.Md5Crypt,md5Crypt(byte[])
+Md5Crypt_md5Crypt_2,Md5Crypt_md5Crypt_2,org.apache.commons.codec.digest.Md5Crypt,"md5Crypt(byte[], Random)"
+Md5Crypt_md5Crypt_2,Md5Crypt_md5Crypt_3,org.apache.commons.codec.digest.Md5Crypt,"md5Crypt(byte[], String)"
+Md5Crypt_md5Crypt_2,Md5Crypt_md5Crypt_4,org.apache.commons.codec.digest.Md5Crypt,"md5Crypt(byte[], String, String)"
+MurmurHash3_hash128,MurmurHash3_hash128_2,org.apache.commons.codec.digest.MurmurHash3,hash128(byte[])
+MurmurHash3_hash128_2,MurmurHash3_hash128_3,org.apache.commons.codec.digest.MurmurHash3,"hash128(byte[], int, int, int)"
+MurmurHash3_hash128_2,MurmurHash3_hash128,org.apache.commons.codec.digest.MurmurHash3,hash128(String)
+MurmurHash3_hash128x64,MurmurHash3_hash128x64,org.apache.commons.codec.digest.MurmurHash3,hash128x64(byte[])
+MurmurHash3_hash128x64_2,MurmurHash3_hash128x64_2,org.apache.commons.codec.digest.MurmurHash3,"hash128x64(byte[], int, int, int)"
+MurmurHash3_hash32,MurmurHash3_hash32_2,org.apache.commons.codec.digest.MurmurHash3,hash32(byte[])
+MurmurHash3_hash32_2,MurmurHash3_hash32_4,org.apache.commons.codec.digest.MurmurHash3,"hash32(byte[], int)"
+MurmurHash3_hash32_2,MurmurHash3_hash32_7,org.apache.commons.codec.digest.MurmurHash3,"hash32(byte[], int, int)"
+MurmurHash3_hash32_2,MurmurHash3_hash32_9,org.apache.commons.codec.digest.MurmurHash3,"hash32(byte[], int, int, int)"
+MurmurHash3_hash32_2,MurmurHash3_hash32_3,org.apache.commons.codec.digest.MurmurHash3,hash32(long)
+MurmurHash3_hash32_2,MurmurHash3_hash32_5,org.apache.commons.codec.digest.MurmurHash3,"hash32(long, int)"
+MurmurHash3_hash32_2,MurmurHash3_hash32_6,org.apache.commons.codec.digest.MurmurHash3,"hash32(long, long)"
+MurmurHash3_hash32_2,MurmurHash3_hash32_8,org.apache.commons.codec.digest.MurmurHash3,"hash32(long, long, int)"
+MurmurHash3_hash32_2,MurmurHash3_hash32,org.apache.commons.codec.digest.MurmurHash3,hash32(String)
+MurmurHash3_hash32x86,MurmurHash3_hash32x86,org.apache.commons.codec.digest.MurmurHash3,hash32x86(byte[])
+MurmurHash3_hash32x86_2,MurmurHash3_hash32x86_2,org.apache.commons.codec.digest.MurmurHash3,"hash32x86(byte[], int, int, int)"
+MurmurHash3_hash64,MurmurHash3_hash64,org.apache.commons.codec.digest.MurmurHash3,hash64(byte[])
+MurmurHash3_hash64_2,MurmurHash3_hash64_5,org.apache.commons.codec.digest.MurmurHash3,"hash64(byte[], int, int)"
+MurmurHash3_hash64_2,MurmurHash3_hash64_6,org.apache.commons.codec.digest.MurmurHash3,"hash64(byte[], int, int, int)"
+MurmurHash3_hash64_2,MurmurHash3_hash64_2,org.apache.commons.codec.digest.MurmurHash3,hash64(int)
+MurmurHash3_hash64_2,MurmurHash3_hash64_3,org.apache.commons.codec.digest.MurmurHash3,hash64(long)
+MurmurHash3_hash64_2,MurmurHash3_hash64_4,org.apache.commons.codec.digest.MurmurHash3,hash64(short)
+Sha2Crypt_sha256Crypt,Sha2Crypt_sha256Crypt,org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt(byte[])
+Sha2Crypt_sha256Crypt_2,Sha2Crypt_sha256Crypt_2,org.apache.commons.codec.digest.Sha2Crypt,"sha256Crypt(byte[], String)"
+Sha2Crypt_sha256Crypt_2,Sha2Crypt_sha256Crypt_3,org.apache.commons.codec.digest.Sha2Crypt,"sha256Crypt(byte[], String, Random)"
+Sha2Crypt_sha512Crypt,Sha2Crypt_sha512Crypt,org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt(byte[])
+Sha2Crypt_sha512Crypt_2,Sha2Crypt_sha512Crypt_2,org.apache.commons.codec.digest.Sha2Crypt,"sha512Crypt(byte[], String)"
+Sha2Crypt_sha512Crypt_2,Sha2Crypt_sha512Crypt_3,org.apache.commons.codec.digest.Sha2Crypt,"sha512Crypt(byte[], String, Random)"

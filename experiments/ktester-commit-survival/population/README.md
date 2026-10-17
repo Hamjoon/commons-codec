@@ -2,7 +2,7 @@
 
 The second addendum fixes membership at the existing candidates.csv. The two private original focal methods are explicitly excluded. No visibility changes or wrappers were used.
 
-Status: **blocked_dataset_prepare_validation**. The raw DatasetPrepare output is diagnostic evidence and is not ready for test generation.
+Status: **validated after addendum 3 renumbering**. dataset_info.json contains 66 unique IDs; dataset_info.raw.json preserves the original extraction. Historical raw-output checks are retained below.
 
 Counts and checks below come from population-validation.json, produced from KTester/docker with:
 
@@ -10,7 +10,7 @@ Counts and checks below come from population-validation.json, produced from KTes
 docker compose run --rm -v /Users/donggi/_projects/experiment-projects/commons-codec:/repo ktester bash -c 'python /work/docker/part1_codec_dataset_prepare.py'
 ```
 
-Source: the authors’ data/projects/commons-codec snapshot through the local commons-codec symlink. The bundled jars and Stage 0 JVM settings are unchanged. Metadata lists the five included original focal methods first (authors’ order), then the remaining candidates in CSV order, preserving original base IDs for the field comparison. No output IDs were rewritten.
+Source: the authors’ data/projects/commons-codec snapshot through the local commons-codec symlink. The bundled jars and Stage 0 JVM settings are unchanged. Metadata lists the five included original focal methods first (authors’ order), then the remaining candidates in CSV order, preserving original base IDs for the field comparison. That describes raw extraction order; addendum 3 naming changes are recorded below.
 
 The earlier population-enumeration.json, enumeration-run.txt and docker/part1_codec_population.py preserve the first enumeration and its then-required stop. Their private-method inclusion conflict is superseded by addendum 2; do not rerun the historical driver to resume generation.
 
@@ -53,7 +53,7 @@ Total: 66; within 60–100: True.
 - `org.apache.commons.codec.digest.Sha2Crypt.sha256Crypt`: `sha256Crypt(byte[])`; `sha256Crypt(byte[], String)`; `sha256Crypt(byte[], String, Random)`
 - `org.apache.commons.codec.digest.Sha2Crypt.sha512Crypt`: `sha512Crypt(byte[])`; `sha512Crypt(byte[], String)`; `sha512Crypt(byte[], String, Random)`
 
-## DatasetPrepare validation
+## Raw DatasetPrepare validation (historical)
 
 Generated entries: 66. Distinct IDs: 43. Colliding IDs: 9; affected methods: 32. Missing methods: 0; unexpected methods: 0; empty fields: 0.
 
@@ -69,7 +69,7 @@ Generated entries: 66. Distinct IDs: 43. Colliding IDs: 9; affected methods: 32.
 | Sha2Crypt_sha256Crypt_2 | org.apache.commons.codec.digest.Sha2Crypt.sha256Crypt(byte[], String)<br>org.apache.commons.codec.digest.Sha2Crypt.sha256Crypt(byte[], String, Random) |
 | Sha2Crypt_sha512Crypt_2 | org.apache.commons.codec.digest.Sha2Crypt.sha512Crypt(byte[], String)<br>org.apache.commons.codec.digest.Sha2Crypt.sha512Crypt(byte[], String, Random) |
 
-## Original-entry field comparison
+## Raw original-entry field comparison
 
 Every field is compared, permitting CRLF/LF differences only. Full per-field evidence is in population-validation.json.
 
@@ -83,10 +83,26 @@ Every field is compared, permitting CRLF/LF differences only. Full per-field evi
 
 The protected-input SHA-256 manifest matches before and after extraction. This includes the authors’ dataset, snapshot sources/libs, packaged extractor jars, DatasetPrepare.java and settings.py. No model call or index rebuild occurred.
 
-Raw dataset_meta.json and dataset_info.json are retained in this directory and copied byte-for-byte to the public experiment population directory. The local source symlink is ignored, and no jars are copied.
+dataset_meta.json, the preserved dataset_info.raw.json and the renumbered dataset_info.json are tracked in both repositories. The local source symlink is ignored, and no jars are copied.
 
-## Stop
+## Renumbering
 
-The addendum explicitly requires stopping on an ID collision or missing/empty entry. Step 5 was not entered. The unmodified DatasetPrepare result has not been renumbered, split into smaller runs, or patched.
+Within each (class, method name) group, sort by parameter count, then parameter-list string (case-sensitive lexicographic order); assign base ID, _2, _3, and so on.
 
-TODO (Gary): Decide how to address the recorded DatasetPrepare validation failures while retaining the fixed 66-method population; Java changes and output ID repairs are not authorized by this addendum.
+Invocation (from commons-codec): `python3 experiments/ktester-commit-survival/tools/renumber_dataset_ids.py --kt /Users/donggi/_projects/experiment-projects/KTester`. Evidence: id-renumbering-validation.json; id-renumbering.csv lists all entries, including unchanged IDs.
+
+Validation: 66 entries, 66 distinct IDs; 34 IDs changed and 32 remained unchanged. Every test-class and test-path follows the author naming convention. No other field changed, including focal-method and class-code; entry order is preserved. Applying the transformation again is idempotent.
+
+The explicit sort also changes 7 previously unique IDs. The addendum’s sentence claiming only duplicates change does not hold for this ordering; the explicit sort rule governs. Affected previously unique IDs:
+
+| Method | Old ID | New ID |
+|---|---|---|
+| org.apache.commons.codec.digest.Md5Crypt.md5Crypt(byte[], String, String, Random) | Md5Crypt_md5Crypt | Md5Crypt_md5Crypt_5 |
+| org.apache.commons.codec.binary.Base64.decodeBase64(byte[]) | Base64_decodeBase64 | Base64_decodeBase64_2 |
+| org.apache.commons.codec.binary.Base64.decodeBase64(String) | Base64_decodeBase64_2 | Base64_decodeBase64 |
+| org.apache.commons.codec.binary.Base64.isBase64(byte) | Base64_isBase64 | Base64_isBase64_2 |
+| org.apache.commons.codec.digest.Md5Crypt.apr1Crypt(byte[]) | Md5Crypt_apr1Crypt | Md5Crypt_apr1Crypt_2 |
+| org.apache.commons.codec.digest.MurmurHash3.hash128(byte[]) | MurmurHash3_hash128 | MurmurHash3_hash128_2 |
+| org.apache.commons.codec.digest.MurmurHash3.hash32(byte[]) | MurmurHash3_hash32 | MurmurHash3_hash32_2 |
+
+The original Md5Crypt.md5Crypt(byte[], String, String, Random) entry is now Md5Crypt_md5Crypt_5. Its id, test-class and test-path change; all other original-entry fields still match the authors up to line endings. The four Base32/Base64 original entries keep their naming fields. No Java source, packaged jar, authors’ dataset, prompts or settings were changed.

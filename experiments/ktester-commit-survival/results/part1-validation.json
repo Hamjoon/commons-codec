@@ -11,11 +11,13 @@
   "tracked_forbidden_paths": [],
   "python_helper_syntax": "passed",
   "population_entries_rechecked": 66,
-  "population_unique_ids": 43,
-  "population_colliding_ids": 9,
-  "population_collision_affected_methods": 32,
-  "original_entries_equal_up_to_line_endings": 5,
+  "population_unique_ids": 66,
+  "population_colliding_ids": 0,
+  "raw_population_colliding_ids": 9,
+  "raw_population_collision_affected_methods": 32,
+  "raw_original_entries_equal_up_to_line_endings": 5,
   "protected_input_hashes_verified": 230,
-  "population_valid": false,
-  "mandatory_stop_correctly_recorded": true
+  "population_valid": true,
+  "renumbered_ids": 34,
+  "non_naming_fields_unchanged": true
 }

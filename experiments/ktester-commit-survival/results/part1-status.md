@@ -1,24 +1,27 @@
-# Part 1 status after addendum
+# Part 1 status after addendum 2
 
-The classpath and commit-range decisions are implemented. Part 1 stops during Step 4 because the fixed population requirements conflict: private methods are excluded, but the original scoped dataset contains private focal methods that are required to be included. No DatasetPrepare run or persistent compose override was performed after this stop.
+Part 1 remains incomplete at Step 4: DatasetPrepare produced 66 entries, but only 43 distinct IDs. 9 IDs collide across 32 methods. The second addendum requires stopping on collisions, so Step 5 was not entered. Raw output is retained without ID repairs or Java patches.
 
-All numbers: `python3 experiments/ktester-commit-survival/tools/report_part1.py`, reading results/commits-check.json, results/developer-baseline.json, results/classpath-fetch.json, results/coverage-smoke.json and population/population-enumeration.json. Their measurement invocations are recorded in the corresponding reports.
+All 66 candidate methods are present with non-empty focal-method and class-code fields. All 5 included original focal entries match every author field up to CRLF/LF differences. The two private originals are excluded as authorized.
 
-- Range: 539 first-parent commits; 187 change src/main; 50 change scoped source files.
-- Developer denominator unchanged: 143 methods pass all runs, from 144 scoped methods. The skipped Base64Test.testCodec265 remains excluded.
-- Current artifact set: 20/20 resolved with recorded SHA-256. EvoSuite removed; coverage uses released JaCoCo. The XML has 70 Md5Crypt.java line entries and 57 covered lines.
-- Eligible population: 66 methods in 5 classes, within the required bound. Original scoped focal methods missing under the non-private rule: 2.
-- Overload groups enumerated: 12. Generated-ID uniqueness and original-entry round trips were not run because the earlier fixed-decision conflict requires stopping.
+Evidence and exact invocation: population/population-validation.json and population/README.md. The latter lists every affected signature. The raw metadata and dataset output are tracked in both repositories as diagnostic evidence, not a generation-ready dataset.
 
-## Conflicting original focal methods
+This report is rendered by `python3 experiments/ktester-commit-survival/tools/report_part1.py` from results/commits-check.json, results/developer-baseline.json and population/population-validation.json.
 
-- `org.apache.commons.codec.digest.MurmurHash3.hash128x64Internal(byte[], int, int, long)`: private at upstream line 515 (Spoon evidence in population-enumeration.json).
-- `org.apache.commons.codec.digest.Sha2Crypt.sha2Crypt(byte[], String, String, int, String)`: private at upstream line 170 (Spoon evidence in population-enumeration.json).
+Range: 539 verified first-parent commits, including 50 scope-changing commits. Developer denominator: 143, unchanged. The approved 20-artifact classpath and verified JaCoCo coverage mechanism remain unchanged (results/classpath-fetch.json and results/coverage-smoke.json).
 
-The candidates and enumeration JSON are committed as diagnostic evidence in both repositories. No dataset_meta.json or dataset_info.json exists for this population. No source/settings/index changes, model calls, generated tests, or pushes occurred. Temporary compose run -v mounts preserve the original cache and mounts; Step 5 persistent wiring was not reached.
+No model calls, pushes, source/settings/index changes, or test generation occurred.
 
 ## First attempt
 
-The initial run stopped at Step 3 after repeated Maven Central failures for EvoSuite and JaCoCo snapshots (commit 05e849ed). The user addendum excluded EvoSuite, selected released coverage jars, and extended the range. Those original blockers are resolved.
+The first attempt stopped at Step 3 (commons-codec 05e849ed) after repeated Maven Central failures for EvoSuite 1.2.0 and JaCoCo 0.8.13-SNAPSHOT. Addendum 1 removed EvoSuite and selected released JaCoCo 0.8.12; all artifacts now resolve. It also extended the range to 539 commits.
 
-TODO (Gary): Reconcile the requirement to include the original private focal methods with the non-private population rule. DatasetPrepare itself also rejects private methods; do not silently patch it or drop required methods. Then resume metadata generation, overload-ID validation and Step 5 wiring.
+## Second attempt
+
+The next attempt stopped at Step 4 (commons-codec f2368151; KTester 2650707): the requirement to include original private focal methods conflicted with the non-private population rule. Addendum 2 explicitly excluded MurmurHash3.hash128x64Internal and Sha2Crypt.sha2Crypt and fixed membership at the enumerated 66 methods. That conflict is resolved. The historical enumeration JSON/driver retain their original stop record; population-validation.json records the current state.
+
+## Current stop and remaining work
+
+The unmodified packaged DatasetPrepare reused overload IDs. Its source updates the suffixed ID counter instead of the base counter in getMethodInfo; the observed collisions are recorded without repairing the output. No missing/empty entries or author-field mismatches were observed. The persistent compose override and final successful Part 1 completion remain pending under the explicit stop rule.
+
+TODO (Gary): Decide how to resolve the DatasetPrepare ID collisions while keeping all 66 methods. The current instructions prohibit patching DatasetPrepare.java; no Java patch or output-ID repair was applied.

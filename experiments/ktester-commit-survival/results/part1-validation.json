@@ -9,5 +9,13 @@
   "unresolved_with_exactly_two_failed_attempts": 0,
   "protected_kt_tracked_diff_empty": true,
   "tracked_forbidden_paths": [],
-  "python_helper_syntax": "passed"
+  "python_helper_syntax": "passed",
+  "population_entries_rechecked": 66,
+  "population_unique_ids": 43,
+  "population_colliding_ids": 9,
+  "population_collision_affected_methods": 32,
+  "original_entries_equal_up_to_line_endings": 5,
+  "protected_input_hashes_verified": 230,
+  "population_valid": false,
+  "mandatory_stop_correctly_recorded": true
 }

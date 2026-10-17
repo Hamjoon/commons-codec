@@ -1,28 +1,42 @@
 {
-  "status": "blocked_fixed_decisions_conflict",
+  "status": "blocked_dataset_prepare_validation",
   "stopped_at_step": 4,
   "completed": [
     "original Steps 1-2",
-    "addendum Decision 1: classpath and released coverage tools",
-    "addendum Decision 2: extended commit range"
+    "addendum 1: classpath and released coverage tools",
+    "addendum 1: extended commit range",
+    "addendum 2: fixed population, metadata and extraction"
   ],
   "developer_denominator": 143,
   "selected_commits": 539,
   "scope_changing_commits": 50,
   "population_eligible_methods": 66,
   "population_classes": 5,
-  "missing_required_original_methods": [
-    "MurmurHash3_hash128x64Internal",
-    "Sha2Crypt_sha2Crypt"
+  "dataset_prepare_run": true,
+  "generated_count": 66,
+  "unique_ids": 43,
+  "colliding_ids": 9,
+  "collision_affected_methods": 32,
+  "missing_methods": [],
+  "empty_fields": [],
+  "original_entries_matching_up_to_line_endings": 5,
+  "excluded_private_original_methods": [
+    "org.apache.commons.codec.digest.MurmurHash3.hash128x64Internal(byte[], int, int, long)",
+    "org.apache.commons.codec.digest.Sha2Crypt.sha2Crypt(byte[], String, String, int, String)"
   ],
-  "dataset_prepare_run": false,
-  "overload_id_uniqueness": "not checked; fixed decisions conflict before generation",
-  "persistent_container_override": "not started after mandatory population stop",
+  "persistent_container_override": "not started after mandatory collision stop",
   "llm_calls": 0,
   "pushes": 0,
-  "first_attempt": {
-    "commit": "05e849ed",
-    "stop": "Step 3 exact EvoSuite/JaCoCo snapshot resolution failures",
-    "resolved_by": "user addendum Decision 1"
-  }
+  "prior_stops": [
+    {
+      "commit": "05e849ed",
+      "stop": "Step 3 exact EvoSuite/JaCoCo snapshot resolution failures",
+      "resolved_by": "addendum 1 Decision 1"
+    },
+    {
+      "commit": "f2368151",
+      "stop": "Step 4 private original focal-method inclusion conflict",
+      "resolved_by": "addendum 2: explicitly exclude both private methods"
+    }
+  ]
 }

@@ -1,0 +1,65 @@
+{
+  "command": "docker compose -f compose.yml -f compose.commit-survival.yml config --format json",
+  "only_change": "add /repo bind mount",
+  "original_mounts_preserved": true,
+  "maven_cache": "ktester-m2:/root/.m2",
+  "merged_config": {
+    "name": "docker",
+    "networks": {
+      "default": {
+        "name": "docker_default",
+        "ipam": {}
+      }
+    },
+    "services": {
+      "ktester": {
+        "build": {
+          "context": "/Users/donggi/_projects/experiment-projects/KTester",
+          "dockerfile": "docker/Dockerfile"
+        },
+        "command": null,
+        "entrypoint": null,
+        "environment": {
+          "_JAVA_OPTIONS": "-Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8"
+        },
+        "image": "ktester-replication:latest",
+        "mem_limit": "12884901888",
+        "networks": {
+          "default": null
+        },
+        "stdin_open": true,
+        "tty": true,
+        "volumes": [
+          {
+            "type": "bind",
+            "source": "/Users/donggi/_projects/experiment-projects/KTester",
+            "target": "/work",
+            "bind": {}
+          },
+          {
+            "type": "volume",
+            "source": "ktester-m2",
+            "target": "/root/.m2",
+            "volume": {}
+          },
+          {
+            "type": "bind",
+            "source": "/Users/donggi/_projects/experiment-projects/commons-codec",
+            "target": "/repo",
+            "bind": {}
+          }
+        ],
+        "working_dir": "/work/code"
+      }
+    },
+    "volumes": {
+      "ktester-m2": {
+        "name": "docker_ktester-m2"
+      }
+    }
+  },
+  "verification_command": "docker compose -f compose.yml -f compose.commit-survival.yml run --rm ktester bash -c 'ls /repo/experiments/ktester-commit-survival && mvn -v'",
+  "cwd": "/Users/donggi/_projects/experiment-projects/KTester/docker",
+  "exit_code": 0,
+  "log": "results/container-wiring.txt"
+}

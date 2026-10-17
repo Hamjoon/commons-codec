@@ -1,0 +1,17 @@
+time="2026-10-17T16:19:37+09:00" level=warning msg="Found orphan containers (ktester-stage4c, ktester-stage4b, ktester-stage4) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+ Container docker-ktester-run-03c94a8ca29d Creating 
+ Container docker-ktester-run-03c94a8ca29d Created 
+README.md
+dev
+docs
+generated
+population
+results
+tools
+work
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /opt/maven
+Java version: 17.0.20.1, vendor: Debian, runtime: /usr/lib/jvm/java-17-openjdk-arm64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "7.0.12-linuxkit", arch: "aarch64", family: "unix"

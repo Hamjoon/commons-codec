@@ -1,11 +1,12 @@
 {
-  "status": "blocked_dataset_prepare_validation",
-  "stopped_at_step": 4,
-  "completed": [
-    "original Steps 1-2",
-    "addendum 1: classpath and released coverage tools",
-    "addendum 1: extended commit range",
-    "addendum 2: fixed population, metadata and extraction"
+  "status": "part1_complete",
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
   ],
   "developer_denominator": 143,
   "selected_commits": 539,
@@ -14,19 +15,21 @@
   "population_classes": 5,
   "dataset_prepare_run": true,
   "generated_count": 66,
-  "unique_ids": 43,
-  "colliding_ids": 9,
-  "collision_affected_methods": 32,
-  "missing_methods": [],
-  "empty_fields": [],
+  "unique_ids": 66,
+  "colliding_ids": 0,
+  "renumbered_ids": 23,
+  "unchanged_ids": 43,
+  "previously_unique_entries_unchanged": true,
+  "non_naming_fields_unchanged": true,
   "original_entries_matching_up_to_line_endings": 5,
   "excluded_private_original_methods": [
     "org.apache.commons.codec.digest.MurmurHash3.hash128x64Internal(byte[], int, int, long)",
     "org.apache.commons.codec.digest.Sha2Crypt.sha2Crypt(byte[], String, String, int, String)"
   ],
-  "persistent_container_override": "not started after mandatory collision stop",
+  "persistent_container_override": "docker/compose.commit-survival.yml; verified",
   "llm_calls": 0,
   "pushes": 0,
+  "open_decisions": [],
   "prior_stops": [
     {
       "commit": "05e849ed",
@@ -37,6 +40,11 @@
       "commit": "f2368151",
       "stop": "Step 4 private original focal-method inclusion conflict",
       "resolved_by": "addendum 2: explicitly exclude both private methods"
+    },
+    {
+      "commit": "09be111e",
+      "stop": "Step 4 duplicate DatasetPrepare IDs",
+      "resolved_by": "addendum 3 with Gary clarification: preserve unique IDs and renumber only colliding entries"
     }
   ]
 }

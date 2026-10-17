@@ -19,48 +19,54 @@ def state():
     b = read('results/developer-baseline.json')
     c = read('results/commits-check.json')
     p = read('population/population-validation.json')
-    assert not p['valid'] and p['id_collisions'], 'Review report wording if the blocker changes'
+    r = read('population/id-renumbering-validation.json')
+    wiring = read('results/container-wiring.json')
+    validation = read('results/part1-validation.json')
+    assert r['valid'] and r['unique_ids'] == 66 and r['previously_unique_entries_unchanged']
+    assert wiring['exit_code'] == 0 and wiring['original_mounts_preserved'] and validation['population_valid']
     return {
-        'status': p['status'], 'stopped_at_step': 4,
-        'completed': ['original Steps 1-2', 'addendum 1: classpath and released coverage tools',
-                      'addendum 1: extended commit range', 'addendum 2: fixed population, metadata and extraction'],
+        'status': 'part1_complete', 'completed_steps': [1, 2, 3, 4, 5, 6],
         'developer_denominator': b['developer_denominator'], 'selected_commits': c['selected_rows'],
         'scope_changing_commits': c['selected_scope_changes'], 'population_eligible_methods': p['expected_count'],
         'population_classes': len(p['per_class']), 'dataset_prepare_run': True,
-        'generated_count': p['generated_count'], 'unique_ids': p['unique_id_count'],
-        'colliding_ids': len(p['id_collisions']), 'collision_affected_methods': p['collision_affected_methods'],
-        'missing_methods': p['missing_methods'], 'empty_fields': p['empty_fields'],
-        'original_entries_matching_up_to_line_endings': sum(x['equal_up_to_line_endings'] for x in p['original_entry_comparisons']),
+        'generated_count': r['entries'], 'unique_ids': r['unique_ids'], 'colliding_ids': 0,
+        'renumbered_ids': r['changed_ids'], 'unchanged_ids': r['unchanged_ids'],
+        'previously_unique_entries_unchanged': r['previously_unique_entries_unchanged'],
+        'non_naming_fields_unchanged': r['non_naming_fields_unchanged'],
+        'original_entries_matching_up_to_line_endings': validation['final_original_entries_equal_up_to_line_endings'],
         'excluded_private_original_methods': p['excluded_private_original_methods'],
-        'persistent_container_override': 'not started after mandatory collision stop',
-        'llm_calls': 0, 'pushes': 0,
+        'persistent_container_override': 'docker/compose.commit-survival.yml; verified',
+        'llm_calls': 0, 'pushes': 0, 'open_decisions': [],
         'prior_stops': [
             {'commit': '05e849ed', 'stop': 'Step 3 exact EvoSuite/JaCoCo snapshot resolution failures', 'resolved_by': 'addendum 1 Decision 1'},
-            {'commit': 'f2368151', 'stop': 'Step 4 private original focal-method inclusion conflict', 'resolved_by': 'addendum 2: explicitly exclude both private methods'}]}
+            {'commit': 'f2368151', 'stop': 'Step 4 private original focal-method inclusion conflict', 'resolved_by': 'addendum 2: explicitly exclude both private methods'},
+            {'commit': '09be111e', 'stop': 'Step 4 duplicate DatasetPrepare IDs', 'resolved_by': 'addendum 3 with Gary clarification: preserve unique IDs and renumber only colliding entries'}]}
 
 
 def summary_lines(s):
     return [
-        f"Part 1 remains incomplete at Step 4: DatasetPrepare produced {s['generated_count']} entries, but only {s['unique_ids']} distinct IDs. {s['colliding_ids']} IDs collide across {s['collision_affected_methods']} methods. The second addendum requires stopping on collisions, so Step 5 was not entered. Raw output is retained without ID repairs or Java patches.", '',
-        f"All {s['population_eligible_methods']} candidate methods are present with non-empty focal-method and class-code fields. All {s['original_entries_matching_up_to_line_endings']} included original focal entries match every author field up to CRLF/LF differences. The two private originals are excluded as authorized.", '',
-        'Evidence and exact invocation: population/population-validation.json and population/README.md. The latter lists every affected signature. The raw metadata and dataset output are tracked in both repositories as diagnostic evidence, not a generation-ready dataset.']
+        f"Part 1 is complete. The population has {s['generated_count']} entries and {s['unique_ids']} unique IDs. Renumbering changes {s['renumbered_ids']} IDs and preserves {s['unchanged_ids']} IDs, including every previously unique ID. The compose override is verified with the existing Maven cache retained.", '',
+        f"All {s['population_eligible_methods']} candidate methods have non-empty focal-method and class-code fields. Only id, test-class and test-path were changed; all other fields and entry order are preserved. All {s['original_entries_matching_up_to_line_endings']} included original focal entries still match every author field up to CRLF/LF differences. The two private originals are excluded as authorized.", '',
+        'Evidence: population/id-renumbering-validation.json, population/id-renumbering.csv, results/part1-validation.json and results/container-wiring.json. Use dataset_info.json for Part 2; dataset_info.raw.json retains the unmodified DatasetPrepare output. Historical population-enumeration.json and population-validation.json retain the earlier stop records.']
 
 
 def stop_history():
     return ['## First attempt', '',
             'The first attempt stopped at Step 3 (commons-codec 05e849ed) after repeated Maven Central failures for EvoSuite 1.2.0 and JaCoCo 0.8.13-SNAPSHOT. Addendum 1 removed EvoSuite and selected released JaCoCo 0.8.12; all artifacts now resolve. It also extended the range to 539 commits.', '',
             '## Second attempt', '',
-            'The next attempt stopped at Step 4 (commons-codec f2368151; KTester 2650707): the requirement to include original private focal methods conflicted with the non-private population rule. Addendum 2 explicitly excluded MurmurHash3.hash128x64Internal and Sha2Crypt.sha2Crypt and fixed membership at the enumerated 66 methods. That conflict is resolved. The historical enumeration JSON/driver retain their original stop record; population-validation.json records the current state.', '',
-            '## Current stop and remaining work', '',
-            'The unmodified packaged DatasetPrepare reused overload IDs. Its source updates the suffixed ID counter instead of the base counter in getMethodInfo; the observed collisions are recorded without repairing the output. No missing/empty entries or author-field mismatches were observed. The persistent compose override and final successful Part 1 completion remain pending under the explicit stop rule.', '',
-            'TODO (Gary): Decide how to resolve the DatasetPrepare ID collisions while keeping all 66 methods. The current instructions prohibit patching DatasetPrepare.java; no Java patch or output-ID repair was applied.']
+            'The next attempt stopped at Step 4 (commons-codec f2368151; KTester 2650707): the requirement to include original private focal methods conflicted with the non-private population rule. Addendum 2 explicitly excluded MurmurHash3.hash128x64Internal and Sha2Crypt.sha2Crypt and fixed membership at 66 methods.', '',
+            '## Third attempt and resolution', '',
+            'Addendum 2 stopped at Step 4 (commons-codec 09be111e; KTester 86fe574): DatasetPrepare emitted 66 entries but only 43 distinct IDs, with nine colliding IDs affecting 32 methods. The raw extraction has no missing/empty entries or author-field mismatches. Addendum 3 authorized post-processing the naming fields while leaving the authors’ Java and all other fields untouched.', '',
+            'Gary clarified that every previously unique ID must be preserved: only entries with colliding raw IDs are sorted and renumbered. This clarification governs the ambiguous full-group sorting sentence in the addendum. The final mapping changes 23 IDs, preserves all previously unique entries, and yields 66 unique IDs. All three stops are resolved.', '',
+            '## Next part', '',
+            'No open Part 1 decisions remain. Stop here: Part 2 generation has not started and no LLM call was made. Use the renumbered dataset_info.json and the authors’ existing project index when Part 2 is authorized. The fixed model, prompts and settings remain unchanged.']
 
 
 def report():
     s = state()
     (EXPERIMENT / 'results/part1-status.json').write_text(json.dumps(s, indent=2) + '\n')
-    lines = ['# Part 1 status after addendum 2', '', *summary_lines(s), '',
-             'This report is rendered by `python3 experiments/ktester-commit-survival/tools/report_part1.py` from results/commits-check.json, results/developer-baseline.json and population/population-validation.json.', '',
+    lines = ['# Part 1 final status', '', *summary_lines(s), '',
+             'This report is rendered by `python3 experiments/ktester-commit-survival/tools/report_part1.py` from results/commits-check.json, results/developer-baseline.json, population/id-renumbering-validation.json, results/part1-validation.json and results/container-wiring.json.', '',
              f"Range: {s['selected_commits']} verified first-parent commits, including {s['scope_changing_commits']} scope-changing commits. Developer denominator: {s['developer_denominator']}, unchanged. The approved 20-artifact classpath and verified JaCoCo coverage mechanism remain unchanged (results/classpath-fetch.json and results/coverage-smoke.json).", '',
              'No model calls, pushes, source/settings/index changes, or test generation occurred.', '', *stop_history()]
     (EXPERIMENT / 'results/part1-status.md').write_text('\n'.join(lines) + '\n')
@@ -75,9 +81,9 @@ def handover(kt):
     smoke = read('results/classpath-smoke.json')
     p = read('population/population-validation.json')
     artifacts = read('tools/classpath-artifacts.json')
-    lines = ['# Part 1 handover after addendum 2', '', *summary_lines(s), '',
+    lines = ['# Part 1 final handover', '', *summary_lines(s), '',
              'Measurements come from the JSON/report files cited below. Render this ignored local handover after committing with `python3 experiments/ktester-commit-survival/tools/report_part1.py --handover --kt ' + str(kt) + '`; Git identities use git branch --show-current and git rev-parse HEAD.', '',
-             '## Repositories at the stop', '',
+             '## Final repositories', '',
              f"- commons-codec: `{git(REPO, 'branch', '--show-current')}` at `{git(REPO, 'rev-parse', 'HEAD')}`.",
              f"- KTester: `{git(kt, 'branch', '--show-current')}` at `{git(kt, 'rev-parse', 'HEAD')}`.",
              '- Neither repository was pushed. New commits have the required Codex co-author trailer.',
@@ -100,13 +106,20 @@ def handover(kt):
         lines.append(f'| {cls} | {n} |')
     lines += ['', 'Excluded private original focal methods:', '']
     lines += ['- `' + m + '`.' for m in p['excluded_private_original_methods']]
-    lines += ['', 'Raw dataset locations:', '',
+    lines += ['', 'Final dataset locations (raw output retained beside each as dataset_info.raw.json):', '',
               '- KTester: `' + str(kt / 'data/commit-survival/commons-codec/dataset_info.json') + '`.',
               '- Public copy: `experiments/ktester-commit-survival/population/dataset_info.json`.', '',
-              f"Every candidate has exactly one entry and both code fields are non-empty. All five original non-private entries match up to line endings. ID uniqueness failed: {p['unique_id_count']} distinct IDs for {p['generated_count']} entries. These colliding IDs affect {p['collision_affected_methods']} methods (full signatures in population/README.md):", '',
+              f"Every candidate has exactly one entry and both code fields are non-empty. All five original non-private entries match up to line endings. Historical raw-output ID check: {p['unique_id_count']} distinct IDs for {p['generated_count']} entries. These former colliding IDs affected {p['collision_affected_methods']} methods (full signatures in population/README.md):", '',
               '| ID | Affected methods |', '|---|---:|']
     for ident, methods in p['id_collisions'].items():
         lines.append(f'| {ident} | {len(methods)} |')
+    renumbering = read('population/id-renumbering-validation.json')
+    lines += ['', '### Final ID renumbering', '', renumbering['rule'], '',
+              f"id-renumbering-validation.json: {renumbering['entries']} entries, {renumbering['unique_ids']} unique IDs, {renumbering['changed_ids']} changed IDs, {renumbering['unchanged_ids']} unchanged IDs. All previously unique entries are preserved. test-class/test-path are consistent, all non-naming fields and entry order are unchanged, and the transformation is idempotent. Full mapping: population/id-renumbering.csv.", '',
+              'Gary’s clarification preserves the five original IDs, including Md5Crypt_md5Crypt. Every original non-private entry continues to match every author field up to line endings. The authors’ Java, dataset, project index, prompts and settings were not changed.', '',
+              'Overload groups from population/population-validation.json:', '', '| Group | Methods |', '|---|---:|']
+    for group, methods in p['overload_groups'].items():
+        lines.append(f'| {group} | {len(methods)} |')
     lines += ['', '## Classpath and exact smoke commands', '',
               f"results/classpath-fetch.json records SHA-256 for all {f['resolved']}/{f['requested']} artifacts: 18 test jars and 2 coverage tools. EvoSuite is removed; the JaCoCo runtime agent and nodeps CLI are version 0.8.12. Neither coverage jar is on the test compile or run classpath. results/coverage-smoke.json verifies Md5Crypt.java: {cov['line_entries']} line entries, {cov['counters']['LINE']['covered']} covered lines.", '']
     for a in artifacts:
@@ -117,7 +130,7 @@ def handover(kt):
     lines += ['', 'Run from /repo/experiments/ktester-commit-survival inside the container. Exact commands from results/classpath-smoke.json (launcher) and results/coverage-smoke.json (explicit test-only compile, agent, report):', '',
               '```sh', *commands, '```', '',
               'The smoke tests compile and execute; their recorded assertion failures are allowed by the smoke criterion. Coverage is nonzero. The authored smoke source and coverage XML/exec remain only in ignored work/smoke/.', '',
-              'Temporary mounts use `docker compose run --rm -v /Users/donggi/_projects/experiment-projects/commons-codec:/repo ktester bash -c ...` from KTester/docker. Existing /work and ktester-m2 mounts are retained; no persistent override was created after the mandatory stop.', '', *stop_history()]
+              '## Container wiring', '', 'From KTester/docker: `docker compose -f compose.yml -f compose.commit-survival.yml run --rm ktester bash -c \'ls /repo/experiments/ktester-commit-survival && mvn -v\'`. results/container-wiring.json and container-wiring.txt record exit 0, the experiment listing, Maven 3.9.9 and Java 17.0.20.1. The merged configuration differs only by the added /repo bind; /work, ktester-m2:/root/.m2 and all base service settings remain unchanged.', '', *stop_history()]
     out = EXPERIMENT / 'docs/handover-part1.md'
     out.write_text('\n'.join(lines) + '\n')
     print(out)

@@ -48,6 +48,12 @@ def main():
     assert len(coverage['table3_totals_verbatim']) == 2
     assert all(row in table3 for row in coverage['table3_totals_verbatim'])
     lines += ['The single all-lines Table 4 is retained in results/table4-exposure-vs-break.md as repository-only supporting evidence, as directed by the updated addendum.', '']
+    memory_file = RESULTS / 'part3-worker-restart-memory.json'
+    if memory_file.exists():
+        memory = json.loads(memory_file.read_text())
+        lines += ['## Restart memory events', '',
+                  f"The eight-worker container recorded {memory['memory_events']['oom_kill']} OOM kills as of {memory['observed_at']}. Developer MurmurHash3Test JVMs at indices 69 and 70 exited with signal 9, producing 54 absent method records in the first completed batch. These are infrastructure-associated outcomes; raw states and scoring were retained unchanged. Exact recorded launcher exits and the memory-counter snapshot are in results/part3-worker-restart-memory.json.", '',
+                  'TODO (Gary): Review memory-associated absent states before interpreting the survival results.', '']
     lines += [(RESULTS / 'consistency.md').read_text().strip(), '', '## Fallbacks and deviations', '',
               f'Whole-class coverage fallbacks: {len(fallbacks)}.', '', '```json', json.dumps(fallbacks, indent=2), '```', '',
               'The initial selector implementation included a private non-test overload in Base64Test and stopped during runner development. It was corrected to inspect compiled JUnit annotations; the corrected Step 0 passed before any survival loop. The failed attempt and correction are recorded in part3-runner-development.json. No frozen input was changed.', '',

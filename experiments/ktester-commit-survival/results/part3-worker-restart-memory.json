@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-10-17T14:32:47.024964+00:00",
+  "container": "ktester-commit-survival-phase-a-8",
+  "memory_events": {
+    "low": 0,
+    "high": 0,
+    "max": 0,
+    "oom": 0,
+    "oom_kill": 3,
+    "oom_group_kill": 0,
+    "sock_throttled": 0
+  },
+  "docker_oom_events": [
+    "1792246896 oom",
+    "1792246897 oom",
+    "1792247476 oom"
+  ],
+  "recorded_jvm_sigkills": [
+    {
+      "index": 69,
+      "group": "dev",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+      "exit_code": -9,
+      "timeout": false,
+      "seconds": 6.499,
+      "log": "work/phase-a/69/dev/05-MurmurHash3Test/initial/console.txt",
+      "affected_methods": 27
+    },
+    {
+      "index": 70,
+      "group": "dev",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+      "exit_code": -9,
+      "timeout": false,
+      "seconds": 7.303,
+      "log": "work/phase-a/70/dev/05-MurmurHash3Test/initial/console.txt",
+      "affected_methods": 27
+    },
+    {
+      "index": 77,
+      "group": "dev",
+      "file": "dev/src-test-t/java/org/apache/commons/codec/digest/MurmurHash3Test.java",
+      "exit_code": -9,
+      "timeout": false,
+      "seconds": 8.558,
+      "log": "work/phase-a/77/dev/05-MurmurHash3Test/initial/console.txt",
+      "affected_methods": 27
+    }
+  ],
+  "action": "Recorded without changing raw states, test settings, scoring, or worker count. Eight-worker Phase A and continuation remain running as requested.",
+  "interpretation": "Container reported OOM kills after the concurrency increase; recorded SIGKILL launcher exits yielded absent methods under the unchanged parser."
+}

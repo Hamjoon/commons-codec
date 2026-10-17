@@ -11,6 +11,7 @@ import sys
 import time
 import traceback
 import survival_common as sc
+from runner_provenance import runner_compatible
 
 TRAILER = 'Co-authored-by: Codex <noreply@openai.com>'
 BRANCH = 'experiment/2026-10-week3-ktester-commit-survival'
@@ -45,7 +46,7 @@ def check_raw(phase):
         for g in full:
             r = json.loads((folder / f'{i}-{g}.json').read_text())
             assert r['sha'] == cm[i]['sha'] and r['input_sha256'] == fingerprint
-            assert r['runner_sha256'] == sc.runner_hashes()
+            assert runner_compatible(r['runner_sha256'], sc.runner_hashes(), phase)
             requested = set(alive[str(i)][g]) if alive is not None else full[g]
             assert set(r['requested_ids']) == requested
             if r['status'] != 'build-fail':
@@ -79,8 +80,8 @@ def wire_coverage():
         assert new in source and 'from coverage_common import line_rows as production_line_rows' in source
     path = sc.EXP / 'tools/survival_common.py'
     source = path.read_text()
-    old = "'MethodSelectors.java', 'dev-compile-units.json']"
-    new = "'MethodSelectors.java', 'dev-compile-units.json', 'coverage_common.py']"
+    old = "'MethodSelectors.java', 'dev-compile-units.json', 'runner_provenance.py']"
+    new = "'MethodSelectors.java', 'dev-compile-units.json', 'runner_provenance.py', 'coverage_common.py']"
     if old in source:
         assert source.count(old) == 1
         path.write_text(source.replace(old, new))
@@ -181,7 +182,7 @@ def main():
             preflight()
             output = sc.RESULTS / 'phase-b.json'
             if not output.exists() and not container_running(B_CONTAINER):
-                container_command('python tools/run_phase.py --phase b --workers 4 --start 0 --end 539', 'phase-b', B_CONTAINER)
+                container_command('python tools/run_phase.py --phase b --workers 8 --start 0 --end 539', 'phase-b', B_CONTAINER)
             return wait_phase('b', B_CONTAINER)
         step('phase-b-verified', phase_b)
         def coverage_plan_done():

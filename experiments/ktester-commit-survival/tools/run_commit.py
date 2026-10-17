@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import shutil
 import time
+from runner_provenance import runner_compatible
 from survival_common import (EXP, RESULTS, check_inputs, classpath, commits, denominator,
     execute, export_build, line_rows, method_state, parse_reports, relative, selectors,
     write_csv, write_json, runner_hashes)
@@ -31,7 +32,7 @@ def run_group(index, group, worker, phase='a', selected_ids=None, coverage=False
         assert saved['requested_ids'] == sorted(r['id'] for r in rows)
         assert saved['coverage_requested'] == coverage
         if phase in {'a', 'b'}:
-            assert saved['runner_sha256'] == runner_hashes(), 'Runner changed since this measurement'
+            assert runner_compatible(saved['runner_sha256'], runner_hashes(), phase), 'Runner changed since this measurement'
         return saved
     folder, build = export_build(index, worker, phase)
     record = {'index': index, 'sha': commit['sha'], 'date': commit['date'], 'group': group, 'phase': phase,

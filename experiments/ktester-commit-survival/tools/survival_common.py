@@ -81,7 +81,7 @@ def check_inputs():
 
 
 def runner_hashes():
-    names = ['survival_common.py', 'run_commit.py', 'run_phase.py', 'MethodSelectors.java', 'dev-compile-units.json']
+    names = ['survival_common.py', 'run_commit.py', 'run_phase.py', 'MethodSelectors.java', 'dev-compile-units.json', 'runner_provenance.py']
     return {name: hashlib.sha256((EXP / 'tools' / name).read_bytes()).hexdigest() for name in names}
 
 

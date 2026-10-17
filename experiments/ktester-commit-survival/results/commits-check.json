@@ -1,0 +1,45 @@
+{
+  "base": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "upstream_master_observed": "a3d9418f2d9cd2b8b012af4280ec0bb87ec33303",
+  "source_sha256": "3bbe3f58607b0e1b7b27c324629606421067b63b8efd398163c907be2254eb8a",
+  "source_rows": 830,
+  "selected_rows": 338,
+  "all_first_parent_links_verified": true,
+  "selected_src_changes": 100,
+  "selected_scope_changes": 21,
+  "full_scope_changes": 77,
+  "scope_milestones": {
+    "25": {
+      "index": 363,
+      "sha": "ca27bd30b6170561786d421eb48f1535dc41336f",
+      "date": "2025-07-19T12:41:12-04:00"
+    },
+    "50": {
+      "index": 539,
+      "sha": "f9808d1f01d3a4e08c0c46283ef447ee0af6e7d8",
+      "date": "2026-01-16T06:56:54-05:00"
+    },
+    "75": {
+      "index": 799,
+      "sha": "54b7ad9d0406800cd54b213ea67a24311a32d2bf",
+      "date": "2026-09-19T06:09:25-07:00"
+    }
+  },
+  "last_selected": {
+    "index": "338",
+    "sha": "1d718d8515091f49fe9c092455b17bacf3085809",
+    "date": "2025-07-18T21:51:03-04:00",
+    "changes-src-main": "yes",
+    "files-changed-src-main": "1",
+    "tags": "",
+    "changes-scope": "yes",
+    "scope-files": 1
+  },
+  "scope_files": [
+    "src/main/java/org/apache/commons/codec/binary/Base32.java",
+    "src/main/java/org/apache/commons/codec/binary/Base64.java",
+    "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+    "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+    "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java"
+  ]
+}

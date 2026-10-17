@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "workers": 2,
+  "corrected_records": [
+    {
+      "index": 69,
+      "group": "dev",
+      "sha256": "18a9f42bebb3ef9f1d0f159bb167572144c1d48e21de65132b24d3770f6e7936",
+      "sigkill_exits": 0,
+      "murmur_methods_evaluated": 27,
+      "murmur_states": {
+        "pass": 27
+      }
+    },
+    {
+      "index": 70,
+      "group": "dev",
+      "sha256": "e6404c3a4f6540fd6d1a93e40049df2cd7ba344c64b61ae0ffe671046e1bc935",
+      "sigkill_exits": 0,
+      "murmur_methods_evaluated": 27,
+      "murmur_states": {
+        "pass": 27
+      }
+    },
+    {
+      "index": 77,
+      "group": "dev",
+      "sha256": "4b883eed75747239db93718fb8f55160811094ff8ae071ebe9044e0fab6f0023",
+      "sigkill_exits": 0,
+      "murmur_methods_evaluated": 27,
+      "murmur_states": {
+        "pass": 27
+      }
+    }
+  ],
+  "healthy_records_preserved": 1075,
+  "full_phase_verification": {
+    "indices": 539,
+    "raw_files": 1078,
+    "build_fail_indices": [
+      330,
+      396,
+      397
+    ]
+  },
+  "verified_at": "2026-10-17T23:29:05.804279+00:00"
+}

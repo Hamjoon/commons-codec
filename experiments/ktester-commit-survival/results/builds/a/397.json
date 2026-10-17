@@ -1,0 +1,48 @@
+{
+  "index": 397,
+  "sha": "4acec76313eaf66de2806d1380d73e7e65df0669",
+  "worker": "w5",
+  "status": "build-fail",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w5",
+      "exit_code": 1,
+      "timeout": false,
+      "seconds": 6.701,
+      "log": "work/phase-a/397/build-1.txt"
+    },
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w5",
+      "exit_code": 1,
+      "timeout": false,
+      "seconds": 5.22,
+      "log": "work/phase-a/397/build-2.txt"
+    }
+  ],
+  "message": "[ERROR] COMPILATION ERROR : \n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w5/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,28] cannot find symbol\n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w5/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,54] cannot find symbol\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile (default-testCompile) on project commons-codec: Compilation failure: Compilation failure: \n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w5/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,28] cannot find symbol\n[ERROR]   symbol:   method getCdma2000Table()\n[ERROR]   location: class org.apache.commons.codec.digest.CRC16\n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w5/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,54] cannot find symbol",
+  "cache_warmed_online": false
+}

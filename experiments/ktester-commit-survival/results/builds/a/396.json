@@ -1,0 +1,48 @@
+{
+  "index": 396,
+  "sha": "ec1a4c520a59fca7afeb5974b5ac1fc63ceea723",
+  "worker": "w4",
+  "status": "build-fail",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w4",
+      "exit_code": 1,
+      "timeout": false,
+      "seconds": 9.804,
+      "log": "work/phase-a/396/build-1.txt"
+    },
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w4",
+      "exit_code": 1,
+      "timeout": false,
+      "seconds": 6.707,
+      "log": "work/phase-a/396/build-2.txt"
+    }
+  ],
+  "message": "[ERROR] COMPILATION ERROR : \n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w4/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,28] cannot find symbol\n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w4/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,54] cannot find symbol\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile (default-testCompile) on project commons-codec: Compilation failure: Compilation failure: \n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w4/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,28] cannot find symbol\n[ERROR]   symbol:   method getCdma2000Table()\n[ERROR]   location: class org.apache.commons.codec.digest.CRC16\n[ERROR] /repo/experiments/ktester-commit-survival/work/commits/w4/src/test/java/org/apache/commons/codec/digest/CRC16Test.java:[92,54] cannot find symbol",
+  "cache_warmed_online": false
+}

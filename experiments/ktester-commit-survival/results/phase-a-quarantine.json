@@ -30,7 +30,8 @@
           "timeout": false
         }
       ],
-      "quarantined_at": "2026-10-17T15:03:37.404442+00:00"
+      "quarantined_at": "2026-10-17T15:03:37.404442+00:00",
+      "archived_reports": "work/quarantine/reports/phase-a/1309f61359be79e95418fce3fdc099b92c89ecc458ce77e20c4b853d6832d230"
     },
     {
       "index": 70,
@@ -60,7 +61,8 @@
           "timeout": false
         }
       ],
-      "quarantined_at": "2026-10-17T15:03:37.409728+00:00"
+      "quarantined_at": "2026-10-17T15:03:37.409728+00:00",
+      "archived_reports": "work/quarantine/reports/phase-a/b110a7b179c67c02c383c40ce1b1669cb9decd0d50a3571f0f417483d4b170a1"
     },
     {
       "index": 77,
@@ -90,9 +92,10 @@
           "timeout": false
         }
       ],
-      "quarantined_at": "2026-10-17T15:03:37.430031+00:00"
+      "quarantined_at": "2026-10-17T15:03:37.430031+00:00",
+      "archived_reports": "work/quarantine/reports/phase-a/760545a95fcc915c8f328344dc3c09de3311b2266f1d1e70234638a030d47207"
     }
   ],
-  "status": "quarantined; two-worker repair pending Phase A completion",
+  "status": "all quarantined records repaired and full Phase A verified",
   "measurement_settings_changed": false
 }

@@ -1,0 +1,29 @@
+{
+  "index": 512,
+  "sha": "a725a353834080ef04f0b629b39ec834265fdb28",
+  "worker": "w8",
+  "status": "built",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w8",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 10.504,
+      "log": "work/phase-a/512/build-1.txt"
+    }
+  ],
+  "message": "",
+  "cache_warmed_online": false
+}

@@ -1,0 +1,59 @@
+{
+  "index": 289,
+  "sha": "1c0c3aca9c170d5714c0d892cfa57c05a842aae7",
+  "parent": "e515180735f7a4c45e0be970b58a87ede834588e",
+  "subject": "Make private class DaitchMokotoffSoundex.Rule's methods private that can be",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      168,
+      176,
+      180,
+      198
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      168,
+      176,
+      180,
+      198
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        168,
+        176,
+        180,
+        198
+      ],
+      "post_image_lines": [
+        168,
+        176,
+        180,
+        198
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e515180735f7a4c45e0be970b58a87ede834588e",
+    "1c0c3aca9c170d5714c0d892cfa57c05a842aae7",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex e9d4afe28..c8508a026 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -168 +168 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        protected Rule(final String pattern, final String replacementAtStart, final String replacementBeforeVowel,\n+        private Rule(final String pattern, final String replacementAtStart, final String replacementBeforeVowel,\n@@ -176 +176 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public int getPatternLength() {\n+        private int getPatternLength() {\n@@ -180 +180 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public String[] getReplacements(final String context, final boolean atStart) {\n+        private String[] getReplacements(final String context, final boolean atStart) {\n@@ -198 +198 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public boolean matches(final String context) {\n+        private boolean matches(final String context) {\n"
+}

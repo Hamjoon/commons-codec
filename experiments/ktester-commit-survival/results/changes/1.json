@@ -1,0 +1,71 @@
+{
+  "index": 1,
+  "sha": "ad28b0f1ea4010dc0eaeb1d1cda041efe0ef7323",
+  "parent": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "subject": "Md5Crypt now throws IllegalArgumentException on an invalid prefix",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      241,
+      264,
+      270
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      23,
+      242,
+      265,
+      271,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        241,
+        264,
+        270
+      ],
+      "post_image_lines": [
+        23,
+        242,
+        265,
+        271,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+    "ad28b0f1ea4010dc0eaeb1d1cda041efe0ef7323",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex 05c6a6ce2..7d25225c6 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -22,0 +23 @@ import java.util.Arrays;\n+import java.util.Objects;\n@@ -241 +242 @@ public class Md5Crypt {\n-     *            salt prefix\n+     *            The salt prefix {@value #APR1_PREFIX}, {@value #MD5_PREFIX}.\n@@ -264 +265 @@ public class Md5Crypt {\n-     *            salt prefix\n+     *            The salt prefix {@value #APR1_PREFIX}, {@value #MD5_PREFIX}.\n@@ -270 +271 @@ public class Md5Crypt {\n-     *             if the salt does not match the allowed pattern\n+     *             if the salt or prefix does not match the allowed pattern\n@@ -282,0 +284,7 @@ public class Md5Crypt {\n+            Objects.requireNonNull(prefix, \"prefix\");\n+            if (prefix.length() < 3) {\n+                throw new IllegalArgumentException(\"Invalid prefix value: \" + prefix);\n+            }\n+            if (prefix.charAt(0) != '$' && prefix.charAt(prefix.length() - 1) != '$') {\n+                throw new IllegalArgumentException(\"Invalid prefix value: \" + prefix);\n+            }\n"
+}

@@ -1,0 +1,53 @@
+{
+  "index": 361,
+  "sha": "fe23bcfc073369ade33ed283e1d167f6fa66e763",
+  "parent": "8cbdc117d69aaae78daa7505aaa9b2e40692a67c",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      45,
+      51
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      45,
+      46,
+      52
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        45,
+        51
+      ],
+      "post_image_lines": [
+        45,
+        46,
+        52
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8cbdc117d69aaae78daa7505aaa9b2e40692a67c",
+    "fe23bcfc073369ade33ed283e1d167f6fa66e763",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex 5b193643b..c94b78cc6 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -45 +45,2 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Original adaption from Apache Hive. That adaption contains a {@code hash64} method that is not part of the original\n+ * Original adaption from <a href=https://hive.apache.org/\">Apache Hive</a>. \n+ * That adaption contains a {@code hash64} method that is not part of the original\n@@ -51 +52 @@ import org.apache.commons.codec.binary.StringUtils;\n- * @see <a href=\"https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp\"> Original MurmurHash3 c++\n+ * @see <a href=\"https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp\"> Original MurmurHash3 C++\n"
+}

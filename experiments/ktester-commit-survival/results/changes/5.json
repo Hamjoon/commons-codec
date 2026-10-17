@@ -1,0 +1,47 @@
+{
+  "index": 5,
+  "sha": "c016dac7a4845ec8b3e3a9acd8c19164a269f5d9",
+  "parent": "aa081fbcf142135b9a3836f2c7e9b6e6dc3c610e",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      23
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      23
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        23
+      ],
+      "post_image_lines": [
+        23
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "aa081fbcf142135b9a3836f2c7e9b6e6dc3c610e",
+    "c016dac7a4845ec8b3e3a9acd8c19164a269f5d9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\nindex 04038f958..d4d5faabf 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n@@ -23 +23 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Implementation of the MurmurHash2 32-bit and 64-bit hash functions.\n+ * Implements the MurmurHash2 32-bit and 64-bit hash functions.\n"
+}

@@ -1,0 +1,55 @@
+{
+  "index": 424,
+  "sha": "3c84e5f20cb0f8828042bf8fe145219ce65ca9be",
+  "parent": "0decfd73543953aeb16cceee5ba36ed8157ac2ae",
+  "subject": "Port Base32OutputStream to non-deprecated methods",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      83,
+      103,
+      126
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      83,
+      103,
+      126
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        83,
+        103,
+        126
+      ],
+      "post_image_lines": [
+        83,
+        103,
+        126
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "0decfd73543953aeb16cceee5ba36ed8157ac2ae",
+    "3c84e5f20cb0f8828042bf8fe145219ce65ca9be",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 41431fc37..0d0c932ec 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -83 +83 @@ public class Base32OutputStream extends BaseNCodecOutputStream {\n-        super(outputStream, new Base32(false), doEncode);\n+        super(outputStream, Base32.builder().get(), doEncode);\n@@ -103 +103 @@ public class Base32OutputStream extends BaseNCodecOutputStream {\n-        super(outputStream, new Base32(lineLength, lineSeparator), doEncode);\n+        super(outputStream, Base32.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).get(), doEncode);\n@@ -126 +126 @@ public class Base32OutputStream extends BaseNCodecOutputStream {\n-        super(outputStream, new Base32(lineLength, lineSeparator, false, BaseNCodec.PAD_DEFAULT, decodingPolicy), doEncode);\n+        super(outputStream, Base32.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).setDecodingPolicy(decodingPolicy).get(), doEncode);\n"
+}

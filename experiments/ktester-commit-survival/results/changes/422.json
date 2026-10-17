@@ -1,0 +1,59 @@
+{
+  "index": 422,
+  "sha": "f2b9b71b8cfbfd0f679677bd168eb5447ed44f1f",
+  "parent": "7f1a796a1726eb6852949f2da35b22e5a7349a02",
+  "subject": "Port Base64InputStream to non-deprecated methods",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      83,
+      103,
+      125,
+      126
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      83,
+      103,
+      125,
+      126
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        83,
+        103,
+        125,
+        126
+      ],
+      "post_image_lines": [
+        83,
+        103,
+        125,
+        126
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "7f1a796a1726eb6852949f2da35b22e5a7349a02",
+    "f2b9b71b8cfbfd0f679677bd168eb5447ed44f1f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex 98eeb61d0..ea3474c61 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -83 +83 @@ public class Base64InputStream extends BaseNCodecInputStream {\n-        super(inputStream, new Base64(false), doEncode);\n+        super(inputStream, Base64.builder().get(), doEncode);\n@@ -103 +103 @@ public class Base64InputStream extends BaseNCodecInputStream {\n-        super(inputStream, new Base64(lineLength, lineSeparator), doEncode);\n+        super(inputStream, Base64.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).get(), doEncode);\n@@ -125,2 +125,2 @@ public class Base64InputStream extends BaseNCodecInputStream {\n-        final CodecPolicy decodingPolicy) {\n-        super(inputStream, new Base64(lineLength, lineSeparator, false, decodingPolicy), doEncode);\n+            final CodecPolicy decodingPolicy) {\n+        super(inputStream, Base64.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).setDecodingPolicy(decodingPolicy).get(), doEncode);\n"
+}

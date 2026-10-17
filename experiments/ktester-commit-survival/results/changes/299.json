@@ -1,0 +1,71 @@
+{
+  "index": 299,
+  "sha": "0d9a85de587f799791b7cf2a5fbd6a97d8d90251",
+  "parent": "4357dc9bdebf5e32944de74015172872e3da9cfa",
+  "subject": "Remove redundant checks for whitespace in DaitchMokotoffSoundex.soundex(String, boolean)",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      467,
+      469,
+      472,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      487,
+      490,
+      515,
+      524,
+      527,
+      534
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        467,
+        469,
+        472,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        487,
+        490,
+        515,
+        524,
+        527,
+        534
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "4357dc9bdebf5e32944de74015172872e3da9cfa",
+    "0d9a85de587f799791b7cf2a5fbd6a97d8d90251",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex b4f4b030e..f0ffdf2a8 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -467 +466,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -469 +467,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -472 +469,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -476,6 +472,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n-            // ignore whitespace inside a name\n-            if (Character.isWhitespace(ch)) {\n-                continue;\n-            }\n-\n@@ -487 +477,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -490 +479,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -515 +503,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -524 +511,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -527 +513,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n@@ -534 +519,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-\n"
+}

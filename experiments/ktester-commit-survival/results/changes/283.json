@@ -1,0 +1,53 @@
+{
+  "index": 283,
+  "sha": "e37a42561708adb6006f6222ece7654c68e63667",
+  "parent": "c529b5d912a873dbdb81212cff50b9aed51a473a",
+  "subject": "Remove dead comments",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      815,
+      816,
+      971,
+      972,
+      1054,
+      1055
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        815,
+        816,
+        971,
+        972,
+        1054,
+        1055
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c529b5d912a873dbdb81212cff50b9aed51a473a",
+    "e37a42561708adb6006f6222ece7654c68e63667",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 3ee8882e0..237f29a30 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -815,2 +814,0 @@ public class DoubleMetaphone implements StringEncoder {\n-    //-- BEGIN CONDITIONS --//\n-\n@@ -971,2 +968,0 @@ public class DoubleMetaphone implements StringEncoder {\n-    //-- BEGIN HELPER FUNCTIONS --//\n-\n@@ -1054,2 +1049,0 @@ public class DoubleMetaphone implements StringEncoder {\n-    //-- BEGIN INNER CLASSES --//\n-\n"
+}

@@ -1,0 +1,51 @@
+{
+  "index": 512,
+  "sha": "a725a353834080ef04f0b629b39ec834265fdb28",
+  "parent": "282999a6af401e11d22bb0a35f51e5eb21e59e66",
+  "subject": "Javadoc 8 can't find {@link #setDecodeTableFormat(DecodeTableFormat)}",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      151
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      123,
+      148,
+      153
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        151
+      ],
+      "post_image_lines": [
+        123,
+        148,
+        153
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "282999a6af401e11d22bb0a35f51e5eb21e59e66",
+    "a725a353834080ef04f0b629b39ec834265fdb28",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 8827e8a2f..b1730e936 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -122,0 +123 @@ public class Base64 extends BaseNCodec {\n+         * @since 1.21\n@@ -146,0 +148 @@ public class Base64 extends BaseNCodec {\n+        // Javadoc 8 can't find {@link #setDecodeTableFormat(DecodeTableFormat)}\n@@ -151 +153 @@ public class Base64 extends BaseNCodec {\n-         * {@link #setDecodeTableFormat(DecodeTableFormat)} method.\n+         * {@code Builder.setDecodeTableFormat(DecodeTableFormat)} method.\n"
+}

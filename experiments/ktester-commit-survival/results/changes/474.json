@@ -1,0 +1,91 @@
+{
+  "index": 474,
+  "sha": "9e155881bb58c2939bb512111f27ea0912cde565",
+  "parent": "e944d5bee7ed649218389880e2f9ef2244e47fb4",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1543
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      879
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      184
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1543
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      879
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      184
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        1543
+      ],
+      "post_image_lines": [
+        1543
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        879
+      ],
+      "post_image_lines": [
+        879
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        184
+      ],
+      "post_image_lines": [
+        184
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e944d5bee7ed649218389880e2f9ef2244e47fb4",
+    "9e155881bb58c2939bb512111f27ea0912cde565",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 937f94345..6b899827c 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -1543 +1543 @@ public class DigestUtils {\n-     * @deprecated since 1.11; only useful to preserve binary compatibility\n+     * @deprecated Since 1.11; only useful to preserve binary compatibility\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex 89bceb6de..1aa9c2e92 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -879 +879 @@ public final class HmacUtils {\n-     * @deprecated since 1.11; only useful to preserve binary compatibility\n+     * @deprecated Since 1.11; only useful to preserve binary compatibility\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex abba578b9..f2772b974 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -184 +184 @@ public class Rule {\n-         * @deprecated since 1.9\n+         * @deprecated Since 1.9\n"
+}

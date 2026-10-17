@@ -23,7 +23,7 @@ def main():
     builds = [json.loads(p.read_text()) for p in (RESULTS / 'builds/a').glob('*.json')]
     warmed = sorted(r['index'] for r in builds if r.get('cache_warmed_online'))
     lines = ['# Part 3 final handover', '',
-             f"Part 3 is complete. Final cumulative survival: Dev {survival['final_alive']['dev']}/143; LLM {survival['final_alive']['llm']}/290. Coverage measured at {coverage['coverage_commits']} commits for 50 scope-changing commits and their predecessors.", '',
+             f"Part 3 is complete. Final cumulative survival: Dev {survival['final_alive']['dev']}/143; LLM {survival['final_alive']['llm']}/290. Coverage measured at {coverage['coverage_commits']} commits for {coverage['production_changing_commits']} production-changing commits and their predecessors.", '',
              f'- commons-codec: `{revision(REPO)}`.', f'- KTester: `{revision(args.kt)}`.',
              '- Branch: `experiment/2026-10-week3-ktester-commit-survival`. No pushes.',
              '- Frozen generated/developer sources, denominators and commits.csv match the Part 3 input SHA-256 manifest.', '',
@@ -41,13 +41,18 @@ def main():
         for row in invocations:
             lines += [f"- {row['start']} to {row['end']}; complete={row['completed']}; worker exit codes={row['worker_exit_codes']}.", '']
         lines += ['Worker layout is the exact interleaved index arrays in the committed phase invocation JSON, with a distinct w1–w4 export per worker.', '']
-    lines += ['## Five tables', '']
-    for filename in ['table1-survival-by-event.md', 'table2-breaking-commits.md', 'table3-changed-line-coverage.md', 'table4-exposure-vs-break.md', 'coverage-t.md']:
+    lines += ['## Report tables', '']
+    for filename in ['table1-survival-by-event.md', 'table2-breaking-commits.md', 'table3-changed-line-coverage.md', 'coverage-t.md']:
         lines += [(RESULTS / filename).read_text().strip(), '']
+    table3 = (RESULTS / 'table3-changed-line-coverage.md').read_text()
+    assert len(coverage['table3_totals_verbatim']) == 2
+    assert all(row in table3 for row in coverage['table3_totals_verbatim'])
+    lines += ['The single all-lines Table 4 is retained in results/table4-exposure-vs-break.md as repository-only supporting evidence, as directed by the updated addendum.', '']
     lines += [(RESULTS / 'consistency.md').read_text().strip(), '', '## Fallbacks and deviations', '',
               f'Whole-class coverage fallbacks: {len(fallbacks)}.', '', '```json', json.dumps(fallbacks, indent=2), '```', '',
               'The initial selector implementation included a private non-test overload in Base64Test and stopped during runner development. It was corrected to inspect compiled JUnit annotations; the corrected Step 0 passed before any survival loop. The failed attempt and correction are recorded in part3-runner-development.json. No frozen input was changed.', '',
               'Matplotlib and its Python dependencies are isolated under ignored work/python-libs for the scientific figures; their versions are recorded. They do not enter Java test classpaths. XML records and line CSVs preserve zero-coverage executable lines; empty alive sets are explicitly supported and verified at t.', '',
+              f"The addendum estimated 100 production-changing commits and at most 200 coverage commits. The immutable commits.csv actually identifies {coverage['production_changing_commits']} production-changing commits, yielding B with {coverage['coverage_commits']} distinct indices. The specified set formula was followed without truncating the population. Phase A was left unchanged. Phase B extracts all codec-package production source-line entries; the revised aggregation has one all/scope split, no table3b, one repository-only Table 4, and five-file baseline coverage only.", '',
               'Raw results: results/raw/ and results/raw-coverage/. Coverage XML and line records: results/coverage/. Change hunks: results/changes/. Local process logs and JUnit XML remain under ignored work/phase-a/ and work/phase-b/.', '',
               'TODO (Gary): Review any recorded build failures or whole-class coverage fallbacks when interpreting exposure and survival. No denominator adjustment was made.']
     (EXP / 'docs/handover-part3.md').write_text('\n'.join(lines) + '\n')

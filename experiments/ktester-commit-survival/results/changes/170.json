@@ -1,0 +1,251 @@
+{
+  "index": 170,
+  "sha": "a841452b9f1bdd635710575b1b46163f573c072c",
+  "parent": "9080767fd03a32c3d592d6359f6dc2f08af2cc45",
+  "subject": "Add Checkstyle RedundantModifier",
+  "pre_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1279,
+      1337
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      974
+    ],
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      196,
+      201,
+      223,
+      252
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      227
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      138
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      254
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      172
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      244,
+      251,
+      447
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      284
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1279,
+      1337
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      974
+    ],
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      196,
+      201,
+      221,
+      224,
+      249,
+      254
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      227
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      138
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      254
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      172
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      244,
+      251,
+      447
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      284
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        1279,
+        1337
+      ],
+      "post_image_lines": [
+        1279,
+        1337
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        974
+      ],
+      "post_image_lines": [
+        974
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "new_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        196,
+        201,
+        223,
+        252
+      ],
+      "post_image_lines": [
+        196,
+        201,
+        221,
+        224,
+        249,
+        254
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        227
+      ],
+      "post_image_lines": [
+        227
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        138
+      ],
+      "post_image_lines": [
+        138
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "new_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        254
+      ],
+      "post_image_lines": [
+        254
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "new_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        172
+      ],
+      "post_image_lines": [
+        172
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        244,
+        251,
+        447
+      ],
+      "post_image_lines": [
+        244,
+        251,
+        447
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        284
+      ],
+      "post_image_lines": [
+        284
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "9080767fd03a32c3d592d6359f6dc2f08af2cc45",
+    "a841452b9f1bdd635710575b1b46163f573c072c",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex e4d9bc846..67abe9bb9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -1279 +1279 @@ public class DigestUtils {\n-        try (final BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(data))) {\n+        try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(data))) {\n@@ -1337 +1337 @@ public class DigestUtils {\n-        try (final BufferedInputStream inputStream = new BufferedInputStream(Files.newInputStream(path, options))) {\n+        try (BufferedInputStream inputStream = new BufferedInputStream(Files.newInputStream(path, options))) {\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex 08415b1d2..90dc337d3 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -974 +974 @@ public final class HmacUtils {\n-        try (final BufferedInputStream stream = new BufferedInputStream(new FileInputStream(valueToDigest))) {\n+        try (BufferedInputStream stream = new BufferedInputStream(new FileInputStream(valueToDigest))) {\ndiff --git a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\nindex f4db0aef1..05b0af6a1 100644\n--- a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n+++ b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n@@ -196 +196 @@ public class ColognePhonetic implements StringEncoder {\n-        public CologneBuffer(final char[] data) {\n+        CologneBuffer(final char[] data) {\n@@ -201 +201 @@ public class ColognePhonetic implements StringEncoder {\n-        public CologneBuffer(final int buffSize) {\n+        CologneBuffer(final int buffSize) {\n@@ -220,0 +221 @@ public class ColognePhonetic implements StringEncoder {\n+\n@@ -223 +224 @@ public class ColognePhonetic implements StringEncoder {\n-        public CologneInputBuffer(final char[] data) {\n+        CologneInputBuffer(final char[] data) {\n@@ -247,0 +249 @@ public class ColognePhonetic implements StringEncoder {\n+\n@@ -252 +254 @@ public class ColognePhonetic implements StringEncoder {\n-        public CologneOutputBuffer(final int buffSize) {\n+        CologneOutputBuffer(final int buffSize) {\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex c4921760d..4daa082f3 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -227 +227 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        try (final Scanner scanner = new Scanner(Resources.getInputStream(RESOURCE_FILE), CharEncoding.UTF_8)) {\n+        try (Scanner scanner = new Scanner(Resources.getInputStream(RESOURCE_FILE), CharEncoding.UTF_8)) {\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex 916ff9505..d92e37c44 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -138 +138 @@ public class Lang {\n-        try (final Scanner scanner = new Scanner(Resources.getInputStream(languageRulesResourceName),\n+        try (Scanner scanner = new Scanner(Resources.getInputStream(languageRulesResourceName),\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Languages.java b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\nindex 92ecb2ec0..479693c3b 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n@@ -254 +254 @@ public class Languages {\n-        try (final Scanner lsScanner = new Scanner(Resources.getInputStream(languagesResourceName),\n+        try (Scanner lsScanner = new Scanner(Resources.getInputStream(languagesResourceName),\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\nindex b1d848aa9..482d6ffdc 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n@@ -172 +172 @@ public class PhoneticEngine {\n-        public RulesApplication(final Map<String, List<Rule>> finalRules, final CharSequence input, final PhonemeBuilder phonemeBuilder, final int i,\n+        RulesApplication(final Map<String, List<Rule>> finalRules, final CharSequence input, final PhonemeBuilder phonemeBuilder, final int i,\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex ab1b917ea..a93969bfd 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -244 +244 @@ public class Rule {\n-                    try (final Scanner scanner = createScanner(s, rt, l)) {\n+                    try (Scanner scanner = createScanner(s, rt, l)) {\n@@ -251 +251 @@ public class Rule {\n-                    try (final Scanner scanner = createScanner(s, rt, \"common\")) {\n+                    try (Scanner scanner = createScanner(s, rt, \"common\")) {\n@@ -447 +447 @@ public class Rule {\n-                    try (final Scanner hashIncludeScanner = createScanner(incl)) {\n+                    try (Scanner hashIncludeScanner = createScanner(incl)) {\ndiff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex 9f1cdc252..98a89bb6b 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -284 +284 @@ public class QuotedPrintableCodec implements BinaryEncoder, BinaryDecoder, Strin\n-    private static final int encodeQuotedPrintable(final int b, final ByteArrayOutputStream buffer) {\n+    private static int encodeQuotedPrintable(final int b, final ByteArrayOutputStream buffer) {\n"
+}

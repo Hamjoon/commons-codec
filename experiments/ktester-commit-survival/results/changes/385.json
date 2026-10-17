@@ -1,0 +1,55 @@
+{
+  "index": 385,
+  "sha": "ad1575188d2f9298b75a7b130abc275582ea0f3a",
+  "parent": "e1a0527a47f5f83662399b78ad2d247726bd2291",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/CRC16.java": [
+      25,
+      26
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/CRC16.java": [
+      25,
+      213,
+      214,
+      215
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/CRC16.java",
+      "new_file": "org/apache/commons/codec/digest/CRC16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25,
+        26
+      ],
+      "post_image_lines": [
+        25,
+        213,
+        214,
+        215
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e1a0527a47f5f83662399b78ad2d247726bd2291",
+    "ad1575188d2f9298b75a7b130abc275582ea0f3a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/CRC16.java b/src/main/java/org/apache/commons/codec/digest/CRC16.java\nindex d4cc37669..f4eddacff 100644\n--- a/src/main/java/org/apache/commons/codec/digest/CRC16.java\n+++ b/src/main/java/org/apache/commons/codec/digest/CRC16.java\n@@ -25,2 +25 @@ import java.util.zip.Checksum;\n- * CRC-16 checksum implementation based on polynomial {@code x<sup>16</spu> + x^15 + x^2 + 1 (0x8005)} and the initial value {@code 0x0000}. This CRC variant is\n- * also known as CRC-16-MODBUS.\n+ * CRC-16 checksum implementations you can customize with a table and input value.\n@@ -213,0 +213,3 @@ public class CRC16 implements Checksum {\n+     * CRC-16 checksum implementation based on polynomial {@code x<sup>16</spu> + x^15 + x^2 + 1 (0x8005)}.\n+     * </p>\n+     * <p>\n"
+}

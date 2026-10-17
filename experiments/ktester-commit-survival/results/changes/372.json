@@ -1,0 +1,83 @@
+{
+  "index": 372,
+  "sha": "9e66c22947495c62b898e9487ae571a8fd2a64b9",
+  "parent": "0253534538e440cfda9726f14901b1b638d20fe8",
+  "subject": "Merge some string literals",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      277
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      56,
+      57,
+      58,
+      59
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      277
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      56,
+      57,
+      59,
+      60,
+      61
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        277
+      ],
+      "post_image_lines": [
+        277
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "new_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "post_image_lines": [
+        56,
+        57,
+        59,
+        60,
+        61
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "0253534538e440cfda9726f14901b1b638d20fe8",
+    "9e66c22947495c62b898e9487ae571a8fd2a64b9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 47e5e9c34..32f9cf456 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -277 +277 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-                                \"Malformed folding statement - \" + \"patterns are not single characters: \" + rawLine + \" in \" + location);\n+                                \"Malformed folding statement - patterns are not single characters: \" + rawLine + \" in \" + location);\ndiff --git a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\nindex 4f9863e40..2e4489f73 100644\n--- a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n@@ -56,4 +56,2 @@ public class MatchRatingApproachEncoder implements StringEncoder {\n-            \"\\u00C2\\u00E2\\u00CA\\u00EA\\u00CE\\u00EE\\u00D4\\u00F4\\u00DB\\u00FB\\u0176\\u0177\" +\n-            \"\\u00C3\\u00E3\\u00D5\\u00F5\\u00D1\\u00F1\" +\n-            \"\\u00C4\\u00E4\\u00CB\\u00EB\\u00CF\\u00EF\\u00D6\\u00F6\\u00DC\\u00FC\\u0178\\u00FF\" +\n-            \"\\u00C5\\u00E5\" + \"\\u00C7\\u00E7\" + \"\\u0150\\u0151\\u0170\\u0171\";\n+            \"\\u00C2\\u00E2\\u00CA\\u00EA\\u00CE\\u00EE\\u00D4\\u00F4\\u00DB\\u00FB\\u0176\\u0177\\u00C3\\u00E3\\u00D5\\u00F5\\u00D1\\u00F1\" +\n+            \"\\u00C4\\u00E4\\u00CB\\u00EB\\u00CF\\u00EF\\u00D6\\u00F6\\u00DC\\u00FC\\u0178\\u00FF\\u00C5\\u00E5\\u00C7\\u00E7\\u0150\\u0151\\u0170\\u0171\";\n@@ -60,0 +59,3 @@ public class MatchRatingApproachEncoder implements StringEncoder {\n+    /**\n+     * Double consonants.\n+     */\n"
+}

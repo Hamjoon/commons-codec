@@ -1,0 +1,59 @@
+{
+  "index": 291,
+  "sha": "812d020064c29a64fea7a1075bd05436dd01dd24",
+  "parent": "ab7a8505ad2a0530a0233a3dff51350d4d2ab45e",
+  "subject": "Precompile and resuse regular expressions in DaitchMokotoffSoundex.parseRules(Scanner, String, Map<Character, List<Rule>>, Map<Character, Character>)",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      275,
+      291
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      231,
+      232,
+      233,
+      234,
+      279,
+      295
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        275,
+        291
+      ],
+      "post_image_lines": [
+        231,
+        232,
+        233,
+        234,
+        279,
+        295
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ab7a8505ad2a0530a0233a3dff51350d4d2ab45e",
+    "812d020064c29a64fea7a1075bd05436dd01dd24",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex dae4bdb30..06f256dee 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -230,0 +231,4 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n+    private static final Pattern EQUAL = Pattern.compile(\"=\");\n+\n+    private static final Pattern SPACES = Pattern.compile(\"\\\\s+\");\n+\n@@ -275 +279 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-                    final String[] parts = line.split(\"=\");\n+                    final String[] parts = EQUAL.split(line);\n@@ -291 +295 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-                    final String[] parts = line.split(\"\\\\s+\");\n+                    final String[] parts = SPACES.split(line);\n"
+}

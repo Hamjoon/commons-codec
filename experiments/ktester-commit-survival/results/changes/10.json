@@ -1,0 +1,85 @@
+{
+  "index": 10,
+  "sha": "14c4621f4cb6b01f1215446c8037418886482df9",
+  "parent": "10412f4028107273c0da1fb69eaa579be2072140",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      95
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      106,
+      117,
+      128,
+      139,
+      150
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      95
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      106,
+      117,
+      128,
+      139,
+      150
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        95
+      ],
+      "post_image_lines": [
+        95
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        106,
+        117,
+        128,
+        139,
+        150
+      ],
+      "post_image_lines": [
+        106,
+        117,
+        128,
+        139,
+        150
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "10412f4028107273c0da1fb69eaa579be2072140",
+    "14c4621f4cb6b01f1215446c8037418886482df9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 971d2c2ed..48ad7334e 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -95 +95 @@ public class Base64 extends BaseNCodec {\n-         * @return this.\n+         * @return {@code this} instance.\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex c598abc3d..e4e3f6ae2 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -106 +106 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this.\n+         * @return {@code this} instance.\n@@ -117 +117 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this.\n+         * @return {@code this} instance.\n@@ -128 +128 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this.\n+         * @return {@code this} instance.\n@@ -139 +139 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this.\n+         * @return {@code this} instance.\n@@ -150 +150 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this.\n+         * @return {@code this} instance.\n"
+}

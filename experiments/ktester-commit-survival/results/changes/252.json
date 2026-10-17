@@ -1,0 +1,57 @@
+{
+  "index": 252,
+  "sha": "1848f8fc46bdfdd54f4c0b28f4644bf6c8f2cf29",
+  "parent": "4eb3f433fcd9e298c6066a481317a6fbe4a84ee9",
+  "subject": "Refactor DigestUtils.updateDigest(MessageDigest, File) to use NIO",
+  "pre_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      22,
+      1279,
+      1280,
+      1281,
+      1317,
+      1322
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1278
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        22,
+        1279,
+        1280,
+        1281,
+        1317,
+        1322
+      ],
+      "post_image_lines": [
+        1278
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "4eb3f433fcd9e298c6066a481317a6fbe4a84ee9",
+    "1848f8fc46bdfdd54f4c0b28f4644bf6c8f2cf29",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex a5d096483..9d0bbb121 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -22 +21,0 @@ import java.io.File;\n-import java.io.FileInputStream;\n@@ -1279,3 +1278 @@ public class DigestUtils {\n-        try (BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream(data))) {\n-            return updateDigest(digest, inputStream);\n-        }\n+        return updateDigest(digest, data.toPath());\n@@ -1317 +1313,0 @@ public class DigestUtils {\n-\n@@ -1322 +1317,0 @@ public class DigestUtils {\n-\n"
+}

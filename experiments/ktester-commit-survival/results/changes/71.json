@@ -1,0 +1,47 @@
+{
+  "index": 71,
+  "sha": "7cae886f2de60fabc37d36a1ddd09473c5aeaa46",
+  "parent": "6175c99ee3055b3a87d9c51e59ab8be22a4c1cfc",
+  "subject": "Javadoc fix [skip ci]",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      243
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      243
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        243
+      ],
+      "post_image_lines": [
+        243
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "6175c99ee3055b3a87d9c51e59ab8be22a4c1cfc",
+    "7cae886f2de60fabc37d36a1ddd09473c5aeaa46",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 3b5a4b5fb..76394d54a 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -243 +243 @@ public class UnixCrypt {\n-     *            generated for you using {@link SecureRandom}.\n+     *            generated for you using {@link B64#getRandomSalt(int)}.\n"
+}

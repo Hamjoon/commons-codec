@@ -1,0 +1,47 @@
+{
+  "index": 31,
+  "sha": "e145a0ae6e0ce48cbd0e393c0d4102a92d4b3562",
+  "parent": "c07d6a49d5b62b4a370ec57d89235fc21004c25a",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      451
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      451
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        451
+      ],
+      "post_image_lines": [
+        451
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c07d6a49d5b62b4a370ec57d89235fc21004c25a",
+    "e145a0ae6e0ce48cbd0e393c0d4102a92d4b3562",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex 6dd800772..86d2e8950 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -451 +451 @@ public class QuotedPrintableCodec implements BinaryEncoder, BinaryDecoder, Strin\n-        return this.decode(sourceStr, this.getCharset());\n+        return this.decode(sourceStr, getCharset());\n"
+}

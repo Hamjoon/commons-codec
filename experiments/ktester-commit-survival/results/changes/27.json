@@ -1,0 +1,55 @@
+{
+  "index": 27,
+  "sha": "17e9b6f98161aefae40922d24509625c120a0b78",
+  "parent": "dfe6d45ffb3d80977fda17eecd6fb974ba96e0b7",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Hex.java": [
+      483,
+      503,
+      524
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Hex.java": [
+      483,
+      503,
+      524
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Hex.java",
+      "new_file": "org/apache/commons/codec/binary/Hex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        483,
+        503,
+        524
+      ],
+      "post_image_lines": [
+        483,
+        503,
+        524
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "dfe6d45ffb3d80977fda17eecd6fb974ba96e0b7",
+    "17e9b6f98161aefae40922d24509625c120a0b78",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Hex.java b/src/main/java/org/apache/commons/codec/binary/Hex.java\nindex dc6d0806b..7db25d5cd 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Hex.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Hex.java\n@@ -483 +483 @@ public class Hex implements BinaryEncoder, BinaryDecoder {\n-        return encodeHexString(array).getBytes(this.getCharset());\n+        return encodeHexString(array).getBytes(getCharset());\n@@ -503 +503 @@ public class Hex implements BinaryEncoder, BinaryDecoder {\n-        return encodeHexString(array).getBytes(this.getCharset());\n+        return encodeHexString(array).getBytes(getCharset());\n@@ -524 +524 @@ public class Hex implements BinaryEncoder, BinaryDecoder {\n-            byteArray = ((String) object).getBytes(this.getCharset());\n+            byteArray = ((String) object).getBytes(getCharset());\n"
+}

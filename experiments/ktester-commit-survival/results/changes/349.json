@@ -1,0 +1,45 @@
+{
+  "index": 349,
+  "sha": "96610734f6d4fd8a3c188e76fb99ef45fd06459f",
+  "parent": "46e8cdc5eb6c916d8a140ae519af31ec401d6514",
+  "subject": "This old tweak doesn't satisfy FindBugs",
+  "pre_image": {
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": [
+      638,
+      639
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "new_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        638,
+        639
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "46e8cdc5eb6c916d8a140ae519af31ec401d6514",
+    "96610734f6d4fd8a3c188e76fb99ef45fd06459f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\nindex d3e160406..fb6ccdc35 100644\n--- a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n+++ b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n@@ -638,2 +637,0 @@ public class PureJavaCrc32C implements Checksum {\n-        default:\n-            break; // satisfy Findbugs\n"
+}

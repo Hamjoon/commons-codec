@@ -1,0 +1,65 @@
+{
+  "index": 327,
+  "sha": "59929c391777e60157ae9533f624f8383c007e85",
+  "parent": "25225b0ecd58d4c5d580107590b11e6855fc2d30",
+  "subject": "[CODEC-331] org.apache.commons.codec.language.bm.Rule.parsePhonemeExpr(String) adds duplicate empty phoneme when input ends with |",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      429,
+      433,
+      437,
+      440
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      83,
+      84,
+      431,
+      435,
+      439,
+      440,
+      443
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        429,
+        433,
+        437,
+        440
+      ],
+      "post_image_lines": [
+        83,
+        84,
+        431,
+        435,
+        439,
+        440,
+        443
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "25225b0ecd58d4c5d580107590b11e6855fc2d30",
+    "59929c391777e60157ae9533f624f8383c007e85",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex aee7b760f..d5d6e0b63 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -82,0 +83,2 @@ public class Rule {\n+    private static final String PIPE = \"|\";\n+\n@@ -429 +431 @@ public class Rule {\n-    private static PhonemeExpr parsePhonemeExpr(final String ph) {\n+    static PhonemeExpr parsePhonemeExpr(final String ph) {\n@@ -433 +435 @@ public class Rule {\n-                throw new IllegalArgumentException(\"Phoneme starts with '(' so must end with ')'\");\n+                throw new IllegalArgumentException(\"Phoneme starting with '(' must end with ')'\");\n@@ -437 +439,2 @@ public class Rule {\n-            for (final String part : AROUND_PIPE.split(body)) {\n+            final String[] split = AROUND_PIPE.split(body);\n+            for (final String part : split) {\n@@ -440 +443 @@ public class Rule {\n-            if (body.startsWith(\"|\") || body.endsWith(\"|\")) {\n+            if (split.length > 1 && split[0].length() != 0 && body.startsWith(PIPE) || split[split.length - 1].length() != 0 && body.endsWith(PIPE)) {\n"
+}

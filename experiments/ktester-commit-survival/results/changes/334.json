@@ -1,0 +1,57 @@
+{
+  "index": 334,
+  "sha": "66bbba913491a89e75fb66e3df9a4dc8710ee699",
+  "parent": "ed43d2a48cd741f62b849ae19b7a9e64d7f73f33",
+  "subject": "Fomat nits",
+  "pre_image": {
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      31,
+      268,
+      269
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      31,
+      32,
+      33,
+      270
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "new_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        31,
+        268,
+        269
+      ],
+      "post_image_lines": [
+        31,
+        32,
+        33,
+        270
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ed43d2a48cd741f62b849ae19b7a9e64d7f73f33",
+    "66bbba913491a89e75fb66e3df9a4dc8710ee699",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/StringUtils.java b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\nindex 6c110eb76..5c741d36f 100644\n--- a/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n+++ b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n@@ -31 +31,3 @@ import org.apache.commons.codec.CharEncoding;\n- * <p>This class is immutable and thread-safe.</p>\n+ * <p>\n+ * This class is immutable and thread-safe.\n+ * </p>\n@@ -268,2 +270 @@ public class StringUtils {\n-    private static IllegalStateException newIllegalStateException(final String charsetName,\n-                                                                  final UnsupportedEncodingException e) {\n+    private static IllegalStateException newIllegalStateException(final String charsetName, final UnsupportedEncodingException e) {\n"
+}

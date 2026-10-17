@@ -1,0 +1,47 @@
+{
+  "index": 345,
+  "sha": "f49428a2965ef94a677d82db3a4ccddfe628f160",
+  "parent": "20df4c9f2947b2c6e992778d2859c4a58856beff",
+  "subject": "The method org.apache.commons.codec.binary.BaseNCodec.AbstractBuilder.setLineSeparator(byte...) now makes a defensive copy",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      153
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      153
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        153
+      ],
+      "post_image_lines": [
+        153
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "20df4c9f2947b2c6e992778d2859c4a58856beff",
+    "f49428a2965ef94a677d82db3a4ccddfe628f160",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex f1f979ef9..2ab1eb07d 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -153 +153 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-            this.lineSeparator = lineSeparator != null ? lineSeparator : CHUNK_SEPARATOR;\n+            this.lineSeparator = lineSeparator != null ? lineSeparator.clone() : CHUNK_SEPARATOR;\n"
+}

@@ -1,0 +1,71 @@
+{
+  "index": 344,
+  "sha": "20df4c9f2947b2c6e992778d2859c4a58856beff",
+  "parent": "45f549ca8f223297a9e0c9972d604784f73cfa17",
+  "subject": "Fix SpotBugs [ERROR] Medium: org.apache.commons.codec.binary.BaseNCodec$AbstractBuilder.setEncodeTable(byte[]) may expose internal representation by storing an externally mutable object into BaseNCodec$AbstractBuilder.encodeTable [org.apache.commons.codec.binary.BaseNCodec$AbstractBuilder] At BaseNCodec.java:[line 131] EI_EXPOSE_REP2",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      670
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      131
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      670,
+      671
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      131
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        670
+      ],
+      "post_image_lines": [
+        670,
+        671
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        131
+      ],
+      "post_image_lines": [
+        131
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "45f549ca8f223297a9e0c9972d604784f73cfa17",
+    "20df4c9f2947b2c6e992778d2859c4a58856beff",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 8d0a489c7..d24c36eb9 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -670 +670,2 @@ public class Base64 extends BaseNCodec {\n-        this.isUrlSafe = encodeTable == URL_SAFE_ENCODE_TABLE;\n+        // same array first or equal contents second\n+        this.isUrlSafe = encodeTable == URL_SAFE_ENCODE_TABLE || Arrays.equals(encodeTable, URL_SAFE_ENCODE_TABLE);\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex ac0f4b2a0..f1f979ef9 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -131 +131 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-            this.encodeTable = encodeTable != null ? encodeTable : defaultEncodeTable;\n+            this.encodeTable = encodeTable != null ? encodeTable.clone() : defaultEncodeTable;\n"
+}

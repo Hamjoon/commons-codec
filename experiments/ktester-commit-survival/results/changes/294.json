@@ -1,0 +1,75 @@
+{
+  "index": 294,
+  "sha": "112463e9a29cbb5937c50570edf29684dcd63697",
+  "parent": "43943fcad460c23d64344225236d916df8d53f21",
+  "subject": "Javadoc typo",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      42,
+      78,
+      222,
+      356,
+      383,
+      392,
+      409,
+      427
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      42,
+      78,
+      222,
+      356,
+      383,
+      392,
+      409,
+      427
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        42,
+        78,
+        222,
+        356,
+        383,
+        392,
+        409,
+        427
+      ],
+      "post_image_lines": [
+        42,
+        78,
+        222,
+        356,
+        383,
+        392,
+        409,
+        427
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "43943fcad460c23d64344225236d916df8d53f21",
+    "112463e9a29cbb5937c50570edf29684dcd63697",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 06f256dee..b4f4b030e 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -42 +42 @@ import org.apache.commons.codec.StringEncoder;\n- * The main differences compared to the other soundex variants are:\n+ * The main differences compared to the other Soundex variants are:\n@@ -78 +78 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * Inner class representing a branch during DM soundex encoding.\n+     * Inner class representing a branch during DM Soundex encoding.\n@@ -222 +222 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-    /** The code length of a DM soundex value. */\n+    /** The code length of a DM Soundex value. */\n@@ -356 +356 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * Performs a cleanup of the input string before the actual soundex transformation.\n+     * Performs a cleanup of the input string before the actual Soundex transformation.\n@@ -383 +383 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * Encodes an Object using the Daitch-Mokotoff soundex algorithm without branching.\n+     * Encodes an Object using the Daitch-Mokotoff Soundex algorithm without branching.\n@@ -392 +392 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * @return An object (of type {@link String}) containing the DM soundex code, which corresponds to the String\n+     * @return An object (of type {@link String}) containing the DM Soundex code, which corresponds to the String\n@@ -409 +409 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * Encodes a String using the Daitch-Mokotoff soundex algorithm without branching.\n+     * Encodes a String using the Daitch-Mokotoff Soundex algorithm without branching.\n@@ -427 +427 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * Encodes a String using the Daitch-Mokotoff soundex algorithm with branching.\n+     * Encodes a String using the Daitch-Mokotoff Soundex algorithm with branching.\n"
+}

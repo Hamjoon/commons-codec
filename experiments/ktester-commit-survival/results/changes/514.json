@@ -1,0 +1,61 @@
+{
+  "index": 514,
+  "sha": "99c53ffb770833ef2b3fce19da15572e3e17c377",
+  "parent": "e104437b20aabef356adc363137be345c3273c6a",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/BinaryEncoder.java": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      36
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/BinaryEncoder.java": [
+      28,
+      29,
+      30
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/BinaryEncoder.java",
+      "new_file": "org/apache/commons/codec/BinaryEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        36
+      ],
+      "post_image_lines": [
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e104437b20aabef356adc363137be345c3273c6a",
+    "99c53ffb770833ef2b3fce19da15572e3e17c377",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/BinaryEncoder.java b/src/main/java/org/apache/commons/codec/BinaryEncoder.java\nindex 2b5e8e6a1..ad7ff36ae 100644\n--- a/src/main/java/org/apache/commons/codec/BinaryEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/BinaryEncoder.java\n@@ -28,5 +28,3 @@ public interface BinaryEncoder extends Encoder {\n-     * @param source\n-     *            Data to be encoded\n-     * @return A byte array containing the encoded data\n-     * @throws EncoderException\n-     *             thrown if the Encoder encounters a failure condition during the encoding process.\n+     * @param source Data to be encoded.\n+     * @return A byte array containing the encoded data.\n+     * @throws EncoderException thrown if the Encoder encounters a failure condition during the encoding process.\n@@ -36 +33,0 @@ public interface BinaryEncoder extends Encoder {\n-\n"
+}

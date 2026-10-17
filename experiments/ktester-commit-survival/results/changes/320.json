@@ -1,0 +1,49 @@
+{
+  "index": 320,
+  "sha": "218d031d5c9163b7688e358639b2b0f9b5f891e8",
+  "parent": "ed9431550e8dc485073d3648c9435b43ee0b2e8b",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      292,
+      293,
+      294,
+      295
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        292,
+        293,
+        294,
+        295
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ed9431550e8dc485073d3648c9435b43ee0b2e8b",
+    "218d031d5c9163b7688e358639b2b0f9b5f891e8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 3205f71c1..77e34ea95 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -291,0 +292,4 @@ public class Rule {\n+\n+    /**\n+     * Initializes {@code RULES}.\n+     */\n"
+}

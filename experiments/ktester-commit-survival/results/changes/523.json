@@ -1,0 +1,89 @@
+{
+  "index": 523,
+  "sha": "db6b7bc648b20b836cedf27319b2f66d20169dd6",
+  "parent": "14b5d6a7e635394a8ce2ab931c8279080721b236",
+  "subject": "Javadoc: The @deprecated tag should be last.",
+  "pre_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      72,
+      84,
+      97,
+      109,
+      121,
+      133
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      262
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      73,
+      85,
+      98,
+      110,
+      122,
+      134
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      263
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Charsets.java",
+      "new_file": "org/apache/commons/codec/Charsets.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        72,
+        84,
+        97,
+        109,
+        121,
+        133
+      ],
+      "post_image_lines": [
+        73,
+        85,
+        98,
+        110,
+        122,
+        134
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Soundex.java",
+      "new_file": "org/apache/commons/codec/language/Soundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        262
+      ],
+      "post_image_lines": [
+        263
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "14b5d6a7e635394a8ce2ab931c8279080721b236",
+    "db6b7bc648b20b836cedf27319b2f66d20169dd6",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/Charsets.java b/src/main/java/org/apache/commons/codec/Charsets.java\nindex e2b121442..b2c26e6db 100644\n--- a/src/main/java/org/apache/commons/codec/Charsets.java\n+++ b/src/main/java/org/apache/commons/codec/Charsets.java\n@@ -72 +71,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#ISO_8859_1} instead.\n@@ -73,0 +73 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#ISO_8859_1} instead.\n@@ -84 +83,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#US_ASCII} instead.\n@@ -85,0 +85 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#US_ASCII} instead.\n@@ -97 +96,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16} instead.\n@@ -98,0 +98 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16} instead.\n@@ -109 +108,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16BE} instead.\n@@ -110,0 +110 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16BE} instead.\n@@ -121 +120,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16LE} instead.\n@@ -122,0 +122 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_16LE} instead.\n@@ -133 +132,0 @@ public class Charsets {\n-     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_8} instead.\n@@ -134,0 +134 @@ public class Charsets {\n+     * @deprecated Use {@link java.nio.charset.StandardCharsets#UTF_8} instead.\ndiff --git a/src/main/java/org/apache/commons/codec/language/Soundex.java b/src/main/java/org/apache/commons/codec/language/Soundex.java\nindex 34c4ca9e0..e7c19ee91 100644\n--- a/src/main/java/org/apache/commons/codec/language/Soundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/Soundex.java\n@@ -262 +261,0 @@ public class Soundex implements StringEncoder {\n-     * @deprecated This feature is not needed since the encoding size must be constant. Will be removed in 2.0.\n@@ -263,0 +263 @@ public class Soundex implements StringEncoder {\n+     * @deprecated This feature is not needed since the encoding size must be constant. Will be removed in 2.0.\n"
+}

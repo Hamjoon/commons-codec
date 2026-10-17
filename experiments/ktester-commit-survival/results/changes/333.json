@@ -1,0 +1,89 @@
+{
+  "index": 333,
+  "sha": "ed43d2a48cd741f62b849ae19b7a9e64d7f73f33",
+  "parent": "cd06e60f4c2a0a63f34192e1ab878d9a4f45e893",
+  "subject": "Sort members",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      83,
+      84
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      203,
+      204,
+      205,
+      206,
+      207
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      277,
+      278
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "post_image_lines": [
+        203,
+        204,
+        205,
+        206,
+        207
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        83,
+        84
+      ],
+      "post_image_lines": [
+        277,
+        278
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cd06e60f4c2a0a63f34192e1ab878d9a4f45e893",
+    "ed43d2a48cd741f62b849ae19b7a9e64d7f73f33",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 546a77b20..c5fc9652e 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -72,5 +71,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-    /**\n-     * The NUL character.\n-     */\n-    private static final char NUL = '\\0';\n-\n@@ -207,0 +203,5 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n+    /**\n+     * The NUL character.\n+     */\n+    private static final char NUL = '\\0';\n+\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 42ad9c9d7..e0bb0b5cd 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -83,2 +82,0 @@ public class Rule {\n-    private static final String PIPE = \"|\";\n-\n@@ -278,0 +277,2 @@ public class Rule {\n+    private static final String PIPE = \"|\";\n+\n"
+}

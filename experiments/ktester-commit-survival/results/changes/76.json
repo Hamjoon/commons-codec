@@ -1,0 +1,65 @@
+{
+  "index": 76,
+  "sha": "007ddf13798a20fc6578f670c3bd057c39c6c179",
+  "parent": "83e80d714a58d5c49591d694d6bf030380f36fa9",
+  "subject": "Rewrite DaitchMokotoffSoundex.soundex(String) using String.join()",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      444
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453
+      ],
+      "post_image_lines": [
+        444
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "007ddf13798a20fc6578f670c3bd057c39c6c179",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 86806e8da..9fcf2887d 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -444,10 +444 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        final String[] branches = soundex(source, true);\n-        final StringBuilder sb = new StringBuilder();\n-        int index = 0;\n-        for (final String branch : branches) {\n-            sb.append(branch);\n-            if (++index < branches.length) {\n-                sb.append('|');\n-            }\n-        }\n-        return sb.toString();\n+        return String.join(\"|\", soundex(source, true));\n"
+}

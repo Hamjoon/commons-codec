@@ -1,0 +1,47 @@
+{
+  "index": 120,
+  "sha": "2160eaa3403aa3ebce4d82c95368b96c39d9c24d",
+  "parent": "70e765490f7a43f642acff2402f96552c4642f72",
+  "subject": "Javadoc: Fix typo.",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      970
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      970
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        970
+      ],
+      "post_image_lines": [
+        970
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "70e765490f7a43f642acff2402f96552c4642f72",
+    "2160eaa3403aa3ebce4d82c95368b96c39d9c24d",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex ba774969b..75de517cc 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -970 +970 @@ public class DoubleMetaphone implements StringEncoder {\n-     * of slavo-germanic origin if it contians any of 'W', 'K', 'CZ', or 'WITZ'.\n+     * of slavo-germanic origin if it contains any of 'W', 'K', 'CZ', or 'WITZ'.\n"
+}

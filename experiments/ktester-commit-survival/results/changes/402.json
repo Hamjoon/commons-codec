@@ -1,0 +1,47 @@
+{
+  "index": 402,
+  "sha": "7963dd219f4535eb848132251f3de63160d2721f",
+  "parent": "ce3af301d3f0f3629894062a1d6ca7b3882ae4a1",
+  "subject": "Format nit",
+  "pre_image": {
+    "org/apache/commons/codec/digest/CRC16.java": [
+      227
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/CRC16.java": [
+      227
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/CRC16.java",
+      "new_file": "org/apache/commons/codec/digest/CRC16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        227
+      ],
+      "post_image_lines": [
+        227
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ce3af301d3f0f3629894062a1d6ca7b3882ae4a1",
+    "7963dd219f4535eb848132251f3de63160d2721f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/CRC16.java b/src/main/java/org/apache/commons/codec/digest/CRC16.java\nindex eeda297ae..d2a2c2e94 100644\n--- a/src/main/java/org/apache/commons/codec/digest/CRC16.java\n+++ b/src/main/java/org/apache/commons/codec/digest/CRC16.java\n@@ -227 +227 @@ public class CRC16 implements Checksum {\n-        private static final int[] MCRF4XX = CCITT;\n+    private static final int[] MCRF4XX = CCITT;\n"
+}

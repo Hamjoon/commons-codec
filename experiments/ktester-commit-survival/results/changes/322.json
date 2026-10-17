@@ -1,0 +1,49 @@
+{
+  "index": 322,
+  "sha": "801afd9731ee93cd265089ced09b916713aa761f",
+  "parent": "e3b840fa7401663935ecd66d20e74981b4c41d0e",
+  "subject": "eprecate unused constant org.apache.commons.codec.language.bm.Rule.ALL",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      284,
+      285,
+      287,
+      289
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        284,
+        285,
+        287,
+        289
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e3b840fa7401663935ecd66d20e74981b4c41d0e",
+    "801afd9731ee93cd265089ced09b916713aa761f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 3f05787c1..8d7d6b668 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -283,0 +284,2 @@ public class Rule {\n+     *\n+     * @deprecated This is unused.\n@@ -284,0 +287 @@ public class Rule {\n+    @Deprecated\n@@ -285,0 +289 @@ public class Rule {\n+\n"
+}

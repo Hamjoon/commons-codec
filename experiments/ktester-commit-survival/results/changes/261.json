@@ -1,0 +1,87 @@
+{
+  "index": 261,
+  "sha": "a7d39e3eb8da2480d90753f181566e1678b3df0e",
+  "parent": "b4c7653f2784c78fc42f943e1f89e4d291c862eb",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      236,
+      345,
+      346,
+      670,
+      690,
+      715,
+      733,
+      743,
+      783,
+      799
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      236,
+      296,
+      346,
+      347,
+      359,
+      672,
+      692,
+      717,
+      735,
+      745,
+      785,
+      801
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        236,
+        345,
+        346,
+        670,
+        690,
+        715,
+        733,
+        743,
+        783,
+        799
+      ],
+      "post_image_lines": [
+        236,
+        296,
+        346,
+        347,
+        359,
+        672,
+        692,
+        717,
+        735,
+        745,
+        785,
+        801
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "b4c7653f2784c78fc42f943e1f89e4d291c862eb",
+    "a7d39e3eb8da2480d90753f181566e1678b3df0e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 9779b2a24..f029f26af 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -236 +236 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * EOF\n+     * End-of-file marker.\n@@ -295,0 +296 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+     *\n@@ -345,2 +346,2 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param byteToCheck\n-     *            the byte to check\n+     *\n+     * @param byteToCheck the byte to check\n@@ -357,0 +359 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+     *\n@@ -670 +672 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Ensure that the buffer has room for {@code size} bytes\n+     * Ensures that the buffer has room for {@code size} bytes\n@@ -690 +692 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Returns the decoding behavior policy.\n+     * Gets the decoding behavior policy.\n@@ -715 +717 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Calculates the amount of space needed to encode the supplied array.\n+     * Gets the amount of space needed to encode the supplied array.\n@@ -733 +735 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Returns true if this object has buffered data for reading.\n+     * Tests whether this object has buffered data for reading.\n@@ -743 +745 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Returns whether or not the {@code octet} is in the current alphabet.\n+     * Tests whether or not the {@code octet} is in the current alphabet.\n@@ -783 +785 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Returns true if decoding behavior is strict. Decoding will raise an {@link IllegalArgumentException} if trailing\n+     * Tests true if decoding behavior is strict. Decoding will raise an {@link IllegalArgumentException} if trailing\n@@ -799 +801 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * Extracts buffered data into the provided byte[] array, starting at position bPos, up to a maximum of bAvail\n+     * Reads buffered data into the provided byte[] array, starting at position bPos, up to a maximum of bAvail\n"
+}

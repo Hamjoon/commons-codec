@@ -1,0 +1,47 @@
+{
+  "index": 503,
+  "sha": "cc31b98843ff1ddaa3a4d98c73dc428f89918699",
+  "parent": "1129c6792df7ca92e57f63b6455007c1382a89a2",
+  "subject": "Javadoc: Fix double the",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      88
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      88
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        88
+      ],
+      "post_image_lines": [
+        88
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1129c6792df7ca92e57f63b6455007c1382a89a2",
+    "cc31b98843ff1ddaa3a4d98c73dc428f89918699",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex fe1ff3bff..0ba01df5b 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -88 +88 @@ public class Base16 extends BaseNCodec {\n-         * Sets whether to use the the lower-case Base16 alphabet.\n+         * Sets whether to use the lower-case Base16 alphabet.\n"
+}

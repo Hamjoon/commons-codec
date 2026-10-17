@@ -1,0 +1,65 @@
+{
+  "index": 517,
+  "sha": "be2cf88e5b43928b571acfa318da7741b1d29bae",
+  "parent": "950c65f5ff9c30e61f9a4448979b27359cbf46f0",
+  "subject": "Internal refactoring",
+  "pre_image": {
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      660,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      660,
+      664,
+      665
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        660,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670
+      ],
+      "post_image_lines": [
+        660,
+        664,
+        665
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "950c65f5ff9c30e61f9a4448979b27359cbf46f0",
+    "be2cf88e5b43928b571acfa318da7741b1d29bae",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex 2fab314a1..84243169d 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -660 +660 @@ public final class HmacUtils {\n-     * @param name the name to check.\n+     * @param hmacAlgorithms the HmacAlgorithms to check.\n@@ -664,7 +664,2 @@ public final class HmacUtils {\n-    public static boolean isAvailable(final HmacAlgorithms name) {\n-        try {\n-            Mac.getInstance(name.getName());\n-            return true;\n-        } catch (final NoSuchAlgorithmException e) {\n-            return false;\n-        }\n+    public static boolean isAvailable(final HmacAlgorithms hmacAlgorithms) {\n+        return isAvailable(hmacAlgorithms.getName());\n"
+}

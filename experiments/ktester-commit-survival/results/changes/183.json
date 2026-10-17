@@ -1,0 +1,375 @@
+{
+  "index": 183,
+  "sha": "fd375f62d280f852ae034ee84baee36c24d0771a",
+  "parent": "1c23ee9696acaf16bec09ed203e845da8c86a839",
+  "subject": "Javadoc: English, not Latin",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      388
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      93,
+      113
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      97,
+      117
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      724
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      97,
+      117
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      101,
+      121
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      397,
+      400,
+      443,
+      444,
+      459,
+      460,
+      476,
+      477
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      129,
+      157
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      68,
+      80,
+      93,
+      106,
+      119,
+      133,
+      1272,
+      1289,
+      1308,
+      1329,
+      1345
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      335
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      847,
+      857,
+      874,
+      943,
+      963,
+      979
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      388
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      93,
+      113
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      97,
+      117
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      724
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      97,
+      117
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      101,
+      121
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      397,
+      400,
+      443,
+      444,
+      459,
+      460,
+      476,
+      477
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      129,
+      157
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      68,
+      80,
+      93,
+      106,
+      119,
+      133,
+      1272,
+      1289,
+      1308,
+      1329,
+      1345
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      335
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      847,
+      857,
+      874,
+      943,
+      963,
+      979
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32.java",
+      "new_file": "org/apache/commons/codec/binary/Base32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        388
+      ],
+      "post_image_lines": [
+        388
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        93,
+        113
+      ],
+      "post_image_lines": [
+        93,
+        113
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        97,
+        117
+      ],
+      "post_image_lines": [
+        97,
+        117
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        724
+      ],
+      "post_image_lines": [
+        724
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        97,
+        117
+      ],
+      "post_image_lines": [
+        97,
+        117
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        101,
+        121
+      ],
+      "post_image_lines": [
+        101,
+        121
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        397,
+        400,
+        443,
+        444,
+        459,
+        460,
+        476,
+        477
+      ],
+      "post_image_lines": [
+        397,
+        400,
+        443,
+        444,
+        459,
+        460,
+        476,
+        477
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        129,
+        157
+      ],
+      "post_image_lines": [
+        129,
+        157
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        68,
+        80,
+        93,
+        106,
+        119,
+        133,
+        1272,
+        1289,
+        1308,
+        1329,
+        1345
+      ],
+      "post_image_lines": [
+        68,
+        80,
+        93,
+        106,
+        119,
+        133,
+        1272,
+        1289,
+        1308,
+        1329,
+        1345
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        335
+      ],
+      "post_image_lines": [
+        335
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        847,
+        857,
+        874,
+        943,
+        963,
+        979
+      ],
+      "post_image_lines": [
+        847,
+        857,
+        874,
+        943,
+        963,
+        979
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1c23ee9696acaf16bec09ed203e845da8c86a839",
+    "fd375f62d280f852ae034ee84baee36c24d0771a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32.java b/src/main/java/org/apache/commons/codec/binary/Base32.java\nindex c771b40fe..9f88c2a34 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32.java\n@@ -388 +388 @@ public class Base32 extends BaseNCodec {\n-     * Ignores all non-Base32 characters. This is how chunked (e.g. 76 character) data is handled, since CR and LF are silently ignored, but has implications\n+     * Ignores all non-Base32 characters. This is how chunked (for example 76 character) data is handled, since CR and LF are silently ignored, but has implications\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex c6f8e5b89..49a23af48 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -93 +93 @@ public class Base32InputStream extends BaseNCodecInputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\n@@ -113 +113 @@ public class Base32InputStream extends BaseNCodecInputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 06367bada..87a6bc389 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -97 +97 @@ public class Base32OutputStream extends BaseNCodecOutputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\n@@ -117 +117 @@ public class Base32OutputStream extends BaseNCodecOutputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex b406c62f4..730df7574 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -724 +724 @@ public class Base64 extends BaseNCodec {\n-     * Ignores all non-base64 characters. This is how chunked (e.g. 76 character) data is handled, since CR and LF are\n+     * Ignores all non-base64 characters. This is how chunked (for example 76 character) data is handled, since CR and LF are\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex 059f66e12..d7b47fe11 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -97 +97 @@ public class Base64InputStream extends BaseNCodecInputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\n@@ -117 +117 @@ public class Base64InputStream extends BaseNCodecInputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 43103b554..745860d91 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -101 +101 @@ public class Base64OutputStream extends BaseNCodecOutputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\n@@ -121 +121 @@ public class Base64OutputStream extends BaseNCodecOutputStream {\n-     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (e.g. \\r\\n).\n+     *            If doEncode is true, each line of encoded data will be terminated with this byte sequence (for example \\r\\n).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex f2c11c907..9779b2a24 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -397 +397 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-    /** Number of bytes in each full block of unencoded data, e.g. 4 for Base64 and 5 for Base32 */\n+    /** Number of bytes in each full block of unencoded data, for example 4 for Base64 and 5 for Base32 */\n@@ -400 +400 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-    /** Number of bytes in each full block of encoded data, e.g. 3 for Base64 and 8 for Base32 */\n+    /** Number of bytes in each full block of encoded data, for example 3 for Base64 and 8 for Base32 */\n@@ -443,2 +443,2 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param unencodedBlockSize the size of an unencoded block (e.g. Base64 = 3)\n-     * @param encodedBlockSize the size of an encoded block (e.g. Base64 = 4)\n+     * @param unencodedBlockSize the size of an unencoded block (for example Base64 = 3)\n+     * @param encodedBlockSize the size of an encoded block (for example Base64 = 4)\n@@ -459,2 +459,2 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param unencodedBlockSize the size of an unencoded block (e.g. Base64 = 3)\n-     * @param encodedBlockSize the size of an encoded block (e.g. Base64 = 4)\n+     * @param unencodedBlockSize the size of an unencoded block (for example Base64 = 3)\n+     * @param encodedBlockSize the size of an encoded block (for example Base64 = 4)\n@@ -476,2 +476,2 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param unencodedBlockSize the size of an unencoded block (e.g. Base64 = 3)\n-     * @param encodedBlockSize the size of an encoded block (e.g. Base64 = 4)\n+     * @param unencodedBlockSize the size of an unencoded block (for example Base64 = 3)\n+     * @param encodedBlockSize the size of an encoded block (for example Base64 = 4)\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex ec658d49e..dfeddcaf9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -129 +129 @@ public class Crypt {\n-     * {@code \"$\"} sign is encountered. It is therefore valid to enter a complete hash value as salt to e.g. verify a\n+     * {@code \"$\"} sign is encountered. It is therefore valid to enter a complete hash value as salt to for example verify a\n@@ -157 +157 @@ public class Crypt {\n-     * UTF-8 but e.g. in ISO-8859-1 where equal characters result in different byte values.\n+     * UTF-8 but for example in ISO-8859-1 where equal characters result in different byte values.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 67abe9bb9..a5d096483 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -68 +68 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -80 +80 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -93 +93 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -106 +106 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -119 +119 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -133 +133 @@ public class DigestUtils {\n-     * @param messageDigest The MessageDigest to use (e.g. MD5)\n+     * @param messageDigest The MessageDigest to use (for example MD5)\n@@ -1272 +1272 @@ public class DigestUtils {\n-     * @param digest The MessageDigest to use (e.g. MD5)\n+     * @param digest The MessageDigest to use (for example MD5)\n@@ -1289 +1289 @@ public class DigestUtils {\n-     * @param digest The MessageDigest to use (e.g. MD5)\n+     * @param digest The MessageDigest to use (for example MD5)\n@@ -1308 +1308 @@ public class DigestUtils {\n-     * @param digest      The MessageDigest to use (e.g. MD5)\n+     * @param digest      The MessageDigest to use (for example MD5)\n@@ -1329 +1329 @@ public class DigestUtils {\n-     * @param digest  The MessageDigest to use (e.g. MD5)\n+     * @param digest  The MessageDigest to use (for example MD5)\n@@ -1345 +1345 @@ public class DigestUtils {\n-     * @param digest The MessageDigest to use (e.g. MD5)\n+     * @param digest The MessageDigest to use (for example MD5)\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 4daa082f3..a2cf6a2f5 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -335 +335 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-     * With ASCII-folding enabled, certain accented characters will be transformed to equivalent ASCII characters, e.g.\n+     * With ASCII-folding enabled, certain accented characters will be transformed to equivalent ASCII characters, for example\ndiff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex e784ec165..3ee8882e0 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -847 +847 @@ public class DoubleMetaphone implements StringEncoder {\n-            //-- german & anglicisations, e.g. \"smith\" match \"schmidt\" //\n+            //-- german & anglicisations, for example \"smith\" match \"schmidt\" //\n@@ -857 +857 @@ public class DoubleMetaphone implements StringEncoder {\n-                //-- french e.g. \"resnais\", \"artois\" --//\n+                //-- french for example \"resnais\", \"artois\" --//\n@@ -874 +874 @@ public class DoubleMetaphone implements StringEncoder {\n-                //-- Dutch origin, e.g. \"school\", \"schooner\" --//\n+                //-- Dutch origin, for example \"school\", \"schooner\" --//\n@@ -943 +943 @@ public class DoubleMetaphone implements StringEncoder {\n-            //-- Polish e.g. \"filipowicz\" --//\n+            //-- Polish for example \"filipowicz\" --//\n@@ -963 +963 @@ public class DoubleMetaphone implements StringEncoder {\n-                //-- French e.g. breaux --//\n+                //-- French for example breaux --//\n@@ -979 +979 @@ public class DoubleMetaphone implements StringEncoder {\n-            //-- Chinese pinyin e.g. \"zhao\" or Angelina \"Zhang\" --//\n+            //-- Chinese pinyin for example \"zhao\" or Angelina \"Zhang\" --//\n"
+}

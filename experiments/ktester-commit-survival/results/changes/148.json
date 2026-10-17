@@ -1,0 +1,43 @@
+{
+  "index": 148,
+  "sha": "485f524e7b423a452bb2b86d1dcaab46160e2ba9",
+  "parent": "f17b5a5adef9d79f61fa9779b61a4136b81466f7",
+  "subject": "Replace 2x empty lines with a single one",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      533
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        533
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "f17b5a5adef9d79f61fa9779b61a4136b81466f7",
+    "485f524e7b423a452bb2b86d1dcaab46160e2ba9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 3d7e879cb..a29d2a8df 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -533 +532,0 @@ public class Base64 extends BaseNCodec {\n-\n"
+}

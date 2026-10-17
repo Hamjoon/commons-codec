@@ -1,0 +1,51 @@
+{
+  "index": 335,
+  "sha": "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce",
+  "parent": "66bbba913491a89e75fb66e3df9a4dc8710ee699",
+  "subject": "Fix PMD multiple UnnecessaryFullyQualifiedName in org.apache.commons.codec.binary.StringUtils",
+  "pre_image": {
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      176,
+      316
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      176,
+      316
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "new_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        176,
+        316
+      ],
+      "post_image_lines": [
+        176,
+        316
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "66bbba913491a89e75fb66e3df9a4dc8710ee699",
+    "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/StringUtils.java b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\nindex 5c741d36f..1e35ec88a 100644\n--- a/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n+++ b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n@@ -176 +176 @@ public class StringUtils {\n-            throw StringUtils.newIllegalStateException(charsetName, e);\n+            throw newIllegalStateException(charsetName, e);\n@@ -316 +316 @@ public class StringUtils {\n-            throw StringUtils.newIllegalStateException(charsetName, e);\n+            throw newIllegalStateException(charsetName, e);\n"
+}

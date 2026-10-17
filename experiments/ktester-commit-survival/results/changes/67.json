@@ -1,0 +1,47 @@
+{
+  "index": 67,
+  "sha": "8862fb3ca57e0fa9e86be0b56aa7eba5e121f33c",
+  "parent": "c52d4daddb00ce45ecd7bb0ab2e34fab29569b67",
+  "subject": "Typo [skip ci]",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Crypt.java": [
+      126
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Crypt.java": [
+      126
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        126
+      ],
+      "post_image_lines": [
+        126
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c52d4daddb00ce45ecd7bb0ab2e34fab29569b67",
+    "8862fb3ca57e0fa9e86be0b56aa7eba5e121f33c",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex cb1f1f320..9a1bff461 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -126 +126 @@ public class Crypt {\n-     * The rest of the salt string is drawn from the set {@code [a-zA-Z0-9./]} and is cut at the maximum length of if a\n+     * The rest of the salt string is drawn from the set {@code [a-zA-Z0-9./]} and is cut at the maximum length or if a\n"
+}

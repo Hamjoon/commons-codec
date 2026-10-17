@@ -1,0 +1,57 @@
+{
+  "index": 219,
+  "sha": "a83a6ed60eab37390218646b6adcea62aa1b3ec8",
+  "parent": "3b9feb49485047cdd2f27c38aa11b86dc79ea2e7",
+  "subject": "Merge branch 'master' of https://github.com/apache/commons-codec.git",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      464
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      469
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        464
+      ],
+      "post_image_lines": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        469
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "3b9feb49485047cdd2f27c38aa11b86dc79ea2e7",
+    "a83a6ed60eab37390218646b6adcea62aa1b3ec8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex a2cf6a2f5..7734d0570 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -70,0 +71,5 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n+    /**\n+     * The NUL character.\n+     */\n+    private static final char NUL = '\\0';\n+\n@@ -464 +469 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        char lastChar = '\\0';\n+        char lastChar = NUL;\n"
+}

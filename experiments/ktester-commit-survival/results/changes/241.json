@@ -1,0 +1,59 @@
+{
+  "index": 241,
+  "sha": "4f0540829d9bd6b3e3e5e2a982f5f929fd42d83c",
+  "parent": "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      144,
+      153,
+      154,
+      156,
+      157
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      144,
+      153,
+      155
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Charsets.java",
+      "new_file": "org/apache/commons/codec/Charsets.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        144,
+        153,
+        154,
+        156,
+        157
+      ],
+      "post_image_lines": [
+        144,
+        153,
+        155
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e",
+    "4f0540829d9bd6b3e3e5e2a982f5f929fd42d83c",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/Charsets.java b/src/main/java/org/apache/commons/codec/Charsets.java\nindex 5103b6a5c..e999eb64c 100644\n--- a/src/main/java/org/apache/commons/codec/Charsets.java\n+++ b/src/main/java/org/apache/commons/codec/Charsets.java\n@@ -144 +144 @@ public class Charsets {\n-     * @return the given Charset or the default Charset if the given Charset is null\n+     * @return the given Charset or the default Charset if the given Charset is null.\n@@ -153,2 +153 @@ public class Charsets {\n-     * @param charset\n-     *            The name of the requested charset, may be null.\n+     * @param charset The name of the requested charset, may be null.\n@@ -156,2 +155 @@ public class Charsets {\n-     * @throws java.nio.charset.UnsupportedCharsetException\n-     *             If the named charset is unavailable\n+     * @throws java.nio.charset.UnsupportedCharsetException If the named charset is unavailable\n"
+}

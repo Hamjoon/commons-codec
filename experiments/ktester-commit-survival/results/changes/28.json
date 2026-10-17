@@ -1,0 +1,55 @@
+{
+  "index": 28,
+  "sha": "2ba905517125a7d4fc3f65b37848b63eb275a943",
+  "parent": "17e9b6f98161aefae40922d24509625c120a0b78",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/language/Caverphone.java": [
+      69,
+      81,
+      94
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Caverphone.java": [
+      69,
+      81,
+      94
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        69,
+        81,
+        94
+      ],
+      "post_image_lines": [
+        69,
+        81,
+        94
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "17e9b6f98161aefae40922d24509625c120a0b78",
+    "2ba905517125a7d4fc3f65b37848b63eb275a943",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Caverphone.java b/src/main/java/org/apache/commons/codec/language/Caverphone.java\nindex 8a00fd1ef..3bb0d45d0 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone.java\n@@ -69 +69 @@ public class Caverphone implements StringEncoder {\n-        return this.caverphone((String) obj);\n+        return caverphone((String) obj);\n@@ -81 +81 @@ public class Caverphone implements StringEncoder {\n-        return this.caverphone(str);\n+        return caverphone(str);\n@@ -94 +94 @@ public class Caverphone implements StringEncoder {\n-        return this.caverphone(str1).equals(this.caverphone(str2));\n+        return caverphone(str1).equals(caverphone(str2));\n"
+}

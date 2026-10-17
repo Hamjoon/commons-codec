@@ -1,0 +1,83 @@
+{
+  "index": 353,
+  "sha": "ea1304029290f649149d8de6fe45707a85f10604",
+  "parent": "9e76e7f760d68f4207509fb53f58d02cf1e2b5f3",
+  "subject": "Remove some redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      188,
+      198,
+      650,
+      659,
+      668,
+      677,
+      692,
+      700,
+      703,
+      706
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      188,
+      198,
+      650,
+      659,
+      668,
+      677,
+      692,
+      700,
+      703,
+      706
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        188,
+        198,
+        650,
+        659,
+        668,
+        677,
+        692,
+        700,
+        703,
+        706
+      ],
+      "post_image_lines": [
+        188,
+        198,
+        650,
+        659,
+        668,
+        677,
+        692,
+        700,
+        703,
+        706
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "9e76e7f760d68f4207509fb53f58d02cf1e2b5f3",
+    "ea1304029290f649149d8de6fe45707a85f10604",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex e0bb0b5cd..a15e1cf10 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -188 +188 @@ public class Rule {\n-            return new Phoneme(this.phonemeText.toString() + right.phonemeText.toString(), this.languages.restrictTo(right.languages));\n+            return new Phoneme(phonemeText.toString() + right.phonemeText.toString(), languages.restrictTo(right.languages));\n@@ -198 +198 @@ public class Rule {\n-            return new Phoneme(this.phonemeText.toString(), this.languages.merge(lang));\n+            return new Phoneme(phonemeText.toString(), languages.merge(lang));\n@@ -650 +650 @@ public class Rule {\n-        return this.lContext;\n+        return lContext;\n@@ -659 +659 @@ public class Rule {\n-        return this.pattern;\n+        return pattern;\n@@ -668 +668 @@ public class Rule {\n-        return this.phoneme;\n+        return phoneme;\n@@ -677 +677 @@ public class Rule {\n-        return this.rContext;\n+        return rContext;\n@@ -692 +692 @@ public class Rule {\n-        final int patternLength = this.pattern.length();\n+        final int patternLength = pattern.length();\n@@ -700 +700 @@ public class Rule {\n-        if (!input.subSequence(i, ipl).equals(this.pattern)) {\n+        if (!input.subSequence(i, ipl).equals(pattern)) {\n@@ -703 +703 @@ public class Rule {\n-        if (!this.rContext.isMatch(input.subSequence(ipl, input.length()))) {\n+        if (!rContext.isMatch(input.subSequence(ipl, input.length()))) {\n@@ -706 +706 @@ public class Rule {\n-        return this.lContext.isMatch(input.subSequence(0, i));\n+        return lContext.isMatch(input.subSequence(0, i));\n"
+}

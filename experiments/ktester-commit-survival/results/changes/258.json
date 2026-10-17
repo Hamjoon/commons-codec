@@ -1,0 +1,77 @@
+{
+  "index": 258,
+  "sha": "7fde92442f48d53ff2b8e80d4153843fcf93070f",
+  "parent": "5c456c3357fb2829f0b13d92b785ed20b9332cae",
+  "subject": "Comments",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      115,
+      116,
+      118,
+      119,
+      131,
+      132,
+      133,
+      142
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      115,
+      116,
+      118,
+      121,
+      129,
+      132,
+      133,
+      135,
+      143
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        115,
+        116,
+        118,
+        119,
+        131,
+        132,
+        133,
+        142
+      ],
+      "post_image_lines": [
+        115,
+        116,
+        118,
+        121,
+        129,
+        132,
+        133,
+        135,
+        143
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "5c456c3357fb2829f0b13d92b785ed20b9332cae",
+    "7fde92442f48d53ff2b8e80d4153843fcf93070f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 730df7574..2b46ec2e3 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -115,2 +115,2 @@ public class Base64 extends BaseNCodec {\n-     * This array is a lookup table that translates 6-bit positive integer index values into their \"Base64 Alphabet\"\n-     * equivalents as specified in Table 1 of RFC 2045.\n+     * This array is a lookup table that translates 6-bit positive integer index values into their \"Base64 Alphabet\" equivalents as specified in Table 1 of RFC\n+     * 2045.\n@@ -118,2 +118 @@ public class Base64 extends BaseNCodec {\n-     * Thanks to \"commons\" project in ws.apache.org for this code.\n-     * https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/util/\n+     * Thanks to \"commons\" project in ws.apache.org for this code. https://svn.apache.org/repos/asf/webservices/commons/trunk/modules/util/\n@@ -121,0 +121 @@ public class Base64 extends BaseNCodec {\n+    // @formatter:off\n@@ -128,0 +129 @@ public class Base64 extends BaseNCodec {\n+    // @formatter:on\n@@ -131,3 +132,2 @@ public class Base64 extends BaseNCodec {\n-     * This is a copy of the STANDARD_ENCODE_TABLE above, but with + and /\n-     * changed to - and _ to make the encoded Base64 results more URL-SAFE.\n-     * This table is only used when the Base64's mode is set to URL-SAFE.\n+     * This is a copy of the STANDARD_ENCODE_TABLE above, but with + and / changed to - and _ to make the encoded Base64 results more URL-SAFE. This table is\n+     * only used when the Base64's mode is set to URL-SAFE.\n@@ -134,0 +135 @@ public class Base64 extends BaseNCodec {\n+    // @formatter:off\n@@ -142 +143 @@ public class Base64 extends BaseNCodec {\n-\n+    // @formatter:on\n"
+}

@@ -1,0 +1,47 @@
+{
+  "index": 346,
+  "sha": "d641319b4fcd53465290856ad8b84e1bdc4e1c2d",
+  "parent": "f49428a2965ef94a677d82db3a4ccddfe628f160",
+  "subject": "org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules(PhonemeBuilder, Map<String, List<Rule>>)",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      325
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      325
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "new_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        325
+      ],
+      "post_image_lines": [
+        325
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "f49428a2965ef94a677d82db3a4ccddfe628f160",
+    "d641319b4fcd53465290856ad8b84e1bdc4e1c2d",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\nindex 6b426d7a0..5fefb4798 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n@@ -325 +325 @@ public class PhoneticEngine {\n-            final String phonemeText = phoneme.getPhonemeText().toString();\n+            final CharSequence phonemeText = phoneme.getPhonemeText();\n"
+}

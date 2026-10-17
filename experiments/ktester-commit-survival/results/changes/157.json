@@ -1,0 +1,53 @@
+{
+  "index": 157,
+  "sha": "01edad7586be038a68b7890044420bc6ce4fcfc9",
+  "parent": "8e744dd504fe7ba36c336def2161642d097c433c",
+  "subject": "[CODEC-324] BeiderMorse engine doesn't work with JPMS enabled",
+  "pre_image": {
+    "org/apache/commons/codec/Resources.java": [
+      30
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/Resources.java": [
+      30,
+      31,
+      35,
+      38
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Resources.java",
+      "new_file": "org/apache/commons/codec/Resources.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        30
+      ],
+      "post_image_lines": [
+        30,
+        31,
+        35,
+        38
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8e744dd504fe7ba36c336def2161642d097c433c",
+    "01edad7586be038a68b7890044420bc6ce4fcfc9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/Resources.java b/src/main/java/org/apache/commons/codec/Resources.java\nindex 944741aba..c506758a4 100644\n--- a/src/main/java/org/apache/commons/codec/Resources.java\n+++ b/src/main/java/org/apache/commons/codec/Resources.java\n@@ -30 +30,2 @@ public class Resources {\n-     * Opens the given named resource from the given class.\n+     * Gets a read-only stream on the contents of the resource specified by resName. The mapping between the resource name and the stream is managed by this\n+     * class's class loader.\n@@ -33,0 +35 @@ public class Resources {\n+     * @see ClassLoader#getResourceAsStream(String)\n@@ -35,0 +38 @@ public class Resources {\n+        // Use java.lang.Class.getResourceAsStream(String) to make JPMS happy\n"
+}

@@ -1,0 +1,147 @@
+{
+  "index": 522,
+  "sha": "14b5d6a7e635394a8ce2ab931c8279080721b236",
+  "parent": "2bb4fd9c5744c0f34230b4909018524457d331dd",
+  "subject": "Javadoc: Empty Javadoc line before the 1st tag.",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [],
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": [],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [],
+    "org/apache/commons/codec/language/RefinedSoundex.java": [],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      74,
+      75,
+      76
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [
+      501
+    ],
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": [
+      62
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      173,
+      193
+    ],
+    "org/apache/commons/codec/language/RefinedSoundex.java": [
+      48
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      77,
+      78,
+      79
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      60
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Blake3.java",
+      "new_file": "org/apache/commons/codec/digest/Blake3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        501
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "new_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        62
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        173,
+        193
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "new_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        48
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "new_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        74,
+        75,
+        76
+      ],
+      "post_image_lines": [
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        60
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "2bb4fd9c5744c0f34230b4909018524457d331dd",
+    "14b5d6a7e635394a8ce2ab931c8279080721b236",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Blake3.java b/src/main/java/org/apache/commons/codec/digest/Blake3.java\nindex 1d42debee..5f20a183e 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Blake3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Blake3.java\n@@ -500,0 +501 @@ public final class Blake3 {\n+     *\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\nindex 5e9437214..0d93670b1 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n@@ -61,0 +62 @@ public enum HmacAlgorithms {\n+     *\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex 82b16707a..0db407a70 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -172,0 +173 @@ public class Md5Crypt {\n+     *\n@@ -191,0 +193 @@ public class Md5Crypt {\n+     *\ndiff --git a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\nindex 166e0495e..90d30a396 100644\n--- a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n@@ -47,0 +48 @@ public class RefinedSoundex implements StringEncoder {\n+     *\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\nindex 8827d0a6e..9bea5c4c9 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n@@ -74,3 +73,0 @@ import org.apache.commons.codec.StringEncoder;\n- * @see <a href=\"https://stevemorse.org/phonetics/bmpm.htm\">Beider-Morse Phonetic Matching</a>\n- * @see <a href=\"https://stevemorse.org/phoneticinfo.htm\">Reference implementation</a>\n- *\n@@ -79,0 +77,3 @@ import org.apache.commons.codec.StringEncoder;\n+ *\n+ * @see <a href=\"https://stevemorse.org/phonetics/bmpm.htm\">Beider-Morse Phonetic Matching</a>\n+ * @see <a href=\"https://stevemorse.org/phoneticinfo.htm\">Reference implementation</a>\ndiff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex c16c55a01..64c38a584 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -59,0 +60 @@ public class URLCodec implements BinaryEncoder, BinaryDecoder, StringEncoder, St\n+     *\n"
+}

@@ -1,0 +1,47 @@
+{
+  "index": 64,
+  "sha": "fd903ce169dc6094c0386fc6ecf85f35c38fb0f5",
+  "parent": "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+  "subject": "Typo - DigestUtils.crypt does not exist [skip ci]",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      27
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      27
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        27
+      ],
+      "post_image_lines": [
+        27
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+    "fd903ce169dc6094c0386fc6ecf85f35c38fb0f5",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex eecbb8988..2917acf75 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -27 +27 @@ import java.util.regex.Pattern;\n- * This class only implements the traditional 56 bit DES based algorithm. Please use DigestUtils.crypt() for a method\n+ * This class only implements the traditional 56 bit DES based algorithm. Please use Crypt.crypt() for a method\n"
+}

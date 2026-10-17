@@ -1,0 +1,22 @@
+{
+  "index": 463,
+  "sha": "cb344d6cfbdac2ce969c8ed86bc02d25e0a8f2c9",
+  "parent": "004966ba0d70c24e59a3107edc06d13e56905313",
+  "subject": "Use leaf in overview",
+  "pre_image": {},
+  "post_image": {},
+  "files": [],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "004966ba0d70c24e59a3107edc06d13e56905313",
+    "cb344d6cfbdac2ce969c8ed86bc02d25e0a8f2c9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": ""
+}

@@ -1,0 +1,47 @@
+{
+  "index": 142,
+  "sha": "f4401a3111124896d1edd56bcb2d1a28a85e37e8",
+  "parent": "2a992c824d8106230e90741938f11a8535347672",
+  "subject": "Normalize spelling",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      25
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      25
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "2a992c824d8106230e90741938f11a8535347672",
+    "f4401a3111124896d1edd56bcb2d1a28a85e37e8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 76394d54a..9657ad6df 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -25 +25 @@ import java.util.regex.Pattern;\n- * UNIX crypt(3) algorithm implementation.\n+ * Unix crypt(3) algorithm implementation.\n"
+}

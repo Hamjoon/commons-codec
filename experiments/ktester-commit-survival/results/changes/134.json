@@ -1,0 +1,269 @@
+{
+  "index": 134,
+  "sha": "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+  "parent": "ffbabba277653100dc08f4733c9e264f23561dfc",
+  "subject": "Javadoc: Use semantic tag <strong> instead of style tag <b>",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      37
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      196,
+      210,
+      269,
+      288,
+      343,
+      356,
+      606,
+      637,
+      810
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      41
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      56
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      72
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      57,
+      65,
+      67,
+      69
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      43,
+      44,
+      46,
+      49
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      67,
+      76,
+      78,
+      80
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      37
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      196,
+      210,
+      269,
+      288,
+      343,
+      356,
+      606,
+      637,
+      810
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      41
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      56
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      72
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      57,
+      65,
+      67,
+      69
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      43,
+      44,
+      46,
+      49
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      67,
+      76,
+      78,
+      80
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        37
+      ],
+      "post_image_lines": [
+        37
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        196,
+        210,
+        269,
+        288,
+        343,
+        356,
+        606,
+        637,
+        810
+      ],
+      "post_image_lines": [
+        196,
+        210,
+        269,
+        288,
+        343,
+        356,
+        606,
+        637,
+        810
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        41
+      ],
+      "post_image_lines": [
+        41
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Soundex.java",
+      "new_file": "org/apache/commons/codec/language/Soundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        56
+      ],
+      "post_image_lines": [
+        56
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "new_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        72
+      ],
+      "post_image_lines": [
+        72
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        57,
+        65,
+        67,
+        69
+      ],
+      "post_image_lines": [
+        57,
+        65,
+        67,
+        69
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "new_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        43,
+        44,
+        46,
+        49
+      ],
+      "post_image_lines": [
+        43,
+        44,
+        46,
+        49
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        67,
+        76,
+        78,
+        80
+      ],
+      "post_image_lines": [
+        67,
+        76,
+        78,
+        80
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ffbabba277653100dc08f4733c9e264f23561dfc",
+    "44373279e1c3a29f1448abe17c0b993bc3cf88d8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 5977ae9d8..b23df241c 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -37 +37 @@ import org.apache.commons.codec.CodecPolicy;\n- * <b>Note:</b> It is mandatory to close the stream after the last byte has been written to it, otherwise the\n+ * <strong>Note:</strong> It is mandatory to close the stream after the last byte has been written to it, otherwise the\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 161af532a..e26a06259 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -196 +196 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note:</b> this method seamlessly handles data encoded in URL-safe or normal mode.\n+     * <strong>Note:</strong> this method seamlessly handles data encoded in URL-safe or normal mode.\n@@ -210 +210 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note:</b> this method seamlessly handles data encoded in URL-safe or normal mode.\n+     * <strong>Note:</strong> this method seamlessly handles data encoded in URL-safe or normal mode.\n@@ -269 +269 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: No padding is added when encoding using the URL-safe alphabet.</b>\n+     *            <strong>Note: No padding is added when encoding using the URL-safe alphabet.</strong>\n@@ -288 +288 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: No padding is added when encoding using the URL-safe alphabet.</b>\n+     *            <strong>Note: No padding is added when encoding using the URL-safe alphabet.</strong>\n@@ -343 +343 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note: No padding is added.</b>\n+     * <strong>Note: No padding is added.</strong>\n@@ -356 +356 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note: No padding is added.</b>\n+     * <strong>Note: No padding is added.</strong>\n@@ -606 +606 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: No padding is added when using the URL-safe alphabet.</b>\n+     *            <strong>Note: No padding is added when using the URL-safe alphabet.</strong>\n@@ -637 +637 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: No padding is added when using the URL-safe alphabet.</b>\n+     *            <strong>Note: No padding is added when using the URL-safe alphabet.</strong>\n@@ -810 +810 @@ public class Base64 extends BaseNCodec {\n-     * <p><b>Note: No padding is added when encoding using the URL-safe alphabet.</b></p>\n+     * <p><strong>Note: No padding is added when encoding using the URL-safe alphabet.</strong></p>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 43b87da5c..906a62200 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -41 +41 @@ import org.apache.commons.codec.CodecPolicy;\n- * <b>Note:</b> It is mandatory to close the stream after the last byte has been written to it, otherwise the\n+ * <strong>Note:</strong> It is mandatory to close the stream after the last byte has been written to it, otherwise the\ndiff --git a/src/main/java/org/apache/commons/codec/language/Soundex.java b/src/main/java/org/apache/commons/codec/language/Soundex.java\nindex e8f4a880c..c5159c39e 100644\n--- a/src/main/java/org/apache/commons/codec/language/Soundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/Soundex.java\n@@ -56 +56 @@ public class Soundex implements StringEncoder {\n-     * <b>Note that letters H and W are treated specially.</b>\n+     * <strong>Note that letters H and W are treated specially.</strong>\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\nindex e57db005c..c8543beee 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n@@ -72 +72 @@ import org.apache.commons.codec.StringEncoder;\n- * <b>Note</b>: this version of the Beider-Morse encoding is equivalent with v3.4 of the reference implementation.\n+ * <strong>Note</strong>: this version of the Beider-Morse encoding is equivalent with v3.4 of the reference implementation.\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex cd5e6f5c4..78aa836e4 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -57 +57 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Rules:</b> whitespace separated strings.\n+ * <li><strong>Rules:</strong> whitespace separated strings.\n@@ -65 +65 @@ import org.apache.commons.codec.Resources;\n- * <li><b>End-of-line comments:</b> Any occurrence of '//' will cause all text following on that line to be\n+ * <li><strong>End-of-line comments:</strong> Any occurrence of '//' will cause all text following on that line to be\n@@ -67 +67 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Multi-line comments:</b> Any line starting with '/*' will start multi-line commenting mode.\n+ * <li><strong>Multi-line comments:</strong> Any line starting with '/*' will start multi-line commenting mode.\n@@ -69 +69 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Blank lines:</b> All blank lines will be skipped.</li>\n+ * <li><strong>Blank lines:</strong> All blank lines will be skipped.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Languages.java b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\nindex c0f366f43..85ad73d1a 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n@@ -43,2 +43,2 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Language:</b> a single string containing no whitespace</li>\n- * <li><b>End-of-line comments:</b> Any occurrence of '//' will cause all text\n+ * <li><strong>Language:</strong> a single string containing no whitespace</li>\n+ * <li><strong>End-of-line comments:</strong> Any occurrence of '//' will cause all text\n@@ -46 +46 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Multi-line comments:</b> Any line starting with '/*' will start\n+ * <li><strong>Multi-line comments:</strong> Any line starting with '/*' will start\n@@ -49 +49 @@ import org.apache.commons.codec.Resources;\n- * <li><b>Blank lines:</b> All blank lines will be skipped.</li>\n+ * <li><strong>Blank lines:</strong> All blank lines will be skipped.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 728e4bd07..a42315d8b 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -67 +67 @@ import org.apache.commons.codec.language.bm.Languages.LanguageSet;\n- * <li><b>Rules:</b> whitespace separated, double-quoted strings. There should be 4 columns to each row, and these\n+ * <li><strong>Rules:</strong> whitespace separated, double-quoted strings. There should be 4 columns to each row, and these\n@@ -76 +76 @@ import org.apache.commons.codec.language.bm.Languages.LanguageSet;\n- * <li><b>End-of-line comments:</b> Any occurrence of '//' will cause all text following on that line to be discarded\n+ * <li><strong>End-of-line comments:</strong> Any occurrence of '//' will cause all text following on that line to be discarded\n@@ -78 +78 @@ import org.apache.commons.codec.language.bm.Languages.LanguageSet;\n- * <li><b>Multi-line comments:</b> Any line starting with '/*' will start multi-line commenting mode. This will skip\n+ * <li><strong>Multi-line comments:</strong> Any line starting with '/*' will start multi-line commenting mode. This will skip\n@@ -80 +80 @@ import org.apache.commons.codec.language.bm.Languages.LanguageSet;\n- * <li><b>Blank lines:</b> All blank lines will be skipped.</li>\n+ * <li><strong>Blank lines:</strong> All blank lines will be skipped.</li>\n"
+}

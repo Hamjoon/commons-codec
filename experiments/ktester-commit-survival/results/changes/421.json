@@ -1,0 +1,81 @@
+{
+  "index": 421,
+  "sha": "7f1a796a1726eb6852949f2da35b22e5a7349a02",
+  "parent": "4488b9d8c3825b1658c1e2a13724527000108412",
+  "subject": "Port Base64OutputStream to non-deprecated methods",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      502
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      87,
+      107,
+      129,
+      130
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      502
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      87,
+      107,
+      129,
+      130
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        502
+      ],
+      "post_image_lines": [
+        502
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        87,
+        107,
+        129,
+        130
+      ],
+      "post_image_lines": [
+        87,
+        107,
+        129,
+        130
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "4488b9d8c3825b1658c1e2a13724527000108412",
+    "7f1a796a1726eb6852949f2da35b22e5a7349a02",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 9f3738a29..df0c1a604 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -502 +502 @@ public class Base64 extends BaseNCodec {\n-    private static byte[] toUrlSafeEncodeTable(final boolean urlSafe) {\n+    static byte[] toUrlSafeEncodeTable(final boolean urlSafe) {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 275c51ac4..4f2adb917 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -87 +87 @@ public class Base64OutputStream extends BaseNCodecOutputStream {\n-        super(outputStream, new Base64(false), doEncode);\n+        super(outputStream, Base64.builder().get(), doEncode);\n@@ -107 +107 @@ public class Base64OutputStream extends BaseNCodecOutputStream {\n-        super(outputStream, new Base64(lineLength, lineSeparator), doEncode);\n+        super(outputStream, Base64.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).get(), doEncode);\n@@ -129,2 +129,2 @@ public class Base64OutputStream extends BaseNCodecOutputStream {\n-        final CodecPolicy decodingPolicy) {\n-        super(outputStream, new Base64(lineLength, lineSeparator, false, decodingPolicy), doEncode);\n+            final CodecPolicy decodingPolicy) {\n+        super(outputStream, Base64.builder().setLineLength(lineLength).setLineSeparator(lineSeparator).setDecodingPolicy(decodingPolicy).get(), doEncode);\n"
+}

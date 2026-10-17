@@ -1,0 +1,43 @@
+{
+  "index": 229,
+  "sha": "0b638414345304d58f19aa58c59f089b3a27ba14",
+  "parent": "9b4f8fd02b38a0dc3c360ecb946ed62bf2434252",
+  "subject": "Add Checkstyle EmptyBlock",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      230
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        230
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "9b4f8fd02b38a0dc3c360ecb946ed62bf2434252",
+    "0b638414345304d58f19aa58c59f089b3a27ba14",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex 1dd58233e..ee3a0a302 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -229,0 +230 @@ public class Metaphone implements StringEncoder {\n+                // empty\n"
+}

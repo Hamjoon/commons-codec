@@ -1,0 +1,47 @@
+{
+  "index": 240,
+  "sha": "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e",
+  "parent": "0fdd68546238ae379da52f67a91afae58f4b7ef7",
+  "subject": "Fix redundant Javadoc phrasing",
+  "pre_image": {
+    "org/apache/commons/codec/net/URLCodec.java": [
+      362
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/net/URLCodec.java": [
+      362
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        362
+      ],
+      "post_image_lines": [
+        362
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "0fdd68546238ae379da52f67a91afae58f4b7ef7",
+    "13d65a152e5fcbc54ed94feb2b5b2e700e2a920e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex e01838799..1f1fc7a2e 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -362 +362 @@ public class URLCodec implements BinaryEncoder, BinaryDecoder, StringEncoder, St\n-     * @return Returns the encoding.\n+     * @return the encoding.\n"
+}

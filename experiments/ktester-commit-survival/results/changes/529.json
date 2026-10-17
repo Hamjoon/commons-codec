@@ -1,0 +1,131 @@
+{
+  "index": 529,
+  "sha": "3ac04a8a9aceb9d891e0a23a6f000a7f96790a24",
+  "parent": "8398c1ac5492951eae3fba5ca9345b7e17edfddd",
+  "subject": "Update Javadoc links from Java 6 to 8",
+  "pre_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      25,
+      56,
+      72,
+      84,
+      97,
+      109,
+      121,
+      133
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      146,
+      164,
+      207
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      157,
+      173
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/Charsets.java": [
+      25,
+      56,
+      72,
+      84,
+      97,
+      109,
+      121,
+      133
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      146,
+      164,
+      207
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      157,
+      173
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Charsets.java",
+      "new_file": "org/apache/commons/codec/Charsets.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25,
+        56,
+        72,
+        84,
+        97,
+        109,
+        121,
+        133
+      ],
+      "post_image_lines": [
+        25,
+        56,
+        72,
+        84,
+        97,
+        109,
+        121,
+        133
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        146,
+        164,
+        207
+      ],
+      "post_image_lines": [
+        146,
+        164,
+        207
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        157,
+        173
+      ],
+      "post_image_lines": [
+        157,
+        173
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8398c1ac5492951eae3fba5ca9345b7e17edfddd",
+    "3ac04a8a9aceb9d891e0a23a6f000a7f96790a24",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/Charsets.java b/src/main/java/org/apache/commons/codec/Charsets.java\nindex b2c26e6db..479faa906 100644\n--- a/src/main/java/org/apache/commons/codec/Charsets.java\n+++ b/src/main/java/org/apache/commons/codec/Charsets.java\n@@ -25 +25 @@ import java.nio.charset.StandardCharsets;\n- * From the Java documentation <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard\n+ * From the Java documentation <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard\n@@ -56 +56 @@ import java.nio.charset.StandardCharsets;\n- * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+ * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -72 +72 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -84 +84 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -97 +97 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -109 +109 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -121 +121 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n@@ -133 +133 @@ public class Charsets {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\n+     * @see <a href=\"https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html\">Standard charsets</a>\ndiff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 36a258bcd..786cc4e5f 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -146 +146 @@ public class DigestUtils {\n-     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\">Appendix A in the Java\n+     *                  <a href=\"https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\">Appendix A in the Java\n@@ -164 +164 @@ public class DigestUtils {\n-     *                             <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\n+     *                             <a href=\"https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\n@@ -207 +207 @@ public class DigestUtils {\n-     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\n+     *                  <a href=\"https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex b3bd66eeb..9624ecc48 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -157 +157 @@ public final class HmacUtils {\n-     *                  <a href= \"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" >Appendix A in the Java\n+     *                  <a href= \"https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" >Appendix A in the Java\n@@ -173 +173 @@ public final class HmacUtils {\n-     *                  <a href= \"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" >Appendix A in the Java\n+     *                  <a href= \"https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" >Appendix A in the Java\n"
+}

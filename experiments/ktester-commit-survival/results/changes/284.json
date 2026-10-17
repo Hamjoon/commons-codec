@@ -1,0 +1,87 @@
+{
+  "index": 284,
+  "sha": "1ad76b4f9b2a0055e3cfb5e5a544abc48eae1557",
+  "parent": "e37a42561708adb6006f6222ece7654c68e63667",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      327,
+      337,
+      451,
+      467,
+      478,
+      991,
+      1005,
+      1019,
+      1035,
+      1044
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      327,
+      337,
+      451,
+      467,
+      478,
+      479,
+      992,
+      1006,
+      1020,
+      1036,
+      1045,
+      1053
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        327,
+        337,
+        451,
+        467,
+        478,
+        991,
+        1005,
+        1019,
+        1035,
+        1044
+      ],
+      "post_image_lines": [
+        327,
+        337,
+        451,
+        467,
+        478,
+        479,
+        992,
+        1006,
+        1020,
+        1036,
+        1045,
+        1053
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e37a42561708adb6006f6222ece7654c68e63667",
+    "1ad76b4f9b2a0055e3cfb5e5a544abc48eae1557",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 237f29a30..225663c03 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -327 +327 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Encode a value with Double Metaphone.\n+     * Encodes a value with Double Metaphone.\n@@ -337 +337 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Encode a value with Double Metaphone, optionally using the alternate encoding.\n+     * Encodes a value with Double Metaphone, optionally using the alternate encoding.\n@@ -451 +451 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Encode the value using DoubleMetaphone.  It will only work if\n+     * Encodes the value using DoubleMetaphone.  It will only work if\n@@ -467 +467 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Encode the value using DoubleMetaphone.\n+     * Encodes the value using DoubleMetaphone.\n@@ -478 +478,2 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Returns the maxCodeLen.\n+     * Gets the maxCodeLen.\n+     *\n@@ -991 +992 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Check if the Double Metaphone values of two {@code String} values\n+     * Tests whether the Double Metaphone values of two {@code String} values\n@@ -1005 +1006 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Check if the Double Metaphone values of two {@code String} values\n+     * Tests whether the Double Metaphone values of two {@code String} values\n@@ -1019 +1020 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Determines whether or not the value starts with a silent letter.  It will\n+     * Tests whether or not the value starts with a silent letter.  It will\n@@ -1035 +1036 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Determines whether or not a value is of slavo-germanic origin. A value is\n+     * Tests whether or not a value is of slavo-germanic origin. A value is\n@@ -1044 +1045 @@ public class DoubleMetaphone implements StringEncoder {\n-     * Determines whether or not a character is a vowel or not\n+     * Tests whether or not a character is a vowel or not\n@@ -1051,0 +1053 @@ public class DoubleMetaphone implements StringEncoder {\n+     *\n"
+}

@@ -1,0 +1,71 @@
+{
+  "index": 73,
+  "sha": "a6f7a5372ecb859d6a3a651e76507a4d354ecadd",
+  "parent": "335ff3534e0dc8039be8851b6d617485688ce13d",
+  "subject": "Javadoc: Grammar",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      269,
+      288,
+      343,
+      356,
+      606,
+      637,
+      810
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      269,
+      288,
+      343,
+      356,
+      606,
+      637,
+      810
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        269,
+        288,
+        343,
+        356,
+        606,
+        637,
+        810
+      ],
+      "post_image_lines": [
+        269,
+        288,
+        343,
+        356,
+        606,
+        637,
+        810
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "335ff3534e0dc8039be8851b6d617485688ce13d",
+    "a6f7a5372ecb859d6a3a651e76507a4d354ecadd",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 48ad7334e..161af532a 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -269 +269 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: no padding is added when encoding using the URL-safe alphabet.</b>\n+     *            <b>Note: No padding is added when encoding using the URL-safe alphabet.</b>\n@@ -288 +288 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: no padding is added when encoding using the URL-safe alphabet.</b>\n+     *            <b>Note: No padding is added when encoding using the URL-safe alphabet.</b>\n@@ -343 +343 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note: no padding is added.</b>\n+     * <b>Note: No padding is added.</b>\n@@ -356 +356 @@ public class Base64 extends BaseNCodec {\n-     * <b>Note: no padding is added.</b>\n+     * <b>Note: No padding is added.</b>\n@@ -606 +606 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: no padding is added when using the URL-safe alphabet.</b>\n+     *            <b>Note: No padding is added when using the URL-safe alphabet.</b>\n@@ -637 +637 @@ public class Base64 extends BaseNCodec {\n-     *            <b>Note: no padding is added when using the URL-safe alphabet.</b>\n+     *            <b>Note: No padding is added when using the URL-safe alphabet.</b>\n@@ -810 +810 @@ public class Base64 extends BaseNCodec {\n-     * <p><b>Note: no padding is added when encoding using the URL-safe alphabet.</b></p>\n+     * <p><b>Note: No padding is added when encoding using the URL-safe alphabet.</b></p>\n"
+}

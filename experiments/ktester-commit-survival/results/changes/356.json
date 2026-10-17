@@ -1,0 +1,83 @@
+{
+  "index": 356,
+  "sha": "303bbaffbd1de9ec19c7348e15bcf1a5a5282fdc",
+  "parent": "699b0a6411763bb9e70eb86435619c9c9b5b985a",
+  "subject": "Don't use underscores in local variable names",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BinaryCodec.java": [
+      154,
+      159,
+      162,
+      164,
+      168,
+      185,
+      190,
+      193,
+      195,
+      199
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BinaryCodec.java": [
+      154,
+      159,
+      162,
+      164,
+      168,
+      185,
+      190,
+      193,
+      195,
+      199
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BinaryCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BinaryCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        154,
+        159,
+        162,
+        164,
+        168,
+        185,
+        190,
+        193,
+        195,
+        199
+      ],
+      "post_image_lines": [
+        154,
+        159,
+        162,
+        164,
+        168,
+        185,
+        190,
+        193,
+        195,
+        199
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "699b0a6411763bb9e70eb86435619c9c9b5b985a",
+    "303bbaffbd1de9ec19c7348e15bcf1a5a5282fdc",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java b/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\nindex c64b6e53a..83ccf1298 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\n@@ -154 +154 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        final byte[] l_ascii = new byte[rawLength << 3];\n+        final byte[] ascii = new byte[rawLength << 3];\n@@ -159 +159 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        for (int ii = 0, jj = l_ascii.length - 1; ii < rawLength; ii++, jj -= 8) {\n+        for (int ii = 0, jj = ascii.length - 1; ii < rawLength; ii++, jj -= 8) {\n@@ -162 +162 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-                    l_ascii[jj - bits] = '0';\n+                    ascii[jj - bits] = '0';\n@@ -164 +164 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-                    l_ascii[jj - bits] = '1';\n+                    ascii[jj - bits] = '1';\n@@ -168 +168 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        return l_ascii;\n+        return ascii;\n@@ -185 +185 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        final char[] l_ascii = new char[rawLength << 3];\n+        final char[] ascii = new char[rawLength << 3];\n@@ -190 +190 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        for (int ii = 0, jj = l_ascii.length - 1; ii < rawLength; ii++, jj -= 8) {\n+        for (int ii = 0, jj = ascii.length - 1; ii < rawLength; ii++, jj -= 8) {\n@@ -193 +193 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-                    l_ascii[jj - bits] = '0';\n+                    ascii[jj - bits] = '0';\n@@ -195 +195 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-                    l_ascii[jj - bits] = '1';\n+                    ascii[jj - bits] = '1';\n@@ -199 +199 @@ public class BinaryCodec implements BinaryDecoder, BinaryEncoder {\n-        return l_ascii;\n+        return ascii;\n"
+}

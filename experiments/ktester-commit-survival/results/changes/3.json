@@ -1,0 +1,87 @@
+{
+  "index": 3,
+  "sha": "f0f649c70ee212f58495937c7e3ef6ee86848181",
+  "parent": "becaef05df69ace689e05dc1b2203c8bf3b9a89e",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      222
+    ],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      23
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      25
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      23
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      25
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        222
+      ],
+      "post_image_lines": []
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        23
+      ],
+      "post_image_lines": [
+        23
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "new_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "becaef05df69ace689e05dc1b2203c8bf3b9a89e",
+    "f0f649c70ee212f58495937c7e3ef6ee86848181",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 443ccc661..971d2c2ed 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -222 +221,0 @@ public class Base64 extends BaseNCodec {\n-    // Implementation of integer encoding used for crypto\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex 197c70537..10ce3b8a2 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -23 +23 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Implementation of the MurmurHash3 32-bit and 128-bit hash functions.\n+ * Implements the MurmurHash3 32-bit and 128-bit hash functions.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/XXHash32.java b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\nindex fd46fc0c3..16f59b8be 100644\n--- a/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n+++ b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n@@ -25 +25 @@ import java.util.zip.Checksum;\n- * Implementation of the xxHash32 hash algorithm.\n+ * Implements the xxHash32 hash algorithm.\n"
+}

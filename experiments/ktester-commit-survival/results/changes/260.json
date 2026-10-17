@@ -1,0 +1,53 @@
+{
+  "index": 260,
+  "sha": "b4c7653f2784c78fc42f943e1f89e4d291c862eb",
+  "parent": "a22ddc35d49a004b98d18b88224f2b572b772044",
+  "subject": "Base validation on standard table length",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      111,
+      129,
+      130,
+      670
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      667
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        111,
+        129,
+        130,
+        670
+      ],
+      "post_image_lines": [
+        667
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "a22ddc35d49a004b98d18b88224f2b572b772044",
+    "b4c7653f2784c78fc42f943e1f89e4d291c862eb",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 2b46ec2e3..9780fc01e 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -111 +110,0 @@ public class Base64 extends BaseNCodec {\n-    private static final int ALPHABET_LENGTH = 64;\n@@ -129,2 +127,0 @@ public class Base64 extends BaseNCodec {\n-    // @formatter:on\n-\n@@ -670 +667 @@ public class Base64 extends BaseNCodec {\n-        if (encodeTable.length != ALPHABET_LENGTH) {\n+        if (encodeTable.length != STANDARD_ENCODE_TABLE.length) {\n"
+}

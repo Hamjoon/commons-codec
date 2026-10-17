@@ -1,0 +1,133 @@
+{
+  "index": 425,
+  "sha": "9f444b458cb2a7edb0aed5793b6f625904844812",
+  "parent": "3c84e5f20cb0f8828042bf8fe145219ce65ca9be",
+  "subject": "BaseNCodecInputStream subclasses are now type-safe to match its matching BaseNCodec",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      34
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      57
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      61
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      30,
+      34,
+      36,
+      53
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      34
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      57
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      61
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      30,
+      32,
+      33,
+      34,
+      35,
+      38,
+      40,
+      57
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        34
+      ],
+      "post_image_lines": [
+        34
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        57
+      ],
+      "post_image_lines": [
+        57
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        61
+      ],
+      "post_image_lines": [
+        61
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        30,
+        34,
+        36,
+        53
+      ],
+      "post_image_lines": [
+        30,
+        32,
+        33,
+        34,
+        35,
+        38,
+        40,
+        57
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "3c84e5f20cb0f8828042bf8fe145219ce65ca9be",
+    "9f444b458cb2a7edb0aed5793b6f625904844812",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\nindex 5561e5769..36ed2d856 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n@@ -34 +34 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base16InputStream extends BaseNCodecInputStream {\n+public class Base16InputStream extends BaseNCodecInputStream<Base16> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex fbc5382e5..d6b35d565 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -57 +57 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base32InputStream extends BaseNCodecInputStream {\n+public class Base32InputStream extends BaseNCodecInputStream<Base32> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex ea3474c61..93f50b643 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -61 +61 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base64InputStream extends BaseNCodecInputStream {\n+public class Base64InputStream extends BaseNCodecInputStream<Base64> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\nindex ea82e2fb2..5bf076118 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n@@ -30 +30 @@ import org.apache.commons.codec.binary.BaseNCodec.Context;\n- * Abstract superclass for Base-N input streams.\n+ * Abstracts Base-N input streams.\n@@ -31,0 +32,4 @@ import org.apache.commons.codec.binary.BaseNCodec.Context;\n+ * @param <T> A BaseNCodec subclass.\n+ * @see Base16InputStream\n+ * @see Base32InputStream\n+ * @see Base64InputStream\n@@ -34 +38 @@ import org.apache.commons.codec.binary.BaseNCodec.Context;\n-public class BaseNCodecInputStream extends FilterInputStream {\n+public class BaseNCodecInputStream<T extends BaseNCodec> extends FilterInputStream {\n@@ -36 +40 @@ public class BaseNCodecInputStream extends FilterInputStream {\n-    private final BaseNCodec baseNCodec;\n+    private final T baseNCodec;\n@@ -53 +57 @@ public class BaseNCodecInputStream extends FilterInputStream {\n-    protected BaseNCodecInputStream(final InputStream inputStream, final BaseNCodec baseNCodec, final boolean doEncode) {\n+    protected BaseNCodecInputStream(final InputStream inputStream, final T baseNCodec, final boolean doEncode) {\n"
+}

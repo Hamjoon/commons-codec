@@ -1,0 +1,55 @@
+{
+  "index": 133,
+  "sha": "ffbabba277653100dc08f4733c9e264f23561dfc",
+  "parent": "b950ea8342130f537f38734a79b9bd62869ecdad",
+  "subject": "Javadoc: Fix format nit",
+  "pre_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      148,
+      166,
+      209
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      148,
+      166,
+      209
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        148,
+        166,
+        209
+      ],
+      "post_image_lines": [
+        148,
+        166,
+        209
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "b950ea8342130f537f38734a79b9bd62869ecdad",
+    "ffbabba277653100dc08f4733c9e264f23561dfc",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 3b43f571e..7e31a7304 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -148 +148 @@ public class DigestUtils {\n-     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" >Appendix A in the Java\n+     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\">Appendix A in the Java\n@@ -166 +166 @@ public class DigestUtils {\n-     *                             <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" > Appendix A in the Java\n+     *                             <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\n@@ -209 +209 @@ public class DigestUtils {\n-     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\" > Appendix A in the Java\n+     *                  <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#AppA\"> Appendix A in the Java\n"
+}

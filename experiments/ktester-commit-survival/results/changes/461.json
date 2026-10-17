@@ -1,0 +1,421 @@
+{
+  "index": 461,
+  "sha": "13208005b9cf043ecd09c149a53eff03c1e7db61",
+  "parent": "fcb8bf612ccdf25c11573ebe82dd9f0474e606d5",
+  "subject": "Use HTTPS in URL",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      25,
+      56
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      51
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      55
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      27,
+      69
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      55
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      59
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      305,
+      348,
+      384
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      32
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      67
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      38
+    ],
+    "org/apache/commons/codec/language/Nysiis.java": [
+      68
+    ],
+    "org/apache/commons/codec/net/BCodec.java": [
+      34,
+      37,
+      45
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      33,
+      36,
+      49
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      37,
+      66
+    ],
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      32,
+      40
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      44,
+      45
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      25,
+      56
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      51
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      55
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      27,
+      69
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      55
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      59
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      305,
+      348,
+      384
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      32
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      67
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      38
+    ],
+    "org/apache/commons/codec/language/Nysiis.java": [
+      68
+    ],
+    "org/apache/commons/codec/net/BCodec.java": [
+      34,
+      37,
+      45
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      33,
+      36,
+      49
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      37,
+      66
+    ],
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      32,
+      40
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      44,
+      45
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32.java",
+      "new_file": "org/apache/commons/codec/binary/Base32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        25,
+        56
+      ],
+      "post_image_lines": [
+        25,
+        56
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        51
+      ],
+      "post_image_lines": [
+        51
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        55
+      ],
+      "post_image_lines": [
+        55
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        27,
+        69
+      ],
+      "post_image_lines": [
+        27,
+        69
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        55
+      ],
+      "post_image_lines": [
+        55
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        59
+      ],
+      "post_image_lines": [
+        59
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        305,
+        348,
+        384
+      ],
+      "post_image_lines": [
+        305,
+        348,
+        384
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        32
+      ],
+      "post_image_lines": [
+        32
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        67
+      ],
+      "post_image_lines": [
+        67
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        38
+      ],
+      "post_image_lines": [
+        38
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Nysiis.java",
+      "new_file": "org/apache/commons/codec/language/Nysiis.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        68
+      ],
+      "post_image_lines": [
+        68
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/BCodec.java",
+      "new_file": "org/apache/commons/codec/net/BCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        34,
+        37,
+        45
+      ],
+      "post_image_lines": [
+        34,
+        37,
+        45
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QCodec.java",
+      "new_file": "org/apache/commons/codec/net/QCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        33,
+        36,
+        49
+      ],
+      "post_image_lines": [
+        33,
+        36,
+        49
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        37,
+        66
+      ],
+      "post_image_lines": [
+        37,
+        66
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "new_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        32,
+        40
+      ],
+      "post_image_lines": [
+        32,
+        40
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        44,
+        45
+      ],
+      "post_image_lines": [
+        44,
+        45
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fcb8bf612ccdf25c11573ebe82dd9f0474e606d5",
+    "13208005b9cf043ecd09c149a53eff03c1e7db61",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32.java b/src/main/java/org/apache/commons/codec/binary/Base32.java\nindex 9b1b0cef2..68a048c8e 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base32 encoding and decoding as defined by <a href=\"http://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>.\n+ * Provides Base32 encoding and decoding as defined by <a href=\"https://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>.\n@@ -56 +56 @@ import org.apache.commons.codec.CodecPolicy;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex d8399eda8..481cd0a0d 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -51 +51 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * @see <a href=\"http://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 936e09b0d..5f8153b06 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -55 +55 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * @see <a href=\"http://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc4648.txt\">RFC 4648</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex b2eb94303..0b1080915 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -27 +27 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base64 encoding and decoding as defined by <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>.\n+ * Provides Base64 encoding and decoding as defined by <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>.\n@@ -69 +69 @@ import org.apache.commons.codec.CodecPolicy;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex 1121e36f6..14e0a1bbb 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -55 +55 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex a2339defa..a5097aa55 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -59 +59 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045</a>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 575bb9b41..a430f61d7 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -305 +305 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 6.8</a>\n+     * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 6.8</a>\n@@ -348 +348 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 2.1</a>\n+     * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 2.1</a>\n@@ -384 +384 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @see <a href=\"http://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 2.1</a>\n+     * @see <a href=\"https://www.ietf.org/rfc/rfc2045.txt\">RFC 2045 section 2.1</a>\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex f1c055eb8..73761347b 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -32 +32 @@ import java.util.regex.Pattern;\n- * href=\"http://www.freebsd.org/cgi/cvsweb.cgi/src/lib/libcrypt/crypt-md5.c?rev=1.1;content-type=text%2Fplain\">\n+ * href=\"https://www.freebsd.org/cgi/cvsweb.cgi/src/lib/libcrypt/crypt-md5.c?rev=1.1;content-type=text%2Fplain\">\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex ee7bbed7b..0d0757132 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -67 +67 @@ import org.apache.commons.codec.StringEncoder;\n- * @see <a href=\"http://www.avotaynu.com/soundex.htm\">Avotaynu - Soundexing and Genealogy</a>\n+ * @see <a href=\"https://www.avotaynu.com/soundex.htm\">Avotaynu - Soundexing and Genealogy</a>\ndiff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 2ec17c592..5a360e14c 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -38 +38 @@ import org.apache.commons.codec.binary.StringUtils;\n- * @see <a href=\"http://aspell.net/metaphone/dmetaph.cpp\">Double Metaphone C++ source by Lawrence Philips</a>\n+ * @see <a href=\"https://aspell.net/metaphone/dmetaph.cpp\">Double Metaphone C++ source by Lawrence Philips</a>\ndiff --git a/src/main/java/org/apache/commons/codec/language/Nysiis.java b/src/main/java/org/apache/commons/codec/language/Nysiis.java\nindex 033b571cb..3e8fbd7b7 100644\n--- a/src/main/java/org/apache/commons/codec/language/Nysiis.java\n+++ b/src/main/java/org/apache/commons/codec/language/Nysiis.java\n@@ -68 +68 @@ import org.apache.commons.codec.StringEncoder;\n- * @see <a href=\"http://www.dropby.com/NYSIIS.html\">NYSIIS on dropby.com</a>\n+ * @see <a href=\"https://www.dropby.com/NYSIIS.html\">NYSIIS on dropby.com</a>\ndiff --git a/src/main/java/org/apache/commons/codec/net/BCodec.java b/src/main/java/org/apache/commons/codec/net/BCodec.java\nindex 3cc1e7fe7..d824f3f1c 100644\n--- a/src/main/java/org/apache/commons/codec/net/BCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/BCodec.java\n@@ -34 +34 @@ import org.apache.commons.codec.binary.BaseNCodec;\n- * Identical to the Base64 encoding defined by <a href=\"http://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a>\n+ * Identical to the Base64 encoding defined by <a href=\"https://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a>\n@@ -37 +37 @@ import org.apache.commons.codec.binary.BaseNCodec;\n- * <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the encoding of non-ASCII\n+ * <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the encoding of non-ASCII\n@@ -45 +45 @@ import org.apache.commons.codec.binary.BaseNCodec;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two: Message\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two: Message\ndiff --git a/src/main/java/org/apache/commons/codec/net/QCodec.java b/src/main/java/org/apache/commons/codec/net/QCodec.java\nindex 284bb04e3..36b92ce2f 100644\n--- a/src/main/java/org/apache/commons/codec/net/QCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QCodec.java\n@@ -33 +33 @@ import org.apache.commons.codec.StringEncoder;\n- * <a href=\"http://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a> and designed to allow text containing mostly ASCII\n+ * <a href=\"https://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a> and designed to allow text containing mostly ASCII\n@@ -36 +36 @@ import org.apache.commons.codec.StringEncoder;\n- * <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the encoding of non-ASCII\n+ * <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the encoding of non-ASCII\n@@ -49 +49 @@ import org.apache.commons.codec.StringEncoder;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two: Message\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two: Message\ndiff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex b867c73a9..4f9baaaa0 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -37 +37 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Codec for the Quoted-Printable section of <a href=\"http://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a>.\n+ * Codec for the Quoted-Printable section of <a href=\"https://www.ietf.org/rfc/rfc1521.txt\">RFC 1521</a>.\n@@ -66 +66 @@ import org.apache.commons.codec.binary.StringUtils;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc1521.txt\">RFC 1521 MIME (Multipurpose Internet Mail Extensions) Part One:\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc1521.txt\">RFC 1521 MIME (Multipurpose Internet Mail Extensions) Part One:\ndiff --git a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\nindex f9ee4df72..08ced9939 100644\n--- a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n+++ b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n@@ -32 +32 @@ import org.apache.commons.codec.binary.StringUtils;\n- * <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the\n+ * <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">RFC 1522</a> describes techniques to allow the\n@@ -40 +40 @@ import org.apache.commons.codec.binary.StringUtils;\n- * @see <a href=\"http://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two:\n+ * @see <a href=\"https://www.ietf.org/rfc/rfc1522.txt\">MIME (Multipurpose Internet Mail Extensions) Part Two:\ndiff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex 641c72357..73e3a4d33 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -44,2 +44,2 @@ import org.apache.commons.codec.binary.StringUtils;\n- * @see <a href=\"http://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.1\">Chapter 17.13.4 Form content types</a>\n- *           of the <a href=\"http://www.w3.org/TR/html4/\">HTML 4.01 Specification</a>\n+ * @see <a href=\"https://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.1\">Chapter 17.13.4 Form content types</a>\n+ *           of the <a href=\"https://www.w3.org/TR/html4/\">HTML 4.01 Specification</a>\n"
+}

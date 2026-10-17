@@ -1,0 +1,61 @@
+{
+  "index": 178,
+  "sha": "4d917fa95d3d31da248f6ef6e8fb4d7bb477d248",
+  "parent": "1b815fef93e6727bd33a3ecdb11f434be28aa1e5",
+  "subject": "Deprecate Sha2Crypt.Sha2Crypt()",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1b815fef93e6727bd33a3ecdb11f434be28aa1e5",
+    "4d917fa95d3d31da248f6ef6e8fb4d7bb477d248",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\nindex 52466d09f..f004c8306 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n@@ -615,0 +616,10 @@ public class Sha2Crypt {\n+\n+    /**\n+     * Consider private.\n+     *\n+     * @deprecated Will be private in the next major version.\n+     */\n+    @Deprecated\n+    public Sha2Crypt() {\n+        // empty\n+    }\n"
+}

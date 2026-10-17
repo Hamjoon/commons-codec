@@ -1,0 +1,71 @@
+{
+  "index": 298,
+  "sha": "4357dc9bdebf5e32944de74015172872e3da9cfa",
+  "parent": "fa89e5c47943bbf8e6485f78bf4b5e954351b036",
+  "subject": "Javadoc typo",
+  "pre_image": {
+    "org/apache/commons/codec/language/Soundex.java": [
+      149,
+      168,
+      184,
+      220,
+      225,
+      241,
+      308
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Soundex.java": [
+      149,
+      168,
+      184,
+      220,
+      225,
+      241,
+      308
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Soundex.java",
+      "new_file": "org/apache/commons/codec/language/Soundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        149,
+        168,
+        184,
+        220,
+        225,
+        241,
+        308
+      ],
+      "post_image_lines": [
+        149,
+        168,
+        184,
+        220,
+        225,
+        241,
+        308
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fa89e5c47943bbf8e6485f78bf4b5e954351b036",
+    "4357dc9bdebf5e32944de74015172872e3da9cfa",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Soundex.java b/src/main/java/org/apache/commons/codec/language/Soundex.java\nindex fd6aacedd..5c12cd1f4 100644\n--- a/src/main/java/org/apache/commons/codec/language/Soundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/Soundex.java\n@@ -149 +149 @@ public class Soundex implements StringEncoder {\n-     * Creates a soundex instance using the given mapping. This constructor can be used to provide an internationalized\n+     * Creates a Soundex instance using the given mapping. This constructor can be used to provide an internationalized\n@@ -168 +168 @@ public class Soundex implements StringEncoder {\n-     * Creates a refined soundex instance using a custom mapping. This constructor can be used to customize the mapping,\n+     * Creates a refined Soundex instance using a custom mapping. This constructor can be used to customize the mapping,\n@@ -184 +184 @@ public class Soundex implements StringEncoder {\n-     * Creates a refined soundex instance using a custom mapping. This constructor can be used to customize the mapping,\n+     * Creates a refined Soundex instance using a custom mapping. This constructor can be used to customize the mapping,\n@@ -220 +220 @@ public class Soundex implements StringEncoder {\n-     * Encodes an Object using the soundex algorithm. This method is provided in order to satisfy the requirements of\n+     * Encodes an Object using the Soundex algorithm. This method is provided in order to satisfy the requirements of\n@@ -225 +225 @@ public class Soundex implements StringEncoder {\n-     * @return An object (or type {@link String}) containing the soundex code which corresponds to the String\n+     * @return An object (or type {@link String}) containing the Soundex code which corresponds to the String\n@@ -241 +241 @@ public class Soundex implements StringEncoder {\n-     * Encodes a String using the soundex algorithm.\n+     * Encodes a String using the Soundex algorithm.\n@@ -308 +308 @@ public class Soundex implements StringEncoder {\n-     * @return A soundex code for the String supplied\n+     * @return A Soundex code for the String supplied\n"
+}

@@ -1,0 +1,105 @@
+{
+  "index": 275,
+  "sha": "e119f125302cc6f65ffd4ab6a1284cf31990a507",
+  "parent": "d75af8c249302825ab99f9cd7b74bb1dfb8d4172",
+  "subject": "Normalize local variable naming",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      332,
+      335,
+      338,
+      406,
+      424,
+      435,
+      536
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      101,
+      109,
+      110,
+      114
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      332,
+      335,
+      338,
+      406,
+      424,
+      435,
+      536
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      101,
+      109,
+      110,
+      114
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        332,
+        335,
+        338,
+        406,
+        424,
+        435,
+        536
+      ],
+      "post_image_lines": [
+        332,
+        335,
+        338,
+        406,
+        424,
+        435,
+        536
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "new_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        101,
+        109,
+        110,
+        114
+      ],
+      "post_image_lines": [
+        101,
+        109,
+        110,
+        114
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "d75af8c249302825ab99f9cd7b74bb1dfb8d4172",
+    "e119f125302cc6f65ffd4ab6a1284cf31990a507",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\nindex f004c8306..7aa343abf 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n@@ -332 +332 @@ public class Sha2Crypt {\n-        final byte[] pBytes = new byte[keyLen];\n+        final byte[] bytes = new byte[keyLen];\n@@ -335 +335 @@ public class Sha2Crypt {\n-            System.arraycopy(tempResult, 0, pBytes, cp, blocksize);\n+            System.arraycopy(tempResult, 0, bytes, cp, blocksize);\n@@ -338 +338 @@ public class Sha2Crypt {\n-        System.arraycopy(tempResult, 0, pBytes, cp, keyLen - cp);\n+        System.arraycopy(tempResult, 0, bytes, cp, keyLen - cp);\n@@ -406 +406 @@ public class Sha2Crypt {\n-                ctx.update(pBytes, 0, keyLen);\n+                ctx.update(bytes, 0, keyLen);\n@@ -424 +424 @@ public class Sha2Crypt {\n-                ctx.update(pBytes, 0, keyLen);\n+                ctx.update(bytes, 0, keyLen);\n@@ -435 +435 @@ public class Sha2Crypt {\n-                ctx.update(pBytes, 0, keyLen);\n+                ctx.update(bytes, 0, keyLen);\n@@ -536 +536 @@ public class Sha2Crypt {\n-        Arrays.fill(pBytes, (byte) 0);\n+        Arrays.fill(bytes, (byte) 0);\ndiff --git a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\nindex 3163ece96..f263122fe 100644\n--- a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n@@ -101 +101 @@ public class MatchRatingApproachEncoder implements StringEncoder {\n-     * @param pObject\n+     * @param object\n@@ -109,2 +109,2 @@ public class MatchRatingApproachEncoder implements StringEncoder {\n-    public final Object encode(final Object pObject) throws EncoderException {\n-        if (!(pObject instanceof String)) {\n+    public final Object encode(final Object object) throws EncoderException {\n+        if (!(object instanceof String)) {\n@@ -114 +114 @@ public class MatchRatingApproachEncoder implements StringEncoder {\n-        return encode((String) pObject);\n+        return encode((String) object);\n"
+}

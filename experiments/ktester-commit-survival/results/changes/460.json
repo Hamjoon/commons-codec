@@ -1,0 +1,22 @@
+{
+  "index": 460,
+  "sha": "fcb8bf612ccdf25c11573ebe82dd9f0474e606d5",
+  "parent": "af58c1af853cd705fa08a5313c7fecd870ed37c6",
+  "subject": "Use component logo",
+  "pre_image": {},
+  "post_image": {},
+  "files": [],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "af58c1af853cd705fa08a5313c7fecd870ed37c6",
+    "fcb8bf612ccdf25c11573ebe82dd9f0474e606d5",
+    "--",
+    "src/main/java"
+  ],
+  "diff": ""
+}

@@ -1,0 +1,99 @@
+{
+  "index": 321,
+  "sha": "e3b840fa7401663935ecd66d20e74981b4c41d0e",
+  "parent": "218d031d5c9163b7688e358639b2b0f9b5f891e8",
+  "subject": "Better local variable names",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      306,
+      309,
+      310,
+      311,
+      314,
+      316
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      306,
+      309,
+      310,
+      311,
+      314,
+      316
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        306,
+        309,
+        310,
+        311,
+        314,
+        316
+      ],
+      "post_image_lines": [
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        306,
+        309,
+        310,
+        311,
+        314,
+        316
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "218d031d5c9163b7688e358639b2b0f9b5f891e8",
+    "e3b840fa7401663935ecd66d20e74981b4c41d0e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 77e34ea95..3f05787c1 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -297,8 +297,8 @@ public class Rule {\n-        for (final NameType s : NameType.values()) {\n-            final Map<RuleType, Map<String, Map<String, List<Rule>>>> rts = new EnumMap<>(RuleType.class);\n-            for (final RuleType rt : RuleType.values()) {\n-                final Map<String, Map<String, List<Rule>>> rs = new HashMap<>();\n-                final Languages ls = Languages.getInstance(s);\n-                ls.getLanguages().forEach(l -> {\n-                    try (Scanner scanner = createScanner(s, rt, l)) {\n-                        rs.put(l, parseRules(scanner, createResourceName(s, rt, l)));\n+        for (final NameType nameType : NameType.values()) {\n+            final Map<RuleType, Map<String, Map<String, List<Rule>>>> rtsMap = new EnumMap<>(RuleType.class);\n+            for (final RuleType ruleType : RuleType.values()) {\n+                final Map<String, Map<String, List<Rule>>> rsMap = new HashMap<>();\n+                final Languages languages = Languages.getInstance(nameType);\n+                languages.getLanguages().forEach(l -> {\n+                    try (Scanner scanner = createScanner(nameType, ruleType, l)) {\n+                        rsMap.put(l, parseRules(scanner, createResourceName(nameType, ruleType, l)));\n@@ -306 +306 @@ public class Rule {\n-                        throw new IllegalStateException(\"Problem processing \" + createResourceName(s, rt, l), e);\n+                        throw new IllegalStateException(\"Problem processing \" + createResourceName(nameType, ruleType, l), e);\n@@ -309,3 +309,3 @@ public class Rule {\n-                if (!rt.equals(RuleType.RULES)) {\n-                    try (Scanner scanner = createScanner(s, rt, \"common\")) {\n-                        rs.put(\"common\", parseRules(scanner, createResourceName(s, rt, \"common\")));\n+                if (!ruleType.equals(RuleType.RULES)) {\n+                    try (Scanner scanner = createScanner(nameType, ruleType, \"common\")) {\n+                        rsMap.put(\"common\", parseRules(scanner, createResourceName(nameType, ruleType, \"common\")));\n@@ -314 +314 @@ public class Rule {\n-                rts.put(rt, Collections.unmodifiableMap(rs));\n+                rtsMap.put(ruleType, Collections.unmodifiableMap(rsMap));\n@@ -316 +316 @@ public class Rule {\n-            RULES.put(s, Collections.unmodifiableMap(rts));\n+            RULES.put(nameType, Collections.unmodifiableMap(rtsMap));\n"
+}

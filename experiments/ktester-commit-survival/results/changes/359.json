@@ -1,0 +1,43 @@
+{
+  "index": 359,
+  "sha": "733e35e0cab3f8188d7faebd3248d916d0a82db8",
+  "parent": "f5db5a2d11ba51190bdf7235a936940131713c7a",
+  "subject": "Add Javadoc reference to C++ source",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      38
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        38
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "f5db5a2d11ba51190bdf7235a936940131713c7a",
+    "733e35e0cab3f8188d7faebd3248d916d0a82db8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 2579ee419..23c2b9d78 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -37,0 +38 @@ import org.apache.commons.codec.binary.StringUtils;\n+ * @see <a href=\"http://aspell.net/metaphone/dmetaph.cpp\">Double Metaphone C++ source by Lawrence Philips</a>\n"
+}

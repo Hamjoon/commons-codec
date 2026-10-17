@@ -1,0 +1,149 @@
+{
+  "index": 292,
+  "sha": "489a3ca6b82c9839ffa4b51a5999a06887acd4e1",
+  "parent": "812d020064c29a64fea7a1075bd05436dd01dd24",
+  "subject": "Precompile regular expressions in Lang.loadFromResource(String, Languages)",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      166,
+      174
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      404,
+      411
+    ],
+    "org/apache/commons/codec/language/bm/ResourceConstants.java": [],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      455,
+      470,
+      524
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      106,
+      107,
+      168,
+      176
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      32,
+      231,
+      232,
+      407,
+      414
+    ],
+    "org/apache/commons/codec/language/bm/ResourceConstants.java": [
+      20,
+      21,
+      37,
+      38
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      303,
+      304,
+      305,
+      306,
+      459,
+      474,
+      528
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        166,
+        174
+      ],
+      "post_image_lines": [
+        106,
+        107,
+        168,
+        176
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "new_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        404,
+        411
+      ],
+      "post_image_lines": [
+        32,
+        231,
+        232,
+        407,
+        414
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/ResourceConstants.java",
+      "new_file": "org/apache/commons/codec/language/bm/ResourceConstants.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        20,
+        21,
+        37,
+        38
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        455,
+        470,
+        524
+      ],
+      "post_image_lines": [
+        303,
+        304,
+        305,
+        306,
+        459,
+        474,
+        528
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "812d020064c29a64fea7a1075bd05436dd01dd24",
+    "489a3ca6b82c9839ffa4b51a5999a06887acd4e1",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex d92e37c44..6aacea1a2 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -105,0 +106,2 @@ public class Lang {\n+    private static final Pattern PLUS = Pattern.compile(\"\\\\+\");\n+\n@@ -166 +168 @@ public class Lang {\n-                    final String[] parts = line.split(\"\\\\s+\");\n+                    final String[] parts = ResourceConstants.SPACES.split(line);\n@@ -174 +176 @@ public class Lang {\n-                    final String[] langs = parts[1].split(\"\\\\+\");\n+                    final String[] langs = PLUS.split(parts[1]);\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\nindex 482d6ffdc..6b426d7a0 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n@@ -31,0 +32 @@ import java.util.TreeMap;\n+import java.util.regex.Pattern;\n@@ -229,0 +231,2 @@ public class PhoneticEngine {\n+    private static final Pattern QUOTE = Pattern.compile(\"'\");\n+\n@@ -404 +407 @@ public class PhoneticEngine {\n-        final List<String> words = Arrays.asList(input.split(\"\\\\s+\"));\n+        final List<String> words = Arrays.asList(ResourceConstants.SPACES.split(input));\n@@ -411 +414 @@ public class PhoneticEngine {\n-                final String[] parts = aWord.split(\"'\", -1);\n+                final String[] parts = QUOTE.split(aWord, -1);\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java b/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\nindex cee46f599..9b0d4a7a9 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language.bm;\n+import java.util.regex.Pattern;\n+\n@@ -34,0 +37,2 @@ final class ResourceConstants {\n+    static final Pattern SPACES = Pattern.compile(\"\\\\s+\");\n+\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 871af3882..5e38c610e 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -302,0 +303,4 @@ public class Rule {\n+    private static final Pattern AROUND_PLUS = Pattern.compile(\"[+]\");\n+\n+    private static final Pattern AROUND_PIPE = Pattern.compile(\"[|]\");\n+\n@@ -455 +459 @@ public class Rule {\n-            final Set<String> langs = new HashSet<>(Arrays.asList(in.split(\"[+]\")));\n+            final Set<String> langs = new HashSet<>(Arrays.asList(AROUND_PLUS.split(in)));\n@@ -470 +474 @@ public class Rule {\n-            for (final String part : body.split(\"[|]\")) {\n+            for (final String part : AROUND_PIPE.split(body)) {\n@@ -524 +528 @@ public class Rule {\n-                    final String[] parts = line.split(\"\\\\s+\");\n+                    final String[] parts = ResourceConstants.SPACES.split(line);\n"
+}

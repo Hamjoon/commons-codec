@@ -1,0 +1,47 @@
+{
+  "index": 279,
+  "sha": "567c084a44df25a917a4074ebbdb90b87850e44d",
+  "parent": "ee23cedff7e319d92d5b7f0fe841e39b9c946cd7",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      31
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      31
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        31
+      ],
+      "post_image_lines": [
+        31
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ee23cedff7e319d92d5b7f0fe841e39b9c946cd7",
+    "567c084a44df25a917a4074ebbdb90b87850e44d",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 6ab7f4a4f..5b91edd33 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -31 +31 @@ import java.util.regex.Pattern;\n- * The Java implementation was taken from the JetSpeed Portal project (see\n+ * The initial Java implementation was taken from the JetSpeed Portal project (see\n"
+}

@@ -1,0 +1,45 @@
+{
+  "index": 287,
+  "sha": "ff49d981d0030dcf6bc2e116f047a6b59fc5d085",
+  "parent": "8be1e90f56caedeec5bbe6778bbe14f6c39c3502",
+  "subject": "Don't initialize instance variables to their default values",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      86,
+      87
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        86,
+        87
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8be1e90f56caedeec5bbe6778bbe14f6c39c3502",
+    "ff49d981d0030dcf6bc2e116f047a6b59fc5d085",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 7734d0570..3009bdf9c 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -86,2 +85,0 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-            lastReplacement = null;\n-            cachedString = null;\n"
+}

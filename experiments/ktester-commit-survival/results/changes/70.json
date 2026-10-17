@@ -1,0 +1,55 @@
+{
+  "index": 70,
+  "sha": "6175c99ee3055b3a87d9c51e59ab8be22a4c1cfc",
+  "parent": "cd91956caf3aed9402b6a0c43affc3a7e8546661",
+  "subject": "Javadoc fixes [skip ci]",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Crypt.java": [
+      65,
+      66
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Crypt.java": [
+      65,
+      66,
+      67,
+      68
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        65,
+        66
+      ],
+      "post_image_lines": [
+        65,
+        66,
+        67,
+        68
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cd91956caf3aed9402b6a0c43affc3a7e8546661",
+    "6175c99ee3055b3a87d9c51e59ab8be22a4c1cfc",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex 9a1bff461..f1ce9e175 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -65,2 +65,4 @@ public class Crypt {\n-     *            real salt value without prefix or \"rounds=\". The salt may be null,\n-     *            in which case a salt is generated for you using {@link SecureRandom}.\n+     *            the salt, which is used to select the algorithm, see {@link #crypt(String, String)}\n+     *            The salt may be null,\n+     *            in which case the method delegates to {@link Sha2Crypt#sha512Crypt(byte[])}\n+     *\n"
+}

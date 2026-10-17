@@ -1,0 +1,47 @@
+{
+  "index": 94,
+  "sha": "babe1807cfc2fbb7c69bc146d33672db7d9eb30c",
+  "parent": "44a317ea0b319190264b20fec612f6c2da6223f3",
+  "subject": "Remove redundant keyword",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      282
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      282
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        282
+      ],
+      "post_image_lines": [
+        282
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "44a317ea0b319190264b20fec612f6c2da6223f3",
+    "babe1807cfc2fbb7c69bc146d33672db7d9eb30c",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 4dd8fd337..ba774969b 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -282 +282 @@ public class DoubleMetaphone implements StringEncoder {\n-        final DoubleMetaphoneResult result = new DoubleMetaphoneResult(this.getMaxCodeLen());\n+        final DoubleMetaphoneResult result = new DoubleMetaphoneResult(getMaxCodeLen());\n"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "prepared; Phase B not started",
+  "production_changing_commits": 187,
+  "coverage_commits": 263,
+  "scope_changing_commits": 50,
+  "src_main_java_changing_commits": 184,
+  "src_main_javadoc_only_indices": [
+    248,
+    460,
+    463
+  ],
+  "population_rule": "Every frozen changes-src-main=yes index and its predecessor; do not truncate to the estimated size.",
+  "estimate_discrepancy": "Addendum estimates 100 production-changing commits and at most 200 coverage indices; immutable CSV yields 187 and 263.",
+  "aggregation_outputs": "No table3b; one all-lines table4 retained only in repository; coverage-t covers five scope files.",
+  "addendum_sha256": "58763fc343c7d7b6716960d15ebf4759abbcddb2cfade1d1d608613d9912c70a",
+  "scope_projection_matches_original_diff": true,
+  "phase_a_unchanged": true,
+  "pending_before_phase_b": "Wire coverage_common.line_rows into run_commit.py only after Phase A finishes; include coverage helper provenance."
+}

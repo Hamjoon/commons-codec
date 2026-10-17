@@ -1,0 +1,77 @@
+{
+  "index": 285,
+  "sha": "1825f013fd3ece04ca6bb3abaa6c7c0de9e7bf69",
+  "parent": "1ad76b4f9b2a0055e3cfb5e5a544abc48eae1557",
+  "subject": "Format tweaks",
+  "pre_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      313,
+      314,
+      629,
+      630,
+      736,
+      737,
+      804,
+      805,
+      819,
+      820,
+      973,
+      974
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      627,
+      733,
+      800,
+      814,
+      967
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        313,
+        314,
+        629,
+        630,
+        736,
+        737,
+        804,
+        805,
+        819,
+        820,
+        973,
+        974
+      ],
+      "post_image_lines": [
+        627,
+        733,
+        800,
+        814,
+        967
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1ad76b4f9b2a0055e3cfb5e5a544abc48eae1557",
+    "1825f013fd3ece04ca6bb3abaa6c7c0de9e7bf69",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 225663c03..7c87ddd6e 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -313,2 +312,0 @@ public class DoubleMetaphone implements StringEncoder {\n-    //-- BEGIN HANDLERS --//\n-\n@@ -629,2 +627 @@ public class DoubleMetaphone implements StringEncoder {\n-    private int handleG(final String value, final DoubleMetaphoneResult result, int index,\n-                        final boolean slavoGermanic) {\n+    private int handleG(final String value, final DoubleMetaphoneResult result, int index, final boolean slavoGermanic) {\n@@ -736,2 +733 @@ public class DoubleMetaphone implements StringEncoder {\n-    private int handleJ(final String value, final DoubleMetaphoneResult result, int index,\n-                        final boolean slavoGermanic) {\n+    private int handleJ(final String value, final DoubleMetaphoneResult result, int index, final boolean slavoGermanic) {\n@@ -804,2 +800 @@ public class DoubleMetaphone implements StringEncoder {\n-    private int handleR(final String value, final DoubleMetaphoneResult result, final int index,\n-                        final boolean slavoGermanic) {\n+    private int handleR(final String value, final DoubleMetaphoneResult result, final int index, final boolean slavoGermanic) {\n@@ -819,2 +814 @@ public class DoubleMetaphone implements StringEncoder {\n-    private int handleS(final String value, final DoubleMetaphoneResult result, int index,\n-                        final boolean slavoGermanic) {\n+    private int handleS(final String value, final DoubleMetaphoneResult result, int index, final boolean slavoGermanic) {\n@@ -973,2 +967 @@ public class DoubleMetaphone implements StringEncoder {\n-    private int handleZ(final String value, final DoubleMetaphoneResult result, int index,\n-                        final boolean slavoGermanic) {\n+    private int handleZ(final String value, final DoubleMetaphoneResult result, int index, final boolean slavoGermanic) {\n"
+}

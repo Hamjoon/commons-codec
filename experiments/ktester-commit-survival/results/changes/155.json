@@ -1,0 +1,139 @@
+{
+  "index": 155,
+  "sha": "59784523e9a30a348a271164fce7b63c42b6b84f",
+  "parent": "4bb932dee2b8a5cbefd39322c742056f8b2cea3f",
+  "subject": "Use Resource.class to load resources, rather than its classloader (#353)",
+  "pre_image": {
+    "org/apache/commons/codec/Resources.java": [
+      36
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      215
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      104
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      274
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      268,
+      280
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/Resources.java": [
+      36
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      215
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      104
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      274
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      268,
+      280
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Resources.java",
+      "new_file": "org/apache/commons/codec/Resources.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        36
+      ],
+      "post_image_lines": [
+        36
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        215
+      ],
+      "post_image_lines": [
+        215
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        104
+      ],
+      "post_image_lines": [
+        104
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "new_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        274
+      ],
+      "post_image_lines": [
+        274
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        268,
+        280
+      ],
+      "post_image_lines": [
+        268,
+        280
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "4bb932dee2b8a5cbefd39322c742056f8b2cea3f",
+    "59784523e9a30a348a271164fce7b63c42b6b84f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/Resources.java b/src/main/java/org/apache/commons/codec/Resources.java\nindex 709545f72..944741aba 100644\n--- a/src/main/java/org/apache/commons/codec/Resources.java\n+++ b/src/main/java/org/apache/commons/codec/Resources.java\n@@ -36 +36 @@ public class Resources {\n-        final InputStream inputStream = Resources.class.getClassLoader().getResourceAsStream(name);\n+        final InputStream inputStream = Resources.class.getResourceAsStream(name);\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 16349ece2..c4921760d 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -215 +215 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-    private static final String RESOURCE_FILE = \"org/apache/commons/codec/language/dmrules.txt\";\n+    private static final String RESOURCE_FILE = \"/org/apache/commons/codec/language/dmrules.txt\";\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex 202a795a6..916ff9505 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -104 +104 @@ public class Lang {\n-    private static final String LANGUAGE_RULES_RN = \"org/apache/commons/codec/language/bm/%s_lang.txt\";\n+    private static final String LANGUAGE_RULES_RN = \"/org/apache/commons/codec/language/bm/%s_lang.txt\";\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Languages.java b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\nindex ed95adfec..3024ab7da 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n@@ -274 +274 @@ public class Languages {\n-        return String.format(\"org/apache/commons/codec/language/bm/%s_languages.txt\", nameType.getName());\n+        return String.format(\"/org/apache/commons/codec/language/bm/%s_languages.txt\", nameType.getName());\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex e2bc35d4e..ab1b917ea 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -268 +268 @@ public class Rule {\n-        return String.format(\"org/apache/commons/codec/language/bm/%s_%s_%s.txt\",\n+        return String.format(\"/org/apache/commons/codec/language/bm/%s_%s_%s.txt\",\n@@ -280 +280 @@ public class Rule {\n-        final String resName = String.format(\"org/apache/commons/codec/language/bm/%s.txt\", lang);\n+        final String resName = String.format(\"/org/apache/commons/codec/language/bm/%s.txt\", lang);\n"
+}

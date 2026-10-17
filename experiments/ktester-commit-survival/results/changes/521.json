@@ -1,0 +1,439 @@
+{
+  "index": 521,
+  "sha": "2bb4fd9c5744c0f34230b4909018524457d331dd",
+  "parent": "54f6443b5bc95dd53e2c9c52bc91e9275f35fd49",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      418
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      67,
+      165,
+      166,
+      170
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1417,
+      1430,
+      1443,
+      1458,
+      1477,
+      1496,
+      1512,
+      1529,
+      1626,
+      1696
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      307
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      76,
+      93,
+      111
+    ],
+    "org/apache/commons/codec/digest/MurmurHash.java": [
+      29,
+      45
+    ],
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      71,
+      83,
+      158,
+      189,
+      275
+    ],
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      147
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      145
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      251,
+      274,
+      288,
+      292,
+      311,
+      375,
+      377
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      364,
+      379,
+      391,
+      404,
+      633,
+      685
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      267,
+      283
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      259,
+      337
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      418
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      67,
+      165,
+      166,
+      170
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      1417,
+      1430,
+      1443,
+      1458,
+      1477,
+      1496,
+      1512,
+      1529,
+      1626,
+      1696
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      307
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      76,
+      93,
+      111
+    ],
+    "org/apache/commons/codec/digest/MurmurHash.java": [
+      29,
+      45
+    ],
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      71,
+      83,
+      158,
+      189,
+      275
+    ],
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      147
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      145
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      251,
+      274,
+      288,
+      292,
+      311,
+      375,
+      377
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      364,
+      379,
+      391,
+      404,
+      633,
+      685
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      267,
+      283
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      259,
+      337
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        418
+      ],
+      "post_image_lines": [
+        418
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        67,
+        165,
+        166,
+        170
+      ],
+      "post_image_lines": [
+        67,
+        165,
+        166,
+        170
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        1417,
+        1430,
+        1443,
+        1458,
+        1477,
+        1496,
+        1512,
+        1529,
+        1626,
+        1696
+      ],
+      "post_image_lines": [
+        1417,
+        1430,
+        1443,
+        1458,
+        1477,
+        1496,
+        1512,
+        1529,
+        1626,
+        1696
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        307
+      ],
+      "post_image_lines": [
+        307
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        76,
+        93,
+        111
+      ],
+      "post_image_lines": [
+        76,
+        93,
+        111
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        29,
+        45
+      ],
+      "post_image_lines": [
+        29,
+        45
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        71,
+        83,
+        158,
+        189,
+        275
+      ],
+      "post_image_lines": [
+        71,
+        83,
+        158,
+        189,
+        275
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        147
+      ],
+      "post_image_lines": [
+        147
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "new_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        145
+      ],
+      "post_image_lines": [
+        145
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "new_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        251,
+        274,
+        288,
+        292,
+        311,
+        375,
+        377
+      ],
+      "post_image_lines": [
+        251,
+        274,
+        288,
+        292,
+        311,
+        375,
+        377
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        364,
+        379,
+        391,
+        404,
+        633,
+        685
+      ],
+      "post_image_lines": [
+        364,
+        379,
+        391,
+        404,
+        633,
+        685
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QCodec.java",
+      "new_file": "org/apache/commons/codec/net/QCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        267,
+        283
+      ],
+      "post_image_lines": [
+        267,
+        283
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        259,
+        337
+      ],
+      "post_image_lines": [
+        259,
+        337
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "54f6443b5bc95dd53e2c9c52bc91e9275f35fd49",
+    "2bb4fd9c5744c0f34230b4909018524457d331dd",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 34d245701..cddefa530 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -418 +418 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param minCapacity the minimum required capacity\n+     * @param minCapacity the minimum required capacity.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex 8d24ffc2b..15599c1f6 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -67 +67 @@ public class Crypt {\n-     *            in which case the method delegates to {@link Sha2Crypt#sha512Crypt(byte[])}\n+     *            in which case the method delegates to {@link Sha2Crypt#sha512Crypt(byte[])}.\n@@ -165,2 +165,2 @@ public class Crypt {\n-     *            salt is generated for you using {@link SecureRandom}\n-     * @return hash value, i.e. encrypted password including the salt string\n+     *            salt is generated for you using {@link SecureRandom}.\n+     * @return hash value, i.e. encrypted password including the salt string.\n@@ -170 +170 @@ public class Crypt {\n-     *             when a {@link java.security.NoSuchAlgorithmException} is caught. *\n+     *             when a {@link java.security.NoSuchAlgorithmException} is caught.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex e3175afb6..36a258bcd 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -1417 +1417 @@ public class DigestUtils {\n-     * @param valueToDigest the value to update the {@link MessageDigest} with\n+     * @param valueToDigest the value to update the {@link MessageDigest} with.\n@@ -1430 +1430 @@ public class DigestUtils {\n-     * @param valueToDigest the value to update the {@link MessageDigest} with\n+     * @param valueToDigest the value to update the {@link MessageDigest} with.\n@@ -1443 +1443 @@ public class DigestUtils {\n-     * @param data   Data to digest\n+     * @param data   Data to digest.\n@@ -1458 +1458 @@ public class DigestUtils {\n-     * @param data   Data to digest\n+     * @param data   Data to digest.\n@@ -1477 +1477 @@ public class DigestUtils {\n-     * @param inputStream Data to digest\n+     * @param inputStream Data to digest.\n@@ -1496 +1496 @@ public class DigestUtils {\n-     * @param path    Data to digest\n+     * @param path    Data to digest.\n@@ -1512 +1512 @@ public class DigestUtils {\n-     * @param data   Data to digest\n+     * @param data   Data to digest.\n@@ -1529 +1529 @@ public class DigestUtils {\n-     * @param valueToDigest the value to update the {@link MessageDigest} with; converted to bytes using {@link StringUtils#getBytesUtf8(String)}\n+     * @param valueToDigest the value to update the {@link MessageDigest} with; converted to bytes using {@link StringUtils#getBytesUtf8(String)}.\n@@ -1626 +1626 @@ public class DigestUtils {\n-     * @param options options How to open the file\n+     * @param options options How to open the file.\n@@ -1696 +1696 @@ public class DigestUtils {\n-     * @param options options How to open the file\n+     * @param options options How to open the file.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex 94f271248..b3bd66eeb 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -307 +307 @@ public final class HmacUtils {\n-     *                      The InputStream must not be null and will not be closed\n+     *                      The InputStream must not be null and will not be closed.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex 49d364904..82b16707a 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -76 +76 @@ public class Md5Crypt {\n-     * @throws IllegalArgumentException when a {@link java.security.NoSuchAlgorithmException} is caught. *\n+     * @throws IllegalArgumentException when a {@link java.security.NoSuchAlgorithmException} is caught.\n@@ -93 +93 @@ public class Md5Crypt {\n-     * @throws IllegalArgumentException when a {@link java.security.NoSuchAlgorithmException} is caught. *\n+     * @throws IllegalArgumentException when a {@link java.security.NoSuchAlgorithmException} is caught.\n@@ -111 +111 @@ public class Md5Crypt {\n-     *            {@link SecureRandom}\n+     *            {@link SecureRandom}.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash.java\nindex f68ff6d93..7c7c25c1a 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash.java\n@@ -29 +29 @@ final class MurmurHash {\n-     * @param index The index\n+     * @param index The index.\n@@ -45 +45 @@ final class MurmurHash {\n-     * @param index The index\n+     * @param index The index.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\nindex daa184684..2871dc121 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n@@ -71 +71 @@ public final class MurmurHash2 {\n-     * @param length The length of the array\n+     * @param length The length of the array.\n@@ -83 +83 @@ public final class MurmurHash2 {\n-     * @param length The length of the array\n+     * @param length The length of the array.\n@@ -158 +158 @@ public final class MurmurHash2 {\n-     * @param from The starting index\n+     * @param from The starting index.\n@@ -189 +189 @@ public final class MurmurHash2 {\n-     * @param length The length of the array\n+     * @param length The length of the array.\n@@ -275 +275 @@ public final class MurmurHash2 {\n-     * @param from The starting index\n+     * @param from The starting index.\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\nindex f5b3849c2..c8389a8fd 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n@@ -147 +147 @@ public class Sha2Crypt {\n-     * @param algorithm  {@link MessageDigest} algorithm identifier string\n+     * @param algorithm  {@link MessageDigest} algorithm identifier string.\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\nindex da2857f4d..8827d0a6e 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n@@ -145 +145 @@ public class BeiderMorseEncoder implements StringEncoder {\n-     *            to be considered\n+     *            to be considered.\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\nindex 2232b7542..b62568c91 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n@@ -251 +251 @@ public class PhoneticEngine {\n-     * @param sep       String to separate them with\n+     * @param sep       String to separate them with.\n@@ -274 +274 @@ public class PhoneticEngine {\n-     *            the type of rules it will apply\n+     *            the type of rules it will apply.\n@@ -288 +288 @@ public class PhoneticEngine {\n-     *            the type of rules it will apply\n+     *            the type of rules it will apply.\n@@ -292 +292 @@ public class PhoneticEngine {\n-     *            the maximum number of phonemes that will be handled\n+     *            the maximum number of phonemes that will be handled.\n@@ -311 +311 @@ public class PhoneticEngine {\n-     * @param finalRules the final rules to apply\n+     * @param finalRules the final rules to apply.\n@@ -375 +375 @@ public class PhoneticEngine {\n-     *            set of possible origin languages\n+     *            set of possible origin languages.\n@@ -377 +377 @@ public class PhoneticEngine {\n-     *         input\n+     *         input.\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 3d53e6aec..17572311b 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -364 +364 @@ public class Rule {\n-     * @param rt       the RuleType to consider\n+     * @param rt       the RuleType to consider.\n@@ -379 +379 @@ public class Rule {\n-     * @param rt       the RuleType to consider\n+     * @param rt       the RuleType to consider.\n@@ -391 +391 @@ public class Rule {\n-     * @param rt       the RuleType to consider\n+     * @param rt       the RuleType to consider.\n@@ -404 +404 @@ public class Rule {\n-     * @param rt       the RuleType to consider\n+     * @param rt       the RuleType to consider.\n@@ -633 +633 @@ public class Rule {\n-     * @param lContext the left context\n+     * @param lContext the left context.\n@@ -685 +685 @@ public class Rule {\n-     * @param i     the int position within the input\n+     * @param i     the int position within the input.\ndiff --git a/src/main/java/org/apache/commons/codec/net/QCodec.java b/src/main/java/org/apache/commons/codec/net/QCodec.java\nindex f67e64db4..4d2c162fd 100644\n--- a/src/main/java/org/apache/commons/codec/net/QCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QCodec.java\n@@ -267 +267 @@ public class QCodec extends RFC1522Codec implements StringEncoder, StringDecoder\n-     *            the Charset for sourceStr\n+     *            the Charset for sourceStr.\n@@ -283 +283 @@ public class QCodec extends RFC1522Codec implements StringEncoder, StringDecoder\n-     *            the Charset for sourceStr\n+     *            the Charset for sourceStr.\ndiff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex 8b7e5b71e..c16c55a01 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -259 +259 @@ public class URLCodec implements BinaryEncoder, BinaryDecoder, StringEncoder, St\n-     *            the original string charset\n+     *            the original string charset.\n@@ -337 +337 @@ public class URLCodec implements BinaryEncoder, BinaryDecoder, StringEncoder, St\n-     *            the charset for str\n+     *            the charset for str.\n"
+}

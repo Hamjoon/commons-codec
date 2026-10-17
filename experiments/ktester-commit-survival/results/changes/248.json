@@ -1,0 +1,22 @@
+{
+  "index": 248,
+  "sha": "3419e7224f1d4a2e74e3829f097750c80b4d9d61",
+  "parent": "3e7f7ef11d1b7656c0f13675b8e27602e2624b9c",
+  "subject": "Remove extra whitespace",
+  "pre_image": {},
+  "post_image": {},
+  "files": [],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "3e7f7ef11d1b7656c0f13675b8e27602e2624b9c",
+    "3419e7224f1d4a2e74e3829f097750c80b4d9d61",
+    "--",
+    "src/main/java"
+  ],
+  "diff": ""
+}

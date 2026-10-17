@@ -1,0 +1,65 @@
+{
+  "index": 280,
+  "sha": "da16f363adf7c60d45002602afa3c466ddff427c",
+  "parent": "567c084a44df25a917a4074ebbdb90b87850e44d",
+  "subject": "[CODEC-328] Clarify Javadoc for org.apache.commons.codec.digest.UnixCrypt.crypt(byte[],String)",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      239,
+      240,
+      241,
+      242,
+      243,
+      245,
+      246
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      239,
+      240,
+      241,
+      243
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        239,
+        240,
+        241,
+        242,
+        243,
+        245,
+        246
+      ],
+      "post_image_lines": [
+        239,
+        240,
+        241,
+        243
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "567c084a44df25a917a4074ebbdb90b87850e44d",
+    "da16f363adf7c60d45002602afa3c466ddff427c",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 5b91edd33..e77dea0e9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -239,5 +239,3 @@ public class UnixCrypt {\n-     * @param original\n-     *            plaintext password\n-     * @param salt\n-     *            a two character string drawn from [a-zA-Z0-9./]. The salt may be null, in which case a salt is\n-     *            generated for you using {@link B64#getRandomSalt(int)}.\n+     * @param original plaintext password\n+     * @param salt     a two character string drawn from [a-zA-Z0-9./]. The salt may be null, in which case a salt is generated for you using\n+     *                 {@link B64#getRandomSalt(int)}. Only the first two characters are used, others are ignored.\n@@ -245,2 +243 @@ public class UnixCrypt {\n-     * @throws IllegalArgumentException\n-     *             if the salt does not match the allowed pattern\n+     * @throws IllegalArgumentException if the salt does not match the allowed pattern\n"
+}

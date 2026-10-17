@@ -1,0 +1,51 @@
+{
+  "index": 352,
+  "sha": "9e76e7f760d68f4207509fb53f58d02cf1e2b5f3",
+  "parent": "8ad83cb10a371d440ba57cc1af74389a073a310d",
+  "subject": "Remove some redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      98,
+      216
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      98,
+      216
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        98,
+        216
+      ],
+      "post_image_lines": [
+        98,
+        216
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8ad83cb10a371d440ba57cc1af74389a073a310d",
+    "9e76e7f760d68f4207509fb53f58d02cf1e2b5f3",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex 6aacea1a2..be838234e 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -98 +98 @@ public class Lang {\n-            return this.pattern.matcher(txt).find();\n+            return pattern.matcher(txt).find();\n@@ -216 +216 @@ public class Lang {\n-        final Set<String> langs = new HashSet<>(this.languages.getLanguages());\n+        final Set<String> langs = new HashSet<>(languages.getLanguages());\n"
+}

@@ -1,0 +1,51 @@
+{
+  "index": 282,
+  "sha": "c529b5d912a873dbdb81212cff50b9aed51a473a",
+  "parent": "71fee598323eac3eb4dd7f9f3c4d070769ca9368",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      25,
+      36
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      25,
+      36
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25,
+        36
+      ],
+      "post_image_lines": [
+        25,
+        36
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "71fee598323eac3eb4dd7f9f3c4d070769ca9368",
+    "c529b5d912a873dbdb81212cff50b9aed51a473a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex e77dea0e9..25b32d813 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -25 +25 @@ import java.util.regex.Pattern;\n- * Unix crypt(3) algorithm implementation.\n+ * Unix <a href=\"https://man7.org/linux/man-pages/man3/crypt.3.html\">crypt(3)</a> algorithm implementation.\n@@ -36 +36 @@ import java.util.regex.Pattern;\n- * [a-zA-Z0-9./].\n+ * {@code [a-zA-Z0-9./]}.\n"
+}

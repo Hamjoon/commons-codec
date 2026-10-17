@@ -1,0 +1,95 @@
+{
+  "index": 388,
+  "sha": "a1a6caafc55a2a9841662a2a60909d6e3ee0dd62",
+  "parent": "49f91e7a043d28e56fe26fe2b1d1a71d78823ecf",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      85,
+      99
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      86
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      149
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32.java": [
+      85,
+      99
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      86
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      149
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32.java",
+      "new_file": "org/apache/commons/codec/binary/Base32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        85,
+        99
+      ],
+      "post_image_lines": [
+        85,
+        99
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        86
+      ],
+      "post_image_lines": [
+        86
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        149
+      ],
+      "post_image_lines": [
+        149
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "49f91e7a043d28e56fe26fe2b1d1a71d78823ecf",
+    "a1a6caafc55a2a9841662a2a60909d6e3ee0dd62",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32.java b/src/main/java/org/apache/commons/codec/binary/Base32.java\nindex 5ebecbcb6..8cdb30f50 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32.java\n@@ -85 +85 @@ public class Base32 extends BaseNCodec {\n-         * @return this instance.\n+         * @return {@code this} instance.\n@@ -99 +99 @@ public class Base32 extends BaseNCodec {\n-         * @return this instance.\n+         * @return {@code this} instance.\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 2ab1eb07d..4baef5db6 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -86 +86 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-         * @return this instance typed as the subclass type {@code B}.\n+         * @return {@code this} instance typed as the subclass type {@code B}.\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex a15e1cf10..abba578b9 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -149 +149 @@ public class Rule {\n-         * @return this instance.\n+         * @return {@code this} instance.\n"
+}

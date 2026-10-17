@@ -1,0 +1,47 @@
+{
+  "index": 324,
+  "sha": "ab821ad679907677b5b9da5b0972a47615b2bd02",
+  "parent": "70e423b8e632b416bbf1ddd9d31493758c905940",
+  "subject": "Better exception message",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      410
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      410
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        410
+      ],
+      "post_image_lines": [
+        410
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "70e423b8e632b416bbf1ddd9d31493758c905940",
+    "ab821ad679907677b5b9da5b0972a47615b2bd02",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex 8d7d6b668..fdd5ba3a4 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -410 +410 @@ public class Rule {\n-            throw new IllegalArgumentException(String.format(\"No rules found for %s, %s, %s.\", nameType.getName(), rt.getName(), lang));\n+            throw new IllegalArgumentException(String.format(\"No rules found for %s, %s, '%s'.\", nameType.getName(), rt.getName(), lang));\n"
+}

@@ -1,0 +1,47 @@
+{
+  "index": 462,
+  "sha": "004966ba0d70c24e59a3107edc06d13e56905313",
+  "parent": "13208005b9cf043ecd09c149a53eff03c1e7db61",
+  "subject": "Better package description",
+  "pre_image": {
+    "org/apache/commons/codec/package-info.java": [
+      27
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/package-info.java": [
+      27
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/package-info.java",
+      "new_file": "org/apache/commons/codec/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        27
+      ],
+      "post_image_lines": [
+        27
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "13208005b9cf043ecd09c149a53eff03c1e7db61",
+    "004966ba0d70c24e59a3107edc06d13e56905313",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/package-info.java b/src/main/java/org/apache/commons/codec/package-info.java\nindex b876aaed1..b857d1d59 100644\n--- a/src/main/java/org/apache/commons/codec/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/package-info.java\n@@ -27 +27 @@\n- * <li><a href=\"binary/package-summary.html\">Binary codecs.</a></li>\n+ * <li><a href=\"binary/package-summary.html\">Binary codecs: Base16, Base32, and Base64.</a></li>\n"
+}

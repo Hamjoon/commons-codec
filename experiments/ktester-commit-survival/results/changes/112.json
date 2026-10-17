@@ -1,0 +1,63 @@
+{
+  "index": 112,
+  "sha": "54431b0a0d5dc4d5032ebc0409008f8f88420eac",
+  "parent": "fbc404722ac037729b0e7706194c67adfc7e16b8",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fbc404722ac037729b0e7706194c67adfc7e16b8",
+    "54431b0a0d5dc4d5032ebc0409008f8f88420eac",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex e4e3f6ae2..4889c9604 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -76,0 +77,11 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+        /**\n+         * Returns this instance typed as the subclass type {@code B}.\n+         * <p>\n+         * This is the same as the expression:\n+         * </p>\n+         * <pre>\n+         * (B) this\n+         * </pre>\n+         *\n+         * @return this instance typed as the subclass type {@code B}.\n+         */\n"
+}

@@ -1,0 +1,47 @@
+{
+  "index": 338,
+  "sha": "1d718d8515091f49fe9c092455b17bacf3085809",
+  "parent": "5097ba612a5dc6fa39dc684cdee7d1c252166e20",
+  "subject": "Fix PMD UnnecessaryFullyQualifiedName in org.apache.commons.codec.digest.Md5Crypt",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      123
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      123
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        123
+      ],
+      "post_image_lines": [
+        123
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "5097ba612a5dc6fa39dc684cdee7d1c252166e20",
+    "1d718d8515091f49fe9c092455b17bacf3085809",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex bf0755640..f1c055eb8 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -123 +123 @@ public class Md5Crypt {\n-        return Md5Crypt.md5Crypt(keyBytes, salt, APR1_PREFIX);\n+        return md5Crypt(keyBytes, salt, APR1_PREFIX);\n"
+}

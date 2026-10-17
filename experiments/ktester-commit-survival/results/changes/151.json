@@ -1,0 +1,81 @@
+{
+  "index": 151,
+  "sha": "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+  "parent": "09d901b6c768afd16c922a016e48732dad8d51b0",
+  "subject": "Merge if tests that do the same block",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      159,
+      160,
+      161,
+      162
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      169,
+      170,
+      171,
+      172
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      159
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      169
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        159,
+        160,
+        161,
+        162
+      ],
+      "post_image_lines": [
+        159
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        169,
+        170,
+        171,
+        172
+      ],
+      "post_image_lines": [
+        169
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "09d901b6c768afd16c922a016e48732dad8d51b0",
+    "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\nindex 74bfb07fe..5c39ab493 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n@@ -159,4 +159 @@ public class BaseNCodecInputStream extends FilterInputStream {\n-        if (offset < 0 || len < 0) {\n-            throw new IndexOutOfBoundsException();\n-        }\n-        if (offset > array.length || offset + len > array.length) {\n+        if (offset < 0 || len < 0 || offset > array.length || offset + len > array.length) {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\nindex 196475938..71d4b72d7 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n@@ -169,4 +169 @@ public class BaseNCodecOutputStream extends FilterOutputStream {\n-        if (offset < 0 || len < 0) {\n-            throw new IndexOutOfBoundsException();\n-        }\n-        if (offset > array.length || offset + len > array.length) {\n+        if (offset < 0 || len < 0 || offset > array.length || offset + len > array.length) {\n"
+}

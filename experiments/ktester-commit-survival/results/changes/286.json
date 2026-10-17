@@ -1,0 +1,163 @@
+{
+  "index": 286,
+  "sha": "8be1e90f56caedeec5bbe6778bbe14f6c39c3502",
+  "parent": "1825f013fd3ece04ca6bb3abaa6c7c0de9e7bf69",
+  "subject": "Use an import instead of a FQCN",
+  "pre_image": {
+    "org/apache/commons/codec/language/Caverphone1.java": [
+      58
+    ],
+    "org/apache/commons/codec/language/Caverphone2.java": [
+      58
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      251
+    ],
+    "org/apache/commons/codec/language/Metaphone.java": [
+      178,
+      181
+    ],
+    "org/apache/commons/codec/language/SoundexUtils.java": [
+      53,
+      55
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Caverphone1.java": [
+      20,
+      21,
+      60
+    ],
+    "org/apache/commons/codec/language/Caverphone2.java": [
+      20,
+      21,
+      60
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      20,
+      21,
+      253
+    ],
+    "org/apache/commons/codec/language/Metaphone.java": [
+      20,
+      21,
+      180,
+      183
+    ],
+    "org/apache/commons/codec/language/SoundexUtils.java": [
+      20,
+      21,
+      55,
+      57
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone1.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone1.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        58
+      ],
+      "post_image_lines": [
+        20,
+        21,
+        60
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone2.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone2.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        58
+      ],
+      "post_image_lines": [
+        20,
+        21,
+        60
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        251
+      ],
+      "post_image_lines": [
+        20,
+        21,
+        253
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        178,
+        181
+      ],
+      "post_image_lines": [
+        20,
+        21,
+        180,
+        183
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/SoundexUtils.java",
+      "new_file": "org/apache/commons/codec/language/SoundexUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        53,
+        55
+      ],
+      "post_image_lines": [
+        20,
+        21,
+        55,
+        57
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1825f013fd3ece04ca6bb3abaa6c7c0de9e7bf69",
+    "8be1e90f56caedeec5bbe6778bbe14f6c39c3502",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Caverphone1.java b/src/main/java/org/apache/commons/codec/language/Caverphone1.java\nindex 72b98b6f7..77495d700 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone1.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone1.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language;\n+import java.util.Locale;\n+\n@@ -58 +60 @@ public class Caverphone1 extends AbstractCaverphone {\n-        txt = txt.toLowerCase(java.util.Locale.ENGLISH);\n+        txt = txt.toLowerCase(Locale.ENGLISH);\ndiff --git a/src/main/java/org/apache/commons/codec/language/Caverphone2.java b/src/main/java/org/apache/commons/codec/language/Caverphone2.java\nindex b4fe12c1d..bcd2e3a73 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone2.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone2.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language;\n+import java.util.Locale;\n+\n@@ -58 +60 @@ public class Caverphone2 extends AbstractCaverphone {\n-        txt = txt.toLowerCase(java.util.Locale.ENGLISH);\n+        txt = txt.toLowerCase(Locale.ENGLISH);\ndiff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 7c87ddd6e..150f81577 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language;\n+import java.util.Locale;\n+\n@@ -251 +253 @@ public class DoubleMetaphone implements StringEncoder {\n-        return input.toUpperCase(java.util.Locale.ENGLISH);\n+        return input.toUpperCase(Locale.ENGLISH);\ndiff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex 34664e0d5..6a964fe42 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language;\n+import java.util.Locale;\n+\n@@ -178 +180 @@ public class Metaphone implements StringEncoder {\n-            return txt.toUpperCase(java.util.Locale.ENGLISH);\n+            return txt.toUpperCase(Locale.ENGLISH);\n@@ -181 +183 @@ public class Metaphone implements StringEncoder {\n-        final char[] inwd = txt.toUpperCase(java.util.Locale.ENGLISH).toCharArray();\n+        final char[] inwd = txt.toUpperCase(Locale.ENGLISH).toCharArray();\ndiff --git a/src/main/java/org/apache/commons/codec/language/SoundexUtils.java b/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\nindex c40b7cf25..2750ffe15 100644\n--- a/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\n+++ b/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\n@@ -19,0 +20,2 @@ package org.apache.commons.codec.language;\n+import java.util.Locale;\n+\n@@ -53 +55 @@ final class SoundexUtils {\n-            return str.toUpperCase(java.util.Locale.ENGLISH);\n+            return str.toUpperCase(Locale.ENGLISH);\n@@ -55 +57 @@ final class SoundexUtils {\n-        return new String(chars, 0, count).toUpperCase(java.util.Locale.ENGLISH);\n+        return new String(chars, 0, count).toUpperCase(Locale.ENGLISH);\n"
+}

@@ -1,0 +1,83 @@
+{
+  "index": 443,
+  "sha": "c5f66c9303700f6ee1e426981e33027b4b7b83dc",
+  "parent": "18bd3d041312579486ad12d3f3a803b485d9f5f0",
+  "subject": "Better internal name",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437
+      ],
+      "post_image_lines": [
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "18bd3d041312579486ad12d3f3a803b485d9f5f0",
+    "c5f66c9303700f6ee1e426981e33027b4b7b83dc",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 59c785c3f..fde69ca15 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -391,0 +392,10 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+    /**\n+     * Gets the array length or 0 if null.\n+     *\n+     * @param array the array or null.\n+     * @return the array length or 0 if null.\n+     */\n+    static int getLength(final byte[] array) {\n+        return array == null ? 0 : array.length;\n+    }\n+\n@@ -428,10 +437,0 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-    /**\n-     * Gets the array length or 0 if null.\n-     *\n-     * @param array the array or null.\n-     * @return the array length or 0 if null.\n-     */\n-    static int toLength(final byte[] array) {\n-        return array == null ? 0 : array.length;\n-    }\n-\n"
+}

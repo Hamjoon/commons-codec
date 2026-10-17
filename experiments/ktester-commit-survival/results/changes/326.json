@@ -1,0 +1,49 @@
+{
+  "index": 326,
+  "sha": "25225b0ecd58d4c5d580107590b11e6855fc2d30",
+  "parent": "8d6cb77b818f62ffb78ca111e80dd2192a905247",
+  "subject": "Comment",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      430
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      430,
+      431
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        430
+      ],
+      "post_image_lines": [
+        430,
+        431
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8d6cb77b818f62ffb78ca111e80dd2192a905247",
+    "25225b0ecd58d4c5d580107590b11e6855fc2d30",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex fdd5ba3a4..aee7b760f 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -430 +430,2 @@ public class Rule {\n-        if (ph.startsWith(\"(\")) { // we have a bracketed list of options\n+        if (ph.startsWith(\"(\")) {\n+            // we have a bracketed list of options\n"
+}

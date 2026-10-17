@@ -1,0 +1,51 @@
+{
+  "index": 337,
+  "sha": "5097ba612a5dc6fa39dc684cdee7d1c252166e20",
+  "parent": "3a7cdf5280bc1dd04839bf37862346eaa672b2ed",
+  "subject": "Fix PMD multiple UnnecessaryFullyQualifiedName in org.apache.commons.codec.digest.Blake3",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [
+      346,
+      402
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [
+      346,
+      402
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Blake3.java",
+      "new_file": "org/apache/commons/codec/digest/Blake3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        346,
+        402
+      ],
+      "post_image_lines": [
+        346,
+        402
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "3a7cdf5280bc1dd04839bf37862346eaa672b2ed",
+    "5097ba612a5dc6fa39dc684cdee7d1c252166e20",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Blake3.java b/src/main/java/org/apache/commons/codec/digest/Blake3.java\nindex b53d4a32b..90e3fe0f9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Blake3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Blake3.java\n@@ -346 +346 @@ public final class Blake3 {\n-        return Blake3.initHash().update(data).doFinalize(OUT_LEN);\n+        return initHash().update(data).doFinalize(OUT_LEN);\n@@ -402 +402 @@ public final class Blake3 {\n-        return Blake3.initKeyedHash(key).update(data).doFinalize(OUT_LEN);\n+        return initKeyedHash(key).update(data).doFinalize(OUT_LEN);\n"
+}

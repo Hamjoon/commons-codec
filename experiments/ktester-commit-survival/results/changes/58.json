@@ -1,0 +1,55 @@
+{
+  "index": 58,
+  "sha": "166e04e82f920f4ab0a5fe9e0eb95c7350b2b42e",
+  "parent": "9197db5514bb56b8faf1b74e100cdcd0f992c170",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      33,
+      308,
+      315
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      33,
+      308,
+      315
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "new_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        33,
+        308,
+        315
+      ],
+      "post_image_lines": [
+        33,
+        308,
+        315
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "9197db5514bb56b8faf1b74e100cdcd0f992c170",
+    "166e04e82f920f4ab0a5fe9e0eb95c7350b2b42e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\nindex a2e97f08a..1837e9d03 100644\n--- a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n+++ b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n@@ -33 +33 @@ import org.apache.commons.codec.StringEncoder;\n- * The <i>K&ouml;lner Phonetik</i> is a phonetic algorithm which is optimized for the German language. It is related to\n+ * The <em>K&ouml;lner Phonetik</em> is a phonetic algorithm which is optimized for the German language. It is related to\n@@ -308 +308 @@ public class ColognePhonetic implements StringEncoder {\n-     * Implements the <i>K&ouml;lner Phonetik</i> algorithm.\n+     * Implements the <em>K&ouml;lner Phonetik</em> algorithm.\n@@ -315 +315 @@ public class ColognePhonetic implements StringEncoder {\n-     * @return the corresponding encoding according to the <i>K&ouml;lner Phonetik</i> algorithm\n+     * @return the corresponding encoding according to the <em>K&ouml;lner Phonetik</em> algorithm\n"
+}

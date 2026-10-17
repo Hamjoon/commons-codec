@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "rename/deletion/addition metadata and image line ranges",
+    "scope-crossing rename groups",
+    "codec package boundary and uncovered lines",
+    "all/scope executable split excludes non-executable changes",
+    "pre-image exposure uses predecessor",
+    "deletion-only commit remains in categories and exposure",
+    "build failure is unavailable, not zero",
+    "all four coverage categories",
+    "two independently expected Table 3 totals",
+    "expanded XML extraction preserves original scope entries",
+    "real aggregation from isolated raw/XML/CSV fixtures emits revised outputs"
+  ],
+  "step0_xml_checks": [
+    {
+      "group": "dev",
+      "all_line_entries": 4628,
+      "scope_line_entries": 830
+    },
+    {
+      "group": "llm",
+      "all_line_entries": 4628,
+      "scope_line_entries": 830
+    }
+  ]
+}

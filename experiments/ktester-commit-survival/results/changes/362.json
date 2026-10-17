@@ -1,0 +1,125 @@
+{
+  "index": 362,
+  "sha": "1dfb4e5bbdc604dc72fe671fded50a5c91bc7543",
+  "parent": "fe23bcfc073369ade33ed283e1d167f6fa66e763",
+  "subject": "Better internal method name",
+  "pre_image": {
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      153,
+      154
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      286,
+      287
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      156,
+      157
+    ],
+    "org/apache/commons/codec/net/Utils.java": [
+      59
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      153,
+      154
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      286,
+      287
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      156,
+      157
+    ],
+    "org/apache/commons/codec/net/Utils.java": [
+      59
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "new_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        153,
+        154
+      ],
+      "post_image_lines": [
+        153,
+        154
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        286,
+        287
+      ],
+      "post_image_lines": [
+        286,
+        287
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        156,
+        157
+      ],
+      "post_image_lines": [
+        156,
+        157
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/Utils.java",
+      "new_file": "org/apache/commons/codec/net/Utils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        59
+      ],
+      "post_image_lines": [
+        59
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fe23bcfc073369ade33ed283e1d167f6fa66e763",
+    "1dfb4e5bbdc604dc72fe671fded50a5c91bc7543",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/net/PercentCodec.java b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\nindex 1d3b01fa1..c10514057 100644\n--- a/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n@@ -153,2 +153,2 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-                final char hex1 = Utils.hexDigit(bb >> 4);\n-                final char hex2 = Utils.hexDigit(bb);\n+                final char hex1 = Utils.hexChar(bb >> 4);\n+                final char hex2 = Utils.hexChar(bb);\ndiff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex 98a89bb6b..b867c73a9 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -286,2 +286,2 @@ public class QuotedPrintableCodec implements BinaryEncoder, BinaryDecoder, Strin\n-        final char hex1 = Utils.hexDigit(b >> 4);\n-        final char hex2 = Utils.hexDigit(b);\n+        final char hex1 = Utils.hexChar(b >> 4);\n+        final char hex2 = Utils.hexChar(b);\ndiff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex 1f1fc7a2e..641c72357 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -156,2 +156,2 @@ public class URLCodec implements BinaryEncoder, BinaryDecoder, StringEncoder, St\n-                final char hex1 = Utils.hexDigit(b >> 4);\n-                final char hex2 = Utils.hexDigit(b);\n+                final char hex1 = Utils.hexChar(b >> 4);\n+                final char hex2 = Utils.hexChar(b);\ndiff --git a/src/main/java/org/apache/commons/codec/net/Utils.java b/src/main/java/org/apache/commons/codec/net/Utils.java\nindex fc370395e..03d2531fa 100644\n--- a/src/main/java/org/apache/commons/codec/net/Utils.java\n+++ b/src/main/java/org/apache/commons/codec/net/Utils.java\n@@ -59 +59 @@ final class Utils {\n-    static char hexDigit(final int b) {\n+    static char hexChar(final int b) {\n"
+}

@@ -1,0 +1,61 @@
+{
+  "index": 513,
+  "sha": "e104437b20aabef356adc363137be345c3273c6a",
+  "parent": "a725a353834080ef04f0b629b39ec834265fdb28",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/BinaryDecoder.java": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      36
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/BinaryDecoder.java": [
+      28,
+      29,
+      30
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/BinaryDecoder.java",
+      "new_file": "org/apache/commons/codec/BinaryDecoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        36
+      ],
+      "post_image_lines": [
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "a725a353834080ef04f0b629b39ec834265fdb28",
+    "e104437b20aabef356adc363137be345c3273c6a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/BinaryDecoder.java b/src/main/java/org/apache/commons/codec/BinaryDecoder.java\nindex f6e42483e..4807d8f18 100644\n--- a/src/main/java/org/apache/commons/codec/BinaryDecoder.java\n+++ b/src/main/java/org/apache/commons/codec/BinaryDecoder.java\n@@ -28,5 +28,3 @@ public interface BinaryDecoder extends Decoder {\n-     * @param source\n-     *            A byte array which has been encoded with the appropriate encoder\n-     * @return a byte array that contains decoded content\n-     * @throws DecoderException\n-     *             A decoder exception is thrown if a Decoder encounters a failure condition during the decode process.\n+     * @param source A byte array which has been encoded with the appropriate encoder.\n+     * @return a byte array that contains decoded content.\n+     * @throws DecoderException A decoder exception is thrown if a Decoder encounters a failure condition during the decode process.\n@@ -36 +33,0 @@ public interface BinaryDecoder extends Decoder {\n-\n"
+}

@@ -1,0 +1,47 @@
+{
+  "index": 296,
+  "sha": "8e54782842f172cbe66eb5ed196e8f6545f7b98a",
+  "parent": "7eb185b4cc9bb5f90b8de7ce7c466a2b8b8f5744",
+  "subject": "Javadoc typo",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      164
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      164
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        164
+      ],
+      "post_image_lines": [
+        164
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "7eb185b4cc9bb5f90b8de7ce7c466a2b8b8f5744",
+    "8e54782842f172cbe66eb5ed196e8f6545f7b98a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex 6a964fe42..22220e4e0 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -164 +164 @@ public class Metaphone implements StringEncoder {\n-     * soundex algorithm, but better at finding similar sounding words.\n+     * Soundex algorithm, but better at finding similar sounding words.\n"
+}

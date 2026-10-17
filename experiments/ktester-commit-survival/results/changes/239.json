@@ -1,0 +1,47 @@
+{
+  "index": 239,
+  "sha": "0fdd68546238ae379da52f67a91afae58f4b7ef7",
+  "parent": "e1b43faad434c13711804cb2cf41a8f4bfe812e1",
+  "subject": "Add Checkstyle UnnecessaryParentheses",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      265
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      265
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        265
+      ],
+      "post_image_lines": [
+        265
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e1b43faad434c13711804cb2cf41a8f4bfe812e1",
+    "0fdd68546238ae379da52f67a91afae58f4b7ef7",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex ee3a0a302..34664e0d5 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -265 +265 @@ public class Metaphone implements StringEncoder {\n-                    if (!isNextChar(local, n, 'H') || (n == 0 && wdsz >= 3 && isVowel(local, 2))) { // CH consonant -> K consonant\n+                    if (!isNextChar(local, n, 'H') || n == 0 && wdsz >= 3 && isVowel(local, 2)) { // CH consonant -> K consonant\n"
+}

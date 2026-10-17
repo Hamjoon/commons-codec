@@ -1,0 +1,179 @@
+{
+  "index": 205,
+  "sha": "9062af4ebbebb68f830ff052979510c7922c872f",
+  "parent": "963ee73837704ccece2b85bc8b714f6566d26fd0",
+  "subject": "Merge branch 'master' of https://gitbox.apache.org/repos/asf/commons-codec.git",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      25
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      25
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "963ee73837704ccece2b85bc8b714f6566d26fd0",
+    "9062af4ebbebb68f830ff052979510c7922c872f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex d14587f18..d1920a10d 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base16 encoding and decoding.\n+ * Provides Base32 encoding and decoding as defined by <a href=\"https://tools.ietf.org/html/rfc4648#section-8\">RFC 4648 - 8. Base 16 Encoding</a>.\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\nindex 16183f9be..cb4aa7edc 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base16 encoding and decoding in a streaming fashion (unlimited size).\n+ * Provides Base16 decoding in a streaming fashion (unlimited size).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\nindex e15f51590..2fceb9f43 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Hex encoding and decoding in a streaming fashion (unlimited size).\n+ * Provides Hex encoding in a streaming fashion (unlimited size).\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex 49a23af48..be7fdc7fc 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base32 encoding and decoding in a streaming fashion (unlimited size). When encoding the default lineLength\n+ * Provides Base32 decoding in a streaming fashion (unlimited size). When encoding the default lineLength\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 87a6bc389..063736154 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base32 encoding and decoding in a streaming fashion (unlimited size). When encoding the default lineLength\n+ * Provides Base32 encoding in a streaming fashion (unlimited size). When encoding the default lineLength\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex d7b47fe11..e44e8662e 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base64 encoding and decoding in a streaming fashion (unlimited size). When encoding the default lineLength\n+ * Provides Base64 decoding in a streaming fashion (unlimited size). When encoding the default lineLength\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 745860d91..1a400237b 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base64 encoding and decoding in a streaming fashion (unlimited size). When encoding the default lineLength\n+ * Provides Base64 encoding in a streaming fashion (unlimited size). When encoding the default lineLength\n"
+}

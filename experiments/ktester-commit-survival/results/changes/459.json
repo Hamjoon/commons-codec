@@ -1,0 +1,91 @@
+{
+  "index": 459,
+  "sha": "af58c1af853cd705fa08a5313c7fecd870ed37c6",
+  "parent": "4368bfeb57e2283fee80a296ed460d887b96a594",
+  "subject": "Use final",
+  "pre_image": {
+    "org/apache/commons/codec/DecoderException.java": [
+      63
+    ],
+    "org/apache/commons/codec/binary/Base16.java": [
+      82
+    ],
+    "org/apache/commons/codec/binary/Base32.java": [
+      100
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/DecoderException.java": [
+      63
+    ],
+    "org/apache/commons/codec/binary/Base16.java": [
+      82
+    ],
+    "org/apache/commons/codec/binary/Base32.java": [
+      100
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/DecoderException.java",
+      "new_file": "org/apache/commons/codec/DecoderException.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        63
+      ],
+      "post_image_lines": [
+        63
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        82
+      ],
+      "post_image_lines": [
+        82
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32.java",
+      "new_file": "org/apache/commons/codec/binary/Base32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        100
+      ],
+      "post_image_lines": [
+        100
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "4368bfeb57e2283fee80a296ed460d887b96a594",
+    "af58c1af853cd705fa08a5313c7fecd870ed37c6",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/DecoderException.java b/src/main/java/org/apache/commons/codec/DecoderException.java\nindex 99091d140..fea2e82be 100644\n--- a/src/main/java/org/apache/commons/codec/DecoderException.java\n+++ b/src/main/java/org/apache/commons/codec/DecoderException.java\n@@ -63 +63 @@ public class DecoderException extends Exception {\n-    public DecoderException(final String message, Object... args) {\n+    public DecoderException(final String message, final Object... args) {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex bebd82ceb..fe1ff3bff 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -82 +82 @@ public class Base16 extends BaseNCodec {\n-        public Builder setEncodeTable(byte... encodeTable) {\n+        public Builder setEncodeTable(final byte... encodeTable) {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32.java b/src/main/java/org/apache/commons/codec/binary/Base32.java\nindex 802465284..9b1b0cef2 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32.java\n@@ -100 +100 @@ public class Base32 extends BaseNCodec {\n-        public Builder setEncodeTable(byte... encodeTable) {\n+        public Builder setEncodeTable(final byte... encodeTable) {\n"
+}

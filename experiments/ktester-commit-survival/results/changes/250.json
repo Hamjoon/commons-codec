@@ -1,0 +1,47 @@
+{
+  "index": 250,
+  "sha": "412d2b3d139dfed2268b3fb3a42771ce472854f1",
+  "parent": "8ee76e594cecfde9ed0a85716e45598da91b7d8a",
+  "subject": "Comment: Remove unnecessary Latin acronym",
+  "pre_image": {
+    "org/apache/commons/codec/digest/B64.java": [
+      42
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/B64.java": [
+      42
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/B64.java",
+      "new_file": "org/apache/commons/codec/digest/B64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        42
+      ],
+      "post_image_lines": [
+        42
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8ee76e594cecfde9ed0a85716e45598da91b7d8a",
+    "412d2b3d139dfed2268b3fb3a42771ce472854f1",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/B64.java b/src/main/java/org/apache/commons/codec/digest/B64.java\nindex a6e45278d..ad9183a13 100644\n--- a/src/main/java/org/apache/commons/codec/digest/B64.java\n+++ b/src/main/java/org/apache/commons/codec/digest/B64.java\n@@ -42 +42 @@ final class B64 {\n-    // N.B. Do not make this protected or public. Array contents are mutable!\n+    // Do not make this protected or public. Array contents are mutable!\n"
+}

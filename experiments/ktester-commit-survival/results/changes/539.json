@@ -1,0 +1,103 @@
+{
+  "index": 539,
+  "sha": "f9808d1f01d3a4e08c0c46283ef447ee0af6e7d8",
+  "parent": "c785924f5236cc1b3954e64722565ffd7d365eab",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      35,
+      43,
+      58,
+      84,
+      326,
+      361,
+      362,
+      376,
+      377,
+      392,
+      407,
+      423,
+      439
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base64.java": [
+      35,
+      41,
+      42,
+      43,
+      44,
+      47,
+      62,
+      88,
+      330,
+      365,
+      366,
+      380,
+      381,
+      396,
+      411,
+      427,
+      443
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        35,
+        43,
+        58,
+        84,
+        326,
+        361,
+        362,
+        376,
+        377,
+        392,
+        407,
+        423,
+        439
+      ],
+      "post_image_lines": [
+        35,
+        41,
+        42,
+        43,
+        44,
+        47,
+        62,
+        88,
+        330,
+        365,
+        366,
+        380,
+        381,
+        396,
+        411,
+        427,
+        443
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c785924f5236cc1b3954e64722565ffd7d365eab",
+    "f9808d1f01d3a4e08c0c46283ef447ee0af6e7d8",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex b06745d82..824d35490 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -35 +35 @@ import org.apache.commons.codec.CodecPolicy;\n- * The class can be parameterized in the following manner with various constructors:\n+ * The class can be parameterized in the following manner with its {@link Builder}:\n@@ -40,0 +41,4 @@ import org.apache.commons.codec.CodecPolicy;\n+ * <li>Strict or lenient decoding policy; default is {@link CodecPolicy#LENIENT}.</li>\n+ * <li>Custom decoding table.</li>\n+ * <li>Custom encoding table.</li>\n+ * <li>Padding; defaults is {@code '='}.</li>\n@@ -43 +47 @@ import org.apache.commons.codec.CodecPolicy;\n- * The URL-safe parameter is only applied to encode operations. Decoding seamlessly handles both modes.\n+ * The URL-safe parameter is only applied to encode operations. Decoding seamlessly handles both modes, see also {@link Builder#setDecodeTableFormat(DecodeTableFormat)}.\n@@ -58 +62 @@ import org.apache.commons.codec.CodecPolicy;\n- *   .setDecodingPolicy(DecodingPolicy.LENIENT) // default is lenient, null resets to default\n+ *   .setDecodingPolicy(CodecPolicy.LENIENT)    // default is lenient, null resets to default\n@@ -84 +88 @@ public class Base64 extends BaseNCodec {\n-     *   .setDecodingPolicy(DecodingPolicy.LENIENT) // default is lenient, null resets to default\n+     *   .setCodecPolicy(CodecPolicy.LENIENT)       // default is lenient, null resets to default\n@@ -326 +330 @@ public class Base64 extends BaseNCodec {\n-     *   .setDecodingPolicy(DecodingPolicy.LENIENT) // default is lenient, null resets to default\n+     *   .setDecodingPolicy(CodecPolicy.LENIENT) // default is lenient, null resets to default\n@@ -361,2 +365,2 @@ public class Base64 extends BaseNCodec {\n-     * tables, please use {@link #decodeBase64Standard(byte[])} or {@link #decodeBase64UrlSafe(byte[])} methods respectively. This method skips any unknown or\n-     * not supported bytes.\n+     * tables, please use {@link #decodeBase64Standard(byte[])} or {@link #decodeBase64UrlSafe(byte[])} methods respectively. This method skips unknown or\n+     * unsupported bytes.\n@@ -376,2 +380,2 @@ public class Base64 extends BaseNCodec {\n-     * tables, please use {@link #decodeBase64Standard(String)} or {@link #decodeBase64UrlSafe(String)} methods respectively. This method skips any unknown or\n-     * not supported bytes.\n+     * tables, please use {@link #decodeBase64Standard(String)} or {@link #decodeBase64UrlSafe(String)} methods respectively. This method skips unknown or\n+     * unsupported bytes.\n@@ -392 +396 @@ public class Base64 extends BaseNCodec {\n-     * Base64 Alphabet</a>. This method skips any unknown or not supported bytes.\n+     * Base64 Alphabet</a>. This method skips unknown or unsupported bytes.\n@@ -407 +411 @@ public class Base64 extends BaseNCodec {\n-     * Base64 Alphabet</a>. This method skips any unknown or not supported characters.\n+     * Base64 Alphabet</a>. This method skips unknown or unsupported characters.\n@@ -423 +427 @@ public class Base64 extends BaseNCodec {\n-     * Table 2: The \"URL and Filename safe\" Base 64 Alphabet</a>. This method skips any unknown or not supported characters.\n+     * Table 2: The \"URL and Filename safe\" Base 64 Alphabet</a>. This method skips unknown or unsupported characters.\n@@ -439 +443 @@ public class Base64 extends BaseNCodec {\n-     * Table 2: The \"URL and Filename safe\" Base 64 Alphabet</a>. This method skips any unknown or not supported characters.\n+     * Table 2: The \"URL and Filename safe\" Base 64 Alphabet</a>. This method skips unknown or unsupported characters.\n"
+}

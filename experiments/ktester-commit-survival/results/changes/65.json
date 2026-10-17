@@ -1,0 +1,49 @@
+{
+  "index": 65,
+  "sha": "aaef8c591276a4eb8be871e6ff1fdab3564930f3",
+  "parent": "fd903ce169dc6094c0386fc6ecf85f35c38fb0f5",
+  "subject": "Document protection needs [skip ci]",
+  "pre_image": {
+    "org/apache/commons/codec/digest/B64.java": [
+      41
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/B64.java": [
+      41,
+      42
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/B64.java",
+      "new_file": "org/apache/commons/codec/digest/B64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        41
+      ],
+      "post_image_lines": [
+        41,
+        42
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fd903ce169dc6094c0386fc6ecf85f35c38fb0f5",
+    "aaef8c591276a4eb8be871e6ff1fdab3564930f3",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/B64.java b/src/main/java/org/apache/commons/codec/digest/B64.java\nindex 5627570d6..64eb28e97 100644\n--- a/src/main/java/org/apache/commons/codec/digest/B64.java\n+++ b/src/main/java/org/apache/commons/codec/digest/B64.java\n@@ -41 +41,2 @@ final class B64 {\n-    static final char[] B64T_ARRAY = B64T_STRING.toCharArray();\n+    static final char[] B64T_ARRAY = B64T_STRING.toCharArray(); // package access for testing\n+    // N.B. Do not make this protected or public. Array contents are mutable!\n"
+}

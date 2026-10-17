@@ -1,0 +1,47 @@
+{
+  "index": 328,
+  "sha": "ab9c9208aa5db662a6c540424d7bee8f5a5324d5",
+  "parent": "59929c391777e60157ae9533f624f8383c007e85",
+  "subject": "[CODEC-331] org.apache.commons.codec.language.bm.Rule.parsePhonemeExpr(String) adds duplicate empty phoneme when input ends with |",
+  "pre_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      431,
+      432,
+      433
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        431,
+        432,
+        433
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "59929c391777e60157ae9533f624f8383c007e85",
+    "ab9c9208aa5db662a6c540424d7bee8f5a5324d5",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex d5d6e0b63..42ad9c9d7 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -430,0 +431,3 @@ public class Rule {\n+    /*\n+     * Package-private for testing only.\n+     */\n"
+}

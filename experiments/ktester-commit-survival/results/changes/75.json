@@ -1,0 +1,135 @@
+{
+  "index": 75,
+  "sha": "83e80d714a58d5c49591d694d6bf030380f36fa9",
+  "parent": "c3188fdbf7fa2c9968f5d2c9ec59750fd2e23b3e",
+  "subject": "Javadoc: Grammar",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      69
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      45
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      64
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      56
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      36
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      69
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      45
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      64
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      56
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      36
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        69
+      ],
+      "post_image_lines": [
+        69
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        45
+      ],
+      "post_image_lines": [
+        45
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "new_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        64
+      ],
+      "post_image_lines": [
+        64
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        56
+      ],
+      "post_image_lines": [
+        56
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Soundex.java",
+      "new_file": "org/apache/commons/codec/language/Soundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        36
+      ],
+      "post_image_lines": [
+        36
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c3188fdbf7fa2c9968f5d2c9ec59750fd2e23b3e",
+    "83e80d714a58d5c49591d694d6bf030380f36fa9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\nindex 1a4c72c4e..74bfb07fe 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n@@ -69 +69 @@ public class BaseNCodecInputStream extends FilterInputStream {\n-        // Note: the logic is similar to the InflaterInputStream:\n+        // Note: The logic is similar to the InflaterInputStream:\ndiff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 2e157b6ab..3b43f571e 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -45 +45 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Note: the class has shorthand methods for all the algorithms present as standard in Java 6. This approach requires lots of methods for each algorithm, and\n+ * Note: The class has shorthand methods for all the algorithms present as standard in Java 6. This approach requires lots of methods for each algorithm, and\ndiff --git a/src/main/java/org/apache/commons/codec/digest/XXHash32.java b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\nindex 16f59b8be..82c4b49e9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n+++ b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n@@ -64 +64 @@ public class XXHash32 implements Checksum {\n-    // Note: the code used to use ByteBuffer but the manual method is 50% faster\n+    // Note: The code used to use ByteBuffer but the manual method is 50% faster\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 609548075..86806e8da 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -56 +56 @@ import org.apache.commons.codec.StringEncoder;\n- * Note: this implementation has additional branching rules compared to the original description of the algorithm. The\n+ * Note: This implementation has additional branching rules compared to the original description of the algorithm. The\ndiff --git a/src/main/java/org/apache/commons/codec/language/Soundex.java b/src/main/java/org/apache/commons/codec/language/Soundex.java\nindex a5ce4e607..e8f4a880c 100644\n--- a/src/main/java/org/apache/commons/codec/language/Soundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/Soundex.java\n@@ -36 +36 @@ public class Soundex implements StringEncoder {\n-     * Note: the {@link #US_ENGLISH_MAPPING_STRING} does not use this mechanism\n+     * Note: The {@link #US_ENGLISH_MAPPING_STRING} does not use this mechanism\n"
+}

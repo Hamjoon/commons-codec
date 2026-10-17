@@ -1,0 +1,1785 @@
+{
+  "index": 152,
+  "sha": "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+  "parent": "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+  "subject": "Use HTTPS instead of HTTP in license file headers as allowed by https://www.apache.org/legal/src-headers.html",
+  "pre_image": {
+    "org/apache/commons/codec/BinaryDecoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/BinaryEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/CharEncoding.java": [
+      9
+    ],
+    "org/apache/commons/codec/Charsets.java": [
+      9
+    ],
+    "org/apache/commons/codec/CodecPolicy.java": [
+      9
+    ],
+    "org/apache/commons/codec/Decoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/DecoderException.java": [
+      9
+    ],
+    "org/apache/commons/codec/Encoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/EncoderException.java": [
+      9
+    ],
+    "org/apache/commons/codec/Resources.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringDecoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringEncoderComparator.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BinaryCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/CharSequenceUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Hex.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/cli/Digest.java": [
+      9
+    ],
+    "org/apache/commons/codec/cli/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/B64.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Blake3.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MessageDigestAlgorithms.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/AbstractCaverphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone1.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone2.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Metaphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Nysiis.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/RefinedSoundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/SoundexUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/NameType.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/ResourceConstants.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/RuleType.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/BCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/Utils.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/package-info.java": [
+      9
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/BinaryDecoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/BinaryEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/CharEncoding.java": [
+      9
+    ],
+    "org/apache/commons/codec/Charsets.java": [
+      9
+    ],
+    "org/apache/commons/codec/CodecPolicy.java": [
+      9
+    ],
+    "org/apache/commons/codec/Decoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/DecoderException.java": [
+      9
+    ],
+    "org/apache/commons/codec/Encoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/EncoderException.java": [
+      9
+    ],
+    "org/apache/commons/codec/Resources.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringDecoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/StringEncoderComparator.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecInputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/BinaryCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/CharSequenceUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/Hex.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/StringUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/binary/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/cli/Digest.java": [
+      9
+    ],
+    "org/apache/commons/codec/cli/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/B64.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Blake3.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/DigestUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/HmacUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Md5Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MessageDigestAlgorithms.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MurmurHash2.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/XXHash32.java": [
+      9
+    ],
+    "org/apache/commons/codec/digest/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/AbstractCaverphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone1.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Caverphone2.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/DoubleMetaphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/MatchRatingApproachEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Metaphone.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Nysiis.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/RefinedSoundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/Soundex.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/SoundexUtils.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Lang.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/NameType.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/PhoneticEngine.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/ResourceConstants.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/Rule.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/RuleType.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/bm/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/language/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/BCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/URLCodec.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/Utils.java": [
+      9
+    ],
+    "org/apache/commons/codec/net/package-info.java": [
+      9
+    ],
+    "org/apache/commons/codec/package-info.java": [
+      9
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/BinaryDecoder.java",
+      "new_file": "org/apache/commons/codec/BinaryDecoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/BinaryEncoder.java",
+      "new_file": "org/apache/commons/codec/BinaryEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/CharEncoding.java",
+      "new_file": "org/apache/commons/codec/CharEncoding.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Charsets.java",
+      "new_file": "org/apache/commons/codec/Charsets.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/CodecPolicy.java",
+      "new_file": "org/apache/commons/codec/CodecPolicy.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Decoder.java",
+      "new_file": "org/apache/commons/codec/Decoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/DecoderException.java",
+      "new_file": "org/apache/commons/codec/DecoderException.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Encoder.java",
+      "new_file": "org/apache/commons/codec/Encoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/EncoderException.java",
+      "new_file": "org/apache/commons/codec/EncoderException.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/Resources.java",
+      "new_file": "org/apache/commons/codec/Resources.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/StringDecoder.java",
+      "new_file": "org/apache/commons/codec/StringDecoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/StringEncoder.java",
+      "new_file": "org/apache/commons/codec/StringEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/StringEncoderComparator.java",
+      "new_file": "org/apache/commons/codec/StringEncoderComparator.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32.java",
+      "new_file": "org/apache/commons/codec/binary/Base32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecInputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BinaryCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BinaryCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/CharSequenceUtils.java",
+      "new_file": "org/apache/commons/codec/binary/CharSequenceUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Hex.java",
+      "new_file": "org/apache/commons/codec/binary/Hex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "new_file": "org/apache/commons/codec/binary/StringUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/package-info.java",
+      "new_file": "org/apache/commons/codec/binary/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/cli/Digest.java",
+      "new_file": "org/apache/commons/codec/cli/Digest.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/cli/package-info.java",
+      "new_file": "org/apache/commons/codec/cli/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/B64.java",
+      "new_file": "org/apache/commons/codec/digest/B64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Blake3.java",
+      "new_file": "org/apache/commons/codec/digest/Blake3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "new_file": "org/apache/commons/codec/digest/DigestUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "new_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "new_file": "org/apache/commons/codec/digest/HmacUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Md5Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+      "new_file": "org/apache/commons/codec/digest/MessageDigestAlgorithms.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash2.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/PureJavaCrc32.java",
+      "new_file": "org/apache/commons/codec/digest/PureJavaCrc32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "new_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "new_file": "org/apache/commons/codec/digest/XXHash32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/package-info.java",
+      "new_file": "org/apache/commons/codec/digest/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/AbstractCaverphone.java",
+      "new_file": "org/apache/commons/codec/language/AbstractCaverphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone1.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone1.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone2.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone2.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "new_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "new_file": "org/apache/commons/codec/language/DoubleMetaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "new_file": "org/apache/commons/codec/language/MatchRatingApproachEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Nysiis.java",
+      "new_file": "org/apache/commons/codec/language/Nysiis.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "new_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Soundex.java",
+      "new_file": "org/apache/commons/codec/language/Soundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/SoundexUtils.java",
+      "new_file": "org/apache/commons/codec/language/SoundexUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "new_file": "org/apache/commons/codec/language/bm/BeiderMorseEncoder.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "new_file": "org/apache/commons/codec/language/bm/Lang.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "new_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/NameType.java",
+      "new_file": "org/apache/commons/codec/language/bm/NameType.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "new_file": "org/apache/commons/codec/language/bm/PhoneticEngine.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/ResourceConstants.java",
+      "new_file": "org/apache/commons/codec/language/bm/ResourceConstants.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "new_file": "org/apache/commons/codec/language/bm/Rule.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/RuleType.java",
+      "new_file": "org/apache/commons/codec/language/bm/RuleType.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/package-info.java",
+      "new_file": "org/apache/commons/codec/language/bm/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/package-info.java",
+      "new_file": "org/apache/commons/codec/language/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/BCodec.java",
+      "new_file": "org/apache/commons/codec/net/BCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "new_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QCodec.java",
+      "new_file": "org/apache/commons/codec/net/QCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "new_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/URLCodec.java",
+      "new_file": "org/apache/commons/codec/net/URLCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/Utils.java",
+      "new_file": "org/apache/commons/codec/net/Utils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/package-info.java",
+      "new_file": "org/apache/commons/codec/net/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/package-info.java",
+      "new_file": "org/apache/commons/codec/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        9
+      ],
+      "post_image_lines": [
+        9
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ba343294fcdc0c439156eefe55e7ed9ae963db34",
+    "870c9a32788c4c9c8f2575416514a1c5eda01cb2",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/BinaryDecoder.java b/src/main/java/org/apache/commons/codec/BinaryDecoder.java\nindex 8280222f7..f6e42483e 100644\n--- a/src/main/java/org/apache/commons/codec/BinaryDecoder.java\n+++ b/src/main/java/org/apache/commons/codec/BinaryDecoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/BinaryEncoder.java b/src/main/java/org/apache/commons/codec/BinaryEncoder.java\nindex 5319bbcf8..2b5e8e6a1 100644\n--- a/src/main/java/org/apache/commons/codec/BinaryEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/BinaryEncoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/CharEncoding.java b/src/main/java/org/apache/commons/codec/CharEncoding.java\nindex 50e769601..98ff8a82c 100644\n--- a/src/main/java/org/apache/commons/codec/CharEncoding.java\n+++ b/src/main/java/org/apache/commons/codec/CharEncoding.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/Charsets.java b/src/main/java/org/apache/commons/codec/Charsets.java\nindex 3847fb68e..5103b6a5c 100644\n--- a/src/main/java/org/apache/commons/codec/Charsets.java\n+++ b/src/main/java/org/apache/commons/codec/Charsets.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/CodecPolicy.java b/src/main/java/org/apache/commons/codec/CodecPolicy.java\nindex 994cba726..817de3e05 100644\n--- a/src/main/java/org/apache/commons/codec/CodecPolicy.java\n+++ b/src/main/java/org/apache/commons/codec/CodecPolicy.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/Decoder.java b/src/main/java/org/apache/commons/codec/Decoder.java\nindex afb030b69..a5e6fa3a0 100644\n--- a/src/main/java/org/apache/commons/codec/Decoder.java\n+++ b/src/main/java/org/apache/commons/codec/Decoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/DecoderException.java b/src/main/java/org/apache/commons/codec/DecoderException.java\nindex 4f2bcc896..4fed66632 100644\n--- a/src/main/java/org/apache/commons/codec/DecoderException.java\n+++ b/src/main/java/org/apache/commons/codec/DecoderException.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/Encoder.java b/src/main/java/org/apache/commons/codec/Encoder.java\nindex 186d1335a..d6aacc05f 100644\n--- a/src/main/java/org/apache/commons/codec/Encoder.java\n+++ b/src/main/java/org/apache/commons/codec/Encoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/EncoderException.java b/src/main/java/org/apache/commons/codec/EncoderException.java\nindex d5e7141e4..b76f0852c 100644\n--- a/src/main/java/org/apache/commons/codec/EncoderException.java\n+++ b/src/main/java/org/apache/commons/codec/EncoderException.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/Resources.java b/src/main/java/org/apache/commons/codec/Resources.java\nindex 5b27f2e92..709545f72 100644\n--- a/src/main/java/org/apache/commons/codec/Resources.java\n+++ b/src/main/java/org/apache/commons/codec/Resources.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/StringDecoder.java b/src/main/java/org/apache/commons/codec/StringDecoder.java\nindex b74c63496..8ef1e88c2 100644\n--- a/src/main/java/org/apache/commons/codec/StringDecoder.java\n+++ b/src/main/java/org/apache/commons/codec/StringDecoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/StringEncoder.java b/src/main/java/org/apache/commons/codec/StringEncoder.java\nindex 29924c6d2..9e0d3abc1 100644\n--- a/src/main/java/org/apache/commons/codec/StringEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/StringEncoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/StringEncoderComparator.java b/src/main/java/org/apache/commons/codec/StringEncoderComparator.java\nindex 368c578c7..9c47ebb6f 100644\n--- a/src/main/java/org/apache/commons/codec/StringEncoderComparator.java\n+++ b/src/main/java/org/apache/commons/codec/StringEncoderComparator.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex c1d01508f..d14587f18 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\nindex 5c0448271..16183f9be 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16InputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\nindex 7e653a372..e15f51590 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32.java b/src/main/java/org/apache/commons/codec/binary/Base32.java\nindex 8e061fe3f..c771b40fe 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex 51adce23d..c6f8e5b89 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex b23df241c..06367bada 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex a29d2a8df..b406c62f4 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex 45ce8b41c..059f66e12 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 906a62200..43103b554 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex c9eb2fd00..f2c11c907 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\nindex 5c39ab493..51733c9ae 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecInputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\nindex 71d4b72d7..a7689a829 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java b/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\nindex 456090bfa..823170fe7 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BinaryCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java b/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\nindex 1868b0b2e..0625e6569 100644\n--- a/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\n+++ b/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Hex.java b/src/main/java/org/apache/commons/codec/binary/Hex.java\nindex 7db25d5cd..409831667 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Hex.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Hex.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/StringUtils.java b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\nindex ad18e0643..6c110eb76 100644\n--- a/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n+++ b/src/main/java/org/apache/commons/codec/binary/StringUtils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/binary/package-info.java b/src/main/java/org/apache/commons/codec/binary/package-info.java\nindex f0111d6e4..d35cf8c0a 100644\n--- a/src/main/java/org/apache/commons/codec/binary/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/binary/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/cli/Digest.java b/src/main/java/org/apache/commons/codec/cli/Digest.java\nindex 20b3684a3..7384a66c9 100644\n--- a/src/main/java/org/apache/commons/codec/cli/Digest.java\n+++ b/src/main/java/org/apache/commons/codec/cli/Digest.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/cli/package-info.java b/src/main/java/org/apache/commons/codec/cli/package-info.java\nindex 68ba42564..aa399b13b 100644\n--- a/src/main/java/org/apache/commons/codec/cli/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/cli/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/B64.java b/src/main/java/org/apache/commons/codec/digest/B64.java\nindex 64eb28e97..a6e45278d 100644\n--- a/src/main/java/org/apache/commons/codec/digest/B64.java\n+++ b/src/main/java/org/apache/commons/codec/digest/B64.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Blake3.java b/src/main/java/org/apache/commons/codec/digest/Blake3.java\nindex 032ce0ffc..b53d4a32b 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Blake3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Blake3.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex f1ce9e175..ec658d49e 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\nindex 40ff4c6b2..e4d9bc846 100644\n--- a/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/DigestUtils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\nindex 8b1c8e38e..12bfb2a88 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\nindex 38cb14101..08415b1d2 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacUtils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\nindex 7d25225c6..bf0755640 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Md5Crypt.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java b/src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java\nindex 8a663cba6..a67420b52 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MessageDigestAlgorithms.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\nindex d4d5faabf..1132a1663 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash2.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex 10ce3b8a2..53a3f75f9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\nindex 5cb3a4883..698168512 100644\n--- a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\n+++ b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\nindex 93cb44b64..528b9c6f9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n+++ b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\nindex 0df7e1165..52466d09f 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 9657ad6df..6ab7f4a4f 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/XXHash32.java b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\nindex 82c4b49e9..493b57c04 100644\n--- a/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n+++ b/src/main/java/org/apache/commons/codec/digest/XXHash32.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/digest/package-info.java b/src/main/java/org/apache/commons/codec/digest/package-info.java\nindex 43d22f104..edb8aa5c4 100644\n--- a/src/main/java/org/apache/commons/codec/digest/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/digest/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java b/src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java\nindex 3ecc52cd7..c0a4fcf2c 100644\n--- a/src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/AbstractCaverphone.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Caverphone.java b/src/main/java/org/apache/commons/codec/language/Caverphone.java\nindex 3bb0d45d0..033d332e1 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Caverphone1.java b/src/main/java/org/apache/commons/codec/language/Caverphone1.java\nindex f2a222193..1c562008e 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone1.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone1.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Caverphone2.java b/src/main/java/org/apache/commons/codec/language/Caverphone2.java\nindex 7fa6edb90..318ce1001 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone2.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone2.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\nindex 1837e9d03..f4db0aef1 100644\n--- a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n+++ b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 35a2b52ef..16349ece2 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\nindex 75de517cc..24880c7ad 100644\n--- a/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/DoubleMetaphone.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\nindex 16400c17a..5374cecf9 100644\n--- a/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/MatchRatingApproachEncoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex ed6312695..caf07828f 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Nysiis.java b/src/main/java/org/apache/commons/codec/language/Nysiis.java\nindex f33b7ce15..944e89f9b 100644\n--- a/src/main/java/org/apache/commons/codec/language/Nysiis.java\n+++ b/src/main/java/org/apache/commons/codec/language/Nysiis.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\nindex 2c196f3ff..28089946f 100644\n--- a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/Soundex.java b/src/main/java/org/apache/commons/codec/language/Soundex.java\nindex b541cf6b2..fd6aacedd 100644\n--- a/src/main/java/org/apache/commons/codec/language/Soundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/Soundex.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/SoundexUtils.java b/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\nindex c1b51b016..c40b7cf25 100644\n--- a/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\n+++ b/src/main/java/org/apache/commons/codec/language/SoundexUtils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\nindex c8543beee..08df64214 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Lang.java b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\nindex 78aa836e4..202a795a6 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Lang.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Languages.java b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\nindex 85ad73d1a..ed95adfec 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/NameType.java b/src/main/java/org/apache/commons/codec/language/bm/NameType.java\nindex 038e160ae..bd8fe3bee 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/NameType.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/NameType.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\nindex 84fbe3515..b1d848aa9 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java b/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\nindex bb48c3606..cee46f599 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/ResourceConstants.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Rule.java b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\nindex a42315d8b..e2bc35d4e 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Rule.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/RuleType.java b/src/main/java/org/apache/commons/codec/language/bm/RuleType.java\nindex 860a19b72..8602e979b 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/RuleType.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/RuleType.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/package-info.java b/src/main/java/org/apache/commons/codec/language/bm/package-info.java\nindex 078e6eaec..4ecf1dc78 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/language/package-info.java b/src/main/java/org/apache/commons/codec/language/package-info.java\nindex 69ad0f8d9..5da027208 100644\n--- a/src/main/java/org/apache/commons/codec/language/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/language/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/BCodec.java b/src/main/java/org/apache/commons/codec/net/BCodec.java\nindex cf9e137f3..3cc1e7fe7 100644\n--- a/src/main/java/org/apache/commons/codec/net/BCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/BCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/PercentCodec.java b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\nindex ee87cf97b..1d3b01fa1 100644\n--- a/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/QCodec.java b/src/main/java/org/apache/commons/codec/net/QCodec.java\nindex 3dad9bdef..284bb04e3 100644\n--- a/src/main/java/org/apache/commons/codec/net/QCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex 86d2e8950..9f1cdc252 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\nindex a77548d98..f9ee4df72 100644\n--- a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n+++ b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/URLCodec.java b/src/main/java/org/apache/commons/codec/net/URLCodec.java\nindex 2178ce4b9..e01838799 100644\n--- a/src/main/java/org/apache/commons/codec/net/URLCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/URLCodec.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/Utils.java b/src/main/java/org/apache/commons/codec/net/Utils.java\nindex 7ea78c15e..fc370395e 100644\n--- a/src/main/java/org/apache/commons/codec/net/Utils.java\n+++ b/src/main/java/org/apache/commons/codec/net/Utils.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/net/package-info.java b/src/main/java/org/apache/commons/codec/net/package-info.java\nindex 0e587edad..a0d969667 100644\n--- a/src/main/java/org/apache/commons/codec/net/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/net/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\ndiff --git a/src/main/java/org/apache/commons/codec/package-info.java b/src/main/java/org/apache/commons/codec/package-info.java\nindex 6e9992a76..b876aaed1 100644\n--- a/src/main/java/org/apache/commons/codec/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/package-info.java\n@@ -9 +9 @@\n- *      http://www.apache.org/licenses/LICENSE-2.0\n+ *      https://www.apache.org/licenses/LICENSE-2.0\n"
+}

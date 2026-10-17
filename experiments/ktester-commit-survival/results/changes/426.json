@@ -1,0 +1,123 @@
+{
+  "index": 426,
+  "sha": "42725631c9244aa3a86a373ecaec2a196426c409",
+  "parent": "9f444b458cb2a7edb0aed5793b6f625904844812",
+  "subject": "BaseNCodecOutputStream subclasses are now type-safe to match its matching BaseNCodec",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      34
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      61
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      65
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      40,
+      44,
+      59
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      34
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      61
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      65
+    ],
+    "org/apache/commons/codec/binary/BaseNCodecOutputStream.java": [
+      38,
+      41,
+      45,
+      60
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        34
+      ],
+      "post_image_lines": [
+        34
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        61
+      ],
+      "post_image_lines": [
+        61
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        65
+      ],
+      "post_image_lines": [
+        65
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodecOutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        40,
+        44,
+        59
+      ],
+      "post_image_lines": [
+        38,
+        41,
+        45,
+        60
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "9f444b458cb2a7edb0aed5793b6f625904844812",
+    "42725631c9244aa3a86a373ecaec2a196426c409",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\nindex f4b4012d1..f591f98d7 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n@@ -34 +34 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base16OutputStream extends BaseNCodecOutputStream {\n+public class Base16OutputStream extends BaseNCodecOutputStream<Base16> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 0d0c932ec..f1e0cc841 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -61 +61 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base32OutputStream extends BaseNCodecOutputStream {\n+public class Base32OutputStream extends BaseNCodecOutputStream<Base32> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex 4f2adb917..95775f646 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -65 +65 @@ import org.apache.commons.codec.CodecPolicy;\n-public class Base64OutputStream extends BaseNCodecOutputStream {\n+public class Base64OutputStream extends BaseNCodecOutputStream<Base64> {\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\nindex 2f31c3f60..2ee52eeb2 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodecOutputStream.java\n@@ -37,0 +38 @@ import org.apache.commons.codec.binary.BaseNCodec.Context;\n+ * @param <T> A BaseNCodec subclass.\n@@ -40 +41 @@ import org.apache.commons.codec.binary.BaseNCodec.Context;\n-public class BaseNCodecOutputStream extends FilterOutputStream {\n+public class BaseNCodecOutputStream<T extends BaseNCodec> extends FilterOutputStream {\n@@ -44 +45 @@ public class BaseNCodecOutputStream extends FilterOutputStream {\n-    private final BaseNCodec baseNCodec;\n+    private final T baseNCodec;\n@@ -59 +60 @@ public class BaseNCodecOutputStream extends FilterOutputStream {\n-    public BaseNCodecOutputStream(final OutputStream outputStream, final BaseNCodec basedCodec, final boolean doEncode) {\n+    public BaseNCodecOutputStream(final OutputStream outputStream, final T basedCodec, final boolean doEncode) {\n"
+}

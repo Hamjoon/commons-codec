@@ -1,0 +1,59 @@
+{
+  "index": 69,
+  "sha": "cd91956caf3aed9402b6a0c43affc3a7e8546661",
+  "parent": "97b7e5d170f494ecbc5861f2f0df8925db3831b2",
+  "subject": "Don't repeat the code in B64.getRandomSalt",
+  "pre_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      59,
+      60,
+      61,
+      253,
+      254,
+      255,
+      256
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/UnixCrypt.java": [
+      250
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "new_file": "org/apache/commons/codec/digest/UnixCrypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        59,
+        60,
+        61,
+        253,
+        254,
+        255,
+        256
+      ],
+      "post_image_lines": [
+        250
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "97b7e5d170f494ecbc5861f2f0df8925db3831b2",
+    "cd91956caf3aed9402b6a0c43affc3a7e8546661",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\nindex 2917acf75..3b5a4b5fb 100644\n--- a/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/UnixCrypt.java\n@@ -59,3 +58,0 @@ public class UnixCrypt {\n-    private static final char[] SALT_CHARS = \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789./\"\n-            .toCharArray();\n-\n@@ -253,4 +250 @@ public class UnixCrypt {\n-            final SecureRandom randomGenerator = new SecureRandom();\n-            final int numSaltChars = SALT_CHARS.length;\n-            salt = \"\" + SALT_CHARS[randomGenerator.nextInt(numSaltChars)] +\n-                    SALT_CHARS[randomGenerator.nextInt(numSaltChars)];\n+            salt = B64.getRandomSalt(2);\n"
+}

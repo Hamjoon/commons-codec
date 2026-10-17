@@ -1,0 +1,55 @@
+{
+  "index": 30,
+  "sha": "c07d6a49d5b62b4a370ec57d89235fc21004c25a",
+  "parent": "c7df2078afd071102b0337f5d4f4f152aa5c1401",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/language/Nysiis.java": [
+      217,
+      231,
+      319
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Nysiis.java": [
+      217,
+      231,
+      319
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Nysiis.java",
+      "new_file": "org/apache/commons/codec/language/Nysiis.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        217,
+        231,
+        319
+      ],
+      "post_image_lines": [
+        217,
+        231,
+        319
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "c7df2078afd071102b0337f5d4f4f152aa5c1401",
+    "c07d6a49d5b62b4a370ec57d89235fc21004c25a",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Nysiis.java b/src/main/java/org/apache/commons/codec/language/Nysiis.java\nindex 10b4a8f08..f33b7ce15 100644\n--- a/src/main/java/org/apache/commons/codec/language/Nysiis.java\n+++ b/src/main/java/org/apache/commons/codec/language/Nysiis.java\n@@ -217 +217 @@ public class Nysiis implements StringEncoder {\n-        return this.nysiis((String) obj);\n+        return nysiis((String) obj);\n@@ -231 +231 @@ public class Nysiis implements StringEncoder {\n-        return this.nysiis(str);\n+        return nysiis(str);\n@@ -319 +319 @@ public class Nysiis implements StringEncoder {\n-        return this.isStrict() ? string.substring(0, Math.min(TRUE_LENGTH, string.length())) : string;\n+        return isStrict() ? string.substring(0, Math.min(TRUE_LENGTH, string.length())) : string;\n"
+}

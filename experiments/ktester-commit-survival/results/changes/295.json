@@ -1,0 +1,47 @@
+{
+  "index": 295,
+  "sha": "7eb185b4cc9bb5f90b8de7ce7c466a2b8b8f5744",
+  "parent": "112463e9a29cbb5937c50570edf29684dcd63697",
+  "subject": "Javadoc typo",
+  "pre_image": {
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      34
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/ColognePhonetic.java": [
+      34
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "new_file": "org/apache/commons/codec/language/ColognePhonetic.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        34
+      ],
+      "post_image_lines": [
+        34
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "112463e9a29cbb5937c50570edf29684dcd63697",
+    "7eb185b4cc9bb5f90b8de7ce7c466a2b8b8f5744",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\nindex 10cffc48c..6534625ba 100644\n--- a/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n+++ b/src/main/java/org/apache/commons/codec/language/ColognePhonetic.java\n@@ -34 +34 @@ import org.apache.commons.codec.StringEncoder;\n- * the well-known soundex algorithm.\n+ * the well-known Soundex algorithm.\n"
+}

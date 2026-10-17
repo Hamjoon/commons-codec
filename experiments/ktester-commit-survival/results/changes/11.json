@@ -1,0 +1,63 @@
+{
+  "index": 11,
+  "sha": "ec4483074c0be014ff60bca9f39f6b6fcb2b48ad",
+  "parent": "14c4621f4cb6b01f1215446c8037418886482df9",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [
+      458,
+      472,
+      501,
+      512,
+      525
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Blake3.java": [
+      458,
+      472,
+      501,
+      512,
+      525
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Blake3.java",
+      "new_file": "org/apache/commons/codec/digest/Blake3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        458,
+        472,
+        501,
+        512,
+        525
+      ],
+      "post_image_lines": [
+        458,
+        472,
+        501,
+        512,
+        525
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "14c4621f4cb6b01f1215446c8037418886482df9",
+    "ec4483074c0be014ff60bca9f39f6b6fcb2b48ad",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Blake3.java b/src/main/java/org/apache/commons/codec/digest/Blake3.java\nindex ba6cceedf..032ce0ffc 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Blake3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Blake3.java\n@@ -458 +458 @@ public final class Blake3 {\n-     * @return this\n+     * @return {@code this} instance.\n@@ -472 +472 @@ public final class Blake3 {\n-     * @return this\n+     * @return {@code this} instance.\n@@ -501 +501 @@ public final class Blake3 {\n-     * @return this\n+     * @return {@code this} instance.\n@@ -512 +512 @@ public final class Blake3 {\n-     * @return this\n+     * @return {@code this} instance.\n@@ -525 +525 @@ public final class Blake3 {\n-     * @return this\n+     * @return {@code this} instance.\n"
+}

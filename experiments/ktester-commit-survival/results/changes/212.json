@@ -1,0 +1,47 @@
+{
+  "index": 212,
+  "sha": "5eff65e517633326d9fdd6bafd231cd98351cecc",
+  "parent": "204d59e02f234e57f1bcec9e67cba89961213790",
+  "subject": "Normalize spelling",
+  "pre_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      161
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      161
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        161
+      ],
+      "post_image_lines": [
+        161
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "204d59e02f234e57f1bcec9e67cba89961213790",
+    "5eff65e517633326d9fdd6bafd231cd98351cecc",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex 24856133d..3d2a65769 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -161 +161 @@ public final class MurmurHash3 {\n-         * This must be finalised to generate the 32-bit hash value.\n+         * This must be finalized to generate the 32-bit hash value.\n"
+}

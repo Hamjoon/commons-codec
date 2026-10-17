@@ -1,0 +1,61 @@
+{
+  "index": 177,
+  "sha": "1b815fef93e6727bd33a3ecdb11f434be28aa1e5",
+  "parent": "6921f982d96a7cf9e531e5001b60e209a19d317e",
+  "subject": "Deprecate CharSequenceUtils.CharSequenceUtils()",
+  "pre_image": {
+    "org/apache/commons/codec/binary/CharSequenceUtils.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/CharSequenceUtils.java": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/CharSequenceUtils.java",
+      "new_file": "org/apache/commons/codec/binary/CharSequenceUtils.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "6921f982d96a7cf9e531e5001b60e209a19d317e",
+    "1b815fef93e6727bd33a3ecdb11f434be28aa1e5",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java b/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\nindex 0625e6569..ece4d81d0 100644\n--- a/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\n+++ b/src/main/java/org/apache/commons/codec/binary/CharSequenceUtils.java\n@@ -31,0 +32,10 @@ public class CharSequenceUtils {\n+    /**\n+     * Consider package-private.\n+     *\n+     * @deprecated Will be package-private in the next major version.\n+     */\n+    @Deprecated\n+    public CharSequenceUtils() {\n+        // empty\n+    }\n+\n"
+}

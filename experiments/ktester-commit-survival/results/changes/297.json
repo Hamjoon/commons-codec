@@ -1,0 +1,67 @@
+{
+  "index": 297,
+  "sha": "fa89e5c47943bbf8e6485f78bf4b5e954351b036",
+  "parent": "8e54782842f172cbe66eb5ed196e8f6545f7b98a",
+  "subject": "Javadoc typo",
+  "pre_image": {
+    "org/apache/commons/codec/language/RefinedSoundex.java": [
+      24,
+      80,
+      131,
+      139,
+      152,
+      188
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/RefinedSoundex.java": [
+      24,
+      80,
+      131,
+      139,
+      152,
+      188
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "new_file": "org/apache/commons/codec/language/RefinedSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        24,
+        80,
+        131,
+        139,
+        152,
+        188
+      ],
+      "post_image_lines": [
+        24,
+        80,
+        131,
+        139,
+        152,
+        188
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "8e54782842f172cbe66eb5ed196e8f6545f7b98a",
+    "fa89e5c47943bbf8e6485f78bf4b5e954351b036",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\nindex 28089946f..39bd9e373 100644\n--- a/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/RefinedSoundex.java\n@@ -24 +24 @@ import org.apache.commons.codec.StringEncoder;\n- * Encodes a string into a Refined Soundex value. A refined soundex code is\n+ * Encodes a string into a Refined Soundex value. A refined Soundex code is\n@@ -80 +80 @@ public class RefinedSoundex implements StringEncoder {\n-     * Creates a refined soundex instance using a custom mapping. This\n+     * Creates a refined Soundex instance using a custom mapping. This\n@@ -131 +131 @@ public class RefinedSoundex implements StringEncoder {\n-     * Encodes an Object using the refined soundex algorithm. This method is\n+     * Encodes an Object using the refined Soundex algorithm. This method is\n@@ -139 +139 @@ public class RefinedSoundex implements StringEncoder {\n-     *             soundex code which corresponds to the String supplied.\n+     *             Soundex code which corresponds to the String supplied.\n@@ -152 +152 @@ public class RefinedSoundex implements StringEncoder {\n-     * Encodes a String using the refined soundex algorithm.\n+     * Encodes a String using the refined Soundex algorithm.\n@@ -188 +188 @@ public class RefinedSoundex implements StringEncoder {\n-     * @return A soundex code for the String supplied\n+     * @return A Soundex code for the String supplied\n"
+}

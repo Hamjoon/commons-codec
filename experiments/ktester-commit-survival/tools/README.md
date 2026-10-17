@@ -65,6 +65,10 @@ Phase A executes all six developer classes and the frozen LLM denominator method
 
 Phase B selects only methods alive entering each commit (index 0 uses the full denominator). It appends coverage within each isolated group using the same released JaCoCo 0.8.12 tools as Part 1. A rejected method selector may fall back to the class, with the exact fallback recorded. The XML report includes all production classes, retaining executable but uncovered lines. An empty alive set produces zero-coverage XML without executing any tests. Step 0 verifies this case too.
 
+The updated Part 3 addendum defines B using every `changes-src-main=yes` index and its predecessor. The frozen inventory has 187 such commits (50 change a scope file), yielding 263 distinct coverage indices including 0. This exceeds the addendum's estimate of 100/at most 200; the set formula governs. `prepare_coverage.py` records all `src/main/java` hunks, each file's scope/other group, and explicit rename/deletion status. Its independent five-file diff check verifies that scope projections retain the original definition. Phase B line CSVs include every source file in the codec package and subpackages.
+
+The revised aggregation writes all/scope post-image columns and all-lines pre-image columns in `changed-lines.csv`. Table 3 has all-production rows and two totals rows (all files and five scope files); it has no separate table3b. The single all-lines Table 4 stays in the repository and is omitted from the handover report. `coverage-t.md` covers only the five scope files. All line counts and percentages are derived from the raw XML and validated against its line CSV.
+
 All commands below run inside the prescribed container, from `/repo/experiments/ktester-commit-survival`:
 
 ```sh
@@ -96,4 +100,4 @@ java -jar work/libs/org.jacoco.cli-0.8.12-nodeps.jar report work/phase-b/INDEX/G
 
 Scientific figures use Matplotlib isolated in ignored `work/python-libs`; resolved package versions are in `results/part3-plot-dependencies.json`. Reinstall in the container with `python -m pip install --target work/python-libs matplotlib` only if that local environment is missing. Python plotting libraries never enter the Java classpath. `selftest_part3.py` checks assertion/error classification, parameterized aggregation, missing/skipped states, process timeout, build carryover, cumulative/transient survival, alive-entering indexing, flaky history, and zero-context diff line ranges.
 
-After final commits, render the ignored handover with `python tools/report_part3.py --kt /work` inside the container, or use the host KTester path when running on the host. The five tables are copied verbatim from scripted results and final Git hashes are read at render time. No push is performed.
+After final commits, render the ignored handover with `python tools/report_part3.py --kt /work` inside the container, or use the host KTester path when running on the host. Tables 1–3 and five-file baseline coverage are copied verbatim from scripted results; Table 4 remains repository-only. Both Table 3 totals rows, the actual B size, and Phase B wall time are included. Final Git hashes are read at render time. No push is performed.

@@ -1,0 +1,53 @@
+{
+  "index": 339,
+  "sha": "5b3c2a5e130bc2f27e5ba34384f7b2cf503a5fbe",
+  "parent": "1d718d8515091f49fe9c092455b17bacf3085809",
+  "subject": "Fix PMD EmptyControlStatement in org.apache.commons.codec.language.Metaphone",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      231,
+      232,
+      233
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      231,
+      232
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        231,
+        232,
+        233
+      ],
+      "post_image_lines": [
+        231,
+        232
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1d718d8515091f49fe9c092455b17bacf3085809",
+    "5b3c2a5e130bc2f27e5ba34384f7b2cf503a5fbe",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex 22220e4e0..1dedf6745 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -231,3 +231,2 @@ public class Metaphone implements StringEncoder {\n-            if (symb != 'C' && isPreviousChar(local, n, symb)) {\n-                // empty\n-            } else { // not dup\n+            if (symb == 'C' || !isPreviousChar(local, n, symb)) {\n+                // not dup\n"
+}

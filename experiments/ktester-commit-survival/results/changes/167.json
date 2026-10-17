@@ -1,0 +1,117 @@
+{
+  "index": 167,
+  "sha": "da3f28e302158a412f1e8626d89215cfcf3720ab",
+  "parent": "0d3ae9037c9c88925babcd4e32899b111b8c4220",
+  "subject": "Add Checkstyle ModifierOrder",
+  "pre_image": {
+    "org/apache/commons/codec/digest/PureJavaCrc32.java": [
+      580,
+      642
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": [
+      645
+    ],
+    "org/apache/commons/codec/language/Caverphone.java": [
+      40
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      71
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/PureJavaCrc32.java": [
+      580,
+      642
+    ],
+    "org/apache/commons/codec/digest/PureJavaCrc32C.java": [
+      645
+    ],
+    "org/apache/commons/codec/language/Caverphone.java": [
+      40
+    ],
+    "org/apache/commons/codec/language/bm/Languages.java": [
+      71
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/PureJavaCrc32.java",
+      "new_file": "org/apache/commons/codec/digest/PureJavaCrc32.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        580,
+        642
+      ],
+      "post_image_lines": [
+        580,
+        642
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "new_file": "org/apache/commons/codec/digest/PureJavaCrc32C.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        645
+      ],
+      "post_image_lines": [
+        645
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Caverphone.java",
+      "new_file": "org/apache/commons/codec/language/Caverphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        40
+      ],
+      "post_image_lines": [
+        40
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "new_file": "org/apache/commons/codec/language/bm/Languages.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        71
+      ],
+      "post_image_lines": [
+        71
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "0d3ae9037c9c88925babcd4e32899b111b8c4220",
+    "da3f28e302158a412f1e8626d89215cfcf3720ab",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\nindex 698168512..0497c1388 100644\n--- a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\n+++ b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32.java\n@@ -580 +580 @@ public class PureJavaCrc32 implements Checksum {\n-    /** Create a new PureJavaCrc32 object. */\n+    /** Constructs a new PureJavaCrc32 object. */\n@@ -642 +642 @@ public class PureJavaCrc32 implements Checksum {\n-    final public void update(final int b) {\n+    public final void update(final int b) {\ndiff --git a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\nindex 528b9c6f9..acf0fd15d 100644\n--- a/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n+++ b/src/main/java/org/apache/commons/codec/digest/PureJavaCrc32C.java\n@@ -645 +645 @@ public class PureJavaCrc32C implements Checksum {\n-    final public void update(final int b) {\n+    public final void update(final int b) {\ndiff --git a/src/main/java/org/apache/commons/codec/language/Caverphone.java b/src/main/java/org/apache/commons/codec/language/Caverphone.java\nindex 033d332e1..416f96b2d 100644\n--- a/src/main/java/org/apache/commons/codec/language/Caverphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Caverphone.java\n@@ -40 +40 @@ public class Caverphone implements StringEncoder {\n-    final private Caverphone2 encoder = new Caverphone2();\n+    private final Caverphone2 encoder = new Caverphone2();\ndiff --git a/src/main/java/org/apache/commons/codec/language/bm/Languages.java b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\nindex 3024ab7da..92ecb2ec0 100644\n--- a/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n+++ b/src/main/java/org/apache/commons/codec/language/bm/Languages.java\n@@ -71 +71 @@ public class Languages {\n-    public static abstract class LanguageSet {\n+    public abstract static class LanguageSet {\n"
+}

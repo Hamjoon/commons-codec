@@ -1,0 +1,51 @@
+{
+  "index": 417,
+  "sha": "892d6719a798c625596cf4e0debfe22f2d204177",
+  "parent": "0b9bd57344b844cc69c31a8a2ca8c6ded5aa742b",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/CodecPolicy.java": [
+      28,
+      33
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/CodecPolicy.java": [
+      28,
+      33
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/CodecPolicy.java",
+      "new_file": "org/apache/commons/codec/CodecPolicy.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        28,
+        33
+      ],
+      "post_image_lines": [
+        28,
+        33
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "0b9bd57344b844cc69c31a8a2ca8c6ded5aa742b",
+    "892d6719a798c625596cf4e0debfe22f2d204177",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/CodecPolicy.java b/src/main/java/org/apache/commons/codec/CodecPolicy.java\nindex 817de3e05..aa66e9b2a 100644\n--- a/src/main/java/org/apache/commons/codec/CodecPolicy.java\n+++ b/src/main/java/org/apache/commons/codec/CodecPolicy.java\n@@ -28 +28 @@ public enum CodecPolicy {\n-     * The strict policy. Data that causes a codec to fail should throw an exception.\n+     * The <em>strict</em> policy. Data that causes a codec to fail should throw an exception.\n@@ -33 +33 @@ public enum CodecPolicy {\n-     * The lenient policy. Data that causes a codec to fail should not throw an exception.\n+     * The <em>lenient</em> policy. Data that causes a codec to fail should not throw an exception.\n"
+}

@@ -1,0 +1,57 @@
+{
+  "index": 342,
+  "sha": "8c7fcfe178832702f837c4211ef02263073a4d4f",
+  "parent": "cd4caaf36d0c97eb72449a02494f794cbd333a1a",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      394
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      391,
+      392,
+      393,
+      394,
+      395,
+      399
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        394
+      ],
+      "post_image_lines": [
+        391,
+        392,
+        393,
+        394,
+        395,
+        399
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cd4caaf36d0c97eb72449a02494f794cbd333a1a",
+    "8c7fcfe178832702f837c4211ef02263073a4d4f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex 837f7e0e8..0c8124693 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -390,0 +391,5 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+     * Deprecated: Will be removed in 2.0.\n+     * <p>\n+     * instance variable just in case it needs to vary later\n+     * </p>\n+     *\n@@ -394 +399 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-    protected final byte PAD = PAD_DEFAULT; // instance variable just in case it needs to vary later\n+    protected final byte PAD = PAD_DEFAULT;\n"
+}

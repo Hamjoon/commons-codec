@@ -1,0 +1,259 @@
+{
+  "index": 501,
+  "sha": "d07487725f94114154ac230ffc75d1fb72fecb27",
+  "parent": "75da1d9c22d07557a0c64f99503dfb936d4c9ea9",
+  "subject": "Fix malformed Javadoc comments",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      41,
+      43
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      45,
+      47
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      45,
+      47
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      49,
+      51
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      41,
+      43,
+      466,
+      468
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      117,
+      118,
+      119,
+      120,
+      121,
+      143,
+      144,
+      145,
+      146
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      45,
+      46,
+      47,
+      48,
+      53,
+      54
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base32InputStream.java": [
+      41,
+      43
+    ],
+    "org/apache/commons/codec/binary/Base32OutputStream.java": [
+      45,
+      47
+    ],
+    "org/apache/commons/codec/binary/Base64InputStream.java": [
+      45,
+      47
+    ],
+    "org/apache/commons/codec/binary/Base64OutputStream.java": [
+      49,
+      51
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      41,
+      43,
+      466,
+      468
+    ],
+    "org/apache/commons/codec/digest/Crypt.java": [
+      117,
+      118,
+      119,
+      120,
+      121,
+      143,
+      144,
+      145,
+      146
+    ],
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      45,
+      46,
+      47,
+      48,
+      53,
+      54
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        41,
+        43
+      ],
+      "post_image_lines": [
+        41,
+        43
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base32OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        45,
+        47
+      ],
+      "post_image_lines": [
+        45,
+        47
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64InputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        45,
+        47
+      ],
+      "post_image_lines": [
+        45,
+        47
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base64OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        49,
+        51
+      ],
+      "post_image_lines": [
+        49,
+        51
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        41,
+        43,
+        466,
+        468
+      ],
+      "post_image_lines": [
+        41,
+        43,
+        466,
+        468
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        143,
+        144,
+        145,
+        146
+      ],
+      "post_image_lines": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        143,
+        144,
+        145,
+        146
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        45,
+        46,
+        47,
+        48,
+        53,
+        54
+      ],
+      "post_image_lines": [
+        45,
+        46,
+        47,
+        48,
+        53,
+        54
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "75da1d9c22d07557a0c64f99503dfb936d4c9ea9",
+    "d07487725f94114154ac230ffc75d1fb72fecb27",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\nindex 481cd0a0d..a00f67a44 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32InputStream.java\n@@ -41 +41 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+ * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -43 +43 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * character must be zero. Impossible counts of entire final characters are not allowed.\n+ * character must be zero. Impossible counts of entire final characters are not allowed.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\nindex 5f8153b06..322d4cf8c 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base32OutputStream.java\n@@ -45 +45 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+ * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -47 +47 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * character must be zero. Impossible counts of entire final characters are not allowed.\n+ * character must be zero. Impossible counts of entire final characters are not allowed.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\nindex 14e0a1bbb..cdfc46eaa 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64InputStream.java\n@@ -45 +45 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+ * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -47 +47 @@ import org.apache.commons.codec.binary.BaseNCodecInputStream.AbstracBuilder; //\n- * character must be zero. Impossible counts of entire final characters are not allowed.\n+ * character must be zero. Impossible counts of entire final characters are not allowed.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\nindex a5097aa55..5929b0782 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64OutputStream.java\n@@ -49 +49 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+ * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -51 +51 @@ import org.apache.commons.codec.binary.BaseNCodecOutputStream.AbstractBuilder; /\n- * character must be zero. Impossible counts of entire final characters are not allowed.\n+ * character must be zero. Impossible counts of entire final characters are not allowed.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex a430f61d7..5216607d7 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -41 +41 @@ import org.apache.commons.codec.EncoderException;\n- * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+ * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -43 +43 @@ import org.apache.commons.codec.EncoderException;\n- * character must be zero. Impossible counts of entire final characters are not allowed.\n+ * character must be zero. Impossible counts of entire final characters are not allowed.</li>\n@@ -466 +466 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.\n+     * <li>Lenient: Any trailing bits are composed into 8-bit bytes where possible. The remainder are discarded.</li>\n@@ -468 +468 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n-     * character must be zero. Impossible counts of entire final characters are not allowed.\n+     * character must be zero. Impossible counts of entire final characters are not allowed.</li>\ndiff --git a/src/main/java/org/apache/commons/codec/digest/Crypt.java b/src/main/java/org/apache/commons/codec/digest/Crypt.java\nindex dfeddcaf9..db7f79cf9 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Crypt.java\n@@ -117,5 +117,5 @@ public class Crypt {\n-     * <li>SHA-512 salts start with {@code $6$} and are up to 16 chars long.\n-     * <li>SHA-256 salts start with {@code $5$} and are up to 16 chars long\n-     * <li>MD5 salts start with {@code $1$} and are up to 8 chars long\n-     * <li>DES, the traditional UnixCrypt algorithm is used with only 2 chars\n-     * <li>Only the first 8 chars of the passwords are used in the DES algorithm!\n+     * <li>SHA-512 salts start with {@code $6$} and are up to 16 chars long.</li>\n+     * <li>SHA-256 salts start with {@code $5$} and are up to 16 chars long</li>\n+     * <li>MD5 salts start with {@code $1$} and are up to 8 chars long</li>\n+     * <li>DES, the traditional UnixCrypt algorithm is used with only 2 chars</li>\n+     * <li>Only the first 8 chars of the passwords are used in the DES algorithm!</li>\n@@ -143,4 +143,4 @@ public class Crypt {\n-     * <li>SHA-512: 106 chars\n-     * <li>SHA-256: 63 chars\n-     * <li>MD5: 34 chars\n-     * <li>DES: 13 chars\n+     * <li>SHA-512: 106 chars</li>\n+     * <li>SHA-256: 63 chars</li>\n+     * <li>MD5: 34 chars</li>\n+     * <li>DES: 13 chars</li>\ndiff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 0d0757132..7a7cc1a87 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -45,4 +45,4 @@ import org.apache.commons.codec.StringEncoder;\n- * <li>coded names are 6 digits long\n- * <li>the initial character of the name is coded\n- * <li>rules to encoded multi-character n-grams\n- * <li>multiple possible encodings for the same name (branching)\n+ * <li>coded names are 6 digits long</li>\n+ * <li>the initial character of the name is coded</li>\n+ * <li>rules to encoded multi-character n-grams</li>\n+ * <li>multiple possible encodings for the same name (branching)</li>\n@@ -53,2 +53,2 @@ import org.apache.commons.codec.StringEncoder;\n- * <li>{@link #encode(String)} - branching disabled, only the first code will be returned\n- * <li>{@link #soundex(String)} - branching enabled, all codes will be returned, separated by '|'\n+ * <li>{@link #encode(String)} - branching disabled, only the first code will be returned</li>\n+ * <li>{@link #soundex(String)} - branching enabled, all codes will be returned, separated by '|'</li>\n"
+}

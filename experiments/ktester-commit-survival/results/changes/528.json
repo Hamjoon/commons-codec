@@ -1,0 +1,189 @@
+{
+  "index": 528,
+  "sha": "8398c1ac5492951eae3fba5ca9345b7e17edfddd",
+  "parent": "5a3a3b1644ce957ed4bb921ead00dd929eebb665",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16.java": [],
+    "org/apache/commons/codec/binary/Base64.java": [
+      148
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [],
+    "org/apache/commons/codec/net/QCodec.java": [],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": []
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      108,
+      123,
+      146
+    ],
+    "org/apache/commons/codec/binary/Base64.java": [
+      159,
+      223,
+      303,
+      792
+    ],
+    "org/apache/commons/codec/binary/BaseNCodec.java": [
+      250,
+      255,
+      260,
+      265,
+      270,
+      275,
+      281,
+      305,
+      316,
+      328,
+      333,
+      344,
+      347,
+      352,
+      359,
+      366,
+      463,
+      466,
+      469,
+      472,
+      478,
+      483
+    ],
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      318
+    ],
+    "org/apache/commons/codec/net/QCodec.java": [
+      55
+    ],
+    "org/apache/commons/codec/net/QuotedPrintableCodec.java": [
+      294
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        108,
+        123,
+        146
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base64.java",
+      "new_file": "org/apache/commons/codec/binary/Base64.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        148
+      ],
+      "post_image_lines": [
+        159,
+        223,
+        303,
+        792
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "new_file": "org/apache/commons/codec/binary/BaseNCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        250,
+        255,
+        260,
+        265,
+        270,
+        275,
+        281,
+        305,
+        316,
+        328,
+        333,
+        344,
+        347,
+        352,
+        359,
+        366,
+        463,
+        466,
+        469,
+        472,
+        478,
+        483
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        318
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QCodec.java",
+      "new_file": "org/apache/commons/codec/net/QCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        55
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "new_file": "org/apache/commons/codec/net/QuotedPrintableCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [],
+      "post_image_lines": [
+        294
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "5a3a3b1644ce957ed4bb921ead00dd929eebb665",
+    "8398c1ac5492951eae3fba5ca9345b7e17edfddd",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex e2415167c..fee4f6fc4 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -107,0 +108 @@ public class Base16 extends BaseNCodec {\n+\n@@ -121,0 +123 @@ public class Base16 extends BaseNCodec {\n+\n@@ -143,0 +146 @@ public class Base16 extends BaseNCodec {\n+\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base64.java b/src/main/java/org/apache/commons/codec/binary/Base64.java\nindex 1dbde3c6e..b06745d82 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base64.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base64.java\n@@ -148 +147,0 @@ public class Base64 extends BaseNCodec {\n-        // Javadoc 8 can't find {@link #setDecodeTableFormat(DecodeTableFormat)}\n@@ -159,0 +159 @@ public class Base64 extends BaseNCodec {\n+            // Javadoc 8 can't find {@link #setDecodeTableFormat(DecodeTableFormat)}\n@@ -222,0 +223 @@ public class Base64 extends BaseNCodec {\n+\n@@ -301,0 +303 @@ public class Base64 extends BaseNCodec {\n+\n@@ -789,0 +792 @@ public class Base64 extends BaseNCodec {\n+\ndiff --git a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\nindex cddefa530..d39431d67 100644\n--- a/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n+++ b/src/main/java/org/apache/commons/codec/binary/BaseNCodec.java\n@@ -249,0 +250 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -253,0 +255 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -257,0 +260 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -261,0 +265 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -265,0 +270 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -269,0 +275 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -274,0 +281 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -297,0 +305 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -307,0 +316 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -318,0 +328 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -322,0 +333 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -332,0 +344 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -334,0 +347 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -338,0 +352 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -344,0 +359 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -350,0 +366 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -446,0 +463 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -448,0 +466 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -450,0 +469 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -452,0 +472 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -457,0 +478 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\n@@ -461,0 +483 @@ public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {\n+\ndiff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex 49524bb1e..5ec7e504f 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -317,0 +318 @@ public final class MurmurHash3 {\n+\ndiff --git a/src/main/java/org/apache/commons/codec/net/QCodec.java b/src/main/java/org/apache/commons/codec/net/QCodec.java\nindex 4d2c162fd..8213b40ac 100644\n--- a/src/main/java/org/apache/commons/codec/net/QCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QCodec.java\n@@ -54,0 +55 @@ public class QCodec extends RFC1522Codec implements StringEncoder, StringDecoder\n+\ndiff --git a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\nindex 8f9bc737a..62a71f960 100644\n--- a/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/QuotedPrintableCodec.java\n@@ -293,0 +294 @@ public class QuotedPrintableCodec implements BinaryEncoder, BinaryDecoder, Strin\n+\n"
+}

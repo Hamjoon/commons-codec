@@ -1,0 +1,111 @@
+{
+  "index": 305,
+  "sha": "1f3b9fe70eff7dbf645a83bc2e949090807b0198",
+  "parent": "1c15f3b6ba78b95c2a00ac087df1fa10a34e6dec",
+  "subject": "Javadoc typo in Base16.java (#380)",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      25,
+      27,
+      36,
+      45,
+      56,
+      68
+    ],
+    "org/apache/commons/codec/binary/package-info.java": [
+      19
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      25
+    ],
+    "org/apache/commons/codec/binary/Base16OutputStream.java": [
+      25,
+      27,
+      36,
+      45,
+      56,
+      68
+    ],
+    "org/apache/commons/codec/binary/package-info.java": [
+      19
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25
+      ],
+      "post_image_lines": [
+        25
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "new_file": "org/apache/commons/codec/binary/Base16OutputStream.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        25,
+        27,
+        36,
+        45,
+        56,
+        68
+      ],
+      "post_image_lines": [
+        25,
+        27,
+        36,
+        45,
+        56,
+        68
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/package-info.java",
+      "new_file": "org/apache/commons/codec/binary/package-info.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        19
+      ],
+      "post_image_lines": [
+        19
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1c15f3b6ba78b95c2a00ac087df1fa10a34e6dec",
+    "1f3b9fe70eff7dbf645a83bc2e949090807b0198",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex f23790813..1cf1590b6 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Base32 encoding and decoding as defined by <a href=\"https://tools.ietf.org/html/rfc4648#section-8\">RFC 4648 - 8. Base 16 Encoding</a>.\n+ * Provides Base16 encoding and decoding as defined by <a href=\"https://tools.ietf.org/html/rfc4648#section-8\">RFC 4648 - 8. Base 16 Encoding</a>.\ndiff --git a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\nindex 2fceb9f43..b05d22616 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16OutputStream.java\n@@ -25 +25 @@ import org.apache.commons.codec.CodecPolicy;\n- * Provides Hex encoding in a streaming fashion (unlimited size).\n+ * Provides Base16 encoding in a streaming fashion (unlimited size).\n@@ -27 +27 @@ import org.apache.commons.codec.CodecPolicy;\n- * The default behavior of the HexOutputStream is to ENCODE, whereas the default behavior of the\n+ * The default behavior of the Base16OutputStream is to ENCODE, whereas the default behavior of the\n@@ -36 +36 @@ public class Base16OutputStream extends BaseNCodecOutputStream {\n-     * Constructs a Base16OutputStream such that all data written is Hex-encoded to the original provided OutputStream.\n+     * Constructs a Base16OutputStream such that all data written is Base16-encoded to the original provided OutputStream.\n@@ -45 +45 @@ public class Base16OutputStream extends BaseNCodecOutputStream {\n-     * Constructs a Base16OutputStream such that all data written is either Hex-encoded or Hex-decoded to the\n+     * Constructs a Base16OutputStream such that all data written is either Base16-encoded or Base16-decoded to the\n@@ -56 +56 @@ public class Base16OutputStream extends BaseNCodecOutputStream {\n-     * Constructs a Base16OutputStream such that all data written is either Hex-encoded or Hex-decoded to the\n+     * Constructs a Base16OutputStream such that all data written is either Base16-encoded or Base16-decoded to the\n@@ -68 +68 @@ public class Base16OutputStream extends BaseNCodecOutputStream {\n-     * Constructs a Base16OutputStream such that all data written is either Hex-encoded or Hex-decoded to the\n+     * Constructs a Base16OutputStream such that all data written is either Base16-encoded or Base16-decoded to the\ndiff --git a/src/main/java/org/apache/commons/codec/binary/package-info.java b/src/main/java/org/apache/commons/codec/binary/package-info.java\nindex d35cf8c0a..087f59e60 100644\n--- a/src/main/java/org/apache/commons/codec/binary/package-info.java\n+++ b/src/main/java/org/apache/commons/codec/binary/package-info.java\n@@ -19 +19 @@\n- * Base64, Base32, Binary, and Hexadecimal String encoding and decoding.\n+ * Base64, Base32, Base16, BaseN, Binary, and Hexadecimal String encoding and decoding.\n"
+}

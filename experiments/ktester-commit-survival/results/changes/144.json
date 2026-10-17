@@ -1,0 +1,47 @@
+{
+  "index": 144,
+  "sha": "4b5ea318b86910cd5fd2677c5f923c6eaa8d3fd0",
+  "parent": "fb532b3815ef05a12f81a08754f90285f7db8f08",
+  "subject": "Normalize spelling",
+  "pre_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      29
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/Sha2Crypt.java": [
+      29
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "new_file": "org/apache/commons/codec/digest/Sha2Crypt.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        29
+      ],
+      "post_image_lines": [
+        29
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "fb532b3815ef05a12f81a08754f90285f7db8f08",
+    "4b5ea318b86910cd5fd2677c5f923c6eaa8d3fd0",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\nindex e20a3a2ce..0df7e1165 100644\n--- a/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n+++ b/src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java\n@@ -29 +29 @@ import java.util.regex.Pattern;\n- * SHA2-based UNIX crypt implementation.\n+ * SHA2-based Unix crypt implementation.\n"
+}

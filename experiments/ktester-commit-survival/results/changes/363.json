@@ -1,0 +1,47 @@
+{
+  "index": 363,
+  "sha": "ca27bd30b6170561786d421eb48f1535dc41336f",
+  "parent": "1dfb4e5bbdc604dc72fe671fded50a5c91bc7543",
+  "subject": "Fix Checkstyle",
+  "pre_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      45
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/MurmurHash3.java": [
+      45
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "new_file": "org/apache/commons/codec/digest/MurmurHash3.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "scope",
+      "pre_image_group": "scope",
+      "post_image_group": "scope",
+      "pre_image_lines": [
+        45
+      ],
+      "post_image_lines": [
+        45
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1dfb4e5bbdc604dc72fe671fded50a5c91bc7543",
+    "ca27bd30b6170561786d421eb48f1535dc41336f",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\nindex c94b78cc6..86b94e69a 100644\n--- a/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n+++ b/src/main/java/org/apache/commons/codec/digest/MurmurHash3.java\n@@ -45 +45 @@ import org.apache.commons.codec.binary.StringUtils;\n- * Original adaption from <a href=https://hive.apache.org/\">Apache Hive</a>. \n+ * Original adaption from <a href=https://hive.apache.org/\">Apache Hive</a>.\n"
+}

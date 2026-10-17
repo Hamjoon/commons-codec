@@ -1,0 +1,91 @@
+{
+  "index": 518,
+  "sha": "76b94688560ea760c98453ff385e7e90e6d33dce",
+  "parent": "be2cf88e5b43928b571acfa318da7741b1d29bae",
+  "subject": "Javadoc",
+  "pre_image": {
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      48,
+      53,
+      77,
+      78,
+      130,
+      131,
+      132,
+      187,
+      188,
+      189,
+      228,
+      246
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/net/PercentCodec.java": [
+      48,
+      53,
+      77,
+      78,
+      130,
+      131,
+      132,
+      187,
+      188,
+      189,
+      228,
+      246
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "new_file": "org/apache/commons/codec/net/PercentCodec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        48,
+        53,
+        77,
+        78,
+        130,
+        131,
+        132,
+        187,
+        188,
+        189,
+        228,
+        246
+      ],
+      "post_image_lines": [
+        48,
+        53,
+        77,
+        78,
+        130,
+        131,
+        132,
+        187,
+        188,
+        189,
+        228,
+        246
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "be2cf88e5b43928b571acfa318da7741b1d29bae",
+    "76b94688560ea760c98453ff385e7e90e6d33dce",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/net/PercentCodec.java b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\nindex c10514057..1d11b0969 100644\n--- a/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n+++ b/src/main/java/org/apache/commons/codec/net/PercentCodec.java\n@@ -48 +48 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * The bit set used to store the character that should be always encoded\n+     * The bit set used to store the character that should be always encoded.\n@@ -53 +53 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * The flag defining if the space character should be encoded as '+'\n+     * The flag defining if the space character should be encoded as '+'.\n@@ -77,2 +77,2 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param alwaysEncodeChars the unsafe characters that should always be encoded\n-     * @param plusForSpace      the flag defining if the space character should be encoded as '+'\n+     * @param alwaysEncodeChars the unsafe characters that should always be encoded.\n+     * @param plusForSpace      the flag defining if the space character should be encoded as '+'.\n@@ -130,3 +130,3 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param obj the object to decode\n-     * @return the decoding result byte[] as Object\n-     * @throws DecoderException if the object is not a byte array\n+     * @param obj the object to decode.\n+     * @return the decoding result byte[] as Object.\n+     * @throws DecoderException if the object is not a byte array.\n@@ -187,3 +187,3 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param obj the object to encode\n-     * @return the encoding result byte[] as Object\n-     * @throws EncoderException if the object is not a byte array\n+     * @param obj the object to encode.\n+     * @return the encoding result byte[] as Object.\n+     * @throws EncoderException if the object is not a byte array.\n@@ -228 +228 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param b the byte that is candidate for min and max limit\n+     * @param b the byte that is candidate for min and max limit.\n@@ -246 +246 @@ public class PercentCodec implements BinaryEncoder, BinaryDecoder {\n-     * @param alwaysEncodeCharsArray\n+     * @param alwaysEncodeCharsArray the byte array into a BitSet for faster lookup.\n"
+}

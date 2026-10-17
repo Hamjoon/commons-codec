@@ -1,0 +1,81 @@
+{
+  "index": 29,
+  "sha": "c7df2078afd071102b0337f5d4f4f152aa5c1401",
+  "parent": "2ba905517125a7d4fc3f65b37848b63eb275a943",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      216,
+      220,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      373,
+      375,
+      376
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      216,
+      254,
+      256,
+      257,
+      369,
+      370,
+      371
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        216,
+        220,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        373,
+        375,
+        376
+      ],
+      "post_image_lines": [
+        216,
+        254,
+        256,
+        257,
+        369,
+        370,
+        371
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "2ba905517125a7d4fc3f65b37848b63eb275a943",
+    "c7df2078afd071102b0337f5d4f4f152aa5c1401",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex 8e0d38dc3..ed6312695 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -216 +216 @@ public class Metaphone implements StringEncoder {\n-        while (code.length() < this.getMaxCodeLen() && n < wdsz) { // max code size of 4 works well\n+        while (code.length() < getMaxCodeLen() && n < wdsz) { // max code size of 4 works well\n@@ -220 +219,0 @@ public class Metaphone implements StringEncoder {\n-                n++;\n@@ -255,7 +254 @@ public class Metaphone implements StringEncoder {\n-                    if (isNextChar(local, n, 'H')) { // detect CH\n-                        if (n == 0 && wdsz >= 3 && isVowel(local, 2)) { // CH consonant -> K consonant\n-                            code.append('K');\n-                        } else {\n-                            code.append('X'); // CHvowel -> X\n-                        }\n-                    } else {\n+                    if (!isNextChar(local, n, 'H') || (n == 0 && wdsz >= 3 && isVowel(local, 2))) { // CH consonant -> K consonant\n@@ -262,0 +256,2 @@ public class Metaphone implements StringEncoder {\n+                    } else {\n+                        code.append('X'); // CHvowel -> X\n@@ -373 +367,0 @@ public class Metaphone implements StringEncoder {\n-                n++;\n@@ -375,2 +369,3 @@ public class Metaphone implements StringEncoder {\n-            if (code.length() > this.getMaxCodeLen()) {\n-                code.setLength(this.getMaxCodeLen());\n+            n++;\n+            if (code.length() > getMaxCodeLen()) {\n+                code.setLength(getMaxCodeLen());\n"
+}

@@ -1,0 +1,55 @@
+{
+  "index": 288,
+  "sha": "e515180735f7a4c45e0be970b58a87ede834588e",
+  "parent": "ff49d981d0030dcf6bc2e116f047a6b59fc5d085",
+  "subject": "Private class DaitchMokotoffSoundex.Branch methods private that can be",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      93,
+      115,
+      135
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      93,
+      115,
+      135
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        93,
+        115,
+        135
+      ],
+      "post_image_lines": [
+        93,
+        115,
+        135
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "ff49d981d0030dcf6bc2e116f047a6b59fc5d085",
+    "e515180735f7a4c45e0be970b58a87ede834588e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 3009bdf9c..e9d4afe28 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -93 +93 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public Branch createBranch() {\n+        private Branch createBranch() {\n@@ -115 +115 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public void finish() {\n+        private void finish() {\n@@ -135 +135 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-        public void processNextReplacement(final String replacement, final boolean forceAppend) {\n+        private void processNextReplacement(final String replacement, final boolean forceAppend) {\n"
+}

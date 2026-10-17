@@ -1,0 +1,47 @@
+{
+  "index": 350,
+  "sha": "9c117905ebee09e52d54cf25fb4f27ee66258ebd",
+  "parent": "96610734f6d4fd8a3c188e76fb99ef45fd06459f",
+  "subject": "Fix SpotBugs [ERROR] High: Potentially dangerous use of non-short-circuit logic in org.apache.commons.codec.language.DaitchMokotoffSoundex.cleanup(String) [org.apache.commons.codec.language.DaitchMokotoffSoundex] At DaitchMokotoffSoundex.java:[line 350] NS_DANGEROUS_NON_SHORT_CIRCUIT",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      350
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      350
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        350
+      ],
+      "post_image_lines": [
+        350
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "96610734f6d4fd8a3c188e76fb99ef45fd06459f",
+    "9c117905ebee09e52d54cf25fb4f27ee66258ebd",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex c5fc9652e..d00d2474f 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -350 +350 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-            if (Character.isWhitespace(ch) | !Character.isLetter(ch)) {\n+            if (Character.isWhitespace(ch) || !Character.isLetter(ch)) {\n"
+}

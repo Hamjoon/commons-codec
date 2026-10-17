@@ -1,0 +1,77 @@
+{
+  "index": 63,
+  "sha": "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+  "parent": "cd2b090758ce2b92b6e07bec568687d694db9814",
+  "subject": "Use Javadoc @code",
+  "pre_image": {
+    "org/apache/commons/codec/DecoderException.java": [
+      72,
+      73
+    ],
+    "org/apache/commons/codec/EncoderException.java": [
+      74,
+      75
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/DecoderException.java": [
+      72,
+      73
+    ],
+    "org/apache/commons/codec/EncoderException.java": [
+      74,
+      75
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/DecoderException.java",
+      "new_file": "org/apache/commons/codec/DecoderException.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        72,
+        73
+      ],
+      "post_image_lines": [
+        72,
+        73
+      ]
+    },
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/EncoderException.java",
+      "new_file": "org/apache/commons/codec/EncoderException.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        74,
+        75
+      ],
+      "post_image_lines": [
+        74,
+        75
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cd2b090758ce2b92b6e07bec568687d694db9814",
+    "867eafc0877d3c78dd59b6721c78a977dd0245fe",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/DecoderException.java b/src/main/java/org/apache/commons/codec/DecoderException.java\nindex fa8220909..4f2bcc896 100644\n--- a/src/main/java/org/apache/commons/codec/DecoderException.java\n+++ b/src/main/java/org/apache/commons/codec/DecoderException.java\n@@ -72,2 +72,2 @@ public class DecoderException extends Exception {\n-     * Constructs a new exception with the specified cause and a detail message of <code>(cause==null ?\n-     * null : cause.toString())</code> (which typically contains the class and detail message of {@code cause}).\n+     * Constructs a new exception with the specified cause and a detail message of {@code (cause==null ?\n+     * null : cause.toString())} (which typically contains the class and detail message of {@code cause}).\ndiff --git a/src/main/java/org/apache/commons/codec/EncoderException.java b/src/main/java/org/apache/commons/codec/EncoderException.java\nindex 039925cb0..d5e7141e4 100644\n--- a/src/main/java/org/apache/commons/codec/EncoderException.java\n+++ b/src/main/java/org/apache/commons/codec/EncoderException.java\n@@ -74,2 +74,2 @@ public class EncoderException extends Exception {\n-     * Constructs a new exception with the specified cause and a detail message of <code>(cause==null ?\n-     * null : cause.toString())</code> (which typically contains the class and detail message of {@code cause}).\n+     * Constructs a new exception with the specified cause and a detail message of {@code (cause==null ?\n+     * null : cause.toString())} (which typically contains the class and detail message of {@code cause}).\n"
+}

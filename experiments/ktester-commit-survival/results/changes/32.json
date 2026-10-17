@@ -1,0 +1,51 @@
+{
+  "index": 32,
+  "sha": "982ee0300d1578d76709762b144ee576408bb35d",
+  "parent": "e145a0ae6e0ce48cbd0e393c0d4102a92d4b3562",
+  "subject": "Remove redundant keywords",
+  "pre_image": {
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      158,
+      160
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/net/RFC1522Codec.java": [
+      158,
+      160
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "new_file": "org/apache/commons/codec/net/RFC1522Codec.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        158,
+        160
+      ],
+      "post_image_lines": [
+        158,
+        160
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "e145a0ae6e0ce48cbd0e393c0d4102a92d4b3562",
+    "982ee0300d1578d76709762b144ee576408bb35d",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\nindex 39064c52a..a77548d98 100644\n--- a/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n+++ b/src/main/java/org/apache/commons/codec/net/RFC1522Codec.java\n@@ -158 +158 @@ abstract class RFC1522Codec {\n-        buffer.append(this.getEncoding());\n+        buffer.append(getEncoding());\n@@ -160 +160 @@ abstract class RFC1522Codec {\n-        buffer.append(StringUtils.newStringUsAscii(this.doEncoding(text.getBytes(charset))));\n+        buffer.append(StringUtils.newStringUsAscii(doEncoding(text.getBytes(charset))));\n"
+}

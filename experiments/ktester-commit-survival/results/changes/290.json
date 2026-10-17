@@ -1,0 +1,59 @@
+{
+  "index": 290,
+  "sha": "ab7a8505ad2a0530a0233a3dff51350d4d2ab45e",
+  "parent": "1c0c3aca9c170d5714c0d892cfa57c05a842aae7",
+  "subject": "Precompile and resuse x3 regular expression in DaitchMokotoffSoundex.Rule",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      171,
+      172,
+      173
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      28,
+      164,
+      173,
+      174,
+      175
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        171,
+        172,
+        173
+      ],
+      "post_image_lines": [
+        28,
+        164,
+        173,
+        174,
+        175
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "1c0c3aca9c170d5714c0d892cfa57c05a842aae7",
+    "ab7a8505ad2a0530a0233a3dff51350d4d2ab45e",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex c8508a026..dae4bdb30 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -27,0 +28 @@ import java.util.Set;\n+import java.util.regex.Pattern;\n@@ -162,0 +164 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n+        private static final Pattern PIPE = Pattern.compile(\"\\\\|\");\n@@ -171,3 +173,3 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-            this.replacementAtStart = replacementAtStart.split(\"\\\\|\");\n-            this.replacementBeforeVowel = replacementBeforeVowel.split(\"\\\\|\");\n-            this.replacementDefault = replacementDefault.split(\"\\\\|\");\n+            this.replacementAtStart = PIPE.split(replacementAtStart);\n+            this.replacementBeforeVowel = PIPE.split(replacementBeforeVowel);\n+            this.replacementDefault = PIPE.split(replacementDefault);\n"
+}

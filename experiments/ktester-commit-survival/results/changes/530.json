@@ -1,0 +1,49 @@
+{
+  "index": 530,
+  "sha": "b316a5b02726d8bf03091255fa225db999f3e4ca",
+  "parent": "3ac04a8a9aceb9d891e0a23a6f000a7f96790a24",
+  "subject": "Remove Java 6 and 7 Javadoc links",
+  "pre_image": {
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": [
+      110,
+      111,
+      112,
+      113
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/digest/HmacAlgorithms.java": []
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "new_file": "org/apache/commons/codec/digest/HmacAlgorithms.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "post_image_lines": []
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "3ac04a8a9aceb9d891e0a23a6f000a7f96790a24",
+    "b316a5b02726d8bf03091255fa225db999f3e4ca",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\nindex 0d93670b1..2ab7d661f 100644\n--- a/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n+++ b/src/main/java/org/apache/commons/codec/digest/HmacAlgorithms.java\n@@ -110,4 +109,0 @@ public enum HmacAlgorithms {\n-     * @see <a href=\"https://docs.oracle.com/javase/6/docs/technotes/guides/security/SunProviders.html#SunJCEProvider\">\n-     *      Java 6 Cryptography Architecture Sun Providers Documentation</a>\n-     * @see <a href=\"https://docs.oracle.com/javase/7/docs/technotes/guides/security/SunProviders.html#SunJCEProvider\">\n-     *      Java 7 Cryptography Architecture Sun Providers Documentation</a>\n"
+}

@@ -1,0 +1,55 @@
+{
+  "index": 336,
+  "sha": "3a7cdf5280bc1dd04839bf37862346eaa672b2ed",
+  "parent": "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce",
+  "subject": "Fix PMD UnusedFormalParameter in private constructor in org.apache.commons.codec.binary.Base16",
+  "pre_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      125,
+      126,
+      130,
+      144
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/binary/Base16.java": [
+      128,
+      142
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/binary/Base16.java",
+      "new_file": "org/apache/commons/codec/binary/Base16.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        125,
+        126,
+        130,
+        144
+      ],
+      "post_image_lines": [
+        128,
+        142
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "b1b7b5a3e80e2bb4dbf03b1ca7fc95f3bff589ce",
+    "3a7cdf5280bc1dd04839bf37862346eaa672b2ed",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/binary/Base16.java b/src/main/java/org/apache/commons/codec/binary/Base16.java\nindex 1cf1590b6..30e52ecad 100644\n--- a/src/main/java/org/apache/commons/codec/binary/Base16.java\n+++ b/src/main/java/org/apache/commons/codec/binary/Base16.java\n@@ -125,2 +124,0 @@ public class Base16 extends BaseNCodec {\n-     *\n-     * @param lowerCase      if {@code true} then use a lower-case Base16 alphabet.\n@@ -130 +128 @@ public class Base16 extends BaseNCodec {\n-    private Base16(final boolean lowerCase, final byte[] encodeTable, final CodecPolicy decodingPolicy) {\n+    private Base16(final byte[] encodeTable, final CodecPolicy decodingPolicy) {\n@@ -144 +142 @@ public class Base16 extends BaseNCodec {\n-        this(lowerCase, lowerCase ? LOWER_CASE_ENCODE_TABLE : UPPER_CASE_ENCODE_TABLE, decodingPolicy);\n+        this(lowerCase ? LOWER_CASE_ENCODE_TABLE : UPPER_CASE_ENCODE_TABLE, decodingPolicy);\n"
+}

@@ -1,0 +1,75 @@
+{
+  "index": 165,
+  "sha": "d07a2e618ca38d09d0bb772809261f0e0ba463c9",
+  "parent": "cef31ffa9f4f6f6d2b2702b8b1256cb0893589da",
+  "subject": "Add Checkstyle LeftCurly",
+  "pre_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      109,
+      110,
+      112,
+      388,
+      390
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/Metaphone.java": [
+      109,
+      110,
+      111,
+      113,
+      114,
+      115,
+      391,
+      392,
+      394,
+      395,
+      396
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/Metaphone.java",
+      "new_file": "org/apache/commons/codec/language/Metaphone.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        109,
+        110,
+        112,
+        388,
+        390
+      ],
+      "post_image_lines": [
+        109,
+        110,
+        111,
+        113,
+        114,
+        115,
+        391,
+        392,
+        394,
+        395,
+        396
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "cef31ffa9f4f6f6d2b2702b8b1256cb0893589da",
+    "d07a2e618ca38d09d0bb772809261f0e0ba463c9",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/Metaphone.java b/src/main/java/org/apache/commons/codec/language/Metaphone.java\nindex caf07828f..c95bd140d 100644\n--- a/src/main/java/org/apache/commons/codec/language/Metaphone.java\n+++ b/src/main/java/org/apache/commons/codec/language/Metaphone.java\n@@ -109,2 +109,3 @@ public class Metaphone implements StringEncoder {\n-     * Returns the maxCodeLen.\n-     * @return int\n+     * Gets the maxCodeLen.\n+     *\n+     * @return the maxCodeLen.\n@@ -112 +113,3 @@ public class Metaphone implements StringEncoder {\n-    public int getMaxCodeLen() { return this.maxCodeLen; }\n+    public int getMaxCodeLen() {\n+        return this.maxCodeLen;\n+    }\n@@ -388 +391,2 @@ public class Metaphone implements StringEncoder {\n-     * @param maxCodeLen The maxCodeLen to set\n+     *\n+     * @param maxCodeLen The maxCodeLen to set.\n@@ -390 +394,3 @@ public class Metaphone implements StringEncoder {\n-    public void setMaxCodeLen(final int maxCodeLen) { this.maxCodeLen = maxCodeLen; }\n+    public void setMaxCodeLen(final int maxCodeLen) {\n+        this.maxCodeLen = maxCodeLen;\n+    }\n"
+}

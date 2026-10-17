@@ -1,0 +1,47 @@
+{
+  "index": 457,
+  "sha": "cb2b7b69fdb35725f54f2bfa3a96e2d5974e4d56",
+  "parent": "48bb283c9b11876bedcb26e837a4efee3a71e77c",
+  "subject": "Clarify comment",
+  "pre_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      459
+    ]
+  },
+  "post_image": {
+    "org/apache/commons/codec/language/DaitchMokotoffSoundex.java": [
+      459
+    ]
+  },
+  "files": [
+    {
+      "status": "M",
+      "old_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "new_file": "org/apache/commons/codec/language/DaitchMokotoffSoundex.java",
+      "renamed": false,
+      "deleted": false,
+      "group": "other",
+      "pre_image_group": "other",
+      "post_image_group": "other",
+      "pre_image_lines": [
+        459
+      ],
+      "post_image_lines": [
+        459
+      ]
+    }
+  ],
+  "scope_projection_matches_original_diff": true,
+  "command": [
+    "git",
+    "diff",
+    "--no-ext-diff",
+    "--find-renames",
+    "-U0",
+    "48bb283c9b11876bedcb26e837a4efee3a71e77c",
+    "cb2b7b69fdb35725f54f2bfa3a96e2d5974e4d56",
+    "--",
+    "src/main/java"
+  ],
+  "diff": "diff --git a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\nindex 32f9cf456..ee7bbed7b 100644\n--- a/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n+++ b/src/main/java/org/apache/commons/codec/language/DaitchMokotoffSoundex.java\n@@ -459 +459 @@ public class DaitchMokotoffSoundex implements StringEncoder {\n-            // use an EMPTY_LIST to avoid false positive warnings wrt potential null pointer access\n+            // Use an EMPTY_LIST to avoid false positive warnings regarding potential null pointer access.\n"
+}

@@ -1,0 +1,173 @@
+{
+  "base": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "jdk": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nopenjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment (build 17.0.20.1+1-1-deb12u1-Debian)\nOpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-deb12u1-Debian, mixed mode, sharing)\n",
+  "maven": "Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8\nApache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)\nMaven home: /opt/maven\nJava version: 17.0.20.1, vendor: Debian, runtime: /usr/lib/jvm/java-17-openjdk-arm64\nDefault locale: en_US, platform encoding: UTF-8\nOS name: \"linux\", version: \"7.0.12-linuxkit\", arch: \"aarch64\", family: \"unix\"\n",
+  "build": {
+    "command": [
+      "mvn",
+      "-q",
+      "-DskipTests",
+      "-Drat.skip",
+      "-Dcheckstyle.skip",
+      "-Dspotbugs.skip",
+      "-Dpmd.skip",
+      "-Dmaven.javadoc.skip",
+      "package"
+    ],
+    "cwd": "/repo/experiments/ktester-commit-survival/work/t",
+    "exit_code": 0,
+    "seconds": 8.073,
+    "log": "results/baseline-package.txt"
+  },
+  "runs": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "test"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/t",
+      "exit_code": 0,
+      "seconds": 12.666,
+      "log": "results/baseline-run1.txt",
+      "totals": {
+        "tests": 1715,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      },
+      "xml_files": 65,
+      "method_count": 970
+    },
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "test"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/t",
+      "exit_code": 0,
+      "seconds": 11.413,
+      "log": "results/baseline-run2.txt",
+      "totals": {
+        "tests": 1715,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      },
+      "xml_files": 65,
+      "method_count": 970
+    },
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "test"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/t",
+      "exit_code": 0,
+      "seconds": 12.165,
+      "log": "results/baseline-run3.txt",
+      "totals": {
+        "tests": 1715,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 2
+      },
+      "xml_files": 65,
+      "method_count": 970
+    }
+  ],
+  "whole_methods": 970,
+  "whole_pass_all": 968,
+  "scope_methods": 144,
+  "developer_denominator": 143,
+  "scope_classes": {
+    "org.apache.commons.codec.binary.Base32Test": {
+      "methods": 32,
+      "pass_all": 32
+    },
+    "org.apache.commons.codec.binary.Base64Codec13Test": {
+      "methods": 8,
+      "pass_all": 8
+    },
+    "org.apache.commons.codec.binary.Base64Test": {
+      "methods": 67,
+      "pass_all": 66
+    },
+    "org.apache.commons.codec.digest.Md5CryptTest": {
+      "methods": 9,
+      "pass_all": 9
+    },
+    "org.apache.commons.codec.digest.MurmurHash3Test": {
+      "methods": 27,
+      "pass_all": 27
+    },
+    "org.apache.commons.codec.digest.Sha2CryptTest": {
+      "methods": 1,
+      "pass_all": 1
+    }
+  },
+  "excluded_prefix_classes": {
+    "org.apache.commons.codec.binary.Base64TestData": {
+      "methods": 0,
+      "reason": "helper/non-Test class"
+    },
+    "org.apache.commons.codec.binary.Base32OutputStreamTest": {
+      "methods": 7,
+      "reason": "prefix before Test names a production class"
+    },
+    "org.apache.commons.codec.binary.Base64OutputStreamTest": {
+      "methods": 8,
+      "reason": "prefix before Test names a production class"
+    },
+    "org.apache.commons.codec.binary.Base32InputStreamTest": {
+      "methods": 17,
+      "reason": "prefix before Test names a production class"
+    },
+    "org.apache.commons.codec.binary.Base64InputStreamTest": {
+      "methods": 21,
+      "reason": "prefix before Test names a production class"
+    },
+    "org.apache.commons.codec.binary.Base32TestData": {
+      "methods": 0,
+      "reason": "helper/non-Test class"
+    }
+  },
+  "not_passing_all": [
+    {
+      "class": "org.apache.commons.codec.binary.Base64Test",
+      "method": "testCodec265",
+      "in-scope": "yes",
+      "run1": "skipped",
+      "run2": "skipped",
+      "run3": "skipped",
+      "cases": "1"
+    },
+    {
+      "class": "org.apache.commons.codec.net.PercentCodecTest",
+      "method": "testBasicSpace",
+      "in-scope": "no",
+      "run1": "skipped",
+      "run2": "skipped",
+      "run3": "skipped",
+      "cases": "1"
+    }
+  ],
+  "case_normalization": "Leading Java identifier; strip first (parameter types) or [case suffix]. Unrecognized names cause a hard failure rather than guessed mappings."
+}

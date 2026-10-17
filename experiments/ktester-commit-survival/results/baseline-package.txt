@@ -1,0 +1,2 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+writing to /repo/experiments/ktester-commit-survival/work/t/target/moditect/org.apache.commons.codec/versions/9/module-info.java

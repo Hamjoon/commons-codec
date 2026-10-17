@@ -1,67 +1,53 @@
-class,method,parameter-types,visibility,line,in-dataset
-org.apache.commons.codec.binary.Base32,builder,,public,171,no
-org.apache.commons.codec.binary.Base32,decode,"byte[], int, int, Context",package-private,402,yes
-org.apache.commons.codec.binary.Base32,encode,"byte[], int, int, Context",package-private,507,yes
-org.apache.commons.codec.binary.Base32,getLineSeparator,,package-private,607,no
-org.apache.commons.codec.binary.Base32,isInAlphabet,byte,public,618,no
-org.apache.commons.codec.binary.Base64,builder,,public,189,no
-org.apache.commons.codec.binary.Base64,decodeBase64,byte[],public,203,no
-org.apache.commons.codec.binary.Base64,decodeBase64,String,public,218,no
-org.apache.commons.codec.binary.Base64,decodeInteger,byte[],public,231,no
-org.apache.commons.codec.binary.Base64,encodeBase64,byte[],public,242,no
-org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean",public,257,no
-org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean, boolean",public,276,no
-org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean, boolean, int",public,297,no
-org.apache.commons.codec.binary.Base64,encodeBase64Chunked,byte[],public,322,no
-org.apache.commons.codec.binary.Base64,encodeBase64String,byte[],public,337,no
-org.apache.commons.codec.binary.Base64,encodeBase64URLSafe,byte[],public,350,no
-org.apache.commons.codec.binary.Base64,encodeBase64URLSafeString,byte[],public,363,no
-org.apache.commons.codec.binary.Base64,encodeInteger,BigInteger,public,377,no
-org.apache.commons.codec.binary.Base64,isArrayByteBase64,byte[],public,393,no
-org.apache.commons.codec.binary.Base64,isBase64,byte,public,405,no
-org.apache.commons.codec.binary.Base64,isBase64,byte[],public,419,no
-org.apache.commons.codec.binary.Base64,isBase64,String,public,438,no
-org.apache.commons.codec.binary.Base64,toIntegerBytes,BigInteger,package-private,449,no
-org.apache.commons.codec.binary.Base64,decode,"byte[], int, int, Context",package-private,745,yes
-org.apache.commons.codec.binary.Base64,encode,"byte[], int, int, Context",package-private,827,yes
-org.apache.commons.codec.binary.Base64,getLineSeparator,,package-private,903,no
-org.apache.commons.codec.binary.Base64,isInAlphabet,byte,protected,915,no
-org.apache.commons.codec.binary.Base64,isUrlSafe,,public,925,no
-org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,byte[],public,78,no
-org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"byte[], Random",public,96,no
-org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"byte[], String",public,117,no
-org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,String,public,138,no
-org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"String, String",public,160,no
-org.apache.commons.codec.digest.Md5Crypt,md5Crypt,byte[],public,179,no
-org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], Random",public,202,no
-org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String",public,224,no
-org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String, String",public,248,no
-org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String, String, Random",public,275,yes
-org.apache.commons.codec.digest.MurmurHash3,hash128,byte[],public,403,no
-org.apache.commons.codec.digest.MurmurHash3,hash128,"byte[], int, int, int",public,424,no
-org.apache.commons.codec.digest.MurmurHash3,hash128,String,public,461,no
-org.apache.commons.codec.digest.MurmurHash3,hash128x64,byte[],public,481,no
-org.apache.commons.codec.digest.MurmurHash3,hash128x64,"byte[], int, int, int",public,498,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,byte[],public,627,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"byte[], int",public,652,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"byte[], int, int",public,677,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"byte[], int, int, int",public,699,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,long,public,751,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"long, int",public,771,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"long, long",public,800,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,"long, long, int",public,822,no
-org.apache.commons.codec.digest.MurmurHash3,hash32,String,public,862,no
-org.apache.commons.codec.digest.MurmurHash3,hash32x86,byte[],public,882,no
-org.apache.commons.codec.digest.MurmurHash3,hash32x86,"byte[], int, int, int",public,899,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,byte[],public,960,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,"byte[], int, int",public,993,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,"byte[], int, int, int",public,1026,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,int,public,1105,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,long,public,1147,no
-org.apache.commons.codec.digest.MurmurHash3,hash64,short,public,1191,no
-org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,byte[],public,89,no
-org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,"byte[], String",public,110,no
-org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,"byte[], String, Random",public,136,no
-org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,byte[],public,561,no
-org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,"byte[], String",public,583,no
-org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,"byte[], String, Random",public,610,no
+class,method,parameter-types,visibility,line,in-dataset,deprecated
+org.apache.commons.codec.binary.Base32,builder,,public,171,no,no
+org.apache.commons.codec.binary.Base32,decode,"byte[], int, int, Context",package-private,402,yes,no
+org.apache.commons.codec.binary.Base32,encode,"byte[], int, int, Context",package-private,507,yes,no
+org.apache.commons.codec.binary.Base32,getLineSeparator,,package-private,607,no,no
+org.apache.commons.codec.binary.Base32,isInAlphabet,byte,public,618,no,no
+org.apache.commons.codec.binary.Base64,builder,,public,189,no,no
+org.apache.commons.codec.binary.Base64,decodeBase64,byte[],public,203,no,no
+org.apache.commons.codec.binary.Base64,decodeBase64,String,public,218,no,no
+org.apache.commons.codec.binary.Base64,decodeInteger,byte[],public,231,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64,byte[],public,242,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean",public,257,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean, boolean",public,276,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64,"byte[], boolean, boolean, int",public,297,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64Chunked,byte[],public,322,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64String,byte[],public,337,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64URLSafe,byte[],public,350,no,no
+org.apache.commons.codec.binary.Base64,encodeBase64URLSafeString,byte[],public,363,no,no
+org.apache.commons.codec.binary.Base64,encodeInteger,BigInteger,public,377,no,no
+org.apache.commons.codec.binary.Base64,isBase64,byte,public,405,no,no
+org.apache.commons.codec.binary.Base64,isBase64,byte[],public,419,no,no
+org.apache.commons.codec.binary.Base64,isBase64,String,public,438,no,no
+org.apache.commons.codec.binary.Base64,toIntegerBytes,BigInteger,package-private,449,no,no
+org.apache.commons.codec.binary.Base64,decode,"byte[], int, int, Context",package-private,745,yes,no
+org.apache.commons.codec.binary.Base64,encode,"byte[], int, int, Context",package-private,827,yes,no
+org.apache.commons.codec.binary.Base64,getLineSeparator,,package-private,903,no,no
+org.apache.commons.codec.binary.Base64,isInAlphabet,byte,protected,915,no,no
+org.apache.commons.codec.binary.Base64,isUrlSafe,,public,925,no,no
+org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,byte[],public,78,no,no
+org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"byte[], Random",public,96,no,no
+org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"byte[], String",public,117,no,no
+org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,String,public,138,no,no
+org.apache.commons.codec.digest.Md5Crypt,apr1Crypt,"String, String",public,160,no,no
+org.apache.commons.codec.digest.Md5Crypt,md5Crypt,byte[],public,179,no,no
+org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], Random",public,202,no,no
+org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String",public,224,no,no
+org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String, String",public,248,no,no
+org.apache.commons.codec.digest.Md5Crypt,md5Crypt,"byte[], String, String, Random",public,275,yes,no
+org.apache.commons.codec.digest.MurmurHash3,hash128,byte[],public,403,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash128x64,byte[],public,481,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash128x64,"byte[], int, int, int",public,498,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32,long,public,751,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32,"long, int",public,771,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32,"long, long",public,800,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32,"long, long, int",public,822,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32x86,byte[],public,882,no,no
+org.apache.commons.codec.digest.MurmurHash3,hash32x86,"byte[], int, int, int",public,899,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,byte[],public,89,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,"byte[], String",public,110,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha256Crypt,"byte[], String, Random",public,136,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,byte[],public,561,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,"byte[], String",public,583,no,no
+org.apache.commons.codec.digest.Sha2Crypt,sha512Crypt,"byte[], String, Random",public,610,no,no

@@ -57,11 +57,11 @@ def renumber(raw):
     return result
 
 
-def validate(raw, result):
+def validate(raw, result, expected_count=66):
     old = raw['commons-codec']['focal-methods']
     new = result['commons-codec']['focal-methods']
-    assert len(old) == len(new) == 66
-    assert len({m['id'] for m in new}) == 66
+    assert len(old) == len(new) == expected_count
+    assert len({m['id'] for m in new}) == expected_count
     assert all(m['test-class'] == m['package'] + '.' + m['id'] + '_Test' for m in new)
     assert all(m['test-path'] == 'src/test/java/' + m['test-class'].replace('.', '/') + '.java' for m in new)
     assert all(m['focal-method'].strip() and m['class-code'].strip() for m in new)

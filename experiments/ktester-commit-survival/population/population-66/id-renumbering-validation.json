@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "rule": "Preserve every ID that is unique in the raw output. Within each (class, method name) group, sort only entries whose raw IDs collide by parameter count, then parameter-list string (case-sensitive lexicographic order). Assign the lowest available base ID, _2, _3, and so on, skipping all reserved unique IDs.",
+  "entries": 66,
+  "unique_ids": 66,
+  "raw_unique_ids": 43,
+  "changed_ids": 23,
+  "unchanged_ids": 43,
+  "previously_unique_ids_changed": [],
+  "non_naming_fields_unchanged": true,
+  "entry_order_unchanged": true,
+  "previously_unique_entries_unchanged": true,
+  "test_class_and_path_consistent": true,
+  "nonempty_code_fields": true,
+  "idempotent": true,
+  "invocation": "python3 experiments/ktester-commit-survival/tools/renumber_dataset_ids.py --kt /Users/donggi/_projects/experiment-projects/KTester",
+  "sha256": {
+    "dataset_info.raw.json": "1d649d45b6f64c40d5cbac56e26967116843ae1f8f9aa682f533bb3da374f188",
+    "dataset_info.json": "2c76f9695a84dcfb01d9daab7cf9b916f2803bace58f0dc0ef494e50c30df91f",
+    "id-renumbering.csv": "902bba6b52ea8fee6c98bbdb68ac922dc2e708cbdc3aa8abdc10594537ff0df6"
+  }
+}

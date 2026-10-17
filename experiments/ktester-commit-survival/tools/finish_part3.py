@@ -12,6 +12,7 @@ import time
 import traceback
 import survival_common as sc
 from runner_provenance import runner_compatible
+from raw_integrity import assert_no_sigkill
 
 TRAILER = 'Co-authored-by: Codex <noreply@openai.com>'
 BRANCH = 'experiment/2026-10-week3-ktester-commit-survival'
@@ -45,6 +46,7 @@ def check_raw(phase):
         records = {}
         for g in full:
             r = json.loads((folder / f'{i}-{g}.json').read_text())
+            assert_no_sigkill(r, f'{phase}/{i}-{g}')
             assert r['sha'] == cm[i]['sha'] and r['input_sha256'] == fingerprint
             assert runner_compatible(r['runner_sha256'], sc.runner_hashes(), phase)
             requested = set(alive[str(i)][g]) if alive is not None else full[g]
@@ -171,7 +173,8 @@ def main():
             return
         step('phase-a-verified', lambda: wait_phase('a', args.phase_a_container))
         step('phase-a-committed', lambda: commit('Phase A: survival states at 539 commits',
-             [sc.RESULTS / p for p in ['raw', 'builds/a', 'phase-a.json', 'phase-a-invocations']]))
+             [sc.RESULTS / p for p in ['raw', 'builds/a', 'phase-a.json', 'phase-a-invocations',
+                                      'phase-a-quarantine.json', 'phase-a-repair-verification.json'] if (sc.RESULTS / p).exists()]))
         step('survival-aggregated', lambda: container_command('python tools/aggregate_survival.py', 'aggregate-survival'))
         step('survival-committed', lambda: commit('Survival tables', [sc.RESULTS / p for p in SURVIVAL_OUTPUTS]))
         step('coverage-wired', wire_coverage)
@@ -180,9 +183,7 @@ def main():
         step('coverage-helper-checked', lambda: run([sys.executable, 'tools/selftest_coverage.py'], 'coverage-selftest'))
         def phase_b():
             preflight()
-            output = sc.RESULTS / 'phase-b.json'
-            if not output.exists() and not container_running(B_CONTAINER):
-                container_command('python tools/run_phase.py --phase b --workers 8 --start 0 --end 539', 'phase-b', B_CONTAINER)
+            run([sys.executable, 'tools/run_coverage_guarded.py', '--kt', str(args.kt)], 'phase-b-controller')
             return wait_phase('b', B_CONTAINER)
         step('phase-b-verified', phase_b)
         def coverage_plan_done():
@@ -194,6 +195,7 @@ def main():
         step('coverage-plan-finalized', coverage_plan_done)
         step('phase-b-committed', lambda: commit(f"Phase B: line coverage at {plan['coverage_commits']} commits",
              [sc.RESULTS / p for p in ['raw-coverage', 'coverage', 'builds/b', 'phase-b.json', 'phase-b-invocations',
+                                      'phase-b-resource-events.json', 'phase-b-quarantine.json',
                                       'part3-coverage-plan.json', 'part3-coverage-selftest.json']] +
              [sc.EXP / 'tools' / p for p in ['run_commit.py', 'survival_common.py']]))
         # Read the instruction file again immediately before Aggregation 2; a changed digest requires review.

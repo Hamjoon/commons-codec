@@ -30,7 +30,7 @@ def main():
              '## Runner and measurements', '',
              'Step 0 reproduced all 143 developer and 290 LLM passes. All six developer classes compiled separately with their recorded transitive helper files and the existing 18 jars. No extra developer test jar was required. Compiled runtime annotations distinguish actual tests from non-test overloads; exact parameter types select parameterized methods.', '',
              'Phase A runs all six developer classes and all frozen LLM denominator methods at every commit. The 46 LLM files are compiled separately; methods excluded by Part 2 are not selected. Phase B selects the alive-entering methods, with any required whole-class fallbacks listed below. Every class run has a 600-second process-group wall limit. Fail/error methods are retried once; a passing retry is pass with flaky=yes. Skipped/non-reported denominator methods are absent. All source copies retain their bytes; r2- prefixes are removed only from temporary compilation filenames.', '',
-             'Each worker uses its own clean git-archive export and per-commit/group reports. The driver used four Python workers initially, then eight after the user-authorized restart; Phase B uses eight workers inside the prescribed container, sharing only the Maven cache and immutable inputs. Completed group JSON is written atomically and checked before being skipped on resume. Tables are derived after the workers finish.', '',
+             'Each worker uses its own clean git-archive export and per-commit/group reports. Phase A used four Python workers initially, eight after the user-authorized restart, and two for the targeted repair of quarantined records. Phase B starts with eight and resumes with six if its container reports OOM. Exact counts and layouts for every actual invocation are recorded below. Workers share only the Maven cache and immutable inputs. Completed group JSON is written atomically and checked before being skipped on resume. Verification rejects every signal-9 exit before aggregation.', '',
              f'Build-fail indices: {survival["build_fail_indices"]}. These commits carry over states and are excluded from survival evaluation.',
              f'Offline Maven cache misses warmed online on the second build attempt at indices: {warmed}. Build commands retain the Part 1 skip set. Exact commands, logs and timing are in results/builds/.', '',
              '## Phase timing and layout', '']
@@ -39,8 +39,8 @@ def main():
         seconds = sum(r['seconds'] for r in invocations)
         lines += [f'Phase {phase.upper()}: {seconds:.3f} wall seconds across {len(invocations)} invocation(s).', '']
         for row in invocations:
-            lines += [f"- {row['start']} to {row['end']}; complete={row['completed']}; worker exit codes={row['worker_exit_codes']}.", '']
-        lines += ['Worker layout is the exact interleaved index arrays in the committed phase invocation JSON, with a distinct export per worker (w1–w4 initially, w1–w8 after the restart).', '']
+            lines += [f"- {row['start']} to {row['end']}; workers={len(row['worker_layout'])}; complete={row['completed']}; worker exit codes={row['worker_exit_codes']}.", '']
+        lines += ['Worker layout is the exact interleaved index arrays in the committed phase invocation JSON, with a distinct export per worker.', '']
     lines += ['## Report tables', '']
     for filename in ['table1-survival-by-event.md', 'table2-breaking-commits.md', 'table3-changed-line-coverage.md', 'coverage-t.md']:
         lines += [(RESULTS / filename).read_text().strip(), '']
@@ -51,9 +51,14 @@ def main():
     memory_file = RESULTS / 'part3-worker-restart-memory.json'
     if memory_file.exists():
         memory = json.loads(memory_file.read_text())
+        repairs = json.loads((RESULTS / 'phase-a-repair-verification.json').read_text())
+        quarantined = json.loads((RESULTS / 'phase-a-quarantine.json').read_text())
+        assert repairs['passed'] and repairs['full_phase_verification']['raw_files'] == 1078
         lines += ['## Restart memory events', '',
-                  f"The eight-worker container recorded {memory['memory_events']['oom_kill']} OOM kills as of {memory['observed_at']}. Developer MurmurHash3Test JVMs at indices 69 and 70 exited with signal 9, producing 54 absent method records in the first completed batch. These are infrastructure-associated outcomes; raw states and scoring were retained unchanged. Exact recorded launcher exits and the memory-counter snapshot are in results/part3-worker-restart-memory.json.", '',
-                  'TODO (Gary): Review memory-associated absent states before interpreting the survival results.', '']
+                  f"The eight-worker container recorded {memory['memory_events']['oom_kill']} OOM kills as of {memory['observed_at']}. The initial affected developer records were 69, 70 and 77, each containing 27 unreported MurmurHash3Test methods after a killed launcher. Those records were quarantined unchanged while Phase A continued. All further signal-9 raw records were also quarantined. The manifest retains {len(quarantined['entries'])} original records and their hashes in results/phase-a-quarantine.json; original bytes and logs remain under ignored work/quarantine/.", '',
+                  f"After Phase A finished, {len(repairs['corrected_records'])} affected records were rerun with two workers. All 27 MurmurHash3Test methods in each repaired developer record were evaluated. Verification found no signal-9 exits in the full 1,078-record Phase A set and preserved {repairs['healthy_records_preserved']} healthy raw records byte-for-byte, including modification times. The restarted continuation aggregated only the corrected records. Evidence is in results/phase-a-repair-verification.json; scoring and frozen inputs were unchanged.", '']
+    resources = json.loads((RESULTS / 'phase-b-resource-events.json').read_text())
+    lines += [f"Phase B worker counts by attempt: {[r['workers'] for r in resources['attempts']]}. OOM-triggered restarts: {sum(bool(r.get('oom_detected')) for r in resources['attempts'])}. Container memory counters, OOM events and exits are recorded in results/phase-b-resource-events.json. Any killed raw coverage records and associated XML/CSV were quarantined before resume; final verification rejects signal-9 exits.", '']
     lines += [(RESULTS / 'consistency.md').read_text().strip(), '', '## Fallbacks and deviations', '',
               f'Whole-class coverage fallbacks: {len(fallbacks)}.', '', '```json', json.dumps(fallbacks, indent=2), '```', '',
               'The initial selector implementation included a private non-test overload in Base64Test and stopped during runner development. It was corrected to inspect compiled JUnit annotations; the corrected Step 0 passed before any survival loop. The failed attempt and correction are recorded in part3-runner-development.json. No frozen input was changed.', '',

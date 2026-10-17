@@ -1,0 +1,98 @@
+{
+  "phase": "a",
+  "initial_scan_raw_records": 208,
+  "entries": [
+    {
+      "index": 69,
+      "group": "dev",
+      "source": "results/raw/69-dev.json",
+      "quarantine": "work/quarantine/69-dev.json",
+      "sha256": "1309f61359be79e95418fce3fdc099b92c89ecc458ce77e20c4b853d6832d230",
+      "sigkill_exits": [
+        {
+          "path": "$.files[4].runs[0]",
+          "command": [
+            "java",
+            "-cp",
+            "/repo/experiments/ktester-commit-survival/work/commits/w5/target/classes:/repo/experiments/ktester-commit-survival/work/phase-a/69/dev/05-MurmurHash3Test/classes:/repo/experiments/ktester-commit-survival/dev/src-test-t/resources:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+            "org.junit.platform.console.ConsoleLauncher",
+            "--disable-banner",
+            "--disable-ansi-colors",
+            "--fail-if-no-tests",
+            "--details",
+            "summary",
+            "--select-class",
+            "org.apache.commons.codec.digest.MurmurHash3Test",
+            "--reports-dir",
+            "/repo/experiments/ktester-commit-survival/work/phase-a/69/dev/05-MurmurHash3Test/initial"
+          ],
+          "log": "work/phase-a/69/dev/05-MurmurHash3Test/initial/console.txt",
+          "timeout": false
+        }
+      ],
+      "quarantined_at": "2026-10-17T15:03:37.404442+00:00"
+    },
+    {
+      "index": 70,
+      "group": "dev",
+      "source": "results/raw/70-dev.json",
+      "quarantine": "work/quarantine/70-dev.json",
+      "sha256": "b110a7b179c67c02c383c40ce1b1669cb9decd0d50a3571f0f417483d4b170a1",
+      "sigkill_exits": [
+        {
+          "path": "$.files[4].runs[0]",
+          "command": [
+            "java",
+            "-cp",
+            "/repo/experiments/ktester-commit-survival/work/commits/w6/target/classes:/repo/experiments/ktester-commit-survival/work/phase-a/70/dev/05-MurmurHash3Test/classes:/repo/experiments/ktester-commit-survival/dev/src-test-t/resources:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+            "org.junit.platform.console.ConsoleLauncher",
+            "--disable-banner",
+            "--disable-ansi-colors",
+            "--fail-if-no-tests",
+            "--details",
+            "summary",
+            "--select-class",
+            "org.apache.commons.codec.digest.MurmurHash3Test",
+            "--reports-dir",
+            "/repo/experiments/ktester-commit-survival/work/phase-a/70/dev/05-MurmurHash3Test/initial"
+          ],
+          "log": "work/phase-a/70/dev/05-MurmurHash3Test/initial/console.txt",
+          "timeout": false
+        }
+      ],
+      "quarantined_at": "2026-10-17T15:03:37.409728+00:00"
+    },
+    {
+      "index": 77,
+      "group": "dev",
+      "source": "results/raw/77-dev.json",
+      "quarantine": "work/quarantine/77-dev.json",
+      "sha256": "760545a95fcc915c8f328344dc3c09de3311b2266f1d1e70234638a030d47207",
+      "sigkill_exits": [
+        {
+          "path": "$.files[4].runs[0]",
+          "command": [
+            "java",
+            "-cp",
+            "/repo/experiments/ktester-commit-survival/work/commits/w5/target/classes:/repo/experiments/ktester-commit-survival/work/phase-a/77/dev/05-MurmurHash3Test/classes:/repo/experiments/ktester-commit-survival/dev/src-test-t/resources:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+            "org.junit.platform.console.ConsoleLauncher",
+            "--disable-banner",
+            "--disable-ansi-colors",
+            "--fail-if-no-tests",
+            "--details",
+            "summary",
+            "--select-class",
+            "org.apache.commons.codec.digest.MurmurHash3Test",
+            "--reports-dir",
+            "/repo/experiments/ktester-commit-survival/work/phase-a/77/dev/05-MurmurHash3Test/initial"
+          ],
+          "log": "work/phase-a/77/dev/05-MurmurHash3Test/initial/console.txt",
+          "timeout": false
+        }
+      ],
+      "quarantined_at": "2026-10-17T15:03:37.430031+00:00"
+    }
+  ],
+  "status": "quarantined; two-worker repair pending Phase A completion",
+  "measurement_settings_changed": false
+}

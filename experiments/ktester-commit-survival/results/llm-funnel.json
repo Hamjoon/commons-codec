@@ -1,0 +1,19 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "files_produced": 52,
+      "files_compiled": 24,
+      "methods_listed": 151,
+      "pass3": 126,
+      "new_unique": 126,
+      "cumulative_denominator": 126,
+      "duplicates_removed": 0
+    }
+  ],
+  "llm_denominator": 126,
+  "developer_denominator": 143,
+  "duplicates_removed": 0,
+  "shortfall": 17,
+  "frozen": false
+}

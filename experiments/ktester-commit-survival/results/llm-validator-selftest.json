@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "method_statuses": {
+    "assertionFailure": "fail",
+    "disabled": "skipped",
+    "exceptionError": "error",
+    "parameterized": "pass",
+    "passing": "pass",
+    "nestedPass": "pass"
+  },
+  "methods": 6,
+  "pass3": 3,
+  "xml_cases": 21,
+  "normalization": "comments/format ignored; string contents preserved",
+  "compile_failure_fixture": "Fixture_Test failed compilation with first javac error retained; excluded methods",
+  "timeout_process_group_killed": true,
+  "timeout_selftest_seconds": 0.102,
+  "multiple_assertions_classified_as": "fail"
+}

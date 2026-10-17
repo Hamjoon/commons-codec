@@ -1,0 +1,3 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+[INFO] Loading execution data file /repo/experiments/ktester-commit-survival/work/smoke/jacoco.exec.
+[INFO] Analyzing 94 classes.

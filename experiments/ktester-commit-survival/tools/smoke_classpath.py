@@ -3,12 +3,13 @@
 import hashlib,json,pathlib,shlex,shutil,subprocess,time
 from experiment import EXPERIMENT,preserve_log
 if __name__=='__main__':
- inventory=json.loads((EXPERIMENT/'tools/jar-inventory.json').read_text());fetched=json.loads((EXPERIMENT/'results/classpath-fetch.json').read_text());resolved={e['filename'] for e in fetched['entries'] if e['resolved']}
- runtime=[e for e in inventory if e['source'].startswith('data/projects/commons-codec/libs/')]+[e for e in inventory if e['filename'].startswith('junit-platform-console-standalone')]
+ inventory=json.loads((EXPERIMENT/'tools/classpath-artifacts.json').read_text());fetched=json.loads((EXPERIMENT/'results/classpath-fetch.json').read_text());resolved={e['filename'] for e in fetched['entries'] if e['resolved']}
+ runtime=sorted([e for e in inventory if e['role']=='test'],key=lambda e:e['filename'].startswith('junit-platform-console-standalone'))
  missing=[e['filename'] for e in runtime if e['filename'] not in resolved]
  if missing:raise SystemExit('Runtime jars unavailable: '+str(missing))
  source=pathlib.Path('/work/results/stage4c/commons-codec/test_classes/Md5Crypt_md5Crypt_Test.java');dest=EXPERIMENT/'work/smoke';(dest/'classes').mkdir(parents=True,exist_ok=True);shutil.copy2(source,dest/source.name)
- compile_cmd=['javac','-cp','work/t/target/classes:work/libs/*','-d','work/smoke/classes','work/smoke/'+source.name]
+ compile_cp='work/t/target/classes:'+':'.join('work/libs/'+e['filename'] for e in runtime)
+ compile_cmd=['javac','-cp',compile_cp,'-d','work/smoke/classes','work/smoke/'+source.name]
  # Mirror KTester precedence: project libs first, bundled ConsoleLauncher last.
  cp='work/t/target/classes:work/smoke/classes:'+':'.join('work/libs/'+e['filename'] for e in runtime)
  run_cmd=['java','-cp',cp,'org.junit.platform.console.ConsoleLauncher','--disable-banner','--disable-ansi-colors','--fail-if-no-tests','--select-class','org.apache.commons.codec.digest.Md5Crypt_md5Crypt_Test','--details','summary','--reports-dir','work/smoke/reports']

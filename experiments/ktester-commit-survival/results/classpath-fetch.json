@@ -4,6 +4,7 @@
       "filename": "apiguardian-api-1.1.2.jar",
       "coordinate": "org.apiguardian:apiguardian-api:1.1.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -16,7 +17,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 3.905,
+          "seconds": 1.083,
           "log": "results/classpath-apiguardian-api-1.1.2.jar-attempt1.txt"
         }
       ],
@@ -29,6 +30,7 @@
       "filename": "byte-buddy-1.14.1.jar",
       "coordinate": "net.bytebuddy:byte-buddy:1.14.1",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -41,7 +43,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.786,
+          "seconds": 0.779,
           "log": "results/classpath-byte-buddy-1.14.1.jar-attempt1.txt"
         }
       ],
@@ -54,6 +56,7 @@
       "filename": "byte-buddy-agent-1.14.1.jar",
       "coordinate": "net.bytebuddy:byte-buddy-agent:1.14.1",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -66,7 +69,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.688,
+          "seconds": 0.731,
           "log": "results/classpath-byte-buddy-agent-1.14.1.jar-attempt1.txt"
         }
       ],
@@ -79,6 +82,7 @@
       "filename": "commons-io-2.16.1.jar",
       "coordinate": "commons-io:commons-io:2.16.1",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -91,7 +95,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.739,
+          "seconds": 0.738,
           "log": "results/classpath-commons-io-2.16.1.jar-attempt1.txt"
         }
       ],
@@ -104,6 +108,7 @@
       "filename": "commons-lang3-3.14.0.jar",
       "coordinate": "org.apache.commons:commons-lang3:3.14.0",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -116,7 +121,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.781,
+          "seconds": 0.745,
           "log": "results/classpath-commons-lang3-3.14.0.jar-attempt1.txt"
         }
       ],
@@ -129,6 +134,7 @@
       "filename": "hamcrest-2.2.jar",
       "coordinate": "org.hamcrest:hamcrest:2.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -141,7 +147,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.743,
+          "seconds": 0.703,
           "log": "results/classpath-hamcrest-2.2.jar-attempt1.txt"
         }
       ],
@@ -154,6 +160,7 @@
       "filename": "junit-jupiter-5.11.4.jar",
       "coordinate": "org.junit.jupiter:junit-jupiter:5.11.4",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -166,7 +173,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.746,
+          "seconds": 0.72,
           "log": "results/classpath-junit-jupiter-5.11.4.jar-attempt1.txt"
         }
       ],
@@ -179,6 +186,7 @@
       "filename": "junit-jupiter-api-5.10.2.jar",
       "coordinate": "org.junit.jupiter:junit-jupiter-api:5.10.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -191,7 +199,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.794,
+          "seconds": 0.743,
           "log": "results/classpath-junit-jupiter-api-5.10.2.jar-attempt1.txt"
         }
       ],
@@ -204,6 +212,7 @@
       "filename": "junit-jupiter-engine-5.10.2.jar",
       "coordinate": "org.junit.jupiter:junit-jupiter-engine:5.10.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -216,7 +225,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.785,
+          "seconds": 0.72,
           "log": "results/classpath-junit-jupiter-engine-5.10.2.jar-attempt1.txt"
         }
       ],
@@ -229,6 +238,7 @@
       "filename": "junit-jupiter-params-5.10.2.jar",
       "coordinate": "org.junit.jupiter:junit-jupiter-params:5.10.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -241,7 +251,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.743,
+          "seconds": 0.776,
           "log": "results/classpath-junit-jupiter-params-5.10.2.jar-attempt1.txt"
         }
       ],
@@ -254,6 +264,7 @@
       "filename": "junit-platform-commons-1.10.2.jar",
       "coordinate": "org.junit.platform:junit-platform-commons:1.10.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -266,7 +277,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.785,
+          "seconds": 0.721,
           "log": "results/classpath-junit-platform-commons-1.10.2.jar-attempt1.txt"
         }
       ],
@@ -279,6 +290,7 @@
       "filename": "junit-platform-console-standalone-1.9.3.jar",
       "coordinate": "org.junit.platform:junit-platform-console-standalone:1.9.3",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -291,7 +303,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 1.151,
+          "seconds": 0.771,
           "log": "results/classpath-junit-platform-console-standalone-1.9.3.jar-attempt1.txt"
         }
       ],
@@ -304,6 +316,7 @@
       "filename": "junit-platform-engine-1.10.2.jar",
       "coordinate": "org.junit.platform:junit-platform-engine:1.10.2",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -316,7 +329,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.728,
+          "seconds": 0.824,
           "log": "results/classpath-junit-platform-engine-1.10.2.jar-attempt1.txt"
         }
       ],
@@ -329,6 +342,7 @@
       "filename": "mockito-core-5.2.0.jar",
       "coordinate": "org.mockito:mockito-core:5.2.0",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -341,7 +355,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.785,
+          "seconds": 0.777,
           "log": "results/classpath-mockito-core-5.2.0.jar-attempt1.txt"
         }
       ],
@@ -354,6 +368,7 @@
       "filename": "mockito-inline-5.2.0.jar",
       "coordinate": "org.mockito:mockito-inline:5.2.0",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -366,7 +381,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.747,
+          "seconds": 0.746,
           "log": "results/classpath-mockito-inline-5.2.0.jar-attempt1.txt"
         }
       ],
@@ -379,6 +394,7 @@
       "filename": "mockito-junit-jupiter-5.2.0.jar",
       "coordinate": "org.mockito:mockito-junit-jupiter:5.2.0",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -391,7 +407,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.771,
+          "seconds": 0.733,
           "log": "results/classpath-mockito-junit-jupiter-5.2.0.jar-attempt1.txt"
         }
       ],
@@ -404,6 +420,7 @@
       "filename": "objenesis-3.3.jar",
       "coordinate": "org.objenesis:objenesis:3.3",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -416,7 +433,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.719,
+          "seconds": 0.775,
           "log": "results/classpath-objenesis-3.3.jar-attempt1.txt"
         }
       ],
@@ -429,6 +446,7 @@
       "filename": "opentest4j-1.3.0.jar",
       "coordinate": "org.opentest4j:opentest4j:1.3.0",
       "classifier": "",
+      "role": "test",
       "attempts": [
         {
           "command": [
@@ -441,7 +459,7 @@
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
           "exit_code": 0,
-          "seconds": 0.789,
+          "seconds": 0.745,
           "log": "results/classpath-opentest4j-1.3.0.jar-attempt1.txt"
         }
       ],
@@ -451,9 +469,10 @@
       "identical_to_supplied": true
     },
     {
-      "filename": "evosuite-1.2.0.jar",
-      "coordinate": "org.evosuite:evosuite-master:1.2.0",
-      "classifier": "",
+      "filename": "org.jacoco.agent-0.8.12-runtime.jar",
+      "coordinate": "org.jacoco:org.jacoco.agent:0.8.12",
+      "classifier": "runtime",
+      "role": "coverage",
       "attempts": [
         {
           "command": [
@@ -461,71 +480,25 @@
             "-q",
             "-U",
             "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.evosuite:evosuite-master:1.2.0:jar",
+            "-Dartifact=org.jacoco:org.jacoco.agent:0.8.12:jar:runtime",
             "-Dtransitive=false",
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
-          "exit_code": 1,
-          "seconds": 1.584,
-          "log": "results/classpath-evosuite-1.2.0.jar-attempt1.txt"
-        },
-        {
-          "command": [
-            "mvn",
-            "-q",
-            "-U",
-            "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.evosuite:evosuite-master:1.2.0:jar",
-            "-Dtransitive=false",
-            "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
-          ],
-          "exit_code": 1,
-          "seconds": 0.985,
-          "log": "results/classpath-evosuite-1.2.0.jar-attempt2.txt"
+          "exit_code": 0,
+          "seconds": 0.75,
+          "log": "results/classpath-org.jacoco.agent-0.8.12-runtime.jar-attempt1.txt"
         }
       ],
-      "resolved": false
+      "resolved": true,
+      "bytes": 302428,
+      "sha256": "115e8e6e6593ca3a9892dfef695df4d487c706e59e71e64dc0ab95716ee02622",
+      "identical_to_supplied": null
     },
     {
-      "filename": "jacocoagent.jar",
-      "coordinate": "org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT",
-      "classifier": "",
-      "attempts": [
-        {
-          "command": [
-            "mvn",
-            "-q",
-            "-U",
-            "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT:jar",
-            "-Dtransitive=false",
-            "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
-          ],
-          "exit_code": 1,
-          "seconds": 1.868,
-          "log": "results/classpath-jacocoagent.jar-attempt1.txt"
-        },
-        {
-          "command": [
-            "mvn",
-            "-q",
-            "-U",
-            "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT:jar",
-            "-Dtransitive=false",
-            "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
-          ],
-          "exit_code": 1,
-          "seconds": 1.009,
-          "log": "results/classpath-jacocoagent.jar-attempt2.txt"
-        }
-      ],
-      "resolved": false
-    },
-    {
-      "filename": "jacococli.jar",
-      "coordinate": "org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT",
+      "filename": "org.jacoco.cli-0.8.12-nodeps.jar",
+      "coordinate": "org.jacoco:org.jacoco.cli:0.8.12",
       "classifier": "nodeps",
+      "role": "coverage",
       "attempts": [
         {
           "command": [
@@ -533,35 +506,24 @@
             "-q",
             "-U",
             "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT:jar:nodeps",
+            "-Dartifact=org.jacoco:org.jacoco.cli:0.8.12:jar:nodeps",
             "-Dtransitive=false",
             "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
           ],
-          "exit_code": 1,
-          "seconds": 1.988,
-          "log": "results/classpath-jacococli.jar-attempt1.txt"
-        },
-        {
-          "command": [
-            "mvn",
-            "-q",
-            "-U",
-            "org.apache.maven.plugins:maven-dependency-plugin:3.8.1:get",
-            "-Dartifact=org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT:jar:nodeps",
-            "-Dtransitive=false",
-            "-DremoteRepositories=central::default::https://repo.maven.apache.org/maven2"
-          ],
-          "exit_code": 1,
-          "seconds": 1.059,
-          "log": "results/classpath-jacococli.jar-attempt2.txt"
+          "exit_code": 0,
+          "seconds": 1.108,
+          "log": "results/classpath-org.jacoco.cli-0.8.12-nodeps.jar-attempt1.txt"
         }
       ],
-      "resolved": false
+      "resolved": true,
+      "bytes": 586283,
+      "sha256": "594c01125b84864a7fc5a9efab19b71b7de36b27346863f6d7cd0cd45400ceb0",
+      "identical_to_supplied": null
     }
   ],
-  "requested": 21,
-  "resolved": 18,
-  "all_present": false,
+  "requested": 20,
+  "resolved": 20,
+  "all_present": true,
   "shared_maven_repository": "/root/.m2/repository",
   "central": "https://repo.maven.apache.org/maven2"
 }

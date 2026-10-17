@@ -1,0 +1,152 @@
+{
+  "runs": [
+    {
+      "stage": "compile",
+      "command": [
+        "javac",
+        "-cp",
+        "work/t/target/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar",
+        "-d",
+        "work/smoke/classes",
+        "work/smoke/Md5Crypt_md5Crypt_Test.java"
+      ],
+      "shell_command": "javac -cp work/t/target/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar -d work/smoke/classes work/smoke/Md5Crypt_md5Crypt_Test.java",
+      "exit_code": 0,
+      "seconds": 0.373,
+      "log": "results/coverage-smoke-compile.txt"
+    },
+    {
+      "stage": "agent",
+      "command": [
+        "java",
+        "-javaagent:work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile=work/smoke/jacoco.exec,includes=org.apache.commons.codec.*",
+        "-cp",
+        "work/t/target/classes:work/smoke/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar",
+        "org.junit.platform.console.ConsoleLauncher",
+        "--disable-banner",
+        "--disable-ansi-colors",
+        "--fail-if-no-tests",
+        "--select-class",
+        "org.apache.commons.codec.digest.Md5Crypt_md5Crypt_Test",
+        "--details",
+        "summary",
+        "--reports-dir",
+        "work/smoke/reports"
+      ],
+      "shell_command": "java '-javaagent:work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile=work/smoke/jacoco.exec,includes=org.apache.commons.codec.*' -cp work/t/target/classes:work/smoke/classes:work/libs/apiguardian-api-1.1.2.jar:work/libs/byte-buddy-1.14.1.jar:work/libs/byte-buddy-agent-1.14.1.jar:work/libs/commons-io-2.16.1.jar:work/libs/commons-lang3-3.14.0.jar:work/libs/hamcrest-2.2.jar:work/libs/junit-jupiter-5.11.4.jar:work/libs/junit-jupiter-api-5.10.2.jar:work/libs/junit-jupiter-engine-5.10.2.jar:work/libs/junit-jupiter-params-5.10.2.jar:work/libs/junit-platform-commons-1.10.2.jar:work/libs/junit-platform-engine-1.10.2.jar:work/libs/mockito-core-5.2.0.jar:work/libs/mockito-inline-5.2.0.jar:work/libs/mockito-junit-jupiter-5.2.0.jar:work/libs/objenesis-3.3.jar:work/libs/opentest4j-1.3.0.jar:work/libs/junit-platform-console-standalone-1.9.3.jar org.junit.platform.console.ConsoleLauncher --disable-banner --disable-ansi-colors --fail-if-no-tests --select-class org.apache.commons.codec.digest.Md5Crypt_md5Crypt_Test --details summary --reports-dir work/smoke/reports",
+      "exit_code": 1,
+      "seconds": 0.422,
+      "log": "results/coverage-smoke-agent.txt"
+    },
+    {
+      "stage": "xml",
+      "command": [
+        "java",
+        "-jar",
+        "work/libs/org.jacoco.cli-0.8.12-nodeps.jar",
+        "report",
+        "work/smoke/jacoco.exec",
+        "--classfiles",
+        "work/t/target/classes",
+        "--sourcefiles",
+        "work/t/src/main/java",
+        "--xml",
+        "work/smoke/jacoco.xml"
+      ],
+      "shell_command": "java -jar work/libs/org.jacoco.cli-0.8.12-nodeps.jar report work/smoke/jacoco.exec --classfiles work/t/target/classes --sourcefiles work/t/src/main/java --xml work/smoke/jacoco.xml",
+      "exit_code": 0,
+      "seconds": 0.224,
+      "log": "results/coverage-smoke-xml.txt"
+    }
+  ],
+  "sourcefile": "org/apache/commons/codec/digest/Md5Crypt.java",
+  "line_entries": 70,
+  "covered_line_numbers": [
+    276,
+    280,
+    281,
+    283,
+    284,
+    285,
+    286,
+    288,
+    290,
+    292,
+    297,
+    302,
+    307,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    326,
+    331,
+    332,
+    333,
+    334,
+    335,
+    337,
+    339,
+    345,
+    346,
+    352,
+    353,
+    354,
+    355,
+    357,
+    360,
+    361,
+    364,
+    365,
+    368,
+    369,
+    371,
+    373,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    390,
+    391,
+    392,
+    393,
+    394,
+    396
+  ],
+  "counters": {
+    "INSTRUCTION": {
+      "missed": 97,
+      "covered": 275
+    },
+    "BRANCH": {
+      "missed": 4,
+      "covered": 20
+    },
+    "LINE": {
+      "missed": 13,
+      "covered": 57
+    },
+    "COMPLEXITY": {
+      "missed": 12,
+      "covered": 11
+    },
+    "METHOD": {
+      "missed": 10,
+      "covered": 1
+    },
+    "CLASS": {
+      "missed": 0,
+      "covered": 1
+    }
+  },
+  "coverage_jars_excluded_from_test_classpaths": true,
+  "xml_path": "work/smoke/jacoco.xml",
+  "exec_bytes": 304
+}

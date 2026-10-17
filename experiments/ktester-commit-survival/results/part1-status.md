@@ -1,18 +1,24 @@
-# Part 1 stop report
+# Part 1 status after addendum
 
-Status: stopped at the end of Step 3 under the explicit repeated-failure rule. Steps 1 and 2 are complete; Step 3 has complete inventory/fetch failure evidence and a successful compile/launcher smoke criterion, but the exact artifact set is incomplete. Steps 4 and 5 are not started. This is not a completed Part 1.
+The classpath and commit-range decisions are implemented. Part 1 stops during Step 4 because the fixed population requirements conflict: private methods are excluded, but the original scoped dataset contains private focal methods that are required to be included. No DatasetPrepare run or persistent compose override was performed after this stop.
 
-All numbers below are rendered by `python3 experiments/ktester-commit-survival/tools/report_part1.py` from results/commits-check.json, results/developer-baseline.json, results/classpath-fetch.json and results/classpath-smoke.json; their measurement invocations are in results/commits-check.md, dev/README.md and tools/README.md.
+All numbers: `python3 experiments/ktester-commit-survival/tools/report_part1.py`, reading results/commits-check.json, results/developer-baseline.json, results/classpath-fetch.json, results/coverage-smoke.json and population/population-enumeration.json. Their measurement invocations are recorded in the corresponding reports.
 
-- Fixed history: 338 commits after cd16988dd46ac7533771eb6856a5f56c7aeaffba; 21 change scoped source files. Range is unchanged.
-- Developer methods: 144 in scope, 143 pass every run; whole-suite reference 970 methods, 968 pass every run.
-- Classpath: 18/21 exact supplied artifacts resolved and byte-identical; remaining artifacts failed both attempts. See tools/README.md for coordinates and logs.
-- Smoke criterion passed: compilation succeeds and the launcher executes 14 tests, with 2 assertion failures allowed by the instruction.
-- Population count and overload uniqueness: not measured; no dataset_meta.json or dataset_info.json was created.
-- No model calls, generation, project-index rebuild, or remote push occurred. KTester pipeline, settings and author data were only read.
-- Temporary /repo mounts were supplied with compose run -v for Steps 2 and 3. Existing compose.yml and Maven cache mounts were unchanged; Step 5 persistent wiring was not created.
-- Root ignore rules for work/ and docs/handover-*.md were brought forward solely to retain the mandated stop handover locally. The handover is written after the final commit so it contains actual final hashes.
+- Range: 539 first-parent commits; 187 change src/main; 50 change scoped source files.
+- Developer denominator unchanged: 143 methods pass all runs, from 144 scoped methods. The skipped Base64Test.testCodec265 remains excluded.
+- Current artifact set: 20/20 resolved with recorded SHA-256. EvoSuite removed; coverage uses released JaCoCo. The XML has 70 Md5Crypt.java line entries and 57 covered lines.
+- Eligible population: 66 methods in 5 classes, within the required bound. Original scoped focal methods missing under the non-private rule: 2.
+- Overload groups enumerated: 12. Generated-ID uniqueness and original-entry round trips were not run because the earlier fixed-decision conflict requires stopping.
 
-TODO (Gary): Decide how the exact missing auxiliary artifacts should be obtained, or explicitly revise their inclusion/version policy before resuming. No substitution was made.
-TODO (Gary): Review the scope-change milestones in commits-check.md; the prescribed range remains fixed.
-TODO (Gary): After resolving the Step 3 blocker, resume with focal-population enumeration and DatasetPrepare overload/missing-entry checks, then container wiring.
+## Conflicting original focal methods
+
+- `org.apache.commons.codec.digest.MurmurHash3.hash128x64Internal(byte[], int, int, long)`: private at upstream line 515 (Spoon evidence in population-enumeration.json).
+- `org.apache.commons.codec.digest.Sha2Crypt.sha2Crypt(byte[], String, String, int, String)`: private at upstream line 170 (Spoon evidence in population-enumeration.json).
+
+The candidates and enumeration JSON are committed as diagnostic evidence in both repositories. No dataset_meta.json or dataset_info.json exists for this population. No source/settings/index changes, model calls, generated tests, or pushes occurred. Temporary compose run -v mounts preserve the original cache and mounts; Step 5 persistent wiring was not reached.
+
+## First attempt
+
+The initial run stopped at Step 3 after repeated Maven Central failures for EvoSuite and JaCoCo snapshots (commit 05e849ed). The user addendum excluded EvoSuite, selected released coverage jars, and extended the range. Those original blockers are resolved.
+
+TODO (Gary): Reconcile the requirement to include the original private focal methods with the non-private population rule. DatasetPrepare itself also rejects private methods; do not silently patch it or drop required methods. Then resume metadata generation, overload-ID validation and Step 5 wiring.

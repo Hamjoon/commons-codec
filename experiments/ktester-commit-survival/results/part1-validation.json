@@ -4,8 +4,9 @@
   "method_rows_rechecked": 970,
   "denominator_rows_rechecked": 143,
   "saved_surefire_runs_rechecked": 3,
-  "resolved_jars_matching_supplied": 18,
-  "unresolved_with_exactly_two_failed_attempts": 3,
+  "resolved_jars_sha256_verified": 20,
+  "original_runtime_jars_matching_supplied": 18,
+  "unresolved_with_exactly_two_failed_attempts": 0,
   "protected_kt_tracked_diff_empty": true,
   "tracked_forbidden_paths": [],
   "python_helper_syntax": "passed"

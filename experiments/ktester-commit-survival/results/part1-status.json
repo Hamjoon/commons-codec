@@ -1,40 +1,28 @@
 {
-  "status": "blocked_at_end_of_step_3",
-  "completed_steps": [
-    1,
-    2
-  ],
-  "incomplete_step": 3,
-  "not_started": [
-    4,
-    5
+  "status": "blocked_fixed_decisions_conflict",
+  "stopped_at_step": 4,
+  "completed": [
+    "original Steps 1-2",
+    "addendum Decision 1: classpath and released coverage tools",
+    "addendum Decision 2: extended commit range"
   ],
   "developer_denominator": 143,
-  "selected_commits": 338,
-  "scope_changing_commits": 21,
-  "unresolved_artifacts": [
-    {
-      "filename": "evosuite-1.2.0.jar",
-      "coordinate": "org.evosuite:evosuite-master:1.2.0",
-      "classifier": "",
-      "attempts": 2
-    },
-    {
-      "filename": "jacocoagent.jar",
-      "coordinate": "org.jacoco:org.jacoco.agent.rt:0.8.13-SNAPSHOT",
-      "classifier": "",
-      "attempts": 2
-    },
-    {
-      "filename": "jacococli.jar",
-      "coordinate": "org.jacoco:org.jacoco.cli:0.8.13-SNAPSHOT",
-      "classifier": "nodeps",
-      "attempts": 2
-    }
+  "selected_commits": 539,
+  "scope_changing_commits": 50,
+  "population_eligible_methods": 66,
+  "population_classes": 5,
+  "missing_required_original_methods": [
+    "MurmurHash3_hash128x64Internal",
+    "Sha2Crypt_sha2Crypt"
   ],
-  "population": "not enumerated or generated",
-  "overload_check": "not run",
+  "dataset_prepare_run": false,
+  "overload_id_uniqueness": "not checked; fixed decisions conflict before generation",
+  "persistent_container_override": "not started after mandatory population stop",
   "llm_calls": 0,
-  "author_index_rebuilt": false,
-  "pushes": 0
+  "pushes": 0,
+  "first_attempt": {
+    "commit": "05e849ed",
+    "stop": "Step 3 exact EvoSuite/JaCoCo snapshot resolution failures",
+    "resolved_by": "user addendum Decision 1"
+  }
 }

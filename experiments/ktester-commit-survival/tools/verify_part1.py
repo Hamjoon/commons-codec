@@ -20,13 +20,22 @@ if __name__=='__main__':
   for r in rows:
    cases=obs[(r['class'],r['method'])];status='pass' if all(c=='pass' for c in cases) else '+'.join(sorted(set(cases)-{'pass'}));assert status==r['run'+str(i)]
    assert len(cases)==int(r['cases'])
- fetched=json.loads((EXPERIMENT/'results/classpath-fetch.json').read_text());items=json.loads((EXPERIMENT/'tools/jar-inventory.json').read_text());original={x['filename']:x for x in items}
+ fetched=json.loads((EXPERIMENT/'results/classpath-fetch.json').read_text());items=json.loads((EXPERIMENT/'tools/classpath-artifacts.json').read_text());original={x['filename']:x for x in items}
  for r in fetched['entries']:
   if r['resolved']:
-   data=(EXPERIMENT/'work/libs'/r['filename']).read_bytes();assert hashlib.sha256(data).hexdigest()==r['sha256']==original[r['filename']]['sha256']
+   data=(EXPERIMENT/'work/libs'/r['filename']).read_bytes();assert hashlib.sha256(data).hexdigest()==r['sha256']
+   if 'supplied_sha256' in original[r['filename']]:assert r['sha256']==original[r['filename']]['supplied_sha256']
   else:assert len(r['attempts'])==2 and all(a['exit_code']!=0 for a in r['attempts'])
+ assert fetched['requested']==20 and fetched['all_present']
+ coordinate_lines=[line.strip() for line in (EXPERIMENT/'tools/llm-classpath.txt').read_text().splitlines() if line.strip() and not line.strip().startswith('#')]
+ assert coordinate_lines==[x['coordinate'] for x in items]
+ coverage=json.loads((EXPERIMENT/'results/coverage-smoke.json').read_text());assert coverage['counters']['LINE']['covered']>0 and coverage['coverage_jars_excluded_from_test_classpaths']
+ population=json.loads((EXPERIMENT/'population/population-enumeration.json').read_text());assert population['status']=='blocked_fixed_decisions_conflict' and not population['dataset_prepare_run']
+ for name in ['README.md','candidates.csv','population-enumeration.json']:
+  assert (EXPERIMENT/'population'/name).read_bytes()==(args.kt/'data/commit-survival/commons-codec'/name).read_bytes()
+ assert not (args.kt/'data/commit-survival/commons-codec/dataset_info.json').exists()
  protected=subprocess.check_output(['git','-C',str(args.kt),'diff','89a1514','--','code','data/projects','data/project_index'],text=True);assert not protected
  forbidden=[p for p in subprocess.check_output(['git','-C',str(REPO),'ls-files','--cached'],text=True).splitlines() if p.startswith('experiments/ktester-commit-survival/') and (p.endswith('.jar') or '/work/' in p or '/docs/handover-' in p)]
  assert not forbidden,forbidden
- evidence={'invocation':'python3 experiments/ktester-commit-survival/tools/verify_part1.py --kt '+str(args.kt),'frozen_files_matching_upstream':len(frozen),'method_rows_rechecked':len(rows),'denominator_rows_rechecked':len(denom),'saved_surefire_runs_rechecked':3,'resolved_jars_matching_supplied':sum(x['resolved'] for x in fetched['entries']),'unresolved_with_exactly_two_failed_attempts':sum(not x['resolved'] for x in fetched['entries']),'protected_kt_tracked_diff_empty':True,'tracked_forbidden_paths':forbidden,'python_helper_syntax':'passed'}
+ evidence={'invocation':'python3 experiments/ktester-commit-survival/tools/verify_part1.py --kt '+str(args.kt),'frozen_files_matching_upstream':len(frozen),'method_rows_rechecked':len(rows),'denominator_rows_rechecked':len(denom),'saved_surefire_runs_rechecked':3,'resolved_jars_sha256_verified':sum(x['resolved'] for x in fetched['entries']),'original_runtime_jars_matching_supplied':sum(x.get('identical_to_supplied') is True for x in fetched['entries']),'unresolved_with_exactly_two_failed_attempts':sum(not x['resolved'] for x in fetched['entries']),'protected_kt_tracked_diff_empty':True,'tracked_forbidden_paths':forbidden,'python_helper_syntax':'passed'}
  (EXPERIMENT/'results/part1-validation.json').write_text(json.dumps(evidence,indent=2)+'\n');print(json.dumps(evidence,indent=2))

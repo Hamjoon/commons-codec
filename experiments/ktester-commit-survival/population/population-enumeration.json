@@ -1,0 +1,410 @@
+{
+  "base": "cd16988dd46ac7533771eb6856a5f56c7aeaffba",
+  "parser": "bundled Spoon via extractor.SpoonExtractor",
+  "source": "upstream clean export at t; byte-checked against git show",
+  "source_inputs": {
+    "org.apache.commons.codec.binary.Base32": {
+      "path": "src/main/java/org/apache/commons/codec/binary/Base32.java",
+      "sha256": "e36d2c8f55c802660ae1c0ea3ff71fb295872a8533432128b4f252479883973c"
+    },
+    "org.apache.commons.codec.binary.Base64": {
+      "path": "src/main/java/org/apache/commons/codec/binary/Base64.java",
+      "sha256": "74eae8edf08bfc06c30afd7274993d248e777b50ac1fe6594889c367165ba688"
+    },
+    "org.apache.commons.codec.digest.Md5Crypt": {
+      "path": "src/main/java/org/apache/commons/codec/digest/Md5Crypt.java",
+      "sha256": "3f73b87a5d55d2e63392e547af4d2c9e95362bb108301454f0ea5cb384cdc02e"
+    },
+    "org.apache.commons.codec.digest.MurmurHash3": {
+      "path": "src/main/java/org/apache/commons/codec/digest/MurmurHash3.java",
+      "sha256": "048ca249170d9823bca7672474723d9e9f44f6d345659106629478e0e0ad8a4b"
+    },
+    "org.apache.commons.codec.digest.Sha2Crypt": {
+      "path": "src/main/java/org/apache/commons/codec/digest/Sha2Crypt.java",
+      "sha256": "e72f1f53226f33fd66fe1dea019d323ef51cb4f50929fb441307de202e71f55e"
+    }
+  },
+  "authors_dataset_sha256": "aba78b7dcf40bc77f27a47ab029241a18f523ddf53b2288882842e44f2eb581a",
+  "total": 66,
+  "per_class": {
+    "org.apache.commons.codec.binary.Base32": 5,
+    "org.apache.commons.codec.binary.Base64": 23,
+    "org.apache.commons.codec.digest.Md5Crypt": 10,
+    "org.apache.commons.codec.digest.MurmurHash3": 22,
+    "org.apache.commons.codec.digest.Sha2Crypt": 6
+  },
+  "within_60_to_100": true,
+  "dataset_total_focal_methods": 18,
+  "scoped_original_count": 7,
+  "original_methods": [
+    {
+      "id": "Base64_decode",
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method-name": "decode(byte[], int, int, Context)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.binary.Base64",
+        "method": "decode",
+        "parameter-types": "byte[], int, int, Context",
+        "visibility": "package-private",
+        "line": 745,
+        "in-dataset": "yes",
+        "eligible": true,
+        "signature": "decode(byte[], int, int, Context)"
+      },
+      "included": true
+    },
+    {
+      "id": "Base32_decode",
+      "class": "org.apache.commons.codec.binary.Base32",
+      "method-name": "decode(byte[], int, int, Context)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.binary.Base32",
+        "method": "decode",
+        "parameter-types": "byte[], int, int, Context",
+        "visibility": "package-private",
+        "line": 402,
+        "in-dataset": "yes",
+        "eligible": true,
+        "signature": "decode(byte[], int, int, Context)"
+      },
+      "included": true
+    },
+    {
+      "id": "Base64_encode",
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method-name": "encode(byte[], int, int, Context)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.binary.Base64",
+        "method": "encode",
+        "parameter-types": "byte[], int, int, Context",
+        "visibility": "package-private",
+        "line": 827,
+        "in-dataset": "yes",
+        "eligible": true,
+        "signature": "encode(byte[], int, int, Context)"
+      },
+      "included": true
+    },
+    {
+      "id": "Base32_encode",
+      "class": "org.apache.commons.codec.binary.Base32",
+      "method-name": "encode(byte[], int, int, Context)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.binary.Base32",
+        "method": "encode",
+        "parameter-types": "byte[], int, int, Context",
+        "visibility": "package-private",
+        "line": 507,
+        "in-dataset": "yes",
+        "eligible": true,
+        "signature": "encode(byte[], int, int, Context)"
+      },
+      "included": true
+    },
+    {
+      "id": "MurmurHash3_hash128x64Internal",
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method-name": "hash128x64Internal(byte[], int, int, long)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.digest.MurmurHash3",
+        "method": "hash128x64Internal",
+        "parameter-types": "byte[], int, int, long",
+        "visibility": "private",
+        "line": 515,
+        "in-dataset": "yes",
+        "eligible": false,
+        "signature": "hash128x64Internal(byte[], int, int, long)"
+      },
+      "included": false
+    },
+    {
+      "id": "Md5Crypt_md5Crypt",
+      "class": "org.apache.commons.codec.digest.Md5Crypt",
+      "method-name": "md5Crypt(byte[], String, String, Random)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.digest.Md5Crypt",
+        "method": "md5Crypt",
+        "parameter-types": "byte[], String, String, Random",
+        "visibility": "public",
+        "line": 275,
+        "in-dataset": "yes",
+        "eligible": true,
+        "signature": "md5Crypt(byte[], String, String, Random)"
+      },
+      "included": true
+    },
+    {
+      "id": "Sha2Crypt_sha2Crypt",
+      "class": "org.apache.commons.codec.digest.Sha2Crypt",
+      "method-name": "sha2Crypt(byte[], String, String, int, String)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.digest.Sha2Crypt",
+        "method": "sha2Crypt",
+        "parameter-types": "byte[], String, String, int, String",
+        "visibility": "private",
+        "line": 170,
+        "in-dataset": "yes",
+        "eligible": false,
+        "signature": "sha2Crypt(byte[], String, String, int, String)"
+      },
+      "included": false
+    }
+  ],
+  "excluded_declarations": [
+    {
+      "class": "org.apache.commons.codec.binary.Base32",
+      "method": "validateCharacter",
+      "parameter-types": "long, Context",
+      "visibility": "private",
+      "line": 634,
+      "in-dataset": "no",
+      "signature": "validateCharacter(long, Context)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base32",
+      "method": "validateTrailingCharacters",
+      "parameter-types": "",
+      "visibility": "private",
+      "line": 647,
+      "in-dataset": "no",
+      "signature": "validateTrailingCharacters()",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method": "toUrlSafeEncodeTable",
+      "parameter-types": "boolean",
+      "visibility": "private",
+      "line": 473,
+      "in-dataset": "no",
+      "signature": "toUrlSafeEncodeTable(boolean)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method": "calculateDecodeTable",
+      "parameter-types": "byte[]",
+      "visibility": "private",
+      "line": 710,
+      "in-dataset": "no",
+      "signature": "calculateDecodeTable(byte[])",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method": "validateCharacter",
+      "parameter-types": "int, Context",
+      "visibility": "private",
+      "line": 942,
+      "in-dataset": "no",
+      "signature": "validateCharacter(int, Context)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.binary.Base64",
+      "method": "validateTrailingCharacter",
+      "parameter-types": "",
+      "visibility": "private",
+      "line": 957,
+      "in-dataset": "no",
+      "signature": "validateTrailingCharacter()",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "fmix32",
+      "parameter-types": "int",
+      "visibility": "private",
+      "line": 330,
+      "in-dataset": "no",
+      "signature": "fmix32(int)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "fmix64",
+      "parameter-types": "long",
+      "visibility": "private",
+      "line": 345,
+      "in-dataset": "no",
+      "signature": "fmix64(long)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "getLittleEndianInt",
+      "parameter-types": "byte[], int",
+      "visibility": "private",
+      "line": 361,
+      "in-dataset": "no",
+      "signature": "getLittleEndianInt(byte[], int)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "getLittleEndianLong",
+      "parameter-types": "byte[], int",
+      "visibility": "private",
+      "line": 375,
+      "in-dataset": "no",
+      "signature": "getLittleEndianLong(byte[], int)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "hash128x64Internal",
+      "parameter-types": "byte[], int, int, long",
+      "visibility": "private",
+      "line": 515,
+      "in-dataset": "yes",
+      "signature": "hash128x64Internal(byte[], int, int, long)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method": "mix32",
+      "parameter-types": "int, int",
+      "visibility": "private",
+      "line": 1213,
+      "in-dataset": "no",
+      "signature": "mix32(int, int)",
+      "reason": "private"
+    },
+    {
+      "class": "org.apache.commons.codec.digest.Sha2Crypt",
+      "method": "sha2Crypt",
+      "parameter-types": "byte[], String, String, int, String",
+      "visibility": "private",
+      "line": 170,
+      "in-dataset": "yes",
+      "signature": "sha2Crypt(byte[], String, String, int, String)",
+      "reason": "private"
+    }
+  ],
+  "overload_groups": {
+    "org.apache.commons.codec.binary.Base64.decodeBase64": [
+      "decodeBase64(byte[])",
+      "decodeBase64(String)"
+    ],
+    "org.apache.commons.codec.binary.Base64.encodeBase64": [
+      "encodeBase64(byte[])",
+      "encodeBase64(byte[], boolean)",
+      "encodeBase64(byte[], boolean, boolean)",
+      "encodeBase64(byte[], boolean, boolean, int)"
+    ],
+    "org.apache.commons.codec.binary.Base64.isBase64": [
+      "isBase64(byte)",
+      "isBase64(byte[])",
+      "isBase64(String)"
+    ],
+    "org.apache.commons.codec.digest.Md5Crypt.apr1Crypt": [
+      "apr1Crypt(byte[])",
+      "apr1Crypt(byte[], Random)",
+      "apr1Crypt(byte[], String)",
+      "apr1Crypt(String)",
+      "apr1Crypt(String, String)"
+    ],
+    "org.apache.commons.codec.digest.Md5Crypt.md5Crypt": [
+      "md5Crypt(byte[])",
+      "md5Crypt(byte[], Random)",
+      "md5Crypt(byte[], String)",
+      "md5Crypt(byte[], String, String)",
+      "md5Crypt(byte[], String, String, Random)"
+    ],
+    "org.apache.commons.codec.digest.MurmurHash3.hash128": [
+      "hash128(byte[])",
+      "hash128(byte[], int, int, int)",
+      "hash128(String)"
+    ],
+    "org.apache.commons.codec.digest.MurmurHash3.hash128x64": [
+      "hash128x64(byte[])",
+      "hash128x64(byte[], int, int, int)"
+    ],
+    "org.apache.commons.codec.digest.MurmurHash3.hash32": [
+      "hash32(byte[])",
+      "hash32(byte[], int)",
+      "hash32(byte[], int, int)",
+      "hash32(byte[], int, int, int)",
+      "hash32(long)",
+      "hash32(long, int)",
+      "hash32(long, long)",
+      "hash32(long, long, int)",
+      "hash32(String)"
+    ],
+    "org.apache.commons.codec.digest.MurmurHash3.hash32x86": [
+      "hash32x86(byte[])",
+      "hash32x86(byte[], int, int, int)"
+    ],
+    "org.apache.commons.codec.digest.MurmurHash3.hash64": [
+      "hash64(byte[])",
+      "hash64(byte[], int, int)",
+      "hash64(byte[], int, int, int)",
+      "hash64(int)",
+      "hash64(long)",
+      "hash64(short)"
+    ],
+    "org.apache.commons.codec.digest.Sha2Crypt.sha256Crypt": [
+      "sha256Crypt(byte[])",
+      "sha256Crypt(byte[], String)",
+      "sha256Crypt(byte[], String, Random)"
+    ],
+    "org.apache.commons.codec.digest.Sha2Crypt.sha512Crypt": [
+      "sha512Crypt(byte[])",
+      "sha512Crypt(byte[], String)",
+      "sha512Crypt(byte[], String, Random)"
+    ]
+  },
+  "overload_group_count": 12,
+  "methods_in_overload_groups": 47,
+  "manual_check": {
+    "class": "org.apache.commons.codec.digest.Sha2Crypt",
+    "expected_signatures": [
+      "sha256Crypt(byte[])",
+      "sha256Crypt(byte[], String)",
+      "sha256Crypt(byte[], String, Random)",
+      "sha512Crypt(byte[])",
+      "sha512Crypt(byte[], String)",
+      "sha512Crypt(byte[], String, Random)"
+    ],
+    "matches_parser": true
+  },
+  "missing_required_original_methods": [
+    {
+      "id": "MurmurHash3_hash128x64Internal",
+      "class": "org.apache.commons.codec.digest.MurmurHash3",
+      "method-name": "hash128x64Internal(byte[], int, int, long)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.digest.MurmurHash3",
+        "method": "hash128x64Internal",
+        "parameter-types": "byte[], int, int, long",
+        "visibility": "private",
+        "line": 515,
+        "in-dataset": "yes",
+        "eligible": false,
+        "signature": "hash128x64Internal(byte[], int, int, long)"
+      },
+      "included": false
+    },
+    {
+      "id": "Sha2Crypt_sha2Crypt",
+      "class": "org.apache.commons.codec.digest.Sha2Crypt",
+      "method-name": "sha2Crypt(byte[], String, String, int, String)",
+      "declaration_at_t": {
+        "class": "org.apache.commons.codec.digest.Sha2Crypt",
+        "method": "sha2Crypt",
+        "parameter-types": "byte[], String, String, int, String",
+        "visibility": "private",
+        "line": 170,
+        "in-dataset": "yes",
+        "eligible": false,
+        "signature": "sha2Crypt(byte[], String, String, int, String)"
+      },
+      "included": false
+    }
+  ],
+  "dataset_prepare_run": false,
+  "generated_id_uniqueness": "not checked; stopped before DatasetPrepare",
+  "seconds": 1.296,
+  "status": "blocked_fixed_decisions_conflict"
+}

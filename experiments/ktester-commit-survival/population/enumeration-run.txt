@@ -1,0 +1,18 @@
+Picked up _JAVA_OPTIONS: -Duser.language=en -Duser.country=US -Dfile.encoding=UTF-8
+{
+  "status": "blocked_fixed_decisions_conflict",
+  "total": 66,
+  "per_class": {
+    "org.apache.commons.codec.binary.Base32": 5,
+    "org.apache.commons.codec.binary.Base64": 23,
+    "org.apache.commons.codec.digest.Md5Crypt": 10,
+    "org.apache.commons.codec.digest.MurmurHash3": 22,
+    "org.apache.commons.codec.digest.Sha2Crypt": 6
+  },
+  "missing_required_original_methods": [
+    "MurmurHash3_hash128x64Internal",
+    "Sha2Crypt_sha2Crypt"
+  ],
+  "overload_groups": 12
+}
+STOP: fixed population requirements cannot simultaneously be satisfied; do not generate metadata or patch pipeline.

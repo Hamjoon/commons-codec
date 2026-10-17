@@ -138,7 +138,8 @@ def main():
     def commit(message, paths):
         assert not sc.git('diff', '--cached', '--name-only').strip(), 'Unrelated staged changes require review'
         sc.git('add', '--', *[str(p.relative_to(sc.REPO)) for p in paths])
-        sc.git('diff', '--cached', '--check')
+        # Matplotlib emits trailing whitespace inside generated SVG path data.
+        sc.git('diff', '--cached', '--check', '--', '.', ':(exclude)*.svg')
         if sc.git('diff', '--cached', '--name-only').strip():
             sc.git('commit', '-q', '-m', message, '-m', TRAILER)
         else:

@@ -374,11 +374,43 @@
           "quarantine": "work/quarantine/phase-b-four-worker-interruption/156-llm"
         }
       ]
+    },
+    {
+      "workers": 6,
+      "started": "2026-10-18T02:09:06.095749+00:00",
+      "since": 1792289346,
+      "command": "python tools/run_phase.py --phase b --workers 6 --start 0 --end 539",
+      "container": "40578a00d905c76cb5c8e60e57e2a9a103e4a190df85662a1a0908f2791756e8",
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0,
+        "sock_throttled": 0
+      },
+      "oom_events": [],
+      "finished": "2026-10-18T07:58:38.031832+00:00",
+      "container_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-18T02:09:06.37059701Z",
+        "FinishedAt": "2026-10-18T07:58:34.697100423Z"
+      },
+      "log": "/Users/donggi/_projects/experiment-projects/KTester/evaluation/logs/commit-survival-part3-phase-b-6.log"
     }
   ],
   "current": null,
-  "stage": "ready-for-six-workers",
-  "updated": "2026-10-18T02:08:23.885074+00:00",
+  "stage": "complete",
+  "updated": "2026-10-18T07:58:39.016642+00:00",
   "diagnosis": {
     "observed_at": "2026-10-18T00:12:02.940605+00:00",
     "docker_memory_total_bytes": 12526108672,

@@ -1,0 +1,29 @@
+{
+  "index": 299,
+  "sha": "0d9a85de587f799791b7cf2a5fbd6a97d8d90251",
+  "worker": "w6",
+  "status": "built",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w6",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 7.47,
+      "log": "work/phase-b/299/build-1.txt"
+    }
+  ],
+  "message": "",
+  "cache_warmed_online": false
+}

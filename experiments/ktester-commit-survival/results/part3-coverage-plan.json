@@ -1,5 +1,5 @@
 {
-  "status": "Capped Phase B resumes with six workers after stable four-worker attempt",
+  "status": "Phase B complete and verified",
   "production_changing_commits": 187,
   "coverage_commits": 263,
   "scope_changing_commits": 50,
@@ -51,5 +51,6 @@
     6,
     4,
     2
-  ]
+  ],
+  "coverage_commits_actually_run": 263
 }

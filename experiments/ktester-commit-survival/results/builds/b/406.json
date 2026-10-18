@@ -1,0 +1,29 @@
+{
+  "index": 406,
+  "sha": "18ec4fbd66255745e52a02fe22cc6a304bcad180",
+  "worker": "w2",
+  "status": "built",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w2",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 12.316,
+      "log": "work/phase-b/406/build-1.txt"
+    }
+  ],
+  "message": "",
+  "cache_warmed_online": false
+}

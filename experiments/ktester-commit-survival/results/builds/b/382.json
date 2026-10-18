@@ -1,0 +1,29 @@
+{
+  "index": 382,
+  "sha": "b3eeb52ff92165277a68f99366f4ff05f20c38a2",
+  "worker": "w5",
+  "status": "built",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w5",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 10.961,
+      "log": "work/phase-b/382/build-1.txt"
+    }
+  ],
+  "message": "",
+  "cache_warmed_online": false
+}

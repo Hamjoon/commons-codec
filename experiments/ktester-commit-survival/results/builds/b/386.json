@@ -1,0 +1,29 @@
+{
+  "index": 386,
+  "sha": "bb98f654c2dd45b56c7a54b6cab2ca3ae1274d6b",
+  "worker": "w3",
+  "status": "built",
+  "attempts": [
+    {
+      "command": [
+        "mvn",
+        "-q",
+        "-o",
+        "-DskipTests",
+        "-Drat.skip",
+        "-Dcheckstyle.skip",
+        "-Dspotbugs.skip",
+        "-Dpmd.skip",
+        "-Dmaven.javadoc.skip",
+        "package"
+      ],
+      "cwd": "/repo/experiments/ktester-commit-survival/work/commits/w3",
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 11.428,
+      "log": "work/phase-b/386/build-1.txt"
+    }
+  ],
+  "message": "",
+  "cache_warmed_online": false
+}

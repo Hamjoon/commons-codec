@@ -1,4 +1,4 @@
-"""Run capped Phase B at four workers; resume at two on container OOM."""
+"""Run capped Phase B; reduce six to four, then four to two on container OOM."""
 import argparse
 import datetime
 import fcntl
@@ -92,7 +92,7 @@ def main():
         check_inputs()
         if state.get('stage') == 'complete':
             return
-        assert state['workers'] in {4, 2}, 'Old uncapped attempt needs the authorized memory-cap recovery before resume'
+        assert state['workers'] in {6, 4, 2}, 'Old uncapped attempt needs the authorized memory-cap recovery before resume'
         while True:
             if state['current'] is None:
                 # Only remove a container retained by one of this controller's attempts.
@@ -146,13 +146,15 @@ def main():
             write_json(RESULTS / 'phase-b-quarantine.json', manifest)
             if has_oom(attempt, info):
                 attempt['oom_detected'] = True
-                assert attempt['workers'] == 4, 'Phase B OOM recurred with two workers; quarantined evidence requires inspection'
-                preserved = EXP / 'work/phase-b-two-worker-preserved.json'
+                fallback = {6: 4, 4: 2}.get(attempt['workers'])
+                assert fallback is not None, 'Phase B OOM recurred with two workers; quarantined evidence requires inspection'
+                preserved = EXP / f'work/phase-b-{fallback}-worker-preserved.json'
                 if not preserved.exists():
                     write_json(preserved, snapshot_healthy())
-                state['workers'] = 2
+                attempt['oom_fallback_workers'] = fallback
+                state['workers'] = fallback
                 state['current'] = None
-                record('resuming-with-two-workers')
+                record(f'resuming-with-{fallback}-workers')
                 continue
             assert not moved, 'Phase B produced signal-9 exits without a reported OOM; verification remains blocked'
             assert info['State']['ExitCode'] == 0 and output.exists(), f'Phase B failed; see {log}'
@@ -160,13 +162,17 @@ def main():
             assert done['completed'] and all(code == 0 for code in done['worker_exit_codes'])
             for entry in manifest['entries']:
                 assert (EXP / entry['source']).exists(), entry['source']
-            preserved = EXP / 'work/phase-b-two-worker-preserved.json'
-            if preserved.exists():
+            verified_healthy = set()
+            for preserved in [EXP / f'work/phase-b-{n}-worker-preserved.json' for n in [4, 2]]:
+                if not preserved.exists():
+                    continue
                 healthy = json.loads(preserved.read_text())
                 for name, expected in healthy.items():
                     raw = EXP / name
                     assert hashlib.sha256(raw.read_bytes()).hexdigest() == expected['sha256'] and raw.stat().st_mtime_ns == expected['mtime_ns'], name
-                state['healthy_artifacts_preserved'] = len(healthy)
+                    verified_healthy.add(name)
+            if verified_healthy:
+                state['healthy_artifacts_preserved'] = len(verified_healthy)
             manifest['status'] = 'no signal-9 exits remain; all quarantined records replaced'
             write_json(RESULTS / 'phase-b-quarantine.json', manifest)
             state['current'] = None

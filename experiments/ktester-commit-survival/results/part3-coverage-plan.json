@@ -1,5 +1,5 @@
 {
-  "status": "Capped Phase B ready to restart after uncapped OOM attempts",
+  "status": "Capped Phase B resumes with six workers after stable four-worker attempt",
   "production_changing_commits": 187,
   "coverage_commits": 263,
   "scope_changing_commits": 50,
@@ -48,6 +48,7 @@
     ]
   },
   "phase_b_worker_counts": [
+    6,
     4,
     2
   ]

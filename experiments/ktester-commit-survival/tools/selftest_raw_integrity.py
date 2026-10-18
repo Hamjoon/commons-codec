@@ -66,13 +66,14 @@ def main():
         with patch.object(finish_part3.sc, 'RESULTS', results), patch.object(finish_part3.sc, 'check_inputs', return_value='fixed'), \
              patch.object(finish_part3.sc, 'commits', return_value={}), patch.object(finish_part3.sc, 'denominator', return_value=[]):
             rejects(lambda: finish_part3.check_raw('a'), 'signal-9')
-        # Exercise both full Phase B attempts using a fake Docker boundary. The
+        # Exercise Phase B OOM fallback using a fake Docker boundary. The
         # real controller must remove the killed raw/XML/CSV, then preserve the
         # healthy group while resuming with two workers.
         kt = exp / 'kt'
         (kt / 'evaluation/logs').mkdir(parents=True)
         containers = {}
         commands = []
+        write_json(results / 'phase-b-resource-events.json', {'workers': 6, 'attempts': [], 'current': None})
         group = {'index': 1, 'group': 'llm', 'files': [], 'methods': []}
         write_json(results / 'raw-coverage/1-llm.json', group)
         good_bytes = (results / 'raw-coverage/1-llm.json').read_bytes()
@@ -86,9 +87,9 @@ def main():
             if argv[1] == 'compose':
                 command = argv[-1]
                 commands.append(command)
-                workers = 4 if '--workers 4' in command else 2
+                workers = next(n for n in [6, 4, 2] if f'--workers {n}' in command)
                 cid = 'fake-' + str(workers)
-                containers[cid] = {'Id': cid, 'State': {'Running': workers == 4, 'OOMKilled': False, 'ExitCode': 1 if workers == 4 else 0}}
+                containers[cid] = {'Id': cid, 'State': {'Running': workers > 2, 'OOMKilled': False, 'ExitCode': 1 if workers > 2 else 0}}
                 containers[coverage.NAME] = containers[cid]
                 done = {'completed': workers == 2, 'worker_exit_codes': [0] * workers if workers == 2 else [-15] * workers}
                 write_json(results / 'phase-b.json', done)
@@ -115,14 +116,15 @@ def main():
              patch('sys.argv', ['run_coverage_guarded.py', '--kt', str(kt)]), contextlib.redirect_stdout(io.StringIO()):
             coverage.main()
         state = json.loads((results / 'phase-b-resource-events.json').read_text())
-        assert state['stage'] == 'complete' and [a['workers'] for a in state['attempts']] == [4, 2]
+        assert state['stage'] == 'complete' and [a['workers'] for a in state['attempts']] == [6, 4, 2]
         assert state['attempts'][0]['oom_detected'] and state['healthy_artifacts_preserved'] == 1
-        assert len(commands) == 2 and '--workers 4' in commands[0] and '--workers 2' in commands[1]
+        assert [a['oom_fallback_workers'] for a in state['attempts'][:2]] == [4, 2]
+        assert len(commands) == 3 and all(f'--workers {n}' in command for n, command in zip([6, 4, 2], commands))
         assert (results / 'raw-coverage/1-llm.json').read_bytes() == good_bytes
         assert coverage.has_oom({'memory_events': {'oom_kill': 1}}, {'State': {}})
         assert not coverage.has_oom({}, {'State': {}})
     print(json.dumps({'passed': True, 'checks': ['recursive signal-9 rejection', 'check_raw signal-9 guard',
-          'byte-preserving quarantine', '27 evaluated MurmurHash3Test methods', 'Phase B OOM four-to-two resume',
+          'byte-preserving quarantine', '27 evaluated MurmurHash3Test methods', 'Phase B OOM six-to-four-to-two resume',
           'quarantined coverage artifacts', 'healthy raw preservation']}))
 
 

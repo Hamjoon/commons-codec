@@ -1,0 +1,498 @@
+{
+  "workers": 4,
+  "attempts": [
+    {
+      "workers": 8,
+      "started": "2026-10-17T23:55:50.974530+00:00",
+      "since": 1792281350,
+      "command": "python tools/run_phase.py --phase b --workers 8 --start 0 --end 539",
+      "container": "52fb4d47ef776be3ea923ffb01430ea192dd2a4d2025a3f547787546498f7ea9",
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 2,
+        "oom_group_kill": 0,
+        "sock_throttled": 0
+      },
+      "oom_events": [
+        {
+          "Type": "container",
+          "Action": "oom",
+          "Actor": {
+            "ID": "52fb4d47ef776be3ea923ffb01430ea192dd2a4d2025a3f547787546498f7ea9",
+            "Attributes": {
+              "com.docker.compose.config-hash": "01dd49476eef6c8585f40ecdb48a8ca714e423ce99afbadb3369fb3e2252595c",
+              "com.docker.compose.depends_on": "",
+              "com.docker.compose.image": "sha256:77703de91c6de9347abf39472982e881d9e02255e5ba76ecdb0ae7d39ea50e38",
+              "com.docker.compose.oneoff": "True",
+              "com.docker.compose.project": "docker",
+              "com.docker.compose.project.config_files": "/Users/donggi/_projects/experiment-projects/KTester/docker/compose.yml,/Users/donggi/_projects/experiment-projects/KTester/docker/compose.commit-survival.yml",
+              "com.docker.compose.project.working_dir": "/Users/donggi/_projects/experiment-projects/KTester/docker",
+              "com.docker.compose.service": "ktester",
+              "com.docker.compose.slug": "4f308d001b1e3d3855a8ebe5f2c8cca84658bb6780bba4ed8b112b5d580a070e",
+              "com.docker.compose.version": "5.5.1",
+              "desktop.docker.io/binds/0/Source": "/Users/donggi/_projects/experiment-projects/KTester",
+              "desktop.docker.io/binds/0/SourceKind": "hostFile",
+              "desktop.docker.io/binds/0/Target": "/work",
+              "desktop.docker.io/binds/2/Source": "/Users/donggi/_projects/experiment-projects/commons-codec",
+              "desktop.docker.io/binds/2/SourceKind": "hostFile",
+              "desktop.docker.io/binds/2/Target": "/repo",
+              "desktop.docker.io/ports.scheme": "v2",
+              "image": "ktester-replication:latest",
+              "name": "ktester-commit-survival-phase-b"
+            }
+          },
+          "scope": "local",
+          "time": 1792281399,
+          "timeNano": 1792281399053689758
+        },
+        {
+          "Type": "container",
+          "Action": "oom",
+          "Actor": {
+            "ID": "52fb4d47ef776be3ea923ffb01430ea192dd2a4d2025a3f547787546498f7ea9",
+            "Attributes": {
+              "com.docker.compose.config-hash": "01dd49476eef6c8585f40ecdb48a8ca714e423ce99afbadb3369fb3e2252595c",
+              "com.docker.compose.depends_on": "",
+              "com.docker.compose.image": "sha256:77703de91c6de9347abf39472982e881d9e02255e5ba76ecdb0ae7d39ea50e38",
+              "com.docker.compose.oneoff": "True",
+              "com.docker.compose.project": "docker",
+              "com.docker.compose.project.config_files": "/Users/donggi/_projects/experiment-projects/KTester/docker/compose.yml,/Users/donggi/_projects/experiment-projects/KTester/docker/compose.commit-survival.yml",
+              "com.docker.compose.project.working_dir": "/Users/donggi/_projects/experiment-projects/KTester/docker",
+              "com.docker.compose.service": "ktester",
+              "com.docker.compose.slug": "4f308d001b1e3d3855a8ebe5f2c8cca84658bb6780bba4ed8b112b5d580a070e",
+              "com.docker.compose.version": "5.5.1",
+              "desktop.docker.io/binds/0/Source": "/Users/donggi/_projects/experiment-projects/KTester",
+              "desktop.docker.io/binds/0/SourceKind": "hostFile",
+              "desktop.docker.io/binds/0/Target": "/work",
+              "desktop.docker.io/binds/2/Source": "/Users/donggi/_projects/experiment-projects/commons-codec",
+              "desktop.docker.io/binds/2/SourceKind": "hostFile",
+              "desktop.docker.io/binds/2/Target": "/repo",
+              "desktop.docker.io/ports.scheme": "v2",
+              "image": "ktester-replication:latest",
+              "name": "ktester-commit-survival-phase-b"
+            }
+          },
+          "scope": "local",
+          "time": 1792281399,
+          "timeNano": 1792281399103783008
+        },
+        {
+          "Type": "container",
+          "Action": "oom",
+          "Actor": {
+            "ID": "52fb4d47ef776be3ea923ffb01430ea192dd2a4d2025a3f547787546498f7ea9",
+            "Attributes": {
+              "com.docker.compose.config-hash": "01dd49476eef6c8585f40ecdb48a8ca714e423ce99afbadb3369fb3e2252595c",
+              "com.docker.compose.depends_on": "",
+              "com.docker.compose.image": "sha256:77703de91c6de9347abf39472982e881d9e02255e5ba76ecdb0ae7d39ea50e38",
+              "com.docker.compose.oneoff": "True",
+              "com.docker.compose.project": "docker",
+              "com.docker.compose.project.config_files": "/Users/donggi/_projects/experiment-projects/KTester/docker/compose.yml,/Users/donggi/_projects/experiment-projects/KTester/docker/compose.commit-survival.yml",
+              "com.docker.compose.project.working_dir": "/Users/donggi/_projects/experiment-projects/KTester/docker",
+              "com.docker.compose.service": "ktester",
+              "com.docker.compose.slug": "4f308d001b1e3d3855a8ebe5f2c8cca84658bb6780bba4ed8b112b5d580a070e",
+              "com.docker.compose.version": "5.5.1",
+              "desktop.docker.io/binds/0/Source": "/Users/donggi/_projects/experiment-projects/KTester",
+              "desktop.docker.io/binds/0/SourceKind": "hostFile",
+              "desktop.docker.io/binds/0/Target": "/work",
+              "desktop.docker.io/binds/2/Source": "/Users/donggi/_projects/experiment-projects/commons-codec",
+              "desktop.docker.io/binds/2/SourceKind": "hostFile",
+              "desktop.docker.io/binds/2/Target": "/repo",
+              "desktop.docker.io/ports.scheme": "v2",
+              "image": "ktester-replication:latest",
+              "name": "ktester-commit-survival-phase-b"
+            }
+          },
+          "scope": "local",
+          "time": 1792281400,
+          "timeNano": 1792281400210443592
+        }
+      ],
+      "finished": "2026-10-17T23:56:42.014434+00:00",
+      "container_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": true,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-17T23:55:52.527726042Z",
+        "FinishedAt": "2026-10-17T23:56:41.110126967Z"
+      },
+      "log": "/Users/donggi/_projects/experiment-projects/KTester/evaluation/logs/commit-survival-part3-phase-b-8.log",
+      "oom_detected": true,
+      "diagnosis": {
+        "invocation": "results/phase-b-invocations/1792281400471990217.json",
+        "elapsed_seconds": 47.69,
+        "worker_positions": [
+          {
+            "worker": 1,
+            "index": 0,
+            "group": "dev"
+          },
+          {
+            "worker": 2,
+            "index": 1,
+            "group": "dev"
+          },
+          {
+            "worker": 3,
+            "index": 2,
+            "group": "dev"
+          },
+          {
+            "worker": 4,
+            "index": 3,
+            "group": "dev"
+          },
+          {
+            "worker": 5,
+            "index": 4,
+            "group": "dev"
+          },
+          {
+            "worker": 6,
+            "index": 5,
+            "group": "dev"
+          },
+          {
+            "worker": 7,
+            "index": 9,
+            "group": "dev"
+          },
+          {
+            "worker": 8,
+            "index": 10,
+            "group": "dev"
+          }
+        ],
+        "position_evidence": "Worker layouts plus no completed-group lines/raw records; retained work/phase-b contains only dev directories for these indices. The six-worker retry replaced earlier partial logs for indices 0-5, so their exact first-attempt launcher at kill time is unavailable.",
+        "completed_raw_records": 0,
+        "worker_exit_codes": [
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15
+        ]
+      }
+    },
+    {
+      "workers": 6,
+      "started": "2026-10-17T23:56:42.111644+00:00",
+      "since": 1792281402,
+      "command": "python tools/run_phase.py --phase b --workers 6 --start 0 --end 539",
+      "container": "a4dc426ecbd730a518f76a46550f71ef650e6319d0912e075902f1c5cfcece65",
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 1,
+        "oom_group_kill": 0,
+        "sock_throttled": 0
+      },
+      "oom_events": [
+        {
+          "Type": "container",
+          "Action": "oom",
+          "Actor": {
+            "ID": "a4dc426ecbd730a518f76a46550f71ef650e6319d0912e075902f1c5cfcece65",
+            "Attributes": {
+              "com.docker.compose.config-hash": "1a3e05ac90055c31f1e3d7d4b23616aa4680020e0d29dd37b958ddfc42d3b4ff",
+              "com.docker.compose.depends_on": "",
+              "com.docker.compose.image": "sha256:77703de91c6de9347abf39472982e881d9e02255e5ba76ecdb0ae7d39ea50e38",
+              "com.docker.compose.oneoff": "True",
+              "com.docker.compose.project": "docker",
+              "com.docker.compose.project.config_files": "/Users/donggi/_projects/experiment-projects/KTester/docker/compose.yml,/Users/donggi/_projects/experiment-projects/KTester/docker/compose.commit-survival.yml",
+              "com.docker.compose.project.working_dir": "/Users/donggi/_projects/experiment-projects/KTester/docker",
+              "com.docker.compose.service": "ktester",
+              "com.docker.compose.slug": "2cc5af9f51d1a645b90a48d4d3ab5aa32ea544a837d26d78635ac0864c558283",
+              "com.docker.compose.version": "5.5.1",
+              "desktop.docker.io/binds/1/Source": "/Users/donggi/_projects/experiment-projects/commons-codec",
+              "desktop.docker.io/binds/1/SourceKind": "hostFile",
+              "desktop.docker.io/binds/1/Target": "/repo",
+              "desktop.docker.io/binds/2/Source": "/Users/donggi/_projects/experiment-projects/KTester",
+              "desktop.docker.io/binds/2/SourceKind": "hostFile",
+              "desktop.docker.io/binds/2/Target": "/work",
+              "desktop.docker.io/ports.scheme": "v2",
+              "image": "ktester-replication:latest",
+              "name": "ktester-commit-survival-phase-b"
+            }
+          },
+          "scope": "local",
+          "time": 1792281419,
+          "timeNano": 1792281419867486378
+        }
+      ],
+      "finished": "2026-10-17T23:57:04.012156+00:00",
+      "container_state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": true,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 1,
+        "Error": "",
+        "StartedAt": "2026-10-17T23:56:42.334888676Z",
+        "FinishedAt": "2026-10-17T23:57:03.455608297Z"
+      },
+      "log": "/Users/donggi/_projects/experiment-projects/KTester/evaluation/logs/commit-survival-part3-phase-b-6.log",
+      "oom_detected": true,
+      "diagnosis": {
+        "invocation": "results/phase-b-invocations/1792281423372501088.json",
+        "elapsed_seconds": 20.851,
+        "worker_positions": [
+          {
+            "worker": 1,
+            "index": 0,
+            "group": "dev"
+          },
+          {
+            "worker": 2,
+            "index": 1,
+            "group": "dev"
+          },
+          {
+            "worker": 3,
+            "index": 2,
+            "group": "dev"
+          },
+          {
+            "worker": 4,
+            "index": 3,
+            "group": "dev"
+          },
+          {
+            "worker": 5,
+            "index": 4,
+            "group": "dev"
+          },
+          {
+            "worker": 6,
+            "index": 5,
+            "group": "dev"
+          }
+        ],
+        "position_evidence": "Worker layouts plus no completed-group lines/raw records; retained work/phase-b contains only dev directories for these indices. The six-worker retry replaced earlier partial logs for indices 0-5, so their exact first-attempt launcher at kill time is unavailable.",
+        "completed_raw_records": 0,
+        "worker_exit_codes": [
+          -15,
+          -15,
+          -15,
+          -15,
+          -15,
+          -15
+        ]
+      }
+    }
+  ],
+  "current": null,
+  "stage": "ready-after-memory-caps",
+  "updated": "2026-10-18T00:15:17.217770+00:00",
+  "diagnosis": {
+    "observed_at": "2026-10-18T00:12:02.940605+00:00",
+    "docker_memory_total_bytes": 12526108672,
+    "container_memory_limit_bytes": 12884901888,
+    "java_defaults": {
+      "MaxHeapSize": 3133145088,
+      "SoftMaxHeapSize": 3133145088,
+      "MaxRAMPercentage": 25.0
+    },
+    "java_flags_probe_command": "java -XX:+PrintFlagsFinal -version 2>&1 | grep -E \"MaxHeapSize|MaxRAMPercentage\"; cat /sys/fs/cgroup/memory.max",
+    "java_flags_probe_output": "   size_t MaxHeapSize                              = 3133145088                                {product} {ergonomic}\n   double MaxRAMPercentage                         = 25.000000                                 {product} {default}\n   size_t SoftMaxHeapSize                          = 3133145088                             {manageable} {ergonomic}\n12884901888\n",
+    "java_version": "OpenJDK 17.0.20.1 (Debian)",
+    "applies_to": "JUnit launcher and jacococli both invoked plain java without a heap cap before recovery",
+    "partial_sigkill_records": [
+      {
+        "path": "work/phase-b/4/dev/05-MurmurHash3Test/result.json",
+        "sigkill_exits": [
+          {
+            "path": "$.file.runs[0]",
+            "command": [
+              "java",
+              "-javaagent:/repo/experiments/ktester-commit-survival/work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile=/repo/experiments/ktester-commit-survival/work/phase-b/4/dev/jacoco.exec,append=true,includes=org.apache.commons.codec.*",
+              "-cp",
+              "/repo/experiments/ktester-commit-survival/work/commits/w5/target/classes:/repo/experiments/ktester-commit-survival/work/phase-b/4/dev/05-MurmurHash3Test/classes:/repo/experiments/ktester-commit-survival/dev/src-test-t/resources:/repo/experiments/ktester-commit-survival/work/libs/apiguardian-api-1.1.2.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/byte-buddy-agent-1.14.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-io-2.16.1.jar:/repo/experiments/ktester-commit-survival/work/libs/commons-lang3-3.14.0.jar:/repo/experiments/ktester-commit-survival/work/libs/hamcrest-2.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-5.11.4.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-api-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-engine-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-jupiter-params-5.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-commons-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-engine-1.10.2.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-core-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-inline-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/mockito-junit-jupiter-5.2.0.jar:/repo/experiments/ktester-commit-survival/work/libs/objenesis-3.3.jar:/repo/experiments/ktester-commit-survival/work/libs/opentest4j-1.3.0.jar:/repo/experiments/ktester-commit-survival/work/libs/junit-platform-console-standalone-1.9.3.jar",
+              "org.junit.platform.console.ConsoleLauncher",
+              "--disable-banner",
+              "--disable-ansi-colors",
+              "--fail-if-no-tests",
+              "--details",
+              "summary",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128String()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128WithOffsetLengthAndNegativeSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128WithOffsetLengthAndSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128x64()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128x64WithOffsetLengthAndNegativeSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash128x64WithOffsetLengthAndSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32Long()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32LongLong()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32LongLongSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32LongSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32String()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32WithLength()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32WithLengthAndSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32WithOffsetLengthAndSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32WithTrailingNegativeSignedBytesIsInvalid()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32x86()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32x86WithOffsetLengthAndSeed()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash32x86WithTrailingNegativeSignedBytes()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash64()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash64InNotEqualToHash128()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash64WithOffsetAndLength()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testHash64WithPrimitives()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testIncrementalHash32()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testIncrementalHash32x86()",
+              "--select-method",
+              "org.apache.commons.codec.digest.MurmurHash3Test#testIncrementalHashWithUnprocessedBytesAndHugeLengthArray()",
+              "--reports-dir",
+              "/repo/experiments/ktester-commit-survival/work/phase-b/4/dev/05-MurmurHash3Test/initial"
+            ],
+            "log": "work/phase-b/4/dev/05-MurmurHash3Test/initial/console.txt",
+            "timeout": false
+          }
+        ]
+      }
+    ],
+    "likely_cause": "Concurrent MurmurHash3Test launchers each attempt a 2147483645-byte allocation; 8 or 6 JVMs with ~2.92 GiB ergonomic heaps exceed the Docker VM memory budget. OOM events are confirmed; kernel victim PIDs were not retained.",
+    "heap_cap_effect": "The frozen huge-array test catches OutOfMemoryError and aborts through assumeTrue when allocation fails. With -Xmx1g it is expected to be reported absent in Phase B, reducing measured coverage for that test; no Phase A state or survival score changes.",
+    "completed_raw_records": 0,
+    "archived_incomplete_evidence": [
+      {
+        "source": "work/phase-b/0/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/0-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/1/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/1-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/2/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/2-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/3/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/3-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/4/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/4-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/5/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/5-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/9/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/9-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "work/phase-b/10/dev",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/10-dev",
+        "kind": "incomplete group evidence"
+      },
+      {
+        "source": "results/coverage/4-dev.xml",
+        "quarantine": "work/quarantine/phase-b-before-memory-caps/4-dev.xml",
+        "sha256": "dfff204bee3c5b2a0b3618df9942293267c67b207a433992862aff11ae946c7b",
+        "kind": "orphan coverage artifact without atomic raw record"
+      }
+    ]
+  },
+  "memory_cap_recovery": {
+    "prepared_at": "2026-10-18T00:15:17.217525+00:00",
+    "previous_controller_error": "Traceback (most recent call last):\n  File \"/Users/donggi/_projects/experiment-projects/commons-codec/experiments/ktester-commit-survival/tools/run_coverage_guarded.py\", line 148, in main\n    assert attempt['workers'] == 8, 'Phase B OOM recurred with six workers; quarantined evidence requires inspection'\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Phase B OOM recurred with six workers; quarantined evidence requires inspection\n",
+    "uncapped_runner_sha256": {
+      "survival_common.py": "3956cb1e1cb984a60d81f3679906db3328f1aaa1468989c29df9bf3d1fff1ce8",
+      "run_commit.py": "6a6934a1f96cb0a542b11b90237bb2a5a9bcbd31771879400811bae9dc4026fb",
+      "run_phase.py": "59c73a3daa6f5ea066874ea90d056d5de0b9639e8369702db24f46af2a42df64",
+      "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+      "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557",
+      "runner_provenance.py": "d36c69bf9e6a56ea9c42ef94c55836650659ab5db0e0aea91f329e88821dc4d7",
+      "coverage_common.py": "2a285d5a4ff4d36aca24099717b13ef5ffae549075ec98b6400cdddfdc0bf6a8"
+    },
+    "capped_runner_sha256": {
+      "survival_common.py": "3956cb1e1cb984a60d81f3679906db3328f1aaa1468989c29df9bf3d1fff1ce8",
+      "run_commit.py": "24b7cbe1c4552bfa4b1590d2565169966059661f356eab0a4233b703a31696e8",
+      "run_phase.py": "59c73a3daa6f5ea066874ea90d056d5de0b9639e8369702db24f46af2a42df64",
+      "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+      "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557",
+      "runner_provenance.py": "d36c69bf9e6a56ea9c42ef94c55836650659ab5db0e0aea91f329e88821dc4d7",
+      "coverage_common.py": "2a285d5a4ff4d36aca24099717b13ef5ffae549075ec98b6400cdddfdc0bf6a8"
+    },
+    "memory_caps": {
+      "junit_java": [
+        "-Xmx1g",
+        "-XX:+UseSerialGC"
+      ],
+      "test_javac": [
+        "-J-Xmx512m"
+      ],
+      "jacococli_java": [
+        "-Xmx1g",
+        "-XX:+UseSerialGC"
+      ]
+    },
+    "workers": 4,
+    "oom_fallback_workers": 2,
+    "no_further_worker_reduction_without_reporting": true,
+    "verified_junit_and_report_MaxHeapSize": 1073741824,
+    "verified_javac_MaxHeapSize": 536870912,
+    "verified_UseSerialGC": true,
+    "checks_passed": [
+      "Phase A command defaults unchanged",
+      "Phase B javac/launcher/report caps",
+      "all report retries retain signal-9 exits",
+      "four-to-two OOM recovery preserves healthy records",
+      "coverage extraction and revised aggregation self-tests"
+    ],
+    "phase_a_and_survival_files_unchanged": 1091
+  }
+}

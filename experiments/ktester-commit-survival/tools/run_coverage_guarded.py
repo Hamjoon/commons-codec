@@ -1,4 +1,4 @@
-"""Run Phase B at eight workers; preserve evidence and resume at six on container OOM."""
+"""Run capped Phase B at four workers; resume at two on container OOM."""
 import argparse
 import datetime
 import fcntl
@@ -82,7 +82,7 @@ def main():
     lock = (EXP / 'work/phase-b-guard.lock').open('a')
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     path = RESULTS / 'phase-b-resource-events.json'
-    state = json.loads(path.read_text()) if path.exists() else {'workers': 8, 'attempts': [], 'current': None}
+    state = json.loads(path.read_text()) if path.exists() else {'workers': 4, 'attempts': [], 'current': None}
     output = RESULTS / 'phase-b.json'
     def record(stage):
         state.update({'stage': stage, 'updated': stamp()})
@@ -92,6 +92,7 @@ def main():
         check_inputs()
         if state.get('stage') == 'complete':
             return
+        assert state['workers'] in {4, 2}, 'Old uncapped attempt needs the authorized memory-cap recovery before resume'
         while True:
             if state['current'] is None:
                 # Only remove a container retained by one of this controller's attempts.
@@ -101,7 +102,7 @@ def main():
                     subprocess.run(['docker', 'rm', existing['Id']], check=True, capture_output=True)
                 if output.exists():
                     previous = json.loads(output.read_text())
-                    assert state['workers'] == 6 and state['attempts'], 'Unexpected existing Phase B completion record'
+                    assert state['attempts'] and not previous['completed'], 'Unexpected existing Phase B completion record'
                     assert any(json.loads(p.read_text()) == previous for p in (RESULTS / 'phase-b-invocations').glob('*.json'))
                     output.unlink()
                 command = f'python tools/run_phase.py --phase b --workers {state["workers"]} --start 0 --end 539'
@@ -145,13 +146,13 @@ def main():
             write_json(RESULTS / 'phase-b-quarantine.json', manifest)
             if has_oom(attempt, info):
                 attempt['oom_detected'] = True
-                assert attempt['workers'] == 8, 'Phase B OOM recurred with six workers; quarantined evidence requires inspection'
-                preserved = EXP / 'work/phase-b-six-worker-preserved.json'
+                assert attempt['workers'] == 4, 'Phase B OOM recurred with two workers; quarantined evidence requires inspection'
+                preserved = EXP / 'work/phase-b-two-worker-preserved.json'
                 if not preserved.exists():
                     write_json(preserved, snapshot_healthy())
-                state['workers'] = 6
+                state['workers'] = 2
                 state['current'] = None
-                record('resuming-with-six-workers')
+                record('resuming-with-two-workers')
                 continue
             assert not moved, 'Phase B produced signal-9 exits without a reported OOM; verification remains blocked'
             assert info['State']['ExitCode'] == 0 and output.exists(), f'Phase B failed; see {log}'
@@ -159,7 +160,7 @@ def main():
             assert done['completed'] and all(code == 0 for code in done['worker_exit_codes'])
             for entry in manifest['entries']:
                 assert (EXP / entry['source']).exists(), entry['source']
-            preserved = EXP / 'work/phase-b-six-worker-preserved.json'
+            preserved = EXP / 'work/phase-b-two-worker-preserved.json'
             if preserved.exists():
                 healthy = json.loads(preserved.read_text())
                 for name, expected in healthy.items():

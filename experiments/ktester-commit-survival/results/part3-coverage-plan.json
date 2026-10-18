@@ -1,5 +1,5 @@
 {
-  "status": "prepared; Phase B not started",
+  "status": "Capped Phase B ready to restart after uncapped OOM attempts",
   "production_changing_commits": 187,
   "coverage_commits": 263,
   "scope_changing_commits": 50,
@@ -15,5 +15,40 @@
   "addendum_sha256": "58763fc343c7d7b6716960d15ebf4759abbcddb2cfade1d1d608613d9912c70a",
   "scope_projection_matches_original_diff": true,
   "phase_a_unchanged": true,
-  "pending_before_phase_b": "Wire coverage_common.line_rows into run_commit.py only after Phase A finishes; include coverage helper provenance."
+  "phase_a_runner_version": "81c49b954a9dee07502c919d2fcbe85f2ecadb1c",
+  "phase_b_runner_sha256": {
+    "survival_common.py": "3956cb1e1cb984a60d81f3679906db3328f1aaa1468989c29df9bf3d1fff1ce8",
+    "run_commit.py": "24b7cbe1c4552bfa4b1590d2565169966059661f356eab0a4233b703a31696e8",
+    "run_phase.py": "59c73a3daa6f5ea066874ea90d056d5de0b9639e8369702db24f46af2a42df64",
+    "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+    "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557",
+    "runner_provenance.py": "d36c69bf9e6a56ea9c42ef94c55836650659ab5db0e0aea91f329e88821dc4d7",
+    "coverage_common.py": "2a285d5a4ff4d36aca24099717b13ef5ffae549075ec98b6400cdddfdc0bf6a8"
+  },
+  "uncapped_phase_b_runner_sha256": {
+    "survival_common.py": "3956cb1e1cb984a60d81f3679906db3328f1aaa1468989c29df9bf3d1fff1ce8",
+    "run_commit.py": "6a6934a1f96cb0a542b11b90237bb2a5a9bcbd31771879400811bae9dc4026fb",
+    "run_phase.py": "59c73a3daa6f5ea066874ea90d056d5de0b9639e8369702db24f46af2a42df64",
+    "MethodSelectors.java": "99773d74020f468d45057c3ecb5e3b82e130a821779bf72137259727b48094dd",
+    "dev-compile-units.json": "ee0e98793464fafb69be054e0c2c67ab697ad3d84bd5b27479ee7b1cfacc4557",
+    "runner_provenance.py": "d36c69bf9e6a56ea9c42ef94c55836650659ab5db0e0aea91f329e88821dc4d7",
+    "coverage_common.py": "2a285d5a4ff4d36aca24099717b13ef5ffae549075ec98b6400cdddfdc0bf6a8"
+  },
+  "phase_b_memory_caps": {
+    "junit_java": [
+      "-Xmx1g",
+      "-XX:+UseSerialGC"
+    ],
+    "test_javac": [
+      "-J-Xmx512m"
+    ],
+    "jacococli_java": [
+      "-Xmx1g",
+      "-XX:+UseSerialGC"
+    ]
+  },
+  "phase_b_worker_counts": [
+    4,
+    2
+  ]
 }

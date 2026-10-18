@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import shutil
 import time
+from coverage_common import line_rows as production_line_rows
 from runner_provenance import runner_compatible
 from survival_common import (EXP, RESULTS, check_inputs, classpath, commits, denominator,
     execute, export_build, line_rows, method_state, parse_reports, relative, selectors,
@@ -18,6 +19,9 @@ def raw_path(index, group, phase):
 
 def run_group(index, group, worker, phase='a', selected_ids=None, coverage=False, force_class=False):
     started = time.monotonic()
+    # Coverage workers share the container's memory budget. Phase A is unchanged.
+    java_options = ['-Xmx1g', '-XX:+UseSerialGC'] if phase == 'b' else []
+    javac_options = ['-J-Xmx512m'] if phase == 'b' else []
     fingerprint = check_inputs()
     commit = commits()[index]
     rows = denominator(group)
@@ -65,7 +69,7 @@ def run_group(index, group, worker, phase='a', selected_ids=None, coverage=False
         cp = ':'.join([str(folder / 'target/classes'), *jars])
         compile_runs = []
         for attempt in range(1, 3):
-            compile_runs.append(execute(['javac', '-cp', cp, '-d', classes, *sources], folder, part / f'javac-{attempt}.txt'))
+            compile_runs.append(execute(['javac', *javac_options, '-cp', cp, '-d', classes, *sources], folder, part / f'javac-{attempt}.txt'))
             if compile_runs[-1]['exit_code'] == 0:
                 break
         file_record = {'file': filename, 'compile_attempts': compile_runs,
@@ -80,7 +84,7 @@ def run_group(index, group, worker, phase='a', selected_ids=None, coverage=False
             continue
         runtime = ':'.join([str(folder / 'target/classes'), str(classes), str(EXP / 'dev/src-test-t/resources'), *jars])
         selection = selectors(members, classes, part / 'selectors.txt', runtime)
-        base = ['java']
+        base = ['java', *java_options]
         if coverage:
             base += [f'-javaagent:{EXP}/work/libs/org.jacoco.agent-0.8.12-runtime.jar=destfile={execfile},append=true,includes=org.apache.commons.codec.*']
         base += ['-cp', runtime, 'org.junit.platform.console.ConsoleLauncher', '--disable-banner', '--disable-ansi-colors', '--fail-if-no-tests', '--details', 'summary']
@@ -124,17 +128,21 @@ def run_group(index, group, worker, phase='a', selected_ids=None, coverage=False
         if phase == 'b':
             xml = RESULTS / 'coverage' / f'{index}-{group}.xml'
         xml.parent.mkdir(parents=True, exist_ok=True)
-        command = ['java', '-jar', str(EXP / 'work/libs/org.jacoco.cli-0.8.12-nodeps.jar'), 'report', *([str(execfile)] if execfile.exists() else []), '--classfiles', str(folder / 'target/classes'), '--sourcefiles', str(folder / 'src/main/java'), '--xml', str(xml)]
-        coverage_run = execute(command, folder, work / 'coverage-report.txt')
-        if coverage_run['exit_code']:
-            coverage_run = execute(command, folder, work / 'coverage-report-retry.txt')
+        command = ['java', *java_options, '-jar', str(EXP / 'work/libs/org.jacoco.cli-0.8.12-nodeps.jar'), 'report', *([str(execfile)] if execfile.exists() else []), '--classfiles', str(folder / 'target/classes'), '--sourcefiles', str(folder / 'src/main/java'), '--xml', str(xml)]
+        report_attempts = [execute(command, folder, work / 'coverage-report.txt')]
+        if report_attempts[-1]['exit_code']:
+            report_attempts.append(execute(command, folder, work / 'coverage-report-retry.txt'))
+        coverage_run = report_attempts[-1]
         if coverage_run['exit_code']:
             raise RuntimeError('Coverage report failed twice: ' + coverage_run['log'])
-        lines = line_rows(xml)
+        lines = production_line_rows(xml) if phase == 'b' else line_rows(xml)
         csv_path = xml.with_name(xml.stem + '-lines.csv')
         write_csv(csv_path, ['file', 'line', 'instructions-missed', 'instructions-covered'], lines)
         record['coverage'] = {'xml': relative(xml), 'lines_csv': relative(csv_path), 'report': coverage_run,
                               'line_entries': len(lines), 'covered_lines': sum(r['instructions-covered'] > 0 for r in lines)}
+        if phase == 'b':
+            # A successful retry must not hide an earlier killed report JVM.
+            record['coverage']['report_attempts'] = report_attempts
     record['seconds'] = round(time.monotonic() - started, 3)
     assert len(record['methods']) == len(rows)
     write_json(output, record)

@@ -125,7 +125,7 @@ def main():
                   f"| Yes | {exposure[g][(True, True)]} | {exposure[g][(True, False)]} |",
                   f"| No | {exposure[g][(False, True)]} | {exposure[g][(False, False)]} |", '',
                   f'Unavailable because c or c−1 failed to build: {unknown_exposure[g]}.', '']
-    (RESULTS / 'table4-exposure-vs-break.md').write_text('\n'.join(lines) + '\n')
+    (RESULTS / 'table4-exposure-vs-break.md').write_text('\n'.join(lines).rstrip() + '\n')
     lines = ['# Coverage at t (full frozen sets)', '', '| Scope source file | Executable lines | Dev covered | LLM covered |', '|---|---:|---:|---:|']
     baseline = {}
     assert maps['dev'][0] is not None and maps['llm'][0] is not None

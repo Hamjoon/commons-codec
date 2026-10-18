@@ -1,0 +1,63 @@
+{
+  "cause": "Host Git was blocked by an unaccepted Xcode license agreement.",
+  "license_accepted_by_user": true,
+  "before_license_acceptance": {
+    "recorded_at": "2026-10-18T17:02:39.902181+09:00",
+    "checks": [
+      {
+        "command": [
+          "git",
+          "--version"
+        ],
+        "exit_code": 69,
+        "stdout": "",
+        "stderr": "You have not agreed to the Xcode license agreements. Please run 'sudo xcodebuild -license' from within a Terminal window to review and agree to the Xcode and Apple SDKs license.\n"
+      },
+      {
+        "command": [
+          "xcode-select",
+          "-p"
+        ],
+        "exit_code": 0,
+        "stdout": "/Applications/Xcode.app/Contents/Developer\n",
+        "stderr": ""
+      }
+    ],
+    "continuation_restarted": false
+  },
+  "after_license_acceptance": {
+    "recorded_at": "2026-10-18T17:08:23.393788+09:00",
+    "checks": [
+      {
+        "command": [
+          "git",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "git version 2.54.0 (Apple Git-157)\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "xcode-select",
+          "-p"
+        ],
+        "exit_code": 0,
+        "stdout": "/Applications/Xcode.app/Contents/Developer\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "show",
+          "-s",
+          "--format=%cI",
+          "cd16988dd46ac7533771eb6856a5f56c7aeaffba"
+        ],
+        "exit_code": 0,
+        "stdout": "2024-05-16T14:47:23-04:00\n",
+        "stderr": ""
+      }
+    ]
+  }
+}
